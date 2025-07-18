@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BatEvadeStartSection_C",
+    "Name": "Default__BatEvadeStartSection_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.BatEvadeStartSection_C'",
+    "Template": {
+      "ObjectName": "BP_CustomMontageSelectBase_C'Default__BP_CustomMontageSelectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/BP_CustomMontageSelectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BatEvadeStartSection_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_CustomMontageSelectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/BP_CustomMontageSelectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Children": [
+      {
+        "ObjectName": "Function'BatEvadeStartSection_C:K2_GetStartSectionName'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.2"
+      }
+    ],
+    "FuncMap": {
+      "K2_GetStartSectionName": {
+        "ObjectName": "Function'BatEvadeStartSection_C:K2_GetStartSectionName'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BatEvadeStartSection_C'Default__BatEvadeStartSection_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_GetStartSectionName",
+    "Outer": "BatEvadeStartSection_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_CustomMontageSelectBase_C:K2_GetStartSectionName'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/BP_CustomMontageSelectBase.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Ability",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayAbility'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwningCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBat_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'BatLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_SelectName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

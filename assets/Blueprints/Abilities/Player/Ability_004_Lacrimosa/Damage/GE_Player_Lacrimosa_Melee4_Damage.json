@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Lacrimosa_Melee4_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Lacrimosa_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Melee"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Lacrimosa_Melee4_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Lacrimosa_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Lacrimosa_Melee4_Damage_C'Default__GE_Player_Lacrimosa_Melee4_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Melee4_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Lacrimosa_Melee4_Damage_C",
+    "Name": "Default__GE_Player_Lacrimosa_Melee4_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Melee4_Damage.GE_Player_Lacrimosa_Melee4_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Lacrimosa_DamageBase_C'Default__GE_Lacrimosa_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationRate": 0.01
+      },
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShake_LacrimosaHit2_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Lacrimosa/CameraShake_LacrimosaHit2.0"
+        },
+        "InnerRadius": 1.0,
+        "OuterRadius": 2000.0,
+        "Falloff": 0.0
+      },
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Combat.Lacrimosa.Melee4"
+      ],
+      "HitWhiteEffectID": "Black_HitFrontShort",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Melee"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Lacrimosa_Melee4_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Melee4_Damage.0"
+        }
+      ]
+    }
+  }
+]

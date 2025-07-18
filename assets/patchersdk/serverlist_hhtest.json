@@ -1,0 +1,24 @@
+[
+  {
+    "IP": "127.0.0.1",
+    "MinorBuildId": 59415,
+    "MaxPlayers": 100,
+    "ClusterId": "gamesdk",
+    "MapName": "QRSL_P",
+    "AllowDownloadChars": 4,
+    "NumPlayers": 1,
+    "LastUpdated": 3577128551,
+    "BuildId": 0,
+    "Port": 30031,
+    "DayTime": "   测试将在6月26日10点开启！",
+    "PreserveDetail": "",
+    "GameMode": "3",
+    "Name": "12000",
+    "TestMode": 1,
+    "SessionName": "fadia-rs",
+    "ExtendData": "",
+    "Recommand": 1,
+    "QueuePlayers": 1,
+    "ServerRegion": "Russia"
+  }
+]

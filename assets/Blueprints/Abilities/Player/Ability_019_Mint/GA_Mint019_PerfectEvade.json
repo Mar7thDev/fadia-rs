@@ -1,0 +1,254 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Mint019_PerfectEvade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Mint019_PerfectEvade_C'Default__GA_Mint019_PerfectEvade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Mint019_PerfectEvade_C",
+    "Name": "Default__GA_Mint019_PerfectEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.GA_Mint019_PerfectEvade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "LockTargetPriotityAngle": 360.0
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "Atk",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 0.0,
+            "RefinedScopePriotityAngle": 0.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Female_PerfectEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/LockRange/LockRange_Female_PerfectEvade.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "PerfectEvadeFront",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_PerfectEvadeFront'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_PerfectEvadeFront.0"
+          }
+        },
+        {
+          "Key": "Atk",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_PerfectEvadeAtk'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_PerfectEvadeAtk.1"
+          }
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_PerfectEvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_PerfectEvadeBack.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Mint019_PerfectEvade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.3"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Atk",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_PerfectEvade_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.5"
+          }
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Mint019_PerfectEvade_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.2"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_PerfectEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_PerfectEvade.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_PerfectEvadeAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_PerfectEvadeAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Branch1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Effect/GE_Player_Mint_Branch1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_Level1_1_Target_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Upgrade/Level1/New/Buff_Mint019_Level1_1_Target_New.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_Property_Long_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade_Property_Long.0"
+              }
+            ]
+          }
+        }
+      ],
+      "HoldWeaponDelayScaleMap": [
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": 1.5
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "PerfectEvadeFront",
+          "Value": false
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Evade.PerfectEvade"
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Mint019_PerfectEvade_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_ExtemeEvde_AtkProperty_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtemeEvde_AtkProperty.0"
+        }
+      ],
+      "TriggerEndEventTags": [
+        "Event.Montage.Player.Common.EndAbilitySkill"
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_Property_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade_Property.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_Property_Long_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade_Property_Long.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_ExtemeEvde_AtkProperty_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtemeEvde_AtkProperty.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Mint019_PerfectEvade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Atk"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack"
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Mint019_PerfectEvade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_PerfectEvade_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.4"
+        }
+      ]
+    }
+  }
+]

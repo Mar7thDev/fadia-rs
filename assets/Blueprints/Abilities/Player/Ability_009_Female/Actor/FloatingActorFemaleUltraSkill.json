@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "FloatingActorFemaleUltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_floatingEffectActor_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_floatingEffectActor.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'FloatingActorFemaleUltraSkill_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "FloatingActorFemaleUltraSkill_C'Default__FloatingActorFemaleUltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FloatingActorFemaleUltraSkill_C",
+    "Name": "Default__FloatingActorFemaleUltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.FloatingActorFemaleUltraSkill_C'",
+    "Template": {
+      "ObjectName": "BP_floatingEffectActor_C'Default__BP_floatingEffectActor_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_floatingEffectActor.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SphereRootComponent": {
+        "ObjectName": "SphereComponent'Default__FloatingActorFemaleUltraSkill_C:SphereOverlapRootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.5"
+      },
+      "LocationCurve": {
+        "ObjectName": "CurveFloat'FloatingCurve'",
+        "ObjectPath": "/Game/Curve/DamageFloaties/FloatingCurve.0"
+      },
+      "FloatingMaxHeight": 150.0,
+      "UpMaxTime": 0.2,
+      "RandUpMaxTimeOffset": 0.1,
+      "SwingHeight": 60.0,
+      "SwingPeriod": 4.0,
+      "RandSwingPeriod": 1.0,
+      "FloatingParticleEffect": {
+        "bUseSoftObject": true,
+        "SoftPSTemplate": {
+          "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Female/NS_Player_Female_Skill_022.NS_Player_Female_Skill_022",
+          "SubPathString": ""
+        },
+        "PSTemplate": null,
+        "LocationOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "RotationOffset": {
+          "Pitch": 0.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "SocketName": "None",
+        "Attached": false,
+        "IgnoreHitEffectOpt": false,
+        "UseParentBoundBox": false,
+        "bAcceptCustomDilation": true,
+        "bAttachRootComponent": false,
+        "AdaptiveScale": false,
+        "UserParameters": [],
+        "DirectionForce": null,
+        "SavedParticleSystem": null
+      },
+      "InitialLifeSpan": 2.6,
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__FloatingActorFemaleUltraSkill_C:SphereOverlapRootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.5"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "FloatingActorFemaleUltraSkill_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'FloatingActorFemaleUltraSkill_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.2"
+      },
+      "VariableGUID": "23E4E350-4C7FA0BE-3160EDA9-B5784CED",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "FloatingActorFemaleUltraSkill_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'FloatingActorFemaleUltraSkill_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/FloatingActorFemaleUltraSkill.3"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereOverlapRootComponent",
+    "Outer": "Default__FloatingActorFemaleUltraSkill_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BP_floatingEffectActor_C:SphereOverlapRootComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_floatingEffectActor.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SphereRadius": 1000.0,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

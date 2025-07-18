@@ -1,0 +1,142 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LockRange_BossLock_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_LockBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Children": [
+      {
+        "ObjectName": "Function'LockRange_BossLock_C:K2_CheckCanSelectTarget'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.1"
+      }
+    ],
+    "FuncMap": {
+      "K2_CheckCanSelectTarget": {
+        "ObjectName": "Function'LockRange_BossLock_C:K2_CheckCanSelectTarget'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LockRange_BossLock_C'Default__LockRange_BossLock_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_CheckCanSelectTarget",
+    "Outer": "LockRange_BossLock_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTTargetType_ShapeTrace:K2_CheckCanSelectTarget'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwningActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TargetingActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTCharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsBossCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "LockRange_BossLock_C",
+    "Name": "Default__LockRange_BossLock_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.LockRange_BossLock_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_LockBoxBase_C'Default__BP_PlayerType_LockBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfSize": {
+        "X": 4000.0,
+        "Y": 4000.0,
+        "Z": 1500.0
+      },
+      "SphereRadius": 4000.0,
+      "ObjectTypes": [
+        "ObjectTypeQuery12"
+      ]
+    }
+  }
+]

@@ -1,0 +1,836 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Lacrimosa_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Lacrimosa_C:K2_SetWeaponMeshVisible'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.2"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Weapon_Player_Lacrimosa": {
+        "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+      },
+      "K2_SetWeaponMeshVisible": {
+        "ObjectName": "Function'Weapon_Player_Lacrimosa_C:K2_SetWeaponMeshVisible'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Lacrimosa_C'Default__Weapon_Player_Lacrimosa_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.17"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Weapon_Player_Lacrimosa",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 10,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Lacrimosa_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Niagara1",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+              "PropertyClass": {
+                "ObjectName": "Class'NiagaraComponent'",
+                "ObjectPath": "/Script/Niagara"
+              }
+            }
+          }
+        },
+        "Offset": 20,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'SceneComponent:SetVisibility'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "K2Node_Event_bVisible",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 52,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Lacrimosa_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Niagara",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+              "PropertyClass": {
+                "ObjectName": "Class'NiagaraComponent'",
+                "ObjectPath": "/Script/Niagara"
+              }
+            }
+          }
+        },
+        "Offset": 20,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'SceneComponent:SetVisibility'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "K2Node_Event_bVisible",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 94,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 96
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_SetWeaponMeshVisible",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'WeaponBase:K2_SetWeaponMeshVisible'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bVisible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+          },
+          "Property": {
+            "Type": "BoolProperty",
+            "Name": "K2Node_Event_bVisible",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "FieldSize": 1,
+            "ByteOffset": 0,
+            "ByteMask": 1,
+            "FieldMask": 255,
+            "BoolSize": 1,
+            "bIsNativeBool": true
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Lacrimosa_C:K2_SetWeaponMeshVisible'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "bVisible",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Lacrimosa_C:ExecuteUbergraph_Weapon_Player_Lacrimosa'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 10
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.ExecuteUbergraph_Weapon_Player_Lacrimosa[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Player_lacrimosa_skin_Skeleton_AnimBlueprint_C'",
+        "ObjectPath": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/Weapon_Player_lacrimosa_skin_Skeleton_AnimBlueprint.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_lacrimosa_skin'",
+        "ObjectPath": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/Weapon_Player_lacrimosa_skin.9"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_lacrimosa_skin'",
+        "ObjectPath": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/Weapon_Player_lacrimosa_skin.9"
+      },
+      "bReceivesDecals": false,
+      "bHiddenInGame": true,
+      "ComponentTags": [
+        "Weapon_Evade"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara1_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Lacrimosa_Skill_030'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_030.28"
+      },
+      "OverrideParameters": {}
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Lacrimosa_Skill_030'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_030.28"
+      },
+      "OverrideParameters": {}
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Lacrimosa_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.7"
+      },
+      "VariableGUID": "C9A4EF71-459A120B-351C2482-8CDDA648",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Lacrimosa_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "9AA60C04-46F58AC8-89DEE680-57D9A0CB",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'Weapon_Player_Lacrimosa_C:Niagara_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.6"
+      },
+      "VariableGUID": "5C0174E3-4C1B2F0C-C339C59A-15C094EB",
+      "InternalVariableName": "Niagara"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'Weapon_Player_Lacrimosa_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.16"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.10"
+        }
+      ],
+      "VariableGUID": "8BF43EFB-4A994971-62D16B97-8ECEB718",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'Weapon_Player_Lacrimosa_C:StaticMesh1_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.15"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.13"
+        }
+      ],
+      "VariableGUID": "231E9131-4A6A5399-60090984-C7A1CD3E",
+      "InternalVariableName": "StaticMesh1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'Weapon_Player_Lacrimosa_C:Niagara1_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.5"
+      },
+      "VariableGUID": "996666C8-49EAEB1E-2B94B083-DDE63C94",
+      "InternalVariableName": "Niagara1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.11"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.12"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.11"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.12"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.9"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.10"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Lacrimosa_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'weapon_lacrimosa_004_01'",
+        "ObjectPath": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/weapon_lacrimosa_004_01.2"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Lacrimosa_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'weapon_lacrimosa_004_01'",
+        "ObjectPath": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/weapon_lacrimosa_004_01.2"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_L1"
+      ]
+    }
+  },
+  {
+    "Type": "Weapon_Player_Lacrimosa_C",
+    "Name": "Default__Weapon_Player_Lacrimosa_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Lacrimosa.Weapon_Player_Lacrimosa_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": "weapon_finger_L1"
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "weapon_finger_R1"
+        },
+        {
+          "Key": "Weapon_Evade",
+          "Value": "WeaponSocket"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_034.NS_Lacrimosa_Skill_034",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "weapon_finger_L1",
+            "Attached": false,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": true,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_034.NS_Lacrimosa_Skill_034",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "weapon_finger_R1",
+            "Attached": false,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": true,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Weapon_Evade",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/004_lacrimosa/Weapon_Player_lacrimosa/animation/char_lacrimosa_skill_batfly_loop_Montage.char_lacrimosa_skill_batfly_loop_Montage",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Adler_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Adler_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Adler_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.3"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Adler_C'Default__Weapon_Player_Adler_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.8"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Player_Adler_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "SocketName": "GrassInteract",
+          "Radius": 150.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Adler_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Weapon_adler_001'",
+        "ObjectPath": "/Game/Characters/Player/033_adler_new/adler_Weapon/Weapon_adler_001/Weapon_adler_001.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Weapon_adler_001'",
+        "ObjectPath": "/Game/Characters/Player/033_adler_new/adler_Weapon/Weapon_adler_001/Weapon_adler_001.1"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Adler_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Adler_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Adler_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.4"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Adler_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.2"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "8D759BD4-48B9BCDA-8ED26DBD-CAEDA105",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Adler_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Adler_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Adler_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Adler_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.5"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Adler_C",
+    "Name": "Default__Weapon_Player_Adler_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.Weapon_Player_Adler_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "Bip001-Prop1"
+        },
+        {
+          "Key": "AirAttack",
+          "Value": "root"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Adler/P_Skill_Player_Adler_009_4.P_Skill_Player_Adler_009_4",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Rhand_Weapon2",
+            "Attached": false,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": false,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Player_Adler_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Adler.1"
+      },
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "containment",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/033_adler_new/adler_Weapon/Weapon_adler_002/Weapon_adler_002_interaction_containment_Montage.Weapon_adler_002_interaction_containment_Montage",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionNew_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionNew.0"
+        },
+        "DLWE_Size": 20.0,
+        "BindSocketName": "GrassInteract"
+      }
+    }
+  }
+]

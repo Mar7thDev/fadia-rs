@@ -1,0 +1,351 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Jin_Show1_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Jin_Show1_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.3"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.2"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Weapon_Player_Jin_Show1": {
+        "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Jin_Show1_C'Default__Weapon_Player_Jin_Show1_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Weapon_Player_Jin_Show1",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 10,
+        "Function": {
+          "ObjectName": "Class'Actor:ReceiveTick'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+              },
+              "Property": {
+                "Type": "FloatProperty",
+                "Name": "K2Node_Event_DeltaSeconds",
+                "Flags": "RF_Public",
+                "ElementSize": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 29,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 31
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+          },
+          "Property": {
+            "Type": "FloatProperty",
+            "Name": "K2Node_Event_DeltaSeconds",
+            "Flags": "RF_Public",
+            "ElementSize": 4
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ReceiveTick'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.2"
+            },
+            "Property": {
+              "Type": "FloatProperty",
+              "Name": "DeltaSeconds",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Jin_Show1_C:ExecuteUbergraph_Weapon_Player_Jin_Show1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 10
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.ExecuteUbergraph_Weapon_Player_Jin_Show1[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Jin_Show1_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.4"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'Weapon_Player_Jin_Show1_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.8"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "EDFEF2C0-42BF94EB-48D85099-025B4C23",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Show1_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Show1_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Jin_Show1_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Show1_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'weapon_jin_Flagon'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_jin_Flagon/weapon_jin_Flagon.2"
+      },
+      "bReceivesDecals": false,
+      "ComponentTags": [
+        "WeaponJinShow1"
+      ]
+    }
+  },
+  {
+    "Type": "Weapon_Player_Jin_Show1_C",
+    "Name": "Default__Weapon_Player_Jin_Show1_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Show1.Weapon_Player_Jin_Show1_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParentSocketMap": [
+        {
+          "Key": "WeaponJinShow1",
+          "Value": "wq_root_L"
+        }
+      ]
+    }
+  }
+]

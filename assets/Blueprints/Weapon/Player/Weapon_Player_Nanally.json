@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Nanally_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Nanally_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.4"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Nanally_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Nanally_C'Default__Weapon_Player_Nanally_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Nanally_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Nanally_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Nanally_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.2"
+      },
+      "VariableGUID": "C9A4EF71-459A120B-351C2482-8CDDA648",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Nanally_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Nanally_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.3"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Nanally_C",
+    "Name": "Default__Weapon_Player_Nanally_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Nanally.Weapon_Player_Nanally_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    }
+  }
+]

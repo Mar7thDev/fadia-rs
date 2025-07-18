@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_MintWind_Rotate_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.AniState.Rotate"
+        ],
+        "Added": [
+          "State.AniState.Rotate"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_MintWind_Rotate_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_MintWind_Rotate_C'Default__GE_MintWind_Rotate_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GE_MintWind_Rotate.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_MintWind_Rotate_C",
+    "Name": "Default__GE_MintWind_Rotate_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GE_MintWind_Rotate.GE_MintWind_Rotate_C'",
+    "Template": {
+      "ObjectName": "GE_SkillEffectBase_C'Default__GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectParam": [
+        {
+          "EventType": "ESkillEventType::SKILL_EVENT_AFTER_HIT",
+          "EffectObj": {
+            "ObjectName": "BlueprintGeneratedClass'MintWindRotate_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/Rotate/MintWindRotate.0"
+          }
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.AniState.Rotate"
+        ],
+        "Added": [
+          "State.AniState.Rotate"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_MintWind_Rotate_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GE_MintWind_Rotate.0"
+        }
+      ]
+    }
+  }
+]

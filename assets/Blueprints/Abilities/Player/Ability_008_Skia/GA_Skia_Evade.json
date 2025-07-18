@@ -1,0 +1,634 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Skia_Evade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Skia_Evade_C:ExecuteUbergraph_GA_Skia_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Skia_Evade_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.2"
+      },
+      {
+        "ObjectName": "Function'GA_Skia_Evade_C:ExecuteUbergraph_GA_Skia_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Skia_Evade": {
+        "ObjectName": "Function'GA_Skia_Evade_C:ExecuteUbergraph_GA_Skia_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Skia_Evade_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Skia_Evade_C'Default__GA_Skia_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Skia_Evade",
+    "Outer": "GA_Skia_Evade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilitySystemComponentFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AbilitySystemComponent'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 72,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'GameplayTagAssetInterface'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HUD'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTHUD'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Skia_Evade_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Skia_Evade_C",
+    "Name": "Default__GA_Skia_Evade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.GA_Skia_Evade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MontageToPlays": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_skia_skill_evadeback_Montage'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/char_skia_skill_evadeback_Montage.0"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_skia_skill_evadeforward_Montage'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/char_skia_skill_evadeforward_Montage.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Dissolve.0"
+          }
+        },
+        {
+          "Key": "EvadeEntry",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEntry'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEntry.0"
+          }
+        },
+        {
+          "Key": "EvadeoutStart",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_Shadow1'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_Shadow1.0"
+          }
+        },
+        {
+          "Key": "EvadeEnd_end",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_end'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_end.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Skia_Evade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.7"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Joystick'Default__GA_Skia_Evade_C:HTMontageSelect_Joystick_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.8"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Evade_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.15"
+          }
+        },
+        {
+          "Key": "EvadeEntry",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Evade_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.16"
+          }
+        },
+        {
+          "Key": "EvadeoutStart",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Evade_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.18"
+          }
+        },
+        {
+          "Key": "EvadeoutLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Evade_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.19"
+          }
+        },
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Evade_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.17"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityStrengthCost'Default__GA_Skia_Evade_C:HTAbilityStrengthCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.4"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Skia_Evade_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.5"
+        },
+        {
+          "ObjectName": "HTGAComponent_EvadeCoolDown'Default__GA_Skia_Evade_C:HTGAComponent_EvadeCoolDown_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.6"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_EvadeAtk1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_EvadeAtk1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Evade1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Evade1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowControl1_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowControl1.1"
+              }
+            ]
+          }
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "BackEvade",
+          "Value": false
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Evade"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityStrengthCost",
+    "Name": "HTAbilityStrengthCost_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'HTAbilityStrengthCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_CommonEvade_Property_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_CommonEvade_Property.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_EvadeCoolDown",
+    "Name": "HTGAComponent_EvadeCoolDown_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_EvadeCoolDown'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerCoolDown": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDown_Evade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDown_Evade.1"
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "BackEvade"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Joystick",
+    "Name": "HTMontageSelect_Joystick_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Joystick'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "FrontEvade"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.25,
+      "OptionalRequirements": [
+        {
+          "HasTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.Property.CantSneak"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              3,
+              1,
+              0
+            ],
+            "UserDescription": "",
+            "AutoDescription": " NONE( State.Property.CantSneak )"
+          }
+        }
+      ],
+      "NextSectionName": "EvadeEntry"
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeFront",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.35,
+      "NextSectionName": "EvadeEnd_end"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "EvadeEnd_end"
+    }
+  },
+  {
+    "Type": "JumpSection_ReleaseHoldTimeTriggerCheck",
+    "Name": "JumpSection_ReleaseHoldTimeTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_ReleaseHoldTimeTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTriggers": [
+        {
+          "Key": "0.2",
+          "Value": "EvadeEnd"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.9"
+        },
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_ReleaseHoldTimeTriggerCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_1.JumpSection_ReleaseHoldTimeTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_3.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Skia_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_Evade_C:SkillJumpSectionData_4.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Evade.13"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Cang_SpawnWordSkillB_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Cang_SpawnWordSkillB_C'Default__GA_Cang_SpawnWordSkillB_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_SpawnWordSkillB.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "NeedCheckFloor": true,
+      "RandLocationOffset": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfRotation": true
+    }
+  },
+  {
+    "Type": "GA_Cang_SpawnWordSkillB_C",
+    "Name": "Default__GA_Cang_SpawnWordSkillB_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_SpawnWordSkillB.GA_Cang_SpawnWordSkillB_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerEventTags": [
+        {
+          "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnHTActor'Default__GA_Cang_SpawnWordSkillB_C:HTAbilitySpawnHTActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_SpawnWordSkillB.4"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnHTActor",
+    "Name": "HTAbilitySpawnHTActor_0",
+    "Outer": "Default__GA_Cang_SpawnWordSkillB_C",
+    "Class": "UScriptClass'HTAbilitySpawnHTActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_CangSkillWordB_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_CangSkillWordB.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Cang_SpawnWordSkillB_C:HTAbilitySpawnHTActor_0.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_SpawnWordSkillB.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_UseTarget'Default__GA_Cang_SpawnWordSkillB_C:HTAbilitySpawnHTActor_0.FindSpawnRotationObj_UseTarget_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_SpawnWordSkillB.2"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  }
+]

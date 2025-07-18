@@ -1,0 +1,97 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Sagiri_Branch_Traction_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.AniState.Traction"
+        ],
+        "Added": [
+          "State.AniState.Traction"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Sagiri_Branch_Traction_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Sagiri_Branch_Traction_C'Default__GE_Player_Sagiri_Branch_Traction_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Branch_Traction.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Sagiri_Branch_Traction_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Sagiri_Traction_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Sagiri/Con_Sagiri_Traction.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Player_Sagiri_Branch_Traction_C",
+    "Name": "Default__GE_Player_Sagiri_Branch_Traction_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Branch_Traction.GE_Player_Sagiri_Branch_Traction_C'",
+    "Template": {
+      "ObjectName": "GE_SkillEffectBase_C'Default__GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectParam": [
+        {
+          "EventType": "ESkillEventType::SKILL_EVENT_AFTER_HIT",
+          "EffectObj": {
+            "ObjectName": "BlueprintGeneratedClass'SagiriTractionBranch_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/Traction/Sagiri/SagiriTractionBranch.0"
+          }
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.AniState.Traction"
+        ],
+        "Added": [
+          "State.AniState.Traction"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Sagiri_Branch_Traction_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Branch_Traction.0"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Player_Sagiri_Branch_Traction_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Branch_Traction.2"
+        }
+      ]
+    }
+  }
+]

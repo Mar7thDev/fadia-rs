@@ -1,0 +1,179 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageActorCangSkillA_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'DamageActorCangSkillA_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'DamageActorCangSkillA_C:ExecuteUbergraph_DamageActorCangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DamageActorCangSkillA_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.3"
+      },
+      {
+        "ObjectName": "Function'DamageActorCangSkillA_C:ExecuteUbergraph_DamageActorCangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_DamageActorCangSkillA": {
+        "ObjectName": "Function'DamageActorCangSkillA_C:ExecuteUbergraph_DamageActorCangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'DamageActorCangSkillA_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageActorCangSkillA_C'Default__DamageActorCangSkillA_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageActorCangSkillA_C",
+    "Name": "Default__DamageActorCangSkillA_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.DamageActorCangSkillA_C'",
+    "Template": {
+      "ObjectName": "BP_DamageTriggerActorBase_C'Default__BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SceneRootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActorCangSkillA_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActorCangSkillA_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.5"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_DamageActorCangSkillA",
+    "Outer": "DamageActorCangSkillA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "DamageActorCangSkillA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "DamageActorCangSkillA_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent",
+    "Outer": "Default__DamageActorCangSkillA_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_DamageTriggerActorBase_C:RootComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'DamageActorCangSkillA_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.4"
+      },
+      "VariableGUID": "EF28E08E-4EFCE1EA-7EE0CCB8-3F0739EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "DamageActorCangSkillA_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'DamageActorCangSkillA_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.6"
+      }
+    }
+  }
+]

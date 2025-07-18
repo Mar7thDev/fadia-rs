@@ -1,0 +1,631 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Cang_WordCBullet_Fadia_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_Fadia_C:ExecuteUbergraph_BP_Cang_WordCBullet_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Cang_WordCBullet_Fadia_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.5"
+      },
+      {
+        "ObjectName": "Function'BP_Cang_WordCBullet_Fadia_C:ExecuteUbergraph_BP_Cang_WordCBullet_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Cang_WordCBullet_Fadia": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_Fadia_C:ExecuteUbergraph_BP_Cang_WordCBullet_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_Fadia_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Cang_WordCBullet_Fadia_C'Default__BP_Cang_WordCBullet_Fadia_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BP_ProjectileBase_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_NpcMoving",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BP_Cang_WordCBullet_Fadia_C",
+    "Name": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.BP_Cang_WordCBullet_Fadia_C'",
+    "Template": {
+      "ObjectName": "BP_ProjectileBase_C'Default__BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Cang_WordCBullet_Fadia_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.14"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BP_Cang_WordCBullet_Fadia_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.6"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_Fadia_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BP_Cang_WordCBullet_Fadia_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.7"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileMissileFire'Default__BP_Cang_WordCBullet_Fadia_C:ProjectileMissileFire_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.9"
+        },
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BP_Cang_WordCBullet_Fadia_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.10"
+        }
+      ],
+      "ProjectileFuncArray": [
+        {
+          "ObjectName": "ProjectileDestroyExplodeEffect'Default__BP_Cang_WordCBullet_Fadia_C:ProjectileDestroyExplodeEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.8"
+        }
+      ],
+      "HitCantBeDamagedParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Cang/NS_Player_Cang_Skill_020a.NS_Player_Cang_Skill_020a",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 135.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "rootsocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "DisappearParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Cang/NS_Player_Cang_Skill_020a.NS_Player_Cang_Skill_020a",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "None",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "HitWaterEffects": [],
+      "AfterOpenGravityDelayDestroyTime": 0.8,
+      "PrimaryActorTick": {
+        "TickInterval": 0.01
+      },
+      "InitialLifeSpan": 10.0,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_Fadia_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.1"
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "ProjectileMissileFire_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Cang_WordCBullet_Fadia",
+    "Outer": "BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_MakeLiteralName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHTPlayerState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerState'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacterByCharacterID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BP_ProjectileBase_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 2000.0,
+      "MaxSpeed": 5000.0,
+      "bRotationFollowsVelocity": true,
+      "ProjectileGravityScale": 0.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BP_ProjectileBase_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Player_Cang_Skill_015a'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Player_Cang/NS_Player_Cang_Skill_015a.40"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "FX_Position_Offset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.FX_Position_Offset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "FX_Size01",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.FX_Size01",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 4,
+            "Name": "User.FX_Position_Offset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector3f'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.FX_Size01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          160,
+          65,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_Fadia_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.1"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileDestroyExplodeEffect",
+    "Name": "ProjectileDestroyExplodeEffect_0",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'ProjectileDestroyExplodeEffect'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TimedExplodeEffectContainer": {
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_WorldPasFadia_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_WorldPasFadia.0"
+        },
+        "TargetGameplayEffectClasses": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'Buff_Cang_WorldPas_Fadia_Treat_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_WorldPas_Fadia_Treat.0"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMissileFire",
+    "Name": "ProjectileMissileFire_1",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'ProjectileMissileFire'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AcceleratedSpeed": 600.0,
+      "DirectionRangeEnd": {
+        "Pitch": 30.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      },
+      "TraceDirectionObj": {
+        "ObjectName": "FindSpawnRotationObj_Owner'Default__BP_Cang_WordCBullet_Fadia_C:ProjectileMissileFire_1.FindSpawnRotationObj_Owner_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.3"
+      },
+      "DelayTrackTime": 0.3,
+      "SortPriority": 100
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitOpenTrack": true,
+      "AcceleratedSpeed": 600.0,
+      "DelayTrackTime": 0.3,
+      "TrackSocketName": "Bip001-Spine2",
+      "TrackNearDistanceTime": 0.0,
+      "UseLerpRotatorVelocity": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Cang_WordCBullet_Fadia_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.11"
+      },
+      "VariableGUID": "7615D6D5-4896560C-AFF1D695-97964569",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Cang_WordCBullet_Fadia_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.12"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_Fadia_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BP_ProjectileBase_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_Fadia_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.1"
+      }
+    }
+  }
+]

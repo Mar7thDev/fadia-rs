@@ -1,0 +1,506 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BulletActor_BatUltraSkill_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BulletActor_BatUltraSkill_C:ExecuteUbergraph_BulletActor_BatUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.3"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BulletActor_BatUltraSkill_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.4"
+      },
+      {
+        "ObjectName": "Function'BulletActor_BatUltraSkill_C:ExecuteUbergraph_BulletActor_BatUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BulletActor_BatUltraSkill": {
+        "ObjectName": "Function'BulletActor_BatUltraSkill_C:ExecuteUbergraph_BulletActor_BatUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BulletActor_BatUltraSkill_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BulletActor_BatUltraSkill_C'Default__BulletActor_BatUltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BP_ProjectileBase_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 32.0,
+        "Z": 32.0
+      },
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BulletActor_BatUltraSkill_C",
+    "Name": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.BulletActor_BatUltraSkill_C'",
+    "Template": {
+      "ObjectName": "BP_ProjectileBase_C'Default__BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BulletActor_BatUltraSkill_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.11"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BulletActor_BatUltraSkill_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.5"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_BatUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BulletActor_BatUltraSkill_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.6"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BulletActor_BatUltraSkill_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.7"
+        }
+      ],
+      "HitCantBeDamagedParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Hit_001.NS_Lacrimosa_Hit_001",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "FireSocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "HitParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Hit_001.NS_Lacrimosa_Hit_001",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "FireSocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "DisappearParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Hit_001.NS_Lacrimosa_Hit_001",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "FireSocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "FlyingSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Stick/Play_Sfx_Player_Wpn_Stick_BulletFly.Play_Sfx_Player_Wpn_Stick_BulletFly",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Imapct/Impact_Stick/Play_Sfx_Player_Wpn_Stick_Impact_Bullet.Play_Sfx_Player_Wpn_Stick_Impact_Bullet",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitLandSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Imapct/Impact_Stick/Play_Sfx_Player_Wpn_Stick_Impact_Bullet.Play_Sfx_Player_Wpn_Stick_Impact_Bullet",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "PlayHitWaterEffect": true,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_BatUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.1"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BulletActor_BatUltraSkill",
+    "Outer": "BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBat_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'BatLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BP_ProjectileBase_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 5500.0,
+      "MaxSpeed": 5500.0,
+      "bRotationFollowsVelocity": true,
+      "ProjectileGravityScale": 0.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BP_ProjectileBase_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Boss_18_Player01_Skill_01_3'",
+        "ObjectPath": "/Game/FX/Nia/Monster/FX_Boss_18/NS_Boss_18_Player01_Skill_01_3.80"
+      },
+      "OverrideParameters": {},
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_BatUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.1"
+      },
+      "RelativeLocation": {
+        "X": -32.302727,
+        "Y": 1.1368684E-13,
+        "Z": -5.316012E-07
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitOpenTrack": true,
+      "UseLockTrackTarget": true,
+      "TrackNearDistanceTime": 0.0,
+      "TrackNearDistance": 0.0,
+      "UseLerpRotatorVelocity": true,
+      "RotateAngularSpeed": 360.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BulletActor_BatUltraSkill_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.8"
+      },
+      "VariableGUID": "7615D6D5-4896560C-AFF1D695-97964569",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BulletActor_BatUltraSkill_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BulletActor_BatUltraSkill_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BP_ProjectileBase_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_BatUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.1"
+      }
+    }
+  }
+]

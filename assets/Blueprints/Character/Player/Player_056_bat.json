@@ -1,0 +1,870 @@
+[
+  {
+    "Type": "BatLogicObj",
+    "Name": "BatLogicObj_0",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'BatLogicObj'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AutoAimTriggerAbility": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Bat_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.0"
+      },
+      "EvadeSuccessGameplayEffect": {
+        "ObjectName": "BlueprintGeneratedClass'BatAddCharge_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatAddCharge.2"
+      },
+      "CheckRingRange": 500.0,
+      "TargetLockRange": 500.0,
+      "BatLinkTimerInfo": {
+        "DilationRate": 0.4,
+        "EffectTime": 0.3,
+        "BatPassiveGameplayEffects": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'Buff_BatExtremeEvade_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/Buff_BatExtremeEvade.1"
+          }
+        ],
+        "BatSelfDuration": 0.3,
+        "BatSelfRateCurve": {
+          "ObjectName": "CurveFloat'PlayerExtremEvadeDilation'",
+          "ObjectPath": "/Game/Curve/SkillEffectCurve/PlayerExtremEvadeDilation.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Player_056_bat_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Player_056_bat_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.29"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Player_056_bat_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.21"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Player_056_bat_C:ExecuteUbergraph_Player_056_bat'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.5"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Player_056_bat_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.6"
+      },
+      {
+        "ObjectName": "Function'Player_056_bat_C:Remove_Volume'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.7"
+      },
+      {
+        "ObjectName": "Function'Player_056_bat_C:ExecuteUbergraph_Player_056_bat'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTNiagara",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTNiagaraComponent'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SRStaticMesh1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SRStaticMeshComponent'",
+          "ObjectPath": "/Script/SnappyRoad"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Capsule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'CapsuleComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Player_056_bat": {
+        "ObjectName": "Function'Player_056_bat_C:ExecuteUbergraph_Player_056_bat'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.5"
+      },
+      "Remove_Volume": {
+        "ObjectName": "Function'Player_056_bat_C:Remove_Volume'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.7"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Player_056_bat_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Player_056_bat_C'Default__Player_056_bat_C'",
+      "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.22"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FPFollowCamera",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Template": {
+      "ObjectName": "CameraComponent'Default__BP_PlayerCharacterBase_C:FPFollowCamera'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FieldOfView": 80.0,
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__Player_056_bat_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.30"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_PlayerCharacterBase_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 40.0,
+      "CapsuleRadius": 40.0
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "Capsule_GEN_VARIABLE",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 120.0,
+      "CapsuleRadius": 120.0,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "Trigger",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 50.0,
+        "Y": 0.0,
+        "Z": 3.2003726E-07
+      },
+      "RelativeRotation": {
+        "Pitch": 3.1805547E-15,
+        "Yaw": 90.0,
+        "Roll": -90.0
+      },
+      "ComponentTags": [
+        "Bat_Damage"
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Player_056_bat",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Remove_Volume",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GameplayAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'GameplayAttributeSet'",
+    "Template": {
+      "ObjectName": "GameplayAttributeSet'Default__BP_PlayerCharacterBase_C:AttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GhostTrailComponent",
+    "Name": "GhostTrail",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'GhostTrailComponent'",
+    "Template": {
+      "ObjectName": "GhostTrailComponent'Default__BP_PlayerCharacterBase_C:GhostTrail'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "HTAbilitySystemComponent'Default__BP_PlayerCharacterBase_C:AbilitySystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterStateManagerComponent",
+    "Name": "StateManagerComponent",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTCharacterStateManagerComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterStateManagerComponent'Default__BP_PlayerCharacterBase_C:StateManagerComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterTrajectoryComponent",
+    "Name": "HTCharacterTrajectoryComponent",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTCharacterTrajectoryComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterTrajectoryComponent'Default__BP_PlayerCharacterBase_C:HTCharacterTrajectoryComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTFluxInteractionComponent",
+    "Name": "HTFluxInteraction",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTFluxInteractionComponent'",
+    "Template": {
+      "ObjectName": "HTFluxInteractionComponent'Default__BP_PlayerCharacterBase_C:HTFluxInteraction'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMotionWarpingComponent",
+    "Name": "MotionWarping",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTMotionWarpingComponent'",
+    "Template": {
+      "ObjectName": "HTMotionWarpingComponent'Default__BP_PlayerCharacterBase_C:MotionWarping'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTNiagaraComponent",
+    "Name": "HTNiagara_GEN_VARIABLE",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'HTNiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Boss_18_TrailSeq'",
+        "ObjectPath": "/Game/FX/Nia/Monster/FX_Boss_18/NS_Boss_18_TrailSeq.38"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Loop Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Loop Duration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Width",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Width",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Loop Duration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Width",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          63,
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerAttributeSet",
+    "Name": "HTCharacterAttributeSet",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTPlayerAttributeSet'",
+    "Template": {
+      "ObjectName": "HTPlayerAttributeSet'Default__BP_PlayerCharacterBase_C:HTCharacterAttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfHitMontage": {
+        "ObjectName": "AnimMontage'Bat_Hit'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_Hit.0"
+      },
+      "HitBackMontage": {
+        "ObjectName": "AnimMontage'Bat_Hit'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_Hit.0"
+      },
+      "HitDownMontage": {
+        "ObjectName": "AnimMontage'Bat_Hit'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_Hit.0"
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTPlayerCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "HTPlayerCharacterMovementComponent'Default__BP_PlayerCharacterBase_C:CharMoveComp'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HtRotationDetection",
+    "Name": "RotationDetection",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HtRotationDetection'",
+    "Template": {
+      "ObjectName": "HtRotationDetection'Default__BP_PlayerCharacterBase_C:RotationDetection'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Template": {
+      "ObjectName": "HTSkeletalMeshComponentBudgeted'Default__BP_PlayerCharacterBase_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'boss_18_player01_Skeleton_AnimBlueprint_C'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/boss_18_player01_Skeleton_AnimBlueprint.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'boss_18_player01'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/boss_18_player01.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'boss_18_player01'",
+        "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/boss_18_player01.1"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_056_bat_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.3"
+      },
+      "RelativeLocation": {
+        "X": -5.0,
+        "Y": -1.12375495E-13,
+        "Z": -40.0
+      },
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  },
+  {
+    "Type": "HTSkillEffectComponent",
+    "Name": "SkillEffectComponent",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'HTSkillEffectComponent'",
+    "Template": {
+      "ObjectName": "HTSkillEffectComponent'Default__BP_PlayerCharacterBase_C:SkillEffectComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Player_056_bat_C",
+    "Name": "Default__Player_056_bat_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Character/Player/Player_056_bat.Player_056_bat_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerCharacterBase_C'Default__BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "HTTrajectoryComponent": {
+        "ObjectName": "HTCharacterTrajectoryComponent'Default__Player_056_bat_C:HTCharacterTrajectoryComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.12"
+      },
+      "GrantedAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_None"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Melee"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Evade"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.GA_Bat_UltraSkill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Skill"
+        }
+      ],
+      "PossessedAddBuffs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BatPassiveBuff_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatPassiveBuff.1"
+        }
+      ],
+      "MotionWarpingComponent": {
+        "ObjectName": "HTMotionWarpingComponent'Default__Player_056_bat_C:MotionWarping'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.14"
+      },
+      "FirstPersonCameraBoom": {
+        "ObjectName": "SpringArmComponent'Default__Player_056_bat_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.30"
+      },
+      "FirstPersonFollowCamera": {
+        "ObjectName": "CameraComponent'Default__Player_056_bat_C:FPFollowCamera'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.2"
+      },
+      "StateManagerComponent": {
+        "ObjectName": "HTCharacterStateManagerComponent'Default__Player_056_bat_C:StateManagerComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.11"
+      },
+      "SilentCheckComponent": {
+        "ObjectName": "SilentCheckComponent'Default__Player_056_bat_C:SilentCheckComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.28"
+      },
+      "DefaultCharacterID": "1056",
+      "SkillVideoID": "FemaleUltralSkill",
+      "PlayerParryData": {},
+      "HTFluxSolverComponent": null,
+      "HTAbilitySystemComponent": null,
+      "AbilityAttributeSet": null,
+      "GhostTrailComponent": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "MassAgentComponent": null,
+      "CurrentWeapon": {
+        "ObjectName": "SceneComponent'Player_056_bat_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.23"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Player_056_bat_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.23"
+      },
+      "VariableGUID": "56E993AE-4187D050-B0DF26A7-ECB83988",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'CapsuleComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CapsuleComponent'Player_056_bat_C:Capsule_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.4"
+      },
+      "AttachToName": "bone02",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGUID": "26A89CF6-47FDCEA7-9FE661A4-BFB9FA4A",
+      "InternalVariableName": "Capsule"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTNiagaraComponent'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTNiagaraComponent'Player_056_bat_C:HTNiagara_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.15"
+      },
+      "AttachToName": "bone03",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGUID": "DFCD62BF-4F89E164-A056609E-58636072",
+      "InternalVariableName": "HTNiagara"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SRStaticMeshComponent'",
+        "ObjectPath": "/Script/SnappyRoad"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SRStaticMeshComponent'Player_056_bat_C:SRStaticMesh1_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.31"
+      },
+      "AttachToName": "mobile",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGUID": "019E50EF-46F0DDD8-22E8B084-D8AD904B",
+      "InternalVariableName": "SRStaticMesh1"
+    }
+  },
+  {
+    "Type": "SilentCheckComponent",
+    "Name": "SilentCheckComponent",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'SilentCheckComponent'",
+    "Template": {
+      "ObjectName": "SilentCheckComponent'Default__BP_PlayerCharacterBase_C:SilentCheckComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_056_bat_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.3"
+      }
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.25"
+        },
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.27"
+        },
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.26"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.25"
+        },
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.27"
+        },
+        {
+          "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.26"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Player_056_bat_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.24"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FPCameraBoom",
+    "Outer": "Default__Player_056_bat_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Template": {
+      "ObjectName": "SpringArmComponent'Default__BP_PlayerCharacterBase_C:FPCameraBoom'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.31"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_056_bat_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_056_bat.3"
+      }
+    }
+  },
+  {
+    "Type": "SRStaticMeshComponent",
+    "Name": "SRStaticMesh1_GEN_VARIABLE",
+    "Outer": "Player_056_bat_C",
+    "Class": "UScriptClass'SRStaticMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_shuita_shouji_02_Open'",
+        "ObjectPath": "/Game/Environment/NPCprops/Items/SM_shuita_shouji_02_Open.2"
+      },
+      "RelativeLocation": {
+        "X": -1.4099832E-13,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

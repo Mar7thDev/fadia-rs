@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Mint_Containment_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Mint_Containment_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Mint_Containment_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.2"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Mint_Containment_C'Default__Weapon_Player_Mint_Containment_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Mint_Containment_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'SM_Storage_bottle_01_skin_Skeleton_AnimBlueprint_C'",
+        "ObjectPath": "/Game/Characters/Item/SM_Storagebottle_01/SM_Storage_bottle_01_skin_Skeleton_AnimBlueprint.0"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'SM_Storage_bottle_01_skin_Anim'",
+          "ObjectPath": "/Game/Characters/Item/SM_Storagebottle_01/SM_Storage_bottle_01_skin_Anim.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SKM_Mint_bottle_01'",
+        "ObjectPath": "/Game/Characters/Item/SM_Mint_bottle_01/SKM_Mint_bottle_01.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SKM_Mint_bottle_01'",
+        "ObjectPath": "/Game/Characters/Item/SM_Mint_bottle_01/SKM_Mint_bottle_01.1"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickMontagesWhenNotRendered",
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Mint_bottle_01'",
+          "ObjectPath": "/Game/Characters/Item/SM_Mint_bottle_01/ter/MI_Mint_bottle_01.0"
+        }
+      ],
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "ComponentTags": [
+        "WeaponShow"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Mint_Containment_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Mint_Containment_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Mint_Containment_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.3"
+      },
+      "VariableGUID": "4482498D-4C3CCC76-50895AA9-55AE8BBA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Mint_Containment_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.1"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "37E7FC7B-4115DB59-48D78094-A5380F01",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Mint_Containment_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_Containment_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_Containment_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Mint_Containment_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.4"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Mint_Containment_C",
+    "Name": "Default__Weapon_Player_Mint_Containment_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_Containment.Weapon_Player_Mint_Containment_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "WeaponShow",
+          "Value": "Rhand_Weapon"
+        }
+      ],
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Default",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Item/SM_Storagebottle_01/SM_Storage_bottle_01_skin_Anim_Montage.SM_Storage_bottle_01_skin_Anim_Montage",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  }
+]

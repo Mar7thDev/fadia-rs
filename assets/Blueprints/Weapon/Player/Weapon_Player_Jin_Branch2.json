@@ -1,0 +1,366 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Jin_Branch2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Jin_Branch2_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.2"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Weapon_Player_Jin_Branch2": {
+        "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Jin_Branch2_C'Default__Weapon_Player_Jin_Branch2_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Weapon_Player_Jin_Branch2",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 10,
+        "Function": {
+          "ObjectName": "Class'Actor:ReceiveTick'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+              },
+              "Property": {
+                "Type": "FloatProperty",
+                "Name": "K2Node_Event_DeltaSeconds",
+                "Flags": "RF_Public",
+                "ElementSize": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 29,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 31
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+          },
+          "Property": {
+            "Type": "FloatProperty",
+            "Name": "K2Node_Event_DeltaSeconds",
+            "Flags": "RF_Public",
+            "ElementSize": 4
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ReceiveTick'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.2"
+            },
+            "Property": {
+              "Type": "FloatProperty",
+              "Name": "DeltaSeconds",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Jin_Branch2_C:ExecuteUbergraph_Weapon_Player_Jin_Branch2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 10
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.ExecuteUbergraph_Weapon_Player_Jin_Branch2[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Jin_Disk_C'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/Weapon_Jin_Disk.0"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'Weapon_char_jin_skill_branch2'",
+          "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/animation/Weapon_char_jin_skill_branch2.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_052_jin_weapon_a_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/player_052_jin_weapon_a_skin.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_052_jin_weapon_a_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/player_052_jin_weapon_a_skin.1"
+      },
+      "bReceivesDecals": false,
+      "ComponentTags": [
+        "WeaponJinBranch"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Jin_Branch2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.5"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Jin_Branch2_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "E872FC1D-4A83A193-B7DB88B0-18868A42",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Jin_Branch2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Branch2_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Branch2_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Jin_Branch2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.6"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Jin_Branch2_C",
+    "Name": "Default__Weapon_Player_Jin_Branch2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Branch2.Weapon_Player_Jin_Branch2_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParentSocketMap": [
+        {
+          "Key": "WeaponJinBranch",
+          "Value": "Bip001-Prop1"
+        }
+      ]
+    }
+  }
+]

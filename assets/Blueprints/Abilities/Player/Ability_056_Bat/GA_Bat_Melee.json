@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Bat_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Bat_Melee_C'Default__GA_Bat_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 100.0,
+        "Y": 80.0,
+        "Z": 80.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 100.0,
+        "Y": -80.0,
+        "Z": 80.0
+      }
+    }
+  },
+  {
+    "Type": "GA_Bat_Melee_C",
+    "Name": "Default__GA_Bat_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.GA_Bat_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerEventTags": [
+        {
+          "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+        }
+      ],
+      "DelayEndAbility": 3.0,
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle"
+      },
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Bat_Melee_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.6"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+          },
+          "Value": {
+            "TargetType": null,
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_BranchPraojectile_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_BranchPraojectile_Damage.1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Bat_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatMelee.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Bat_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.3"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.1"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatMelee.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Bat_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.4"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.2"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  }
+]

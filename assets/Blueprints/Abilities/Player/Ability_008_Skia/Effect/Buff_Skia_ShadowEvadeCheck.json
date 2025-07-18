@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Skia_ShadowEvadeCheck_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Skia_ShadowEvadeCheck_C'Default__Buff_Skia_ShadowEvadeCheck_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowEvadeCheck.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Skia_ShadowEvadeCheck_C",
+    "Name": "Default__Buff_Skia_ShadowEvadeCheck_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowEvadeCheck.Buff_Skia_ShadowEvadeCheck_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_PERIODIC",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [
+            {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_EvadeShadow_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_EvadeShadow.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_EvadeShadow_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_EvadeShadow_Damage.1"
+                }
+              ]
+            }
+          ],
+          "ExecGEs": [],
+          "ApplicationRequirement": null
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_SKILL_AFTER_DAMAGE",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowEvadeDamCD_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowEvadeDamCD.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::Infinite",
+      "Period": {
+        "Value": 0.3
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 1
+    }
+  }
+]

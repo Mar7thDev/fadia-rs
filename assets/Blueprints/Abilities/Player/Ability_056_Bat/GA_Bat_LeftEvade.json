@@ -1,0 +1,182 @@
+[
+  {
+    "Type": "BatEvadeStartSection_C",
+    "Name": "BatEvadeStartSection_C_0",
+    "Outer": "Default__GA_Bat_LeftEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.BatEvadeStartSection_C'",
+    "Template": {
+      "ObjectName": "BatEvadeStartSection_C'Default__BatEvadeStartSection_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatEvadeStartSection.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "LeftEvade"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Bat_LeftEvade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Bat_LeftEvade_C'Default__GA_Bat_LeftEvade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Bat_LeftEvade_C",
+    "Name": "Default__GA_Bat_LeftEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.GA_Bat_LeftEvade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Mint_Melee_New_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/LockRange/LockRange_Mint_Melee_New.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "LeftEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'Bat_LeftEvade'",
+            "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_LeftEvade.0"
+          }
+        },
+        {
+          "Key": "EvadeAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Bat_EvadeAttack'",
+            "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_EvadeAttack.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "BatEvadeStartSection_C'Default__GA_Bat_LeftEvade_C:BatEvadeStartSection_C_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.0"
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "LeftEvade",
+        "EvadeAttack"
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Bat_LeftEvade_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.5"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee1_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee1_Damage_New.1"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true,
+      "AbilityTags": [
+        "Ability.Evade"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Bat_LeftEvade_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatEvadeAttack_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatEvadeAttack.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Bat_LeftEvade_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Bat_LeftEvade_C:HTAbilitySpawnProjectiles_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.3"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Nanally010_Pas2CD_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "CoolDown"
+        ],
+        "Added": [
+          "CoolDown"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Nanally010_Pas2CD_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Nanally010_Pas2CD_C'Default__GE_Nanally010_Pas2CD_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/PassiveEffect/GE_Nanally010_Pas2CD.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Nanally010_Pas2CD_C",
+    "Name": "Default__GE_Nanally010_Pas2CD_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/PassiveEffect/GE_Nanally010_Pas2CD.GE_Nanally010_Pas2CD_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffSave": true,
+      "BuffAddToAddQueue": false,
+      "DeathCanBeAdded": true,
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 1.0,
+          "Curve": {
+            "CurveTable": {
+              "ObjectName": "CurveTable'DT_NanallyEffectFigure'",
+              "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_NanallyEffectFigure.0"
+            },
+            "RowName": "Nanally_Pas2CD"
+          }
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "CoolDown"
+        ],
+        "Added": [
+          "CoolDown"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Nanally010_Pas2CD_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/PassiveEffect/GE_Nanally010_Pas2CD.0"
+        }
+      ]
+    }
+  }
+]

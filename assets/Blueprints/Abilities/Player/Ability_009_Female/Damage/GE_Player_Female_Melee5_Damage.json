@@ -1,0 +1,86 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Female_Melee5_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Female_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Female_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Female",
+          "State.Damage.Melee",
+          "Ability.Melee"
+        ],
+        "Added": [
+          "Ability.Player.Female",
+          "State.Damage.Melee",
+          "Ability.Melee"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Female_Melee5_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Female_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Female_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Female_Melee5_Damage_C'Default__GE_Player_Female_Melee5_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee5_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Female_Melee5_Damage_C",
+    "Name": "Default__GE_Player_Female_Melee5_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee5_Damage.GE_Player_Female_Melee5_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Female_DamageBase_C'Default__GE_Female_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Female_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Combat.Female.Light"
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Female",
+          "State.Damage.Melee",
+          "Ability.Melee"
+        ],
+        "Added": [
+          "Ability.Player.Female",
+          "State.Damage.Melee",
+          "Ability.Melee"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Female_Melee5_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee5_Damage.0"
+        }
+      ]
+    }
+  }
+]

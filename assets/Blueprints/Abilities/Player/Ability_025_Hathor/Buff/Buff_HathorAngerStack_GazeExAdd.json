@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_HathorAngerStack_GazeExAdd_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_HathorAngerStack_GazeExAdd_C'Default__Buff_HathorAngerStack_GazeExAdd_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAngerStack_GazeExAdd.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_HathorAngerStack_GazeExAdd_C",
+    "Name": "Default__Buff_HathorAngerStack_GazeExAdd_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAngerStack_GazeExAdd.Buff_HathorAngerStack_GazeExAdd_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 0.5
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__Buff_HathorAngerStack_GazeExAdd_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAngerStack_GazeExAdd.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__Buff_HathorAngerStack_GazeExAdd_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Hathor_GazeExAddAnger_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Hathor/Con_Hathor_GazeExAddAnger.0"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_PlayerFemale_RimLight_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_RimLight_Common_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_RimLight_Common.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_PlayerFemale_RimLight_C'Default__Buff_PlayerFemale_RimLight_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_PlayerFemale_RimLight.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_PlayerFemale_RimLight_C",
+    "Name": "Default__Buff_PlayerFemale_RimLight_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_PlayerFemale_RimLight.Buff_PlayerFemale_RimLight_C'",
+    "Template": {
+      "ObjectName": "Buff_RimLight_Common_C'Default__Buff_RimLight_Common_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_RimLight_Common.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 0.5
+        }
+      }
+    }
+  }
+]

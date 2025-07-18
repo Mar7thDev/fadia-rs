@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Lacrimosa004_CaluMeleeNums_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Lacrimosa004_CaluMeleeNums_C'Default__Buff_Lacrimosa004_CaluMeleeNums_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level4/Buff_Lacrimosa004_CaluMeleeNums.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Lacrimosa004_CaluMeleeNums_C",
+    "Name": "Default__Buff_Lacrimosa004_CaluMeleeNums_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level4/Buff_Lacrimosa004_CaluMeleeNums.Buff_Lacrimosa004_CaluMeleeNums_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 50.0
+        }
+      },
+      "ApplicationTagRequirements": {
+        "RequireTags": [
+          "CoolDown.Player.Skill.Lacrimosa"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 20,
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagRequirementsGameplayEffectComponent'Default__Buff_Lacrimosa004_CaluMeleeNums_C:TargetTagRequirementsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level4/Buff_Lacrimosa004_CaluMeleeNums.3"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__Buff_Lacrimosa004_CaluMeleeNums_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level4/Buff_Lacrimosa004_CaluMeleeNums.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Lacrimosa004_CaluMeleeNums_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Lacrimosa_Lv4_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Lacrimosa/Con_Lacrimosa_Lv4.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_IsServerOrStandalone_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Common/Con_IsServerOrStandalone.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagRequirementsGameplayEffectComponent",
+    "Name": "TargetTagRequirementsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Lacrimosa004_CaluMeleeNums_C",
+    "Class": "UScriptClass'TargetTagRequirementsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationTagRequirements": {
+        "RequireTags": [
+          "CoolDown.Player.Skill.Lacrimosa"
+        ]
+      }
+    }
+  }
+]

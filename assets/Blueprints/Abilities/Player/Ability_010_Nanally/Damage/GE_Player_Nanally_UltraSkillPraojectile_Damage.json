@@ -1,0 +1,98 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Nanally_UltraSkillPraojectile_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Nanally_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Nanally.UltraSkillCat",
+          "State.Damage.UltraSkill",
+          "State.Damage.Bullet",
+          "Ability.Player.Nanally.XieTongDamage"
+        ],
+        "Added": [
+          "Ability.Player.Nanally.UltraSkillCat",
+          "State.Damage.UltraSkill",
+          "State.Damage.Bullet",
+          "Ability.Player.Nanally.XieTongDamage"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Nanally_UltraSkillPraojectile_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Nanally_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Nanally_UltraSkillPraojectile_Damage_C'Default__GE_Player_Nanally_UltraSkillPraojectile_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_UltraSkillPraojectile_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Nanally_UltraSkillPraojectile_Damage_C",
+    "Name": "Default__GE_Player_Nanally_UltraSkillPraojectile_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_UltraSkillPraojectile_Damage.GE_Player_Nanally_UltraSkillPraojectile_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Nanally_DamageBase_C'Default__GE_Nanally_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationRate": 0.0
+      },
+      "HitParticleEffects": [],
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShake_NanallyHit_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Nanally/CameraShake_NanallyHit.0"
+        }
+      },
+      "DamageExuteGameplayCueTags": [],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Nanally.UltraSkillCat",
+          "State.Damage.UltraSkill",
+          "State.Damage.Bullet",
+          "Ability.Player.Nanally.XieTongDamage"
+        ],
+        "Added": [
+          "Ability.Player.Nanally.UltraSkillCat",
+          "State.Damage.UltraSkill",
+          "State.Damage.Bullet",
+          "Ability.Player.Nanally.XieTongDamage"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Nanally_UltraSkillPraojectile_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_UltraSkillPraojectile_Damage.0"
+        }
+      ]
+    }
+  }
+]

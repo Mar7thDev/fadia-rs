@@ -1,0 +1,373 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Jin_CantInteract_C'Default__Buff_Jin_CantInteract_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Jin_CantInteract_C",
+    "Name": "Default__Buff_Jin_CantInteract_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.Buff_Jin_CantInteract_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_BEGIN",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_UltraskillEffect_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_UltraskillEffect.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_FINISH",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_UltraskillEffect_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_UltraskillEffect.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 40.0
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      },
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.HideInteractUI",
+          "Ability.Player.Jin.TimeStop",
+          "State.Property.CantDrive",
+          "State.Property.ImmuneDamage",
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.HideInteractUI",
+          "Ability.Player.Jin.TimeStop",
+          "State.Property.CantDrive",
+          "State.Property.ImmuneDamage",
+          "State.Property.ImmuneAniState"
+        ]
+      },
+      "GrantedApplicationImmunityQuery": {
+        "OwningTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.WeakControlState.TimeDilation"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+        }
+      },
+      "RemoveGameplayEffectQuery": {
+        "OwningTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.WeakControlState.TimeDilation"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_Jin_CantInteract_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.6"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_Jin_CantInteract_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.0"
+        },
+        {
+          "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_Jin_CantInteract_C:ImmunityGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.5"
+        },
+        {
+          "ObjectName": "HTRemoveOtherGameplayEffectComponent'Default__Buff_Jin_CantInteract_C:HTRemoveOtherGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.4"
+        },
+        {
+          "ObjectName": "HTGlobalGameplayEffectComponent'Default__Buff_Jin_CantInteract_C:HTGlobalGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGlobalGameplayEffectComponent",
+    "Name": "HTGlobalGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'HTGlobalGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTRemoveOtherGameplayEffectComponent",
+    "Name": "HTRemoveOtherGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'HTRemoveOtherGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RemoveGameplayEffectQueries": [
+        {
+          "CustomMatchDelegate_BP": {
+            "Num": 0,
+            "Name": "None"
+          },
+          "OwningTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.WeakControlState.TimeDilation"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "UserDescription": "",
+            "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+          },
+          "EffectTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceAggregateTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "ModifyingAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "EffectSource": null,
+          "EffectDefinition": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ImmunityGameplayEffectComponent",
+    "Name": "ImmunityGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'ImmunityGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ImmunityQueries": [
+        {
+          "CustomMatchDelegate_BP": {
+            "Num": 0,
+            "Name": "None"
+          },
+          "OwningTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.WeakControlState.TimeDilation"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "UserDescription": "",
+            "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+          },
+          "EffectTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceAggregateTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "ModifyingAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "EffectSource": null,
+          "EffectDefinition": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Jin_CantInteract_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.HideInteractUI",
+          "Ability.Player.Jin.TimeStop",
+          "State.Property.CantDrive",
+          "State.Property.ImmuneDamage",
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.HideInteractUI",
+          "Ability.Player.Jin.TimeStop",
+          "State.Property.CantDrive",
+          "State.Property.ImmuneDamage",
+          "State.Property.ImmuneAniState"
+        ]
+      }
+    }
+  }
+]

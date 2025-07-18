@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Nanally_ExtremEvade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Nanally_ExtremEvade_C'Default__DamageRange_Nanally_ExtremEvade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_ExtremEvade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Nanally_ExtremEvade_C",
+    "Name": "Default__DamageRange_Nanally_ExtremEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_ExtremEvade.DamageRange_Nanally_ExtremEvade_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageBoxBase_C'Default__BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetFromActor": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TraceVector": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "HalfSize": {
+        "X": 300.0,
+        "Y": 260.0,
+        "Z": 150.0
+      }
+    }
+  }
+]

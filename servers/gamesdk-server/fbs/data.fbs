@@ -1,0 +1,43 @@
+table ServerVersionCmd {
+	server_version: string;
+	client_wan_ip: string;
+	client_wan_port: int;
+	heart_type: ubyte;
+	heart_client_interval: int;
+	check_server_interval: int;
+	server_id: int;
+	server_time_utc: ulong;
+	server_time: ulong;
+}
+
+table ClientLoginReq {
+	client_version: string;
+	username: string;
+	password: string;
+	auth_type: int;
+	unk_empty_string: string;
+	game_id: string;
+	unk_empty_string_3: string;
+	unk_related_to_uid: string;
+	unk_empty_string_5: string;
+	client_wan_ip: string;
+	unk_hex: string;
+	unk_hex_2: string;
+	unk_empty_string_8: string;
+	os_version: string;
+}
+
+table ClientTravelCmd {
+	unk_131644: int;
+	player_uid: string;
+	unk_empty_string: string;
+	server_addr: string;
+	unk_empty_string_2: string;
+	unk_empty_string_3: string;
+	player_role_id: int;
+	player_character_bp: string;
+	compressed_data_blob: [ubyte];
+	unk_322: int;
+	unk_1: int;
+	unk_cdcdcdcd: uint;
+}

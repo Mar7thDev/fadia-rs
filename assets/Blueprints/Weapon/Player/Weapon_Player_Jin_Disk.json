@@ -1,0 +1,1306 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Jin_Disk_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Jin_Disk_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.4"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Disk_C:BPPreviewActorMontage'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.1"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Mesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsTeam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CurrentIsTeam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Weapon_Player_Jin_Disk": {
+        "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+      },
+      "BPPreviewActorMontage": {
+        "ObjectName": "Function'Weapon_Player_Jin_Disk_C:BPPreviewActorMontage'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Jin_Disk_C'Default__Weapon_Player_Jin_Disk_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPPreviewActorMontage",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'WeaponBase:BPPreviewActorMontage'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InAsset",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "StartSectionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+          },
+          "Property": {
+            "Type": "ObjectProperty",
+            "Name": "K2Node_Event_InAsset",
+            "Flags": "RF_Public",
+            "ElementSize": 8,
+            "PropertyClass": {
+              "ObjectName": "Class'AnimMontage'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:BPPreviewActorMontage'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "InAsset",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+              "PropertyClass": {
+                "ObjectName": "Class'AnimMontage'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 18,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+          },
+          "Property": {
+            "Type": "NameProperty",
+            "Name": "K2Node_Event_StartSectionName",
+            "Flags": "RF_Public",
+            "ElementSize": 12
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:BPPreviewActorMontage'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.1"
+            },
+            "Property": {
+              "Type": "NameProperty",
+              "Name": "StartSectionName",
+              "Flags": "RF_Public",
+              "ElementSize": 12,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 36,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 535
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[535]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 51,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 53
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Weapon_Player_Jin_Disk",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_InAsset",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Event_StartSectionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetDisplayName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_StriStri_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTCharacter_Actor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTCharacterActor'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 10,
+        "CodeOffset": 29,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[29]",
+        "BooleanExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "IsTeam",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 1,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 24,
+        "CodeOffset": 540,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[540]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 29,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetSystemLibrary:IsValid'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "K2Node_Event_InAsset",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'AnimMontage'",
+                    "ObjectPath": "/Script/Engine"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 58,
+        "CodeOffset": 519,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[519]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 72,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "StrProperty",
+              "Name": "CallFunc_GetDisplayName_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 16
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetSystemLibrary:GetDisplayName'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "K2Node_Event_InAsset",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'AnimMontage'",
+                    "ObjectPath": "/Script/Engine"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 109,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_EqualEqual_StriStri_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetStringLibrary:EqualEqual_StriStri'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+                },
+                "Property": {
+                  "Type": "StrProperty",
+                  "Name": "CallFunc_GetDisplayName_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 16
+                }
+              }
+            },
+            {
+              "Inst": "EX_StringConst",
+              "Value": "UI_Jin_Team"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 151,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "IsTeam",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 1,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_EqualEqual_StriStri_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 170,
+        "CodeOffset": 540,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[540]",
+        "BooleanExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "IsTeam",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 1,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 184,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetOwner_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Actor'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'Actor:GetOwner'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 204,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTCharacter_Actor",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTCharacterActor'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTCharacterActor'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_GetOwner_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'Actor'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 240,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTCharacter_Actor",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTCharacterActor'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 269,
+        "CodeOffset": 540,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[540]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 283,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Mesh",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+              "PropertyClass": {
+                "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Offset": 19,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'SkeletalMeshComponent:SetSkeletalMeshAsset'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_ObjectConst",
+              "Value": {
+                "ObjectName": "SkeletalMesh'Weapon_Player_Jin_001'",
+                "ObjectPath": "/Game/Characters/Player/052_jin/weapon/Weapon_Player_Jin_001.1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 324,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Mesh",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+              "PropertyClass": {
+                "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Offset": 23,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_VirtualFunction",
+          "Function": "SetAnimInstanceClass",
+          "Parameters": [
+            {
+              "Inst": "EX_ObjectConst",
+              "Value": {
+                "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Player_Jin_001_Skeleton_AnimBlueprint_C'",
+                "ObjectPath": "/Game/Characters/Player/052_jin/weapon/Weapon_Player_Jin_001_Skeleton_AnimBlueprint.0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 369,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetMesh_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "InstancedReference",
+              "PropertyClass": {
+                "ObjectName": "Class'SkeletalMeshComponent'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTCharacter_Actor",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTCharacterActor'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 10,
+          "RValuePointer": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetMesh_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "InstancedReference",
+              "PropertyClass": {
+                "ObjectName": "Class'SkeletalMeshComponent'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_FinalFunction",
+            "Function": {
+              "ObjectName": "Class'HTCharacterActor:GetMesh'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "Parameters": []
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 411,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_InstanceVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "Mesh",
+                "Flags": "RF_Public | RF_LoadCompleted",
+                "ElementSize": 8,
+                "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+                "PropertyClass": {
+                  "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 39,
+          "RValuePointer": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_FinalFunction",
+            "Function": {
+              "ObjectName": "Class'SceneComponent:K2_AttachToComponent'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Parameters": [
+              {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+                    "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+                  },
+                  "Property": {
+                    "Type": "ObjectProperty",
+                    "Name": "CallFunc_GetMesh_ReturnValue",
+                    "Flags": "RF_Public",
+                    "ElementSize": 8,
+                    "PropertyFlags": "InstancedReference",
+                    "PropertyClass": {
+                      "ObjectName": "Class'SkeletalMeshComponent'",
+                      "ObjectPath": "/Script/Engine"
+                    }
+                  }
+                }
+              },
+              {
+                "Inst": "EX_NameConst",
+                "Value": "Bip001-Prop2"
+              },
+              {
+                "Inst": "EX_ByteConst",
+                "Value": 0
+              },
+              {
+                "Inst": "EX_ByteConst",
+                "Value": 0
+              },
+              {
+                "Inst": "EX_ByteConst",
+                "Value": 0
+              },
+              {
+                "Inst": "EX_True"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 482,
+        "ObjectExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Jin_Disk_C:ExecuteUbergraph_Weapon_Player_Jin_Disk'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTCharacter_Actor",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTCharacterActor'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Offset": 10,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'HTCharacterActor:ProcessNewRegisteredWeaponAsset'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 514,
+        "CodeOffset": 540,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[540]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 519,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "BlueprintGeneratedClass'Weapon_Player_Jin_Disk_C'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "IsTeam",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 1,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_False"
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 530,
+        "CodeOffset": 170,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[170]"
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 535,
+        "CodeOffset": 10,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.ExecuteUbergraph_Weapon_Player_Jin_Disk[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 540,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 542
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "Mesh_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Jin_Disk_C'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/Weapon_Jin_Disk.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_052_jin_weapon_a_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/player_052_jin_weapon_a_skin.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_052_jin_weapon_a_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/weapon_diskfan/player_052_jin_weapon_a_skin.1"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_L1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Jin_Disk_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.5"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Jin_Disk_C:Mesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "E872FC1D-4A83A193-B7DB88B0-18868A42",
+      "InternalVariableName": "Mesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Jin_Disk_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Disk_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Jin_Disk_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Jin_Disk_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.6"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Jin_Disk_C",
+    "Name": "Default__Weapon_Player_Jin_Disk_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Jin_Disk.Weapon_Player_Jin_Disk_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": "root"
+        }
+      ],
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/052_jin/weapon_diskfan/animation/weapon_jin_disk_Montage.weapon_jin_disk_Montage",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  }
+]

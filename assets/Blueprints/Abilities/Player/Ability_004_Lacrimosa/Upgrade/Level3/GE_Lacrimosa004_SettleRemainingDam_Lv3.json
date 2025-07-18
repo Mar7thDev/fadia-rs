@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Lacrimosa004_SettleRemainingDam_Lv3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Lacrimosa004_SettleRemainingDam_Lv3_C'Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level3/GE_Lacrimosa004_SettleRemainingDam_Lv3.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Lacrimosa_Lv3_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Lacrimosa/Con_Lacrimosa_Lv3.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Lacrimosa004_SettleRemainingDam_Lv3_C",
+    "Name": "Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level3/GE_Lacrimosa004_SettleRemainingDam_Lv3.GE_Lacrimosa004_SettleRemainingDam_Lv3_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 0.01
+        }
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "SettleRemainingDamageGEComp'Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C:SettleRemainingDamageGEComp_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level3/GE_Lacrimosa004_SettleRemainingDam_Lv3.3"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Upgrade/Level3/GE_Lacrimosa004_SettleRemainingDam_Lv3.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SettleRemainingDamageGEComp",
+    "Name": "SettleRemainingDamageGEComp_0",
+    "Outer": "Default__GE_Lacrimosa004_SettleRemainingDam_Lv3_C",
+    "Class": "UScriptClass'SettleRemainingDamageGEComp'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ExecuteGEQuery": {
+        "EffectTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.Damage.Dot.Blood"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            2,
+            1,
+            0
+          ],
+          "AutoDescription": " ALL( State.Damage.Dot.Blood )"
+        }
+      }
+    }
+  }
+]

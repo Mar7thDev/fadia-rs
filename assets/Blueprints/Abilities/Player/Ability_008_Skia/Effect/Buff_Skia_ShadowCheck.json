@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Skia_ShadowCheck_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Skia_ShadowCheck_C'Default__Buff_Skia_ShadowCheck_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowCheck.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Skia_ShadowCheck_C",
+    "Name": "Default__Buff_Skia_ShadowCheck_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowCheck.Buff_Skia_ShadowCheck_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_UNKNOW",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": true,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowAddMelee_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowAddMelee.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            },
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowAddSkill_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowAddSkill.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_SKILL_AFTER_DAMAGE",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowCheck_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowCheck.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 3.0
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 1
+    }
+  }
+]

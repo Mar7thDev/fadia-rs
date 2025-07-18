@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Alphard_UltraSkill_Palsy_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Ability.Player.Buff.Alphard.Delay"
+        ],
+        "Added": [
+          "Ability.Player.Buff.Alphard.Delay"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Alphard_UltraSkill_Palsy_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Alphard_UltraSkill_Palsy_C'Default__GE_Player_Alphard_UltraSkill_Palsy_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Alphard_UltraSkill_Palsy_C",
+    "Name": "Default__GE_Player_Alphard_UltraSkill_Palsy_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy.GE_Player_Alphard_UltraSkill_Palsy_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SourceTagsPartakeImmunity": true,
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 3.5
+        }
+      },
+      "bSuppressStackingCues": true,
+      "GameplayCues": [
+        {
+          "MagnitudeAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "MinLevel": 0.0,
+          "MaxLevel": 0.0,
+          "GameplayCueTags": [
+            "GameplayCue.Display.Alphard.UltraSkill.Palsy"
+          ]
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Ability.Player.Buff.Alphard.Delay"
+        ],
+        "Added": [
+          "Ability.Player.Buff.Alphard.Delay"
+        ]
+      },
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.ImmuneAniState"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "StackPeriodResetPolicy": "EGameplayEffectStackingPeriodPolicy::NeverReset",
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__GE_Player_Alphard_UltraSkill_Palsy_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy.3"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Alphard_UltraSkill_Palsy_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Alphard_UltraSkill_Palsy_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.ImmuneAniState"
+        ]
+      }
+    }
+  }
+]

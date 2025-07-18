@@ -1,0 +1,845 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'NanallyBranchProjectile_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'NanallyBranchProjectile_C:ExecuteUbergraph_NanallyBranchProjectile'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'NanallyBranchProjectile_C:OnEmitterSpawned_C417C9A541195C13A5184EACD0A0A68C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.3"
+      },
+      {
+        "ObjectName": "Function'NanallyBranchProjectile_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.4"
+      },
+      {
+        "ObjectName": "Function'NanallyBranchProjectile_C:ExecuteUbergraph_NanallyBranchProjectile'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HitEnd",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | Transient | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_NanallyBranchProjectile": {
+        "ObjectName": "Function'NanallyBranchProjectile_C:ExecuteUbergraph_NanallyBranchProjectile'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'NanallyBranchProjectile_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.4"
+      },
+      "OnEmitterSpawned_C417C9A541195C13A5184EACD0A0A68C": {
+        "ObjectName": "Function'NanallyBranchProjectile_C:OnEmitterSpawned_C417C9A541195C13A5184EACD0A0A68C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "NanallyBranchProjectile_C'Default__NanallyBranchProjectile_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__NanallyBranchProjectile_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BP_ProjectileBase_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_NpcMoving",
+              "Response": "ECollisionResponse::ECR_Block"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_NanallyBranchProjectile",
+    "Outer": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_RotatorToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocalClientRole_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_TransformLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AsyncTaskSpawnEmitterAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_SpawnedComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAsyncSpawnEmitterCompleted__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BoxTraceSingleByProfile_OutHit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BoxTraceSingleByProfile_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_InDouble_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEmitterSpawned_C417C9A541195C13A5184EACD0A0A68C",
+    "Outer": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__NanallyBranchProjectile_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BP_ProjectileBase_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 40000.0,
+      "MaxSpeed": 50000.0,
+      "bRotationFollowsVelocity": true,
+      "ProjectileGravityScale": 0.0
+    }
+  },
+  {
+    "Type": "NanallyBranchProjectile_C",
+    "Name": "Default__NanallyBranchProjectile_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.NanallyBranchProjectile_C'",
+    "Template": {
+      "ObjectName": "BP_ProjectileBase_C'Default__BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "HitEnd": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__NanallyBranchProjectile_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.11"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__NanallyBranchProjectile_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.5"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__NanallyBranchProjectile_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__NanallyBranchProjectile_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.7"
+      },
+      "HitParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Nanally/NS_Nanally_Hit_005.NS_Nanally_Hit_005",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "None",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "FlyingSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Claw/Play_Sfx_Player_Wpn_Claw_Branch_BulletFly.Play_Sfx_Player_Wpn_Claw_Branch_BulletFly",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Claw/Play_Sfx_Player_Wpn_Claw_Branch_BulletHit.Play_Sfx_Player_Wpn_Claw_Branch_BulletHit",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitLandSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Claw/Play_Sfx_Player_Wpn_Claw_Branch_BulletHit.Play_Sfx_Player_Wpn_Claw_Branch_BulletHit",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitWaterSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Imapct/Impact_Cmn/Play_Sfx_Player_Wpn_Cmn_Impact_Water_Small_Tune.Play_Sfx_Player_Wpn_Cmn_Impact_Water_Small_Tune",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "PlayHitWaterEffect": true,
+      "OpenGravityFunc": true,
+      "MaxFlyDistance": 4700.0,
+      "AfterOpenGravityDelayDestroyTime": 0.1,
+      "InitialLifeSpan": 10.0,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__NanallyBranchProjectile_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.1"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__NanallyBranchProjectile_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BP_ProjectileBase_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OverrideParameters": {},
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__NanallyBranchProjectile_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.1"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'NanallyBranchProjectile_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.8"
+      },
+      "VariableGUID": "FB9DC129-4FB930D5-3E47029F-8F16A225",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "NanallyBranchProjectile_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'NanallyBranchProjectile_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__NanallyBranchProjectile_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BP_ProjectileBase_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__NanallyBranchProjectile_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.1"
+      }
+    }
+  }
+]

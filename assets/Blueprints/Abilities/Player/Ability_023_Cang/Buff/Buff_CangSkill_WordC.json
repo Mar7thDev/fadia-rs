@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_CangSkill_WordC_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_CangSkill_WordC_C'Default__Buff_CangSkill_WordC_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_CangSkill_WordC.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_CangSkill_WordC_C",
+    "Name": "Default__Buff_CangSkill_WordC_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_CangSkill_WordC.Buff_CangSkill_WordC_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_BEGIN",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": false,
+          "TargetTrigger": true,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Cang_SpawnWordMelee_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_SpawnWordMelee.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 0.1
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "StackDurationRefreshPolicy": "EGameplayEffectStackingDurationPolicy::NeverRefresh",
+      "StackPeriodResetPolicy": "EGameplayEffectStackingPeriodPolicy::NeverReset"
+    }
+  }
+]

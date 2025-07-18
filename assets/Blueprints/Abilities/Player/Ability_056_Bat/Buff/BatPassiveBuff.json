@@ -1,0 +1,135 @@
+[
+  {
+    "Type": "BatPassiveBuff_C",
+    "Name": "Default__BatPassiveBuff_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatPassiveBuff.BatPassiveBuff_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::Infinite",
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.CantMove"
+        ],
+        "Added": [
+          "State.Property.CantMove"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "HTAbilitiesGameplayEffectComponent'Default__BatPassiveBuff_C:HTAbilitiesGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatPassiveBuff.2"
+        },
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__BatPassiveBuff_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatPassiveBuff.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BatPassiveBuff_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTGamePlayEffect'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BatPassiveBuff_C'Default__BatPassiveBuff_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Buff/BatPassiveBuff.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTAbilitiesGameplayEffectComponent",
+    "Name": "HTAbilitiesGameplayEffectComponent_0",
+    "Outer": "Default__BatPassiveBuff_C",
+    "Class": "UScriptClass'HTAbilitiesGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrantAbilityConfigs": [
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Bat_LeftEvade_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_LeftEvade.1"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": 25,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::CancelAbilityImmediately"
+        },
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Bat_RightEvade_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_RightEvade.1"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": 26,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::CancelAbilityImmediately"
+        },
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Bat_Melee_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_Melee.0"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": -1,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::CancelAbilityImmediately"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__BatPassiveBuff_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.CantMove"
+        ],
+        "Added": [
+          "State.Property.CantMove"
+        ]
+      }
+    }
+  }
+]

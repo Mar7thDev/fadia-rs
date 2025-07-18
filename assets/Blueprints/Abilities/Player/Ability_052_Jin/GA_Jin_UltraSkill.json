@@ -1,0 +1,686 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:ExecuteUbergraph_GA_Jin_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.2"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.3"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:ExecuteUbergraph_GA_Jin_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsSet",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Jin_UltraSkill": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:ExecuteUbergraph_GA_Jin_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.1"
+      },
+      "K2_OnEndAbility": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.3"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Jin_UltraSkill_C'Default__GA_Jin_UltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Jin_UltraSkill",
+    "Outer": "GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 72,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HUD'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilitySystemComponentFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AbilitySystemComponent'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTHUD'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'GameplayTagAssetInterface'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCurrentWeapon_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WeaponBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_OnEndAbility",
+    "Outer": "GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'GameplayAbility:K2_OnEndAbility'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Jin_UltraSkill_C",
+    "Name": "Default__GA_Jin_UltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.GA_Jin_UltraSkill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Jin_UtraSkill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_Jin_UtraSkill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "UltraSkill",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraSkill'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraSkill.4"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_dissolve'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Jin_UltraSkill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.10"
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityJinTimeValueCost'Default__GA_Jin_UltraSkill_C:HTAbilityJinTimeValueCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.5"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Jin_UltraSkill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.6"
+        },
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Jin_UltraSkill_C:HTGAComponent_AddOrRemoveGE_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.7"
+        },
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Jin_UltraSkill_C:HTGAComponent_AddOrRemoveGE_2'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.8"
+        },
+        {
+          "ObjectName": "HTGAComponent_PlayAndStopVideo'Default__GA_Jin_UltraSkill_C:HTGAComponent_PlayAndStopVideo_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.9"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.Jin.UltraEffect"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_UltraskillEffect_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_UltraskillEffect.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill4_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1_1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1_2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1_3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1_4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_4_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1_5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkill1_5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkill1_5_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "AbilityTags": [
+        "Ability.UltraSkill"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityJinTimeValueCost",
+    "Name": "HTAbilityJinTimeValueCost_0",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilityJinTimeValueCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Jin_DelayUI_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_DelayUI.0"
+        }
+      ],
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_1",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_2",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Jin_ForceUseAbility_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_ForceUseAbility.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_PlayAndStopVideo",
+    "Name": "HTGAComponent_PlayAndStopVideo_0",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_PlayAndStopVideo'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VideoName": "JinUltraSkill"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Jin_UltraSkill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "UltraSkill"
+    }
+  }
+]

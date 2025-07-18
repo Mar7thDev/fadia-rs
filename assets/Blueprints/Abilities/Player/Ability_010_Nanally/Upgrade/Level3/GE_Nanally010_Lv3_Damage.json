@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Nanally010_Lv3_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Nanally_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee",
+          "Ability.Player.Nanally.XieTongDamage"
+        ],
+        "Added": [
+          "State.Damage.Melee",
+          "Ability.Player.Nanally.XieTongDamage"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Nanally010_Lv3_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Nanally_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Nanally010_Lv3_Damage_C'Default__GE_Nanally010_Lv3_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Upgrade/Level3/GE_Nanally010_Lv3_Damage.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Nanally010_Lv3_Damage_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Nanally_Lv3_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Nanally/Con_Nanally_Lv3.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Nanally_Using_E_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Nanally/Con_Nanally_Using_E.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Nanally010_Lv3_Damage_C",
+    "Name": "Default__GE_Nanally010_Lv3_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Upgrade/Level3/GE_Nanally010_Lv3_Damage.GE_Nanally010_Lv3_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Nanally_DamageBase_C'Default__GE_Nanally_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Nanally_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitParticleEffects": [],
+      "DamageExuteGameplayCueTags": [],
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 10.0
+        }
+      },
+      "Period": {
+        "Value": 10000.0
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee",
+          "Ability.Player.Nanally.XieTongDamage"
+        ],
+        "Added": [
+          "State.Damage.Melee",
+          "Ability.Player.Nanally.XieTongDamage"
+        ]
+      },
+      "StackLimitCount": 1,
+      "StackDurationRefreshPolicy": "EGameplayEffectStackingDurationPolicy::NeverRefresh",
+      "StackPeriodResetPolicy": "EGameplayEffectStackingPeriodPolicy::NeverReset",
+      "GEComponents": [
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Nanally010_Lv3_Damage_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Upgrade/Level3/GE_Nanally010_Lv3_Damage.2"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Nanally010_Lv3_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Upgrade/Level3/GE_Nanally010_Lv3_Damage.0"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_1",
+    "Outer": "Default__GE_NanallySpawnProjectileCD_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_CoolDownBase_C:AssetTagsGameplayEffectComponent_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_NanallySpawnProjectileCD_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_NanallySpawnProjectileCD_C'Default__GE_NanallySpawnProjectileCD_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallySpawnProjectileCD.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_NanallySpawnProjectileCD_C",
+    "Name": "Default__GE_NanallySpawnProjectileCD_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallySpawnProjectileCD.GE_NanallySpawnProjectileCD_C'",
+    "Template": {
+      "ObjectName": "GE_CoolDownBase_C'Default__GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationMagnitude": {
+        "MagnitudeCalculationType": "EGameplayEffectMagnitudeCalculation::ScalableFloat",
+        "ScalableFloatMagnitude": {
+          "Value": 0.3
+        },
+        "CustomMagnitude": {
+          "CalculationClassMagnitude": null
+        }
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_NanallySpawnProjectileCD_C:AssetTagsGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallySpawnProjectileCD.0"
+        }
+      ]
+    }
+  }
+]

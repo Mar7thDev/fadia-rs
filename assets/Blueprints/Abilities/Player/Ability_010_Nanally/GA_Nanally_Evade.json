@@ -1,0 +1,252 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Nanally_Evade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Nanally_Evade_C'Default__GA_Nanally_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Nanally_Evade_C",
+    "Name": "Default__GA_Nanally_Evade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.GA_Nanally_Evade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_EvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_EvadeBack.0"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_EvadeForward'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_EvadeForward.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Nanally_Evade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.5"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Joystick'Default__GA_Nanally_Evade_C:HTMontageSelect_Joystick_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.6"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Evade_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.10"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Evade_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.9"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityStrengthCost'Default__GA_Nanally_Evade_C:HTAbilityStrengthCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.2"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Nanally_Evade_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.3"
+        },
+        {
+          "ObjectName": "HTGAComponent_EvadeCoolDown'Default__GA_Nanally_Evade_C:HTGAComponent_EvadeCoolDown_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.4"
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "BackEvade",
+          "Value": false
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Evade"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityStrengthCost",
+    "Name": "HTAbilityStrengthCost_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'HTAbilityStrengthCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_CommonEvade_Property_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_CommonEvade_Property.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_EvadeCoolDown",
+    "Name": "HTGAComponent_EvadeCoolDown_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_EvadeCoolDown'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerCoolDown": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDown_Evade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDown_Evade.1"
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "BackEvade"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Joystick",
+    "Name": "HTMontageSelect_Joystick_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Joystick'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "FrontEvade"
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeFront",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Nanally_Evade_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Nanally_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Nanally_Evade_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Evade.8"
+        }
+      ]
+    }
+  }
+]

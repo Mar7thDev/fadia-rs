@@ -1,0 +1,1180 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Nanally_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Nanally_Melee_C:K2_SetPreActiveAbilityParam'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.4"
+      },
+      {
+        "ObjectName": "Function'GA_Nanally_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.3"
+      }
+    ],
+    "FuncMap": {
+      "CheckNeedUseReleaseTask": {
+        "ObjectName": "Function'GA_Nanally_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.3"
+      },
+      "K2_SetPreActiveAbilityParam": {
+        "ObjectName": "Function'GA_Nanally_Melee_C:K2_SetPreActiveAbilityParam'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Nanally_Melee_C'Default__GA_Nanally_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 30.0,
+        "Y": 0.0,
+        "Z": 120.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_AimingOffset",
+    "Name": "FindSpawnRotationObj_AimingOffset_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_AimingOffset'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckNeedUseReleaseTask",
+    "Outer": "GA_Nanally_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:CheckNeedUseReleaseTask'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckNeedUseReleaseTask_NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_SetPreActiveAbilityParam",
+    "Outer": "GA_Nanally_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTGameplayAbility:K2_SetPreActiveAbilityParam'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AbilityInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayAbility'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ActorInfo",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilityActorInfo'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "GA_Nanally_Melee_C",
+    "Name": "Default__GA_Nanally_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.GA_Nanally_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Nanally_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/LockDamage/LockRange_Nanally_Melee.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 150.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Nanally_AppearMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/LockDamage/LockRange_Nanally_AppearMelee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_001'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_001.1"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_002'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_002.1"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_003'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_003.3"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_004'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_004.1"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_005'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_005.4"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_AirAttackEnd.2"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Melee_Pre'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Melee_Pre.1"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_Dissolve.0"
+          }
+        },
+        {
+          "Key": "Fire",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_BranchEnd'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_BranchEnd.0"
+          }
+        },
+        {
+          "Key": "Fire_LoopAim",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_BranchAimFire'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_BranchAimFire.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'Nanally_AppearMelee'",
+            "ObjectPath": "/Game/Characters/Player/010_nanally/animation/skill/Nanally_AppearMelee.1"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Walking'Default__GA_Nanally_Melee_C:HTMontageSelect_Walking_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.9"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Nanally_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.7"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Nanally_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.8"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.21"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.22"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.28"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.27"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.25"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.23"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.20"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.24"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_9'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.29"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Nanally_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.26"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "AirAttackEnd"
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Nanally_Melee_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.6"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee2_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee4_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee5_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee6_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee6_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee9_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee9_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.10"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee5.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee10_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_Melee10_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee5_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.1"
+          },
+          "Value": {
+            "TargetType": null,
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_BranchPraojectile_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_BranchPraojectile_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Nanally_Melee5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/DamageRange/DamageRange_Nanally_Melee5.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_AirAttack1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_AirAttack1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Effect/GE_Player_Nanally_Melee3_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "ReleaseSkillMode": "EInputTriggerSkillType::Input_P_And_R",
+      "bCheckLedges": true,
+      "AimingSectionMap": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "HoldPressDurationForAiming": 0.2,
+            "FireRequireAimingTime": 0.0,
+            "bCheckMontagePosition": true
+          }
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'NanallyBranchProjectile_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Actor/NanallyBranchProjectile.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Nanally_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_AimingOffset'Default__GA_Nanally_Melee_C:HTAbilitySpawnProjectiles_0.FindSpawnRotationObj_AimingOffset_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.2"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 400.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Walking",
+    "Name": "HTMontageSelect_Walking_0",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Walking'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.23,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.29,
+          "Y": 0.5
+        },
+        {
+          "X": 0.86,
+          "Y": 1.0
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.04,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.15,
+          "Y": 0.35
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.25
+        },
+        {
+          "X": 0.26,
+          "Y": 0.44
+        },
+        {
+          "X": 0.45,
+          "Y": 1.6
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.25,
+          "Y": 0.4
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.25,
+          "Y": 0.4
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Nanally_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Nanally_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Nanally_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_6.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_9",
+    "Outer": "Default__GA_Nanally_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Nanally_Melee_C:SkillJumpSectionData_9.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_Melee.19"
+        }
+      ]
+    }
+  }
+]

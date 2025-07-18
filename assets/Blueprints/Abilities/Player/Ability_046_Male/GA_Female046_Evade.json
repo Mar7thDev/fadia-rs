@@ -1,0 +1,230 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Female046_Evade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_Female051_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Female046_Evade_C'Default__GA_Female046_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Female046_Evade_C",
+    "Name": "Default__GA_Female046_Evade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.GA_Female046_Evade_C'",
+    "Template": {
+      "ObjectName": "GA_Female051_Evade_C'Default__GA_Female051_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_evadeback_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_evadeback_Montage.0"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_evadeforward_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_evadeforward_Montage.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_dissolve_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_dissolve_Montage.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Female046_Evade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.5"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Joystick'Default__GA_Female046_Evade_C:HTMontageSelect_Joystick_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.6"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Evade_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.10"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Evade_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.9"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityStrengthCost'Default__GA_Female046_Evade_C:HTAbilityStrengthCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.2"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female046_Evade_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.3"
+        },
+        {
+          "ObjectName": "HTGAComponent_EvadeCoolDown'Default__GA_Female046_Evade_C:HTGAComponent_EvadeCoolDown_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityStrengthCost",
+    "Name": "HTAbilityStrengthCost_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'HTAbilityStrengthCost'",
+    "Template": {
+      "ObjectName": "HTAbilityStrengthCost'Default__GA_Female051_Evade_C:HTAbilityStrengthCost_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Template": {
+      "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female051_Evade_C:HTGAComponent_AddOrRemoveGE_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.3"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_EvadeCoolDown",
+    "Name": "HTGAComponent_EvadeCoolDown_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_EvadeCoolDown'",
+    "Template": {
+      "ObjectName": "HTGAComponent_EvadeCoolDown'Default__GA_Female051_Evade_C:HTGAComponent_EvadeCoolDown_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.4"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Default'Default__GA_Female051_Evade_C:HTMontageSelect_Default_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.5"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Joystick",
+    "Name": "HTMontageSelect_Joystick_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Joystick'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Joystick'Default__GA_Female051_Evade_C:HTMontageSelect_Joystick_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.6"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Template": {
+      "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Female051_Evade_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.7"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female046_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Template": {
+      "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Female051_Evade_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.8"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female046_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Evade_C:SkillJumpSectionData_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.9"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Female046_Evade_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Female046_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Evade_C:SkillJumpSectionData_2'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.10"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Female046_Evade_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Evade.8"
+        }
+      ]
+    }
+  }
+]

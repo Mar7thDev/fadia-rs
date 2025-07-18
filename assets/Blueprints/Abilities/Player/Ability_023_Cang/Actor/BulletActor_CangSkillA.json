@@ -1,0 +1,516 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BulletActor_CangSkillA_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.16"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BulletActor_CangSkillA_C:ExecuteUbergraph_BulletActor_CangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.5"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BulletActor_CangSkillA_C:K2_NextTickDestroySelf'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.6"
+      },
+      {
+        "ObjectName": "Function'BulletActor_CangSkillA_C:ExecuteUbergraph_BulletActor_CangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BulletActor_CangSkillA": {
+        "ObjectName": "Function'BulletActor_CangSkillA_C:ExecuteUbergraph_BulletActor_CangSkillA'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.5"
+      },
+      "K2_NextTickDestroySelf": {
+        "ObjectName": "Function'BulletActor_CangSkillA_C:K2_NextTickDestroySelf'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BulletActor_CangSkillA_C'Default__BulletActor_CangSkillA_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BP_ProjectileBase_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 30.0,
+        "Z": 30.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_NpcMoving",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Water",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "BulletActor_CangSkillA_C",
+    "Name": "Default__BulletActor_CangSkillA_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.BulletActor_CangSkillA_C'",
+    "Template": {
+      "ObjectName": "BP_ProjectileBase_C'Default__BP_ProjectileBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BulletActor_CangSkillA_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.17"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BulletActor_CangSkillA_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.7"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_CangSkillA_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BulletActor_CangSkillA_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.8"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BulletActor_CangSkillA_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.13"
+        },
+        {
+          "ObjectName": "ProjectileCircleAroundOwner'Default__BulletActor_CangSkillA_C:ProjectileCircleAroundOwner_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.9"
+        },
+        {
+          "ObjectName": "ProjectileMissileFire'Default__BulletActor_CangSkillA_C:ProjectileMissileFire_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.11"
+        }
+      ],
+      "ProjectileFuncArray": [
+        {
+          "ObjectName": "ProjectileSpawnDamageActorsEffect'Default__BulletActor_CangSkillA_C:ProjectileSpawnDamageActorsEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.12"
+        },
+        {
+          "ObjectName": "ProjectileHitExplodeEffect'Default__BulletActor_CangSkillA_C:ProjectileHitExplodeEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.10"
+        }
+      ],
+      "HitWaterEffects": [
+        null
+      ],
+      "FlyingSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": true,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": true,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitWaterSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Imapct/Impact_Cmn/Play_Sfx_Player_Wpn_Cmn_Impact_Water_Small.Play_Sfx_Player_Wpn_Cmn_Impact_Water_Small",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": true,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "DefaultDisappearTime": 10.0,
+      "bAffectedOwnerTimeDilation": true,
+      "PrimaryActorTick": {
+        "TickInterval": 0.0
+      },
+      "InitialLifeSpan": 15.0,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_CangSkillA_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.1"
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_2",
+    "Outer": "ProjectileSpawnDamageActorsEffect_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "ProjectileSpawnDamageActorsEffect_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BulletActor_CangSkillA",
+    "Outer": "BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_fDelayTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_NextTickDestroySelf",
+    "Outer": "BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'ProjectileBase:K2_NextTickDestroySelf'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "fDelayTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BP_ProjectileBase_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxSpeed": 50000.0,
+      "bRotationFollowsVelocity": true,
+      "ProjectileGravityScale": 0.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BP_ProjectileBase_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Player_Cang_Skill_010a'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Player_Cang/NS_Player_Cang_Skill_010a.23"
+      },
+      "OverrideParameters": {},
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_CangSkillA_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.1"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileCircleAroundOwner",
+    "Name": "ProjectileCircleAroundOwner_0",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'ProjectileCircleAroundOwner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CenterLocOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 50.0
+      },
+      "CenterRotOffset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 45.0
+      },
+      "CircleRadius": 110.0,
+      "CircleAngularSpeed": 1000.0,
+      "CircleVelocityInterpSpeed": 24.0,
+      "EndOnAngleExceed": 345.0
+    }
+  },
+  {
+    "Type": "ProjectileHitExplodeEffect",
+    "Name": "ProjectileHitExplodeEffect_0",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'ProjectileHitExplodeEffect'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitExplodeEffectContainer": {
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_SkillA_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_SkillA.0"
+        },
+        "TargetGameplayEffectClasses": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_Melee1_HitBack_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_Melee1_HitBack.1"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMissileFire",
+    "Name": "ProjectileMissileFire_0",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'ProjectileMissileFire'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "ProjectileSpawnDamageActorsEffect",
+    "Name": "ProjectileSpawnDamageActorsEffect_0",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'ProjectileSpawnDamageActorsEffect'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageActorArray": [
+        {
+          "SapwnActorClass": {
+            "ObjectName": "BlueprintGeneratedClass'DamageActorCangSkillA_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangSkillA.0"
+          },
+          "SpawnConditionObjs": [],
+          "SpawnLocationObj": {
+            "ObjectName": "FindSpawnLocationObj_Target'Default__BulletActor_CangSkillA_C:ProjectileSpawnDamageActorsEffect_0.FindSpawnLocationObj_Target_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.3"
+          },
+          "SpawnRotationObj": {
+            "ObjectName": "FindSpawnRotationObj_Owner'Default__BulletActor_CangSkillA_C:ProjectileSpawnDamageActorsEffect_0.FindSpawnRotationObj_Owner_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.4"
+          },
+          "SpawnScaleObj": null,
+          "bForceSpawn": true,
+          "bClientPredictionSpawn": true,
+          "DamageTriggerConfigID": "PlayerCangSkillA",
+          "RandomRadius": 0.0,
+          "EffectContainer": {
+            "TargetType": null,
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_QTE_HitDown_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_QTE_HitDown.1"
+              }
+            ]
+          },
+          "RandomCountCurve": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitOpenTrack": true,
+      "AcceleratedSpeed": 50000.0,
+      "UseLockTrackTarget": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BulletActor_CangSkillA_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.14"
+      },
+      "VariableGUID": "7615D6D5-4896560C-AFF1D695-97964569",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BulletActor_CangSkillA_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.15"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BulletActor_CangSkillA_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BP_ProjectileBase_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_ProjectileBase.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_CangSkillA_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BulletActor_CangSkillA.1"
+      }
+    }
+  }
+]

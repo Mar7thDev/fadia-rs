@@ -1,0 +1,1268 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Player_039_Fadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Player_039_Fadia_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.28"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Player_039_Fadia_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Player_039_Fadia_C:ExecuteUbergraph_Player_039_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.5"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:OnHPChange_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.9"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:InitChangeState'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.6"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:OnActivateAbilityEvent_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.7"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:ChangeFadiaState'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.4"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:OnGiveAbilityDelegate_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.8"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:OnRemoveAbilityDelegate_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.10"
+      },
+      {
+        "ObjectName": "Function'Player_039_Fadia_C:ExecuteUbergraph_Player_039_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "UltraMeleeHandle",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpecHandle'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "NewVar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Player_039_Fadia": {
+        "ObjectName": "Function'Player_039_Fadia_C:ExecuteUbergraph_Player_039_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.5"
+      },
+      "OnRemoveAbilityDelegate_Event": {
+        "ObjectName": "Function'Player_039_Fadia_C:OnRemoveAbilityDelegate_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.10"
+      },
+      "OnGiveAbilityDelegate_Event": {
+        "ObjectName": "Function'Player_039_Fadia_C:OnGiveAbilityDelegate_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.8"
+      },
+      "ChangeFadiaState": {
+        "ObjectName": "Function'Player_039_Fadia_C:ChangeFadiaState'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.4"
+      },
+      "OnActivateAbilityEvent_Event": {
+        "ObjectName": "Function'Player_039_Fadia_C:OnActivateAbilityEvent_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.7"
+      },
+      "InitChangeState": {
+        "ObjectName": "Function'Player_039_Fadia_C:InitChangeState'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.6"
+      },
+      "OnHPChange_Event": {
+        "ObjectName": "Function'Player_039_Fadia_C:OnHPChange_Event'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Player_039_Fadia_C'Default__Player_039_Fadia_C'",
+      "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.24"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FPFollowCamera",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Template": {
+      "ObjectName": "CameraComponent'Default__BP_PlayerCharacterBase_C:FPFollowCamera'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__Player_039_Fadia_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.29"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_PlayerCharacterBase_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 89.0,
+      "CapsuleRadius": 30.0
+    }
+  },
+  {
+    "Type": "FadiaLogicObj",
+    "Name": "FadiaLogicObj_0",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'FadiaLogicObj'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxHPEachAdd": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_FadiaEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_FadiaEffectFigure.0"
+          },
+          "RowName": "FadiaHPAddTempLv3"
+        }
+      },
+      "InherentMaxHPRatio": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_FadiaEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_FadiaEffectFigure.0"
+          },
+          "RowName": "FadiaHPMaxRatioLv3"
+        }
+      },
+      "AddMaxHPRequiredBuff": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Fadia039_Level3_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Upgrade/Level3/Buff_Fadia039_Level3.0"
+      },
+      "ChangeStateBuff": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_ChangeState_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_ChangeState.0"
+      },
+      "GiveUltraMeleeBuff": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_GiveUltraMelee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.1"
+      },
+      "UltraSkillDamUpBuff": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_HighQ_DamUp_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_HighQ_DamUp.0"
+      },
+      "RecoverEnergyGE": {
+        "ObjectName": "BlueprintGeneratedClass'GE_Fadia_Q_RecoverEnergy_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/GE_Fadia_Q_RecoverEnergy.0"
+      },
+      "RemoveUltraMeleeOnActivate": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'GA_Fadia_Appear_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Appear.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'GA_Fadia_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Melee.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'GA_Fadia_QTE_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_QTE.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'GA_Fadia_Skill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Skill.0"
+        }
+      ],
+      "UltraSkillAbility": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Fadia_UltraSkill_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.0"
+      },
+      "UltraMeleeAbility": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Fadia_UltraSkill_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill_Melee.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeFadiaState",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bOpenOrNot",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Player_039_Fadia",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_PlayAbility",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_bOpenOrNot",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "K2Node_ClassDynamicCast_AsHTGameplay_Ability",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'HTGameplayAbility'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ClassDynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_AbilitySpec_1",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpec'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ClassIsChildOf_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpec_bIsInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpec_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ClassIsChildOf_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_AbilitySpec",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpec'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpec_bIsInstance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpec_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ClassProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Class'",
+            "ObjectPath": "/Script/CoreUObject"
+          },
+          "MetaClass": {
+            "ObjectName": "Class'HTGameplayAbility'",
+            "ObjectPath": "/Script/HTGame"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ClassIsChildOf_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_FindAbilitySpecHandleForClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpecHandle'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpecHandle_bIsInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameplayAbilityFromSpecHandle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitChangeState",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnActivateAbilityEvent_Event",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayAbility",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnGiveAbilityDelegate_Event",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AbilitySpec",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpec'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnHPChange_Event",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "OldValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "NewValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "NewReducedHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "OldReducedHP",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "QLimitHP",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHPMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsServerOrStandalone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFadiaQLimitHp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHPMax_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRemoveAbilityDelegate_Event",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AbilitySpec",
+        "Flags": "RF_Public",
+        "ElementSize": 240,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "Class'GameplayAbilitySpec'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GameplayAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'GameplayAttributeSet'",
+    "Template": {
+      "ObjectName": "GameplayAttributeSet'Default__BP_PlayerCharacterBase_C:AttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GhostTrailComponent",
+    "Name": "GhostTrail",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'GhostTrailComponent'",
+    "Template": {
+      "ObjectName": "GhostTrailComponent'Default__BP_PlayerCharacterBase_C:GhostTrail'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "HTAbilitySystemComponent'Default__BP_PlayerCharacterBase_C:AbilitySystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterStateManagerComponent",
+    "Name": "StateManagerComponent",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTCharacterStateManagerComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterStateManagerComponent'Default__BP_PlayerCharacterBase_C:StateManagerComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterTrajectoryComponent",
+    "Name": "HTCharacterTrajectoryComponent",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTCharacterTrajectoryComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterTrajectoryComponent'Default__BP_PlayerCharacterBase_C:HTCharacterTrajectoryComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTFluxInteractionComponent",
+    "Name": "HTFluxInteraction",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTFluxInteractionComponent'",
+    "Template": {
+      "ObjectName": "HTFluxInteractionComponent'Default__BP_PlayerCharacterBase_C:HTFluxInteraction'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMotionWarpingComponent",
+    "Name": "MotionWarping",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTMotionWarpingComponent'",
+    "Template": {
+      "ObjectName": "HTMotionWarpingComponent'Default__BP_PlayerCharacterBase_C:MotionWarping'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTPlayerAttributeSet",
+    "Name": "HTCharacterAttributeSet",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTPlayerAttributeSet'",
+    "Template": {
+      "ObjectName": "HTPlayerAttributeSet'Default__BP_PlayerCharacterBase_C:HTCharacterAttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DeathAnimation": {
+        "ObjectName": "AnimMontage'DieMontage'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Skill/DieMontage.0"
+      },
+      "HalfHitMontage": {
+        "ObjectName": "AnimMontage'Fadia_HalfHitMontage'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Hit/Fadia_HalfHitMontage.0"
+      },
+      "HitBackMontage": {
+        "ObjectName": "AnimMontage'Fadia_HitBackMontage'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Hit/Fadia_HitBackMontage.0"
+      },
+      "HitDownMontage": {
+        "ObjectName": "AnimMontage'Fadia_HitDownMontage'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Hit/Fadia_HitDownMontage.0"
+      },
+      "ChainRestrainMontage": {
+        "ObjectName": "AnimMontage'char_f_combat_linkrest_Montage'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Hit/char_f_combat_linkrest_Montage.0"
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTPlayerCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "HTPlayerCharacterMovementComponent'Default__BP_PlayerCharacterBase_C:CharMoveComp'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HtRotationDetection",
+    "Name": "RotationDetection",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HtRotationDetection'",
+    "Template": {
+      "ObjectName": "HtRotationDetection'Default__BP_PlayerCharacterBase_C:RotationDetection'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Template": {
+      "ObjectName": "HTSkeletalMeshComponentBudgeted'Default__BP_PlayerCharacterBase_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Player039_Fadia_AnimBP_C'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Player039_Fadia_AnimBP.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_039_fadia_skin'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/player_039_fadia_skin.141"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_039_fadia_skin'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/player_039_fadia_skin.141"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_039_Fadia_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.2"
+      },
+      "RelativeLocation": {
+        "X": -4.3871708E-08,
+        "Y": 1.6144137E-16,
+        "Z": -91.0
+      }
+    }
+  },
+  {
+    "Type": "HTSkillEffectComponent",
+    "Name": "SkillEffectComponent",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'HTSkillEffectComponent'",
+    "Template": {
+      "ObjectName": "HTSkillEffectComponent'Default__BP_PlayerCharacterBase_C:SkillEffectComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Player_039_Fadia_C",
+    "Name": "Default__Player_039_Fadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Character/Player/Player_039_Fadia.Player_039_Fadia_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerCharacterBase_C'Default__BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "UltraMeleeHandle": {
+        "Handle": -1
+      },
+      "BodyType": "EBodyType::FemaleBodyType_LevelFour",
+      "HTTrajectoryComponent": {
+        "ObjectName": "HTCharacterTrajectoryComponent'Default__Player_039_Fadia_C:HTCharacterTrajectoryComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.15"
+      },
+      "GrantedAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Melee.GA_Fadia_Melee_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_None"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Evade.GA_Fadia_Evade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Melee"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Skill.GA_Fadia_Skill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Evade"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.GA_Fadia_UltraSkill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Skill"
+        }
+      ],
+      "PassiveAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.GA_Common_SpawnTimeActor_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_Appear.GA_Fadia_Appear_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_QTE.GA_Fadia_QTE_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_PerfectEvade.GA_Fadia_PerfectEvade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        }
+      ],
+      "PassiveBuffs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_ShareOutTeammatesDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_ShareOutTeammatesDamage.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_NoDieShareDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_NoDieShareDamage.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Cang_WorldPas_Fadia_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_WorldPas_Fadia.0"
+        }
+      ],
+      "PossessedAddBuffs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Cang_WorldPas_Fadia_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_WorldPas_Fadia.0"
+        }
+      ],
+      "HtMovementSetting": {
+        "fWalkSpeed": 115.0,
+        "fRunSpeed": 470.0,
+        "fSprintSpeed": 620.0
+      },
+      "MotionWarpingComponent": {
+        "ObjectName": "HTMotionWarpingComponent'Default__Player_039_Fadia_C:MotionWarping'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.17"
+      },
+      "FirstPersonCameraBoom": {
+        "ObjectName": "SpringArmComponent'Default__Player_039_Fadia_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.29"
+      },
+      "FirstPersonFollowCamera": {
+        "ObjectName": "CameraComponent'Default__Player_039_Fadia_C:FPFollowCamera'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.1"
+      },
+      "StateManagerComponent": {
+        "ObjectName": "HTCharacterStateManagerComponent'Default__Player_039_Fadia_C:StateManagerComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.14"
+      },
+      "SilentCheckComponent": {
+        "ObjectName": "SilentCheckComponent'Default__Player_039_Fadia_C:SilentCheckComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.27"
+      },
+      "DefaultCharacterID": "1039",
+      "SkillVideoID": "FadiaUltraSkill",
+      "PlayerParryData": {},
+      "HTFluxSolverComponent": null,
+      "HTAbilitySystemComponent": null,
+      "AbilityAttributeSet": null,
+      "GhostTrailComponent": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "MassAgentComponent": null,
+      "CurrentWeapon": {
+        "ObjectName": "SceneComponent'Player_039_Fadia_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.25"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Player_039_Fadia_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.25"
+      },
+      "VariableGUID": "56E993AE-4187D050-B0DF26A7-ECB83988",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SilentCheckComponent",
+    "Name": "SilentCheckComponent",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'SilentCheckComponent'",
+    "Template": {
+      "ObjectName": "SilentCheckComponent'Default__BP_PlayerCharacterBase_C:SilentCheckComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_039_Fadia_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.2"
+      }
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Player_039_Fadia_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Player_039_Fadia_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.26"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FPCameraBoom",
+    "Outer": "Default__Player_039_Fadia_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Template": {
+      "ObjectName": "SpringArmComponent'Default__BP_PlayerCharacterBase_C:FPCameraBoom'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.31"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_039_Fadia_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_039_Fadia.2"
+      }
+    }
+  }
+]

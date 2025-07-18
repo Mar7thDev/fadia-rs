@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1123,
+    "NoticeIndex": 1,
+    "NoticeType": 1,
+    "NoticeTitle": "ReversedRooms",
+    "NoticeSignature": "",
+    "IsHot": false,
+    "DisplayBeginTime": "",
+    "DisplayEndedTime": "",
+    "NoticeContent": [
+      {
+        "Type": "Image",
+        "Content": {
+          "DisplayText": "",
+          "ImgUrl": "https://serverlist-yh.wmupd.com/notice_test5/pic/qidianceshi-shoucegonggao1080.jpg"
+        }
+      },
+      {
+        "Type": "Text",
+        "Content": {
+          "DisplayText": "Visit discord.gg/reversedrooms for more info\n"
+        }
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "NoticeIndex": 5,
+    "NoticeType": 1,
+    "NoticeTitle": "fadia-rs",
+    "NoticeSignature": "",
+    "IsHot": true,
+    "DisplayBeginTime": "",
+    "DisplayEndedTime": "",
+    "NoticeContent": [
+      {
+        "Type": "Image",
+        "Content": {
+          "DisplayText": "",
+          "ImgUrl": " https://serverlist-yh.wmupd.com/notice_test5/pic/gongpingyunying-shouce1920x1080.jpg"
+        }
+      },
+      {
+        "Type": "Text",
+        "Content": {
+          "DisplayText": "Visit discord.gg/reversedrooms for more info\n"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TestLockRangeParrayRange_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AIType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_AIType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TestLockRangeParrayRange_C'Default__TestLockRangeParrayRange_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/TestLockRangeParrayRange.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "TestLockRangeParrayRange_C",
+    "Name": "Default__TestLockRangeParrayRange_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Common/LockRange/TestLockRangeParrayRange.TestLockRangeParrayRange_C'",
+    "Template": {
+      "ObjectName": "BP_AIType_DamageBoxBase_C'Default__BP_AIType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_AIType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfSize": {
+        "X": 1000.0,
+        "Y": 1000.0,
+        "Z": 150.0
+      },
+      "ObjectTypes": [
+        "ObjectTypeQuery9",
+        "ObjectTypeQuery3"
+      ],
+      "bConsiderCanAttackable": false
+    }
+  }
+]

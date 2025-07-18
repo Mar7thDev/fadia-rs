@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Common_SpawnTimeActor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Common_SpawnTimeActor_C'Default__GA_Common_SpawnTimeActor_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Common_SpawnTimeActor_C",
+    "Name": "Default__GA_Common_SpawnTimeActor_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.GA_Common_SpawnTimeActor_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerEventTags": [
+        {
+          "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnHTActor'Default__GA_Common_SpawnTimeActor_C:HTAbilitySpawnHTActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.4"
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Value": 1.5
+      },
+      "CooldownTags": [
+        "CoolDown.Player.UltraSkill.TimeActor"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnHTActor",
+    "Name": "HTAbilitySpawnHTActor_0",
+    "Outer": "Default__GA_Common_SpawnTimeActor_C",
+    "Class": "UScriptClass'HTAbilitySpawnHTActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'Actor_MintUltraSkill_TimeDilation_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.1"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Common_SpawnTimeActor_C:HTAbilitySpawnHTActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Common_SpawnTimeActor_C:HTAbilitySpawnHTActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.2"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  }
+]

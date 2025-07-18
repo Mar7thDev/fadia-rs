@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Hathor_AddSkill2_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Hathor_AddSkill2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Hathor_AddSkill2_C'Default__Buff_Hathor_AddSkill2_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_AddSkill2.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Hathor_AddSkill2_C",
+    "Name": "Default__Buff_Hathor_AddSkill2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_AddSkill2.Buff_Hathor_AddSkill2_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::Infinite",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 10.0
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "HTAbilitiesGameplayEffectComponent'Default__Buff_Hathor_AddSkill2_C:HTAbilitiesGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_AddSkill2.4"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__Buff_Hathor_AddSkill2_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_AddSkill2.3"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_Hathor_AddSkill2_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_AddSkill2.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Hathor_AddSkill2_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Hathor_AddSkill2_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Hathor/Con_Hathor_AddSkill2.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitiesGameplayEffectComponent",
+    "Name": "HTAbilitiesGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Hathor_AddSkill2_C",
+    "Class": "UScriptClass'HTAbilitiesGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrantAbilityConfigs": [
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Hathor_Skill2_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill2.0"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": 2,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::RemoveAbilityOnEnd"
+        }
+      ]
+    }
+  }
+]

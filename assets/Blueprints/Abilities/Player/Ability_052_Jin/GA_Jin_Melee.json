@@ -1,0 +1,1678 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Jin_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Jin_Melee_C:ExecuteUbergraph_GA_Jin_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.8"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Jin_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.7"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_Melee_C:GetHoldSection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.9"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.10"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_Melee_C:ExecuteUbergraph_GA_Jin_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.8"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Jin_Melee": {
+        "ObjectName": "Function'GA_Jin_Melee_C:ExecuteUbergraph_GA_Jin_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.8"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Jin_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.10"
+      },
+      "GetHoldSection": {
+        "ObjectName": "Function'GA_Jin_Melee_C:GetHoldSection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.9"
+      },
+      "CheckNeedUseReleaseTask": {
+        "ObjectName": "Function'GA_Jin_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.7"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Jin_Melee_C'Default__GA_Jin_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_2",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_2",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckNeedUseReleaseTask",
+    "Outer": "GA_Jin_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:CheckNeedUseReleaseTask'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckNeedUseReleaseTask_NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Jin_Melee",
+    "Outer": "GA_Jin_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilitySystemComponentFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AbilitySystemComponent'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 72,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'GameplayTagAssetInterface'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HUD'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTHUD'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHoldSection",
+    "Outer": "GA_Jin_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTGameplayAbility:GetHoldSection'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInPeace_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsJin_Record_Skill_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'JinRecordSkillLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsRestore_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInMeleeBranchTimeSlomo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_SelectName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_SelectName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Jin_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Jin_Melee_C",
+    "Name": "Default__GA_Jin_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.GA_Jin_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Jin_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_Jin_Melee.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 150.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Jin_AppearMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_Jin_AppearMelee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Melee_001'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Melee_001.1"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Melee_002'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Melee_002.0"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Melee_003'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Melee_003.0"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Melee_004'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Melee_004.0"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Melee_005'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Melee_005.1"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_AirAttackEnd.0"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_MeleePre'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_MeleePre.1"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_dissolve'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_dissolve.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_MeleePre'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_MeleePre.1"
+          }
+        },
+        {
+          "Key": "Branch1",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Branch1'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Branch1.0"
+          }
+        },
+        {
+          "Key": "Branch2",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Branch2'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Branch2.0"
+          }
+        },
+        {
+          "Key": "Branch3",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_Branch3'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_Branch3.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Jin_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.15"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Jin_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.16"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Jin_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.17"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.35"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.36"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.34"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.37"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.38"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.39"
+          }
+        },
+        {
+          "Key": "Branch1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.40"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.41"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_9'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.43"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.42"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "AirAttackEnd"
+      ],
+      "StartBlockMovementSections": [
+        "AirAttack",
+        "AirAttackEnd"
+      ],
+      "HoldSection": "Branch1",
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.14"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.12"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5_1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.13"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee2_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee2_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee3_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee4_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_AirAttack_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_AirAttack.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_AirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_AirAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee6_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee6.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee7_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee7_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Mon_Nanally_Skill_HitDown_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Monster/mon_nanally/GE/HitOut/GE_Mon_Nanally_Skill_HitDown.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee6_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee6.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee8_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee8_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee8_HitOut_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee8_HitOut.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Branch1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Branch1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Branch1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Branch1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee9_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee9_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Display.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_MeleeImmune_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_MeleeImmune.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Display.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_BranchImmune_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_BranchImmune.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Branch1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Branch1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Branch2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Branch2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "ReleaseSkillMode": "EInputTriggerSkillType::Input_P_And_R",
+      "ActivateAutoBreakCurSkill": false,
+      "bCheckLedges": true,
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "Branch2",
+          "Value": false
+        },
+        {
+          "Key": "Branch3",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorJinMelee5_2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Actor/DamageActorJinMelee5_2.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.4"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerJinMelee5_2",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee5_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee5.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee6_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee6_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee6_Float_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee6_Float.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AttackTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_1",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorJinMelee5_1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Actor/DamageActorJinMelee5_1.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.5"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerJinMelee5_1",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee5_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee5.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee5_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee5_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AttackTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_2",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorJinMelee5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Actor/DamageActorJinMelee5.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_2.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.3"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Jin_Melee_C:HTAbilitySpawnDamageTriggerActor_2.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.6"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerJinMelee5_1",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_Melee5_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_Melee5.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee5_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_Melee5_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AttackTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 280.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Branch1"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Branch1"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Branch1"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.2,
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Melee5"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.2,
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Melee5"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Branch1"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "RequiredAnyBreakSkillTypes": 262
+        }
+      ],
+      "NextSectionName": "Branch1"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.9
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.8
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.54,
+          "Y": 0.74
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.77
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.18"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.27"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.26"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_3.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.19"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.28"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_4.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.20"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.29"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_5.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.21"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.30"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_6.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_7.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.23"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.32"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_9",
+    "Outer": "Default__GA_Jin_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Jin_Melee_C:SkillJumpSectionData_9.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.24"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Jin_Melee_C:SkillJumpSectionData_9.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.33"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'DamageActor_HathorSkill1Power_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ExecuteUbergraph_DamageActor_HathorSkill1Power'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:OnTimerExecute_17F5CDCC4840201EC127588C37C4A74F'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.4"
+      },
+      {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.5"
+      },
+      {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.6"
+      },
+      {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:HathorSkill1End'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.3"
+      },
+      {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ExecuteUbergraph_DamageActor_HathorSkill1Power'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "Target Type",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'HTGATargetType'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Target Gameplay Effect Classes",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ClassProperty",
+          "Name": "Target Gameplay Effect Classes",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "UObjectWrapper",
+          "PropertyClass": {
+            "ObjectName": "Class'Class'",
+            "ObjectPath": "/Script/CoreUObject"
+          },
+          "MetaClass": {
+            "ObjectName": "Class'GameplayEffect'",
+            "ObjectPath": "/Script/GameplayAbilities"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TaskHathorSkill1Power",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayEffectTask_Timer'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_DamageActor_HathorSkill1Power": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ExecuteUbergraph_DamageActor_HathorSkill1Power'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.2"
+      },
+      "HathorSkill1End": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:HathorSkill1End'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.3"
+      },
+      "ReceiveDestroyed": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.6"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.5"
+      },
+      "OnTimerExecute_17F5CDCC4840201EC127588C37C4A74F": {
+        "ObjectName": "Function'DamageActor_HathorSkill1Power_C:OnTimerExecute_17F5CDCC4840201EC127588C37C4A74F'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageActor_HathorSkill1Power_C'Default__DamageActor_HathorSkill1Power_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageActor_HathorSkill1Power_C",
+    "Name": "Default__DamageActor_HathorSkill1Power_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.DamageActor_HathorSkill1Power_C'",
+    "Template": {
+      "ObjectName": "BP_DamageTriggerActorBase_C'Default__BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Target Gameplay Effect Classes": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill1Power_Damage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill1Power_Damage.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_HathorAnger_GazeEx_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_GazeEx.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_HathorAnger_Gaze_Menu_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_Menu.0"
+        }
+      ],
+      "SceneRootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActor_HathorSkill1Power_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.8"
+      },
+      "InitialLifeSpan": 4.5,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActor_HathorSkill1Power_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.8"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_DamageActor_HathorSkill1Power",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AsyncTaskSetTimer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayEffectTask_Timer'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'GameplayEventData'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAbilityEndedDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCharacterItemNetID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'HTItemNetID'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCurrentMontage_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimMontage'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_K2_GetCharacterAbilityLevelWithNetID_OutSkillLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_K2_GetCharacterAbilityLevelWithNetID_OutAwakenSkillLevel",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_K2_GetCharacterAbilityLevelWithNetID_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidSectionName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSpanLifeTimeSinceCreation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_HTGameplayEffectContainer",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'HTGameplayEffectContainer'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeEffectContainerSpecFromContainer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'HTGameplayEffectContainerSpec'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_ApplyEffectContainerSpec_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_ApplyEffectContainerSpec_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "Struct": {
+            "ObjectName": "Class'ActiveGameplayEffectHandle'",
+            "ObjectPath": "/Script/GameplayAbilities"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'GETaskSimpleDynamicMulticastDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_PlayAbility",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ClassClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "HathorSkill1End",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayAbility",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'GameplayAbility'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTimerExecute_17F5CDCC4840201EC127588C37C4A74F",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDestroyed",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveDestroyed'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent",
+    "Outer": "Default__DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_DamageTriggerActorBase_C:RootComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'DamageActor_HathorSkill1Power_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.7"
+      },
+      "VariableGUID": "EF28E08E-4EFCE1EA-7EE0CCB8-3F0739EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "DamageActor_HathorSkill1Power_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'DamageActor_HathorSkill1Power_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.9"
+      }
+    }
+  }
+]

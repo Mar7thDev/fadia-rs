@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_1",
+    "Outer": "Default__TestBuff_WalkOnWall_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ],
+        "Added": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TestBuff_WalkOnWall_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TestBuff_WalkOnWall_C'Default__TestBuff_WalkOnWall_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/TestBuff_WalkOnWall.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__TestBuff_WalkOnWall_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ],
+        "Added": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "TestBuff_WalkOnWall_C",
+    "Name": "Default__TestBuff_WalkOnWall_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/TestBuff_WalkOnWall.TestBuff_WalkOnWall_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::Infinite",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 10.0
+        }
+      },
+      "GameplayCues": [
+        {
+          "MagnitudeAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "MinLevel": 0.0,
+          "MaxLevel": 0.0,
+          "GameplayCueTags": [
+            "GameplayCue.Display.Nanally.Skill.WalkOnWall"
+          ]
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ],
+        "Added": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ]
+      },
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ],
+        "Added": [
+          "State.Property.CantVines",
+          "State.Property.IgnoreDownDamage"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__TestBuff_WalkOnWall_C:AssetTagsGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/TestBuff_WalkOnWall.0"
+        },
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__TestBuff_WalkOnWall_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/TestBuff_WalkOnWall.2"
+        }
+      ]
+    }
+  }
+]

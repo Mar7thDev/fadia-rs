@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Female046_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Female046_ExtremEvadeAtk_C'Default__GA_Female046_ExtremEvadeAtk_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Female046_ExtremEvadeAtk_C",
+    "Name": "Default__GA_Female046_ExtremEvadeAtk_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.GA_Female046_ExtremEvadeAtk_C'",
+    "Template": {
+      "ObjectName": "GA_Female051_ExtremEvadeAtk_C'Default__GA_Female051_ExtremEvadeAtk_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "PerfectEvadeFront",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_PerfectEvadeFront'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeFront.0"
+          }
+        },
+        {
+          "Key": "Atk",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_PerfectEvadeAtk'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeAtk.0"
+          }
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_PerfectEvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeBack.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_dissolve_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_dissolve_Montage.0"
+          }
+        }
+      ],
+      "ForceLoadMontages": [
+        {
+          "ObjectName": "AnimMontage'char_m_PerfectEvadeFront'",
+          "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeFront.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_m_PerfectEvadeAtk'",
+          "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeAtk.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_m_PerfectEvadeBack'",
+          "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_PerfectEvadeBack.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_m_skill_dissolve_Montage'",
+          "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_dissolve_Montage.0"
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Female046_ExtremEvadeAtk_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.3"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Atk",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_ExtremEvadeAtk_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.5"
+          }
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female046_ExtremEvadeAtk_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.2"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_ExtremEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_ExtremEvade.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_PerfectEvadeAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Damage/GE_Player_Female046_PerfectEvadeAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee1_HitBack.1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Female046_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Template": {
+      "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female051_ExtremEvadeAtk_C:HTGAComponent_AddOrRemoveGE_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Female046_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Default'Default__GA_Female051_ExtremEvadeAtk_C:HTMontageSelect_Default_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.3"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Template": {
+      "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_ExtremEvadeAtk_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.4"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Female046_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_ExtremEvadeAtk_C:SkillJumpSectionData_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.5"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female046_ExtremEvadeAtk_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.4"
+        }
+      ]
+    }
+  }
+]

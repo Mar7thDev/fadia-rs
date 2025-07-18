@@ -1,0 +1,292 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageActorLacrimosaUltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'DamageActorLacrimosaUltraSkill_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.6"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "WindFieldInteraction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'WindFieldInteractionComponent'",
+          "ObjectPath": "/Script/FieldInteraction"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageActorLacrimosaUltraSkill_C'Default__DamageActorLacrimosaUltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageActorLacrimosaUltraSkill_C",
+    "Name": "Default__DamageActorLacrimosaUltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.DamageActorLacrimosaUltraSkill_C'",
+    "Template": {
+      "ObjectName": "BP_DamageTriggerActorBase_C'Default__BP_DamageTriggerActorBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SceneRootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActorLacrimosaUltraSkill_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.3"
+      },
+      "SpawnParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_022.NS_Lacrimosa_Skill_022",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "rootSocket",
+          "Attached": true,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        },
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_023.NS_Lacrimosa_Skill_023",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "rootSocket",
+          "Attached": true,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        },
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_024.NS_Lacrimosa_Skill_024",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 50.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "rootSocket",
+          "Attached": true,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        },
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_028.NS_Lacrimosa_Skill_028",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 50.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "rootSocket",
+          "Attached": true,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__DamageActorLacrimosaUltraSkill_C:RootComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "DamageActorLacrimosaUltraSkill_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent",
+    "Outer": "Default__DamageActorLacrimosaUltraSkill_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__BP_DamageTriggerActorBase_C:RootComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_DamageTriggerActorBase.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'DamageActorLacrimosaUltraSkill_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.2"
+      },
+      "VariableGUID": "EF28E08E-4EFCE1EA-7EE0CCB8-3F0739EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'WindFieldInteractionComponent'",
+        "ObjectPath": "/Script/FieldInteraction"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "WindFieldInteractionComponent'DamageActorLacrimosaUltraSkill_C:WindFieldInteraction_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.7"
+      },
+      "VariableGUID": "8ADA04BF-4FB9CC5E-C0ACED97-379B3058",
+      "InternalVariableName": "WindFieldInteraction"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "DamageActorLacrimosaUltraSkill_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'DamageActorLacrimosaUltraSkill_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'DamageActorLacrimosaUltraSkill_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'DamageActorLacrimosaUltraSkill_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/DamageActorLacrimosaUltraSkill.4"
+      }
+    }
+  },
+  {
+    "Type": "WindFieldInteractionComponent",
+    "Name": "WindFieldInteraction_GEN_VARIABLE",
+    "Outer": "DamageActorLacrimosaUltraSkill_C",
+    "Class": "UScriptClass'WindFieldInteractionComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WindStrength": 90000.0,
+      "WindRadius": 500.0,
+      "MinVelocity": 0.0
+    }
+  }
+]

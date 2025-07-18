@@ -1,0 +1,694 @@
+[
+  {
+    "Type": "ActorReaction_1_Projectile2_C",
+    "Name": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.ActorReaction_1_Projectile2_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "InitialSpeedAfterFire": 1000.0,
+      "SpawnParticle": {
+        "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Common/NS_common_reaction1_004.NS_common_reaction1_004",
+        "SubPathString": ""
+      },
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__ActorReaction_1_Projectile2_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.14"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__ActorReaction_1_Projectile2_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.7"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__ActorReaction_1_Projectile2_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.2"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__ActorReaction_1_Projectile2_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.8"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "HTProjectileBezierPath'Default__ActorReaction_1_Projectile2_C:HTProjectileBezierPath_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.6"
+        }
+      ],
+      "ProjectileFuncArray": [
+        {
+          "ObjectName": "ProjectileHitExplodeEffect'Default__ActorReaction_1_Projectile2_C:ProjectileHitExplodeEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.9"
+        }
+      ],
+      "HitParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Common/NS_common_reaction1_new3_3.NS_common_reaction1_new3_3",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.2,
+            "Y": 1.2,
+            "Z": 1.2
+          },
+          "SocketName": "FireSocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "FlyingSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Cmn/Play_Sfx_Player_Wpn_Cmn_FangShengHua_Atk.Play_Sfx_Player_Wpn_Cmn_FangShengHua_Atk",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": true,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Cmn/Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit.Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitLandSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Cmn/Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit.Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "HitWaterSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Cmn/Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit.Play_Sfx_Player_Wpn_Cmn_FangShengHua_Hit",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "SpeedSetOnDestroy": 0.0,
+      "DefaultDisappearTime": 0.5,
+      "NewCustomTimeDilation": -1.0066825E+09,
+      "RemoteRole": "ENetRole::136"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'ActorReaction_1_Projectile2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ActorReaction_1_Projectile2_C:ExecuteUbergraph_ActorReaction_1_Projectile2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'CosmosNatureProjectile'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ActorReaction_1_Projectile2_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.4"
+      },
+      {
+        "ObjectName": "Function'ActorReaction_1_Projectile2_C:ExecuteUbergraph_ActorReaction_1_Projectile2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTNiagara",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTNiagaraComponent'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ActorReaction_1_Projectile2": {
+        "ObjectName": "Function'ActorReaction_1_Projectile2_C:ExecuteUbergraph_ActorReaction_1_Projectile2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'ActorReaction_1_Projectile2_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ActorReaction_1_Projectile2_C'Default__ActorReaction_1_Projectile2_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 15.0,
+        "Y": 15.0,
+        "Z": 15.0
+      },
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_NpcMoving",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        },
+        "bEnableGravity": false
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ActorReaction_1_Projectile2",
+    "Outer": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTNiagaraComponent",
+    "Name": "HTNiagara_GEN_VARIABLE",
+    "Outer": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'HTNiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_common_reaction1_Trail'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Player_Common/NS_common_reaction1_Trail.80"
+      },
+      "OverrideParameters": {},
+      "RelativeScale3D": {
+        "X": 0.7692308,
+        "Y": 0.7692308,
+        "Z": 0.7692308
+      }
+    }
+  },
+  {
+    "Type": "HTProjectileBezierPath",
+    "Name": "HTProjectileBezierPath_0",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'HTProjectileBezierPath'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AccelerateCurve": {
+        "ObjectName": "CurveFloat'Reaction1_BulletCurve'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Buff/element/Reaction/ReactionEffect/Reaction1/New/Reaction1_BulletCurve.0"
+      },
+      "ControlPointParams": [
+        {
+          "LocationRange": {
+            "X": -1.0,
+            "Y": -2.0
+          },
+          "OffLineRange": {
+            "X": 300.0,
+            "Y": 800.0
+          },
+          "RandAngleAround": {
+            "X": -90.0,
+            "Y": 90.0
+          }
+        },
+        {
+          "LocationRange": {
+            "X": 0.2,
+            "Y": 0.6
+          },
+          "OffLineRange": {
+            "X": 300.0,
+            "Y": 700.0
+          },
+          "RandAngleAround": {
+            "X": -90.0,
+            "Y": 90.0
+          }
+        }
+      ],
+      "bTrackEvenIfNoTarget": true,
+      "DistToTargetScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "LerpTime": 0.7
+    }
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 6000.0,
+      "MaxSpeed": 6000.0,
+      "ProjectileGravityScale": 0.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_common_reaction1_new3_5'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Player_Common/NS_common_reaction1_new3_5.28"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Camera Offset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Camera Offset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "rota",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.rota",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "size",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.size",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Sub",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Sub",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Camera Offset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.rota",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.size",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.Sub",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          32,
+          65,
+          0,
+          0,
+          240,
+          65,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          64
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__ActorReaction_1_Projectile2_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.2"
+      },
+      "RelativeScale3D": {
+        "X": 1.3,
+        "Y": 1.3,
+        "Z": 1.3
+      }
+    }
+  },
+  {
+    "Type": "ProjectileHitExplodeEffect",
+    "Name": "ProjectileHitExplodeEffect_0",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'ProjectileHitExplodeEffect'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitExplodeEffectContainer": {
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'DamageRangeReaction1_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/element/Reaction/ReactionEffect/Reaction1/New/DamageRangeReaction1.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'ActorReaction_1_Projectile2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.10"
+      },
+      "VariableGUID": "5493BF9B-46F90F67-D28B0D99-D708060F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTNiagaraComponent'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTNiagaraComponent'ActorReaction_1_Projectile2_C:HTNiagara_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.5"
+      },
+      "ParentComponentOrVariableName": "ParticleSystemComponent",
+      "bIsParentComponentNative": true,
+      "VariableGUID": "5CB30A55-40D40A2D-598A3FB6-20051CDF",
+      "InternalVariableName": "HTNiagara"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'ActorReaction_1_Projectile2_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'ActorReaction_1_Projectile2_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'ActorReaction_1_Projectile2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.11"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__ActorReaction_1_Projectile2_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__ActorReaction_1_Projectile2_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/ActorReaction_1_Projectile2.2"
+      }
+    }
+  }
+]

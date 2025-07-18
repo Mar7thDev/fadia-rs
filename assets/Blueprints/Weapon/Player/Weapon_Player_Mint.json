@@ -1,0 +1,386 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Mint_2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.9"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Mint_2_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.4"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Mint_2_C'Default__Weapon_Player_Mint_2_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.10"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Hand_L1",
+          "SocketName": "GrassInteract",
+          "Radius": 150.0
+        },
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "SocketName": "GrassInteract",
+          "Radius": 150.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted1_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Player_016_weapon'",
+        "ObjectPath": "/Game/Characters/Player/016_mint/Player_016_weapon/Player_016_weapon.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Player_016_weapon'",
+        "ObjectPath": "/Game/Characters/Player/016_mint/Player_016_weapon/Player_016_weapon.1"
+      },
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Player_016_weapon'",
+        "ObjectPath": "/Game/Characters/Player/016_mint/Player_016_weapon/Player_016_weapon.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Player_016_weapon'",
+        "ObjectPath": "/Game/Characters/Player/016_mint/Player_016_weapon/Player_016_weapon.1"
+      },
+      "bReceivesDecals": false,
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "ComponentTags": [
+        "Weapon_Hand_L1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Mint_2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.5"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Mint_2_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "5BA54791-4969A66E-009F8597-C25008BF",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Mint_2_C:HTSkeletalMeshComponentBudgeted1_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.2"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "09630972-48188980-B8D1F0A4-928D1F76",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Mint_2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_2_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.7"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_2_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_2_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.7"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Mint_2_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Mint_2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.6"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Mint_C",
+    "Name": "Default__Weapon_Player_Mint_2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.Weapon_Player_Mint_2_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": "Lhand_Weapon2"
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "Rhand_Weapon2"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_L1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Common/Weapon/NS_player_016_weapon_Disappear_BP.NS_player_016_weapon_Disappear_BP",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Lhand_Weapon2",
+            "Attached": true,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": true,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        },
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Common/Weapon/NS_player_016_weapon_Disappear_BP.NS_player_016_weapon_Disappear_BP",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Rhand_Weapon2",
+            "Attached": true,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": true,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Player_Mint_2_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Mint_2.1"
+      },
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionNew_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionNew.0"
+        },
+        "DLWE_Size": 20.0,
+        "BindSocketName": "SnowInteract"
+      }
+    }
+  }
+]

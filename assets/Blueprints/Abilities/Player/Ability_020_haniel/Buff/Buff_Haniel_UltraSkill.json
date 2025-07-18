@@ -1,0 +1,256 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Haniel_UltraSkill_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Haniel_UltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Haniel_UltraSkill_C'Default__Buff_Haniel_UltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Haniel_UltraSkill_C",
+    "Name": "Default__Buff_Haniel_UltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill.Buff_Haniel_UltraSkill_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bSuppressStackingEvent": true,
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_BEGIN",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel_UltraSkill_DamageUp_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill_DamageUp.0"
+              },
+              "StackCount": 10,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": {
+            "ObjectName": "BlueprintGeneratedClass'Con_Haniel_Lv4_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Haniel/Con_Haniel_Lv4.0"
+          }
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_BEGIN",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel_Metronome_Start_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_Metronome_Start.1"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            },
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel020_Level1_damageup_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Upgrade/level1/Buff_Haniel020_Level1_damageup.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_FINISH",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel_UltraSkill_DamageUp_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill_DamageUp.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            },
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel020_Level1_damageup_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Upgrade/level1/Buff_Haniel020_Level1_damageup.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": {
+            "ObjectName": "BlueprintGeneratedClass'Con_Haniel_NotInUltraSkillState_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Haniel/Con_Haniel_NotInUltraSkillState.0"
+          }
+        },
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_CHANGE_ROLE_OUT",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Haniel_UltraSkill_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill.1"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 30.0
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1000,
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_Haniel_UltraSkill_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_020_haniel/Buff/Buff_Haniel_UltraSkill.0"
+        }
+      ]
+    }
+  }
+]

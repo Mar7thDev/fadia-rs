@@ -1,0 +1,71 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_1",
+    "Outer": "Default__GE_Sagiri_BranchCD1_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_CoolDownBase_C:AssetTagsGameplayEffectComponent_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Sagiri_BranchCD1_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Sagiri_BranchCD1_C'Default__GE_Sagiri_BranchCD1_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD1.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Sagiri_BranchCD1_C",
+    "Name": "Default__GE_Sagiri_BranchCD1_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD1.GE_Sagiri_BranchCD1_C'",
+    "Template": {
+      "ObjectName": "GE_CoolDownBase_C'Default__GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationMagnitude": {
+        "MagnitudeCalculationType": "EGameplayEffectMagnitudeCalculation::ScalableFloat",
+        "ScalableFloatMagnitude": {
+          "Value": 1.0,
+          "Curve": {
+            "CurveTable": {
+              "ObjectName": "CurveTable'DT_SagiriEffectFigure'",
+              "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_SagiriEffectFigure.0"
+            },
+            "RowName": "Sagiri_SwallowCD"
+          }
+        },
+        "CustomMagnitude": {
+          "CalculationClassMagnitude": null
+        }
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Sagiri_BranchCD1_C:AssetTagsGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD1.0"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,746 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Player_052_Jin_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Player_052_Jin_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.27"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Player_052_Jin_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.21"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Player_052_Jin_C'Default__Player_052_Jin_C'",
+      "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.23"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FPFollowCamera",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Template": {
+      "ObjectName": "CameraComponent'Default__BP_PlayerCharacterBase_C:FPFollowCamera'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_PlayerCharacterBase_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 90.0,
+      "CapsuleRadius": 30.0
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 100.0,
+        "Y": -400.0,
+        "Z": 0.0
+      },
+      "TargetLocationOffset": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 0.0
+      },
+      "NeedCheckFloor": true
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_1",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 100.0,
+        "Y": 400.0,
+        "Z": 0.0
+      },
+      "TargetLocationOffset": {
+        "X": 0.0,
+        "Y": 200.0,
+        "Z": 0.0
+      },
+      "NeedCheckFloor": true
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_2",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 100.0,
+        "Y": -400.0,
+        "Z": 0.0
+      },
+      "TargetLocationOffset": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "NeedCheckFloor": true
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_0",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfRotation": true,
+      "bIgnoreZAccumulate": true,
+      "SpawnOffsetRotation": {
+        "Pitch": 0.0,
+        "Yaw": 45.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_1",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfRotation": true,
+      "bIgnoreZAccumulate": true,
+      "SpawnOffsetRotation": {
+        "Pitch": 0.0,
+        "Yaw": -45.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_2",
+    "Outer": "JinRecordSkillLogicObj_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfRotation": true,
+      "bIgnoreZAccumulate": true,
+      "SpawnOffsetRotation": {
+        "Pitch": 0.0,
+        "Yaw": 45.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "GameplayAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'GameplayAttributeSet'",
+    "Template": {
+      "ObjectName": "GameplayAttributeSet'Default__BP_PlayerCharacterBase_C:AttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GhostTrailComponent",
+    "Name": "GhostTrail",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'GhostTrailComponent'",
+    "Template": {
+      "ObjectName": "GhostTrailComponent'Default__BP_PlayerCharacterBase_C:GhostTrail'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "HTAbilitySystemComponent'Default__BP_PlayerCharacterBase_C:AbilitySystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterStateManagerComponent",
+    "Name": "StateManagerComponent",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTCharacterStateManagerComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterStateManagerComponent'Default__BP_PlayerCharacterBase_C:StateManagerComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterTrajectoryComponent",
+    "Name": "HTCharacterTrajectoryComponent",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTCharacterTrajectoryComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterTrajectoryComponent'Default__BP_PlayerCharacterBase_C:HTCharacterTrajectoryComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTFluxInteractionComponent",
+    "Name": "HTFluxInteraction",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTFluxInteractionComponent'",
+    "Template": {
+      "ObjectName": "HTFluxInteractionComponent'Default__BP_PlayerCharacterBase_C:HTFluxInteraction'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMotionWarpingComponent",
+    "Name": "MotionWarping",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTMotionWarpingComponent'",
+    "Template": {
+      "ObjectName": "HTMotionWarpingComponent'Default__BP_PlayerCharacterBase_C:MotionWarping'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTPlayerAttributeSet",
+    "Name": "HTCharacterAttributeSet",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTPlayerAttributeSet'",
+    "Template": {
+      "ObjectName": "HTPlayerAttributeSet'Default__BP_PlayerCharacterBase_C:HTCharacterAttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DeathAnimation": {
+        "ObjectName": "AnimMontage'DieMontage'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Hit/DieMontage.0"
+      },
+      "HalfHitMontage": {
+        "ObjectName": "AnimMontage'Jin_HalfHitMontage'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Hit/Jin_HalfHitMontage.0"
+      },
+      "HitBackMontage": {
+        "ObjectName": "AnimMontage'Jin_HitBackMontage'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Hit/Jin_HitBackMontage.0"
+      },
+      "HitDownMontage": {
+        "ObjectName": "AnimMontage'Jin_HitDownMontage'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Hit/Jin_HitDownMontage.0"
+      },
+      "ChainRestrainMontage": {
+        "ObjectName": "AnimMontage'char_f_combat_linkrest_Montage'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Hit/char_f_combat_linkrest_Montage.0"
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTPlayerCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "HTPlayerCharacterMovementComponent'Default__BP_PlayerCharacterBase_C:CharMoveComp'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HtRotationDetection",
+    "Name": "RotationDetection",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HtRotationDetection'",
+    "Template": {
+      "ObjectName": "HtRotationDetection'Default__BP_PlayerCharacterBase_C:RotationDetection'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Template": {
+      "ObjectName": "HTSkeletalMeshComponentBudgeted'Default__BP_PlayerCharacterBase_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Player052_Jin_AnimBP_C'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/animation/Player052_Jin_AnimBP.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_052_jin_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/player_052_jin_skin.146"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_052_jin_skin'",
+        "ObjectPath": "/Game/Characters/Player/052_jin/player_052_jin_skin.146"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_052_Jin_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.2"
+      },
+      "RelativeLocation": {
+        "X": -4.3871708E-08,
+        "Y": 1.6144137E-16,
+        "Z": -92.0
+      }
+    }
+  },
+  {
+    "Type": "HTSkillEffectComponent",
+    "Name": "SkillEffectComponent",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'HTSkillEffectComponent'",
+    "Template": {
+      "ObjectName": "HTSkillEffectComponent'Default__BP_PlayerCharacterBase_C:SkillEffectComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Player_052_Jin_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JinRecordSkillLogicObj",
+    "Name": "JinRecordSkillLogicObj_0",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'JinRecordSkillLogicObj'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UltraSubSkillTriggerMaxCount": 10,
+      "UseRecordSkillData": [
+        {
+          "LocationObj": {
+            "ObjectName": "FindSpawnLocationObj_Target'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnLocationObj_Target_0'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.3"
+          },
+          "RotationObj": {
+            "ObjectName": "FindSpawnRotationObj_UseTarget'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnRotationObj_UseTarget_0'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.6"
+          }
+        },
+        {
+          "LocationObj": {
+            "ObjectName": "FindSpawnLocationObj_Target'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnLocationObj_Target_1'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.4"
+          },
+          "RotationObj": {
+            "ObjectName": "FindSpawnRotationObj_UseTarget'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnRotationObj_UseTarget_1'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.7"
+          }
+        },
+        {
+          "LocationObj": {
+            "ObjectName": "FindSpawnLocationObj_Target'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnLocationObj_Target_2'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.5"
+          },
+          "RotationObj": {
+            "ObjectName": "FindSpawnRotationObj_UseTarget'Default__Player_052_Jin_C:JinRecordSkillLogicObj_0.FindSpawnRotationObj_UseTarget_2'",
+            "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.8"
+          }
+        }
+      ],
+      "StartTriggerRecordSkillEventTags": [
+        "Event.Montage.Player.Skill.Jin.RecordOtherSkill"
+      ],
+      "TriggerUseRecordSkillEventTags": [
+        "Event.Montage.Player.UltraSkill.Jin.TriggerRecordSkill"
+      ],
+      "TriggerUltraSkillPauseTimeEventTags": [
+        "Event.Montage.Player.UltraSkill.Jin.EnterTimeStop"
+      ],
+      "UltraSubSkillGameplayEffects": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Jin_GiveUlrSubAbility_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_GiveUlrSubAbility.1"
+        }
+      ],
+      "UltraSubSkillCDO": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Jin_UltraSkill_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.0"
+      },
+      "CreateGhostEventTags": [
+        "Event.Montage.Player.Common.JinRecordSkill"
+      ],
+      "InGhostTrailActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'JinGhost_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Actor/JinGhost.0"
+      },
+      "GhostMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_GhostTrailMask_JinUS1'",
+        "ObjectPath": "/Game/CoreMaterials/Character/Effect/MI_GhostTrailMask_JinUS1.0"
+      },
+      "MaxTimeValue": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_MaxTimeValue"
+        }
+      },
+      "TimeValueRegenerationPerSecond": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_TimeValueRePerSecond"
+        }
+      },
+      "TimeValueRegenerationPerSecondInFirstPausedEnd": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_Lv3_TimeValueRePerSecond"
+        }
+      },
+      "KillTargetRegenerationCount": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_Lv4_KillTargetCount"
+        }
+      },
+      "KillTargetTimeValueRegeneration": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_Lv4_KillTargetTimeValueRe"
+        }
+      },
+      "TimeValueConsumptionPerSecond": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_TimeValueConsumePerSecond"
+        }
+      },
+      "SkillCostValue": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_SkillCost"
+        }
+      },
+      "UltraSkillCostValue": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_UltraSkillCost"
+        }
+      },
+      "LimitSkillGameplayEffect": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Jin_CantUseSkill_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantUseSkill.1"
+      },
+      "RecoverHPGameplayEffect": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Jin_RecoverHP_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_RecoverHP.0"
+      },
+      "DebugShowCurrentTimeValue": true,
+      "TriggerUltraSubSkillEventTags": [
+        "Event.Montage.Player.UltraSkill.Jin.CountSkill"
+      ],
+      "TriggerUltraSubSkillClearTimeTags": [
+        "Event.Montage.Player.UltraSkill.Jin.ClearTimeStop"
+      ],
+      "TriggerMeleeBreachTimeEventTags": [
+        "Event.Montage.Player.Melee.Jin.TimeSlomo",
+        "Event.Montage.Player.Melee.Jin.TimeSlomoEnd"
+      ],
+      "MeleeBreachTimeValueConsumptionPerSecond": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_JinEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_JinEffectFigure.0"
+          },
+          "RowName": "Jin_BranchTimeValueConsumePerSecond"
+        }
+      },
+      "FirstTimeStopEventTag": {
+        "TagName": "Ability.Player.Jin.FirstTimeStop"
+      },
+      "AccumulateKillEventTag": {
+        "TagName": "Ability.Player.Jin.AccumulateKill"
+      },
+      "TriggerEnterBattleEventTag": {
+        "TagName": "Ability.Player.Jin.ResetTime"
+      },
+      "GamePausedEvent": {
+        "ObjectName": "AkAudioEvent'Play_Sfx_Player_Wpn_Xun_SlowMotion_In'",
+        "ObjectPath": "/Game/WwiseAudio/Events/Weapon/Weapon_Xun/Play_Sfx_Player_Wpn_Xun_SlowMotion_In.0"
+      },
+      "GamePausedState": {
+        "ObjectName": "AkStateValue'SlowMotion-In'",
+        "ObjectPath": "/Game/WwiseAudio/States/Default_Work_Unit/SlowMotion/SlowMotion-In.0"
+      },
+      "GamePausedRTPC": {
+        "ObjectName": "AkRtpc'SlowMotion_BypassEffect'",
+        "ObjectPath": "/Game/WwiseAudio/Game_Parameters/Default_Work_Unit/Mixing/SlowMotion_BypassEffect.0"
+      },
+      "ResumeEvent": {
+        "ObjectName": "AkAudioEvent'Play_Sfx_Player_Wpn_Xun_SlowMotion_Out'",
+        "ObjectPath": "/Game/WwiseAudio/Events/Weapon/Weapon_Xun/Play_Sfx_Player_Wpn_Xun_SlowMotion_Out.0"
+      },
+      "ResumeState": {
+        "ObjectName": "AkStateValue'SlowMotion-Out'",
+        "ObjectPath": "/Game/WwiseAudio/States/Default_Work_Unit/SlowMotion/SlowMotion-Out.0"
+      },
+      "DissolveEndOffset": -40.0,
+      "BranchLimitGameplayEffect": {
+        "ObjectName": "BlueprintGeneratedClass'Buff_Jin_CantInteract_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_CantInteract.1"
+      },
+      "TriggerCharacterOverlayMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_GhostTrailMask_JinUS'",
+        "ObjectPath": "/Game/CoreMaterials/Character/Effect/MI_GhostTrailMask_JinUS.0"
+      }
+    }
+  },
+  {
+    "Type": "Player_052_Jin_C",
+    "Name": "Default__Player_052_Jin_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Character/Player/Player_052_Jin.Player_052_Jin_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerCharacterBase_C'Default__BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HTTrajectoryComponent": {
+        "ObjectName": "HTCharacterTrajectoryComponent'Default__Player_052_Jin_C:HTCharacterTrajectoryComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.13"
+      },
+      "GrantedAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Melee.GA_Jin_Melee_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_None"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Evade.GA_Jin_Evade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Melee"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Skill.GA_Jin_Skill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Evade"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill.GA_Jin_UltraSkill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Skill"
+        }
+      ],
+      "PassiveAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.GA_Common_SpawnTimeActor_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_Appear.GA_Jin_Appear_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_QTE.GA_Jin_QTE_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_PerfectEvade.GA_Jin_PerfectEvade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        }
+      ],
+      "HtMovementSetting": {
+        "fWalkSpeed": 95.0,
+        "fRunSpeed": 470.0,
+        "fSprintSpeed": 620.0
+      },
+      "MotionWarpingComponent": {
+        "ObjectName": "HTMotionWarpingComponent'Default__Player_052_Jin_C:MotionWarping'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.15"
+      },
+      "FirstPersonCameraBoom": null,
+      "FirstPersonFollowCamera": null,
+      "StateManagerComponent": {
+        "ObjectName": "HTCharacterStateManagerComponent'Default__Player_052_Jin_C:StateManagerComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.12"
+      },
+      "SilentCheckComponent": {
+        "ObjectName": "SilentCheckComponent'Default__Player_052_Jin_C:SilentCheckComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.26"
+      },
+      "DefaultCharacterID": "1052",
+      "SkillVideoID": "JinUltraSkill"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Player_052_Jin_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Player_052_Jin_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.24"
+      },
+      "VariableGUID": "56E993AE-4187D050-B0DF26A7-ECB83988",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SilentCheckComponent",
+    "Name": "SilentCheckComponent",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'SilentCheckComponent'",
+    "Template": {
+      "ObjectName": "SilentCheckComponent'Default__BP_PlayerCharacterBase_C:SilentCheckComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_052_Jin_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.2"
+      }
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Player_052_Jin_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Player_052_Jin_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_052_Jin.25"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FPCameraBoom",
+    "Outer": "Default__Player_052_Jin_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Template": {
+      "ObjectName": "SpringArmComponent'Default__BP_PlayerCharacterBase_C:FPCameraBoom'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.31"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": null
+    }
+  }
+]

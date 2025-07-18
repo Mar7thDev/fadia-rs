@@ -1,0 +1,7 @@
+udp_addr = "127.0.0.1:30150"
+
+[gameplay]
+map = "/Game/Maps/Map_bigworld/XL_map_bigworld_test"
+game_name = "/Game/Blueprints/GameMode/BP_HTGameMode.BP_HTGameMode_C"
+redirect_url = " -HybridMode=1"
+player_character = "Player_039_Fadia"

@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Cang_PerfectEvadeAtk_HitBack_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.AniState.Back"
+        ],
+        "Added": [
+          "State.AniState.Back"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Cang_PerfectEvadeAtk_HitBack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Cang_PerfectEvadeAtk_HitBack_C'Default__GE_Player_Cang_PerfectEvadeAtk_HitBack_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_PerfectEvadeAtk_HitBack.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Cang_PerfectEvadeAtk_HitBack_C",
+    "Name": "Default__GE_Player_Cang_PerfectEvadeAtk_HitBack_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_PerfectEvadeAtk_HitBack.GE_Player_Cang_PerfectEvadeAtk_HitBack_C'",
+    "Template": {
+      "ObjectName": "GE_SkillEffectBase_C'Default__GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectParam": [
+        {
+          "EventType": "ESkillEventType::SKILL_EVENT_AFTER_HIT",
+          "EffectObj": {
+            "ObjectName": "BlueprintGeneratedClass'CangHitBackPerfectEvadeAtk_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/Back/PlayerCang/CangHitBackPerfectEvadeAtk.0"
+          }
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.AniState.Back"
+        ],
+        "Added": [
+          "State.AniState.Back"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Cang_PerfectEvadeAtk_HitBack_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_PerfectEvadeAtk_HitBack.0"
+        }
+      ]
+    }
+  }
+]

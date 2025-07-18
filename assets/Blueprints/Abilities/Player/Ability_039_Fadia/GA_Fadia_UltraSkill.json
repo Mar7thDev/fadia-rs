@@ -1,0 +1,489 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Fadia_UltraSkill_C:ExecuteUbergraph_GA_Fadia_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Fadia_UltraSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.2"
+      },
+      {
+        "ObjectName": "Function'GA_Fadia_UltraSkill_C:ExecuteUbergraph_GA_Fadia_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Fadia_UltraSkill": {
+        "ObjectName": "Function'GA_Fadia_UltraSkill_C:ExecuteUbergraph_GA_Fadia_UltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Fadia_UltraSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Fadia_UltraSkill_C'Default__GA_Fadia_UltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Fadia_UltraSkill",
+    "Outer": "GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHTAbilitySystemComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilitySystemComponent'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHPCurrent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetFadiaQLimitHp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHPMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Fadia_UltraSkill_C",
+    "Name": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.GA_Fadia_UltraSkill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Fadia_UtraSkill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/LockRange/LockRange_Fadia_UtraSkill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "UltraSkill",
+          "Value": {
+            "ObjectName": "AnimMontage'Fadia_UltraSkill'",
+            "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Skill/Fadia_UltraSkill.4"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Fadia_dissolve'",
+            "ObjectPath": "/Game/Characters/Player/039_fadia/animation/Skill/Fadia_dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Fadia_UltraSkill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.9"
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityChargeCost'Default__GA_Fadia_UltraSkill_C:HTAbilityChargeCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.4"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Fadia_UltraSkill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.6"
+        },
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Fadia_UltraSkill_C:HTGAComponent_AddOrRemoveGE_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.7"
+        },
+        {
+          "ObjectName": "HTGAComponent_PlayAndStopVideo'Default__GA_Fadia_UltraSkill_C:HTGAComponent_PlayAndStopVideo_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.8"
+        },
+        {
+          "ObjectName": "HTGAComponent_AbilityGamePaused'Default__GA_Fadia_UltraSkill_C:HTGAComponent_AbilityGamePaused_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill.5"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Fadia_UltraSkill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/DamageRange/DamageRange_Fadia_UltraSkill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_UltraSkill1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill2_Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Effect/GE_Player_Fadia_UltraSkill2_Float.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Fadia_UltraSkill2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/DamageRange/DamageRange_Fadia_UltraSkill2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_UltraSkill2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill2_Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Effect/GE_Player_Fadia_UltraSkill2_Float.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Fadia_UltraSkill2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/DamageRange/DamageRange_Fadia_UltraSkill2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_UltraSkill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Fadia_UltraSkill_HitOut_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Effect/GE_Player_Fadia_UltraSkill_HitOut.1"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Fadia_UltraSkill"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.UltraSkill.F"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.UltraSkill.F"
+      ],
+      "AbilityTags": [
+        "Ability.UltraSkill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilityChargeCost",
+    "Name": "HTAbilityChargeCost_0",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilityChargeCost'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AbilityGamePaused",
+    "Name": "HTGAComponent_AbilityGamePaused_0",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AbilityGamePaused'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerEndEventTags": [
+        "Event.Montage.Player.Common.EndAbilitySkill"
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_1",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_PlayAndStopVideo",
+    "Name": "HTGAComponent_PlayAndStopVideo_0",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_PlayAndStopVideo'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VideoName": "FadiaUltraSkill"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Fadia_UltraSkill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "UltraSkill"
+    }
+  }
+]

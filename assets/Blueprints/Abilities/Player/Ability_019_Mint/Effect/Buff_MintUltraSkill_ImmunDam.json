@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_MintUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_MintUltraSkill_ImmunDam_C'Default__Buff_MintUltraSkill_ImmunDam_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_MintUltraSkill_ImmunDam_C",
+    "Name": "Default__Buff_MintUltraSkill_ImmunDam_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.Buff_MintUltraSkill_ImmunDam_C'",
+    "Template": {
+      "ObjectName": "Buff_UltraSkill_ImmuneDamage_C'Default__Buff_UltraSkill_ImmuneDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_SKILL_FINISH",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintUltraSkill_ImmunDam_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.0"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_MintUltraSkill_ImmunDam_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.4"
+        },
+        {
+          "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_MintUltraSkill_ImmunDam_C:ImmunityGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.2"
+        },
+        {
+          "ObjectName": "RemoveOtherGameplayEffectComponent'Default__Buff_MintUltraSkill_ImmunDam_C:RemoveOtherGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunDam.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ImmunityGameplayEffectComponent",
+    "Name": "ImmunityGameplayEffectComponent_1",
+    "Outer": "Default__Buff_MintUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'ImmunityGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:ImmunityGameplayEffectComponent_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "RemoveOtherGameplayEffectComponent",
+    "Name": "RemoveOtherGameplayEffectComponent_0",
+    "Outer": "Default__Buff_MintUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'RemoveOtherGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "RemoveOtherGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:RemoveOtherGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_MintUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:TargetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

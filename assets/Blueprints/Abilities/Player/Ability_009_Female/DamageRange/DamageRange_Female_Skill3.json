@@ -1,0 +1,46 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Female_Skill3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Female_Skill3_C'Default__DamageRange_Female_Skill3_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Skill3.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Female_Skill3_C",
+    "Name": "Default__DamageRange_Female_Skill3_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Skill3.DamageRange_Female_Skill3_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageBoxBase_C'Default__BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfSize": {
+        "X": 220.0,
+        "Y": 220.0,
+        "Z": 200.0
+      },
+      "SphereRadius": 220.0,
+      "MaxCount": 1,
+      "UseEventDataTarget": true
+    }
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Mint019_Skill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Mint019_Skill_C'Default__GA_Mint019_Skill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Mint019_Skill_C",
+    "Name": "Default__GA_Mint019_Skill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.GA_Mint019_Skill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Mint_Skill_New_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/LockRange/LockRange_Mint_Skill_New.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Dissolve.0"
+          }
+        },
+        {
+          "Key": "Skill",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Skill_01'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Skill_01.2"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Mint019_Skill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.3"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Begin",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Skill_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.5"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Mint019_Skill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.2"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Display.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_Level5_1_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Upgrade/Level5/Buff_Mint019_Level5_1.0"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_LevelExtra_AddEnergy_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Upgrade/LevelExtra/New/Buff_Mint019_LevelExtra_AddEnergy.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill2_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill2_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill1_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Skill1_Damage_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill1_Hit_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill1_Hit.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill3_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill3_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill1_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Skill1_Damage_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill1_Hit2_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill1_Hit2.1"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Mint019_Skill"
+        }
+      },
+      "CancelCooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "CoolDownBreak"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.Skill.ShortPress",
+        "CoolDown.Player.Skill.Mint"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.ShortPress",
+        "CoolDown.Player.Skill.Mint"
+      ],
+      "AbilityTags": [
+        "Ability.Skill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Mint019_Skill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerEndEventTags": [
+        "Event.Montage.Player.Common.EndAbilitySkill"
+      ],
+      "EndAbilityRemoveGEs": [
+        null
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Mint019_Skill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Skill"
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_SkillEnd_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_Mint019_SkillEnd.0"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "End"
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Mint019_Skill_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Mint019_Skill_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Skill.4"
+        }
+      ]
+    }
+  }
+]

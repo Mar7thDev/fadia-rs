@@ -1,0 +1,97 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Hathor_Skill6_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Hathor_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.TriggerParry",
+          "State.Damage.Skill",
+          "Ability.Player.Hathor.Skill2"
+        ],
+        "Added": [
+          "State.Damage.TriggerParry",
+          "State.Damage.Skill",
+          "Ability.Player.Hathor.Skill2"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Hathor_Skill6_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Hathor_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Hathor_Skill6_Damage_C'Default__GE_Player_Hathor_Skill6_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill6_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Hathor_Skill6_Damage_C",
+    "Name": "Default__GE_Player_Hathor_Skill6_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill6_Damage.GE_Player_Hathor_Skill6_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Hathor_DamageBase_C'Default__GE_Hathor_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationTime": 0.083333,
+        "AttackDilationRate": 0.25
+      },
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShakeHitLight_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/CameraShakeHitLight.0"
+        }
+      },
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Combat.Hathor.Skill"
+      ],
+      "HitWhiteEffectID": "Orange_HitRightShort",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.TriggerParry",
+          "State.Damage.Skill",
+          "Ability.Player.Hathor.Skill2"
+        ],
+        "Added": [
+          "State.Damage.TriggerParry",
+          "State.Damage.Skill",
+          "Ability.Player.Hathor.Skill2"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Hathor_Skill6_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill6_Damage.0"
+        }
+      ]
+    }
+  }
+]

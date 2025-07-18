@@ -1,0 +1,470 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Player_051_Female_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Player_051_Female_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.20"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Player_051_Female_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.15"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Player_051_Female_C'Default__Player_051_Female_C'",
+      "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.16"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FPFollowCamera",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Template": {
+      "ObjectName": "CameraComponent'Default__BP_PlayerCharacterBase_C:FPFollowCamera'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": null
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_PlayerCharacterBase_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 82.0,
+      "CapsuleRadius": 29.5,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Projectile",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "ECC_MeleeTrace",
+              "Response": "ECollisionResponse::ECR_Block"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "GameplayAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'GameplayAttributeSet'",
+    "Template": {
+      "ObjectName": "GameplayAttributeSet'Default__BP_PlayerCharacterBase_C:AttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GhostTrailComponent",
+    "Name": "GhostTrail",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'GhostTrailComponent'",
+    "Template": {
+      "ObjectName": "GhostTrailComponent'Default__BP_PlayerCharacterBase_C:GhostTrail'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "HTAbilitySystemComponent'Default__BP_PlayerCharacterBase_C:AbilitySystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterStateManagerComponent",
+    "Name": "StateManagerComponent",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTCharacterStateManagerComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterStateManagerComponent'Default__BP_PlayerCharacterBase_C:StateManagerComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterTrajectoryComponent",
+    "Name": "HTCharacterTrajectoryComponent",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTCharacterTrajectoryComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterTrajectoryComponent'Default__BP_PlayerCharacterBase_C:HTCharacterTrajectoryComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTFluxInteractionComponent",
+    "Name": "HTFluxInteraction",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTFluxInteractionComponent'",
+    "Template": {
+      "ObjectName": "HTFluxInteractionComponent'Default__BP_PlayerCharacterBase_C:HTFluxInteraction'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMotionWarpingComponent",
+    "Name": "MotionWarping",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTMotionWarpingComponent'",
+    "Template": {
+      "ObjectName": "HTMotionWarpingComponent'Default__BP_PlayerCharacterBase_C:MotionWarping'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTPlayerAttributeSet",
+    "Name": "HTCharacterAttributeSet",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTPlayerAttributeSet'",
+    "Template": {
+      "ObjectName": "HTPlayerAttributeSet'Default__BP_PlayerCharacterBase_C:HTCharacterAttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DeathAnimation": {
+        "ObjectName": "AnimMontage'char_f_die_stand_Montage'",
+        "ObjectPath": "/Game/Characters/Player/051_female/animation/Hit/char_f_die_stand_Montage.0"
+      },
+      "HalfHitMontage": {
+        "ObjectName": "AnimMontage'char_f_combat_halfhit_Montage'",
+        "ObjectPath": "/Game/Characters/Player/051_female/animation/Hit/char_f_combat_halfhit_Montage.0"
+      },
+      "HitBackMontage": {
+        "ObjectName": "AnimMontage'Female051_Hitback_Montage'",
+        "ObjectPath": "/Game/Characters/Player/051_female/animation/Hit/Female051_Hitback_Montage.0"
+      },
+      "HitDownMontage": {
+        "ObjectName": "AnimMontage'Female051_Heavyhit_Montage'",
+        "ObjectPath": "/Game/Characters/Player/051_female/animation/Hit/Female051_Heavyhit_Montage.0"
+      },
+      "ChainRestrainMontage": {
+        "ObjectName": "AnimMontage'char_f_combat_linkrest_Montage'",
+        "ObjectPath": "/Game/Characters/Player/051_female/animation/Hit/char_f_combat_linkrest_Montage.0"
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTPlayerCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "HTPlayerCharacterMovementComponent'Default__BP_PlayerCharacterBase_C:CharMoveComp'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "fMaxImmersionDepth": 0.73,
+      "ImmersionPercentEnterSwim": 0.73
+    }
+  },
+  {
+    "Type": "HtRotationDetection",
+    "Name": "RotationDetection",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HtRotationDetection'",
+    "Template": {
+      "ObjectName": "HtRotationDetection'Default__BP_PlayerCharacterBase_C:RotationDetection'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Template": {
+      "ObjectName": "HTSkeletalMeshComponentBudgeted'Default__BP_PlayerCharacterBase_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Player051_Female_AnimBP_C'",
+        "ObjectPath": "/Game/Characters/Player/051_female/Player051_Female_AnimBP.0"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_051_Female_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.2"
+      },
+      "RelativeLocation": {
+        "X": -4.3871708E-08,
+        "Y": 1.6144137E-16,
+        "Z": -84.0
+      }
+    }
+  },
+  {
+    "Type": "HTSkillEffectComponent",
+    "Name": "SkillEffectComponent",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'HTSkillEffectComponent'",
+    "Template": {
+      "ObjectName": "HTSkillEffectComponent'Default__BP_PlayerCharacterBase_C:SkillEffectComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Player_051_Female_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Player_051_Female_C",
+    "Name": "Default__Player_051_Female_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Character/Player/Player_051_Female.Player_051_Female_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerCharacterBase_C'Default__BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BodyType": "EBodyType::FemaleBodyType_LevelThree",
+      "VaultAsset": {
+        "HighHeight": 500.0
+      },
+      "HTTrajectoryComponent": {
+        "ObjectName": "HTCharacterTrajectoryComponent'Default__Player_051_Female_C:HTCharacterTrajectoryComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.7"
+      },
+      "GrantedAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.GA_Female051_Melee_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_None"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade.GA_Female051_Evade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Melee"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Skill.GA_Female051_Skill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Evade"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_UltraSkill.GA_Female051_UltraSkill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Skill"
+        }
+      ],
+      "PassiveAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.GA_Common_SpawnTimeActor_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.GA_Female051_Appear_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.GA_Female051_QTE_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.GA_Female051_ExtremEvadeAtk_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        }
+      ],
+      "HtMovementSetting": {
+        "fWalkSpeed": 90.0
+      },
+      "MotionWarpingComponent": {
+        "ObjectName": "HTMotionWarpingComponent'Default__Player_051_Female_C:MotionWarping'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.9"
+      },
+      "FirstPersonCameraBoom": null,
+      "FirstPersonFollowCamera": null,
+      "StateManagerComponent": {
+        "ObjectName": "HTCharacterStateManagerComponent'Default__Player_051_Female_C:StateManagerComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.6"
+      },
+      "SilentCheckComponent": {
+        "ObjectName": "SilentCheckComponent'Default__Player_051_Female_C:SilentCheckComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.19"
+      },
+      "DefaultCharacterID": "1051",
+      "SkillVideoID": "FemaleUltralSkill",
+      "HTFluxSolverComponent": {
+        "ObjectName": "HTFluxInteractionComponent'Default__Player_051_Female_C:HTFluxInteraction'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.8"
+      },
+      "HTAbilitySystemComponent": {
+        "ObjectName": "HTSkillEffectComponent'Default__Player_051_Female_C:SkillEffectComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.14"
+      },
+      "AbilityAttributeSet": {
+        "ObjectName": "HTAbilitySystemComponent'Default__Player_051_Female_C:AbilitySystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.5"
+      },
+      "GhostTrailComponent": {
+        "ObjectName": "GameplayAttributeSet'Default__Player_051_Female_C:AttributeSet'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.3"
+      },
+      "MassAgentComponent": null,
+      "CurrentWeapon": {
+        "ObjectName": "HTPlayerAttributeSet'Default__Player_051_Female_C:HTCharacterAttributeSet'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.10"
+      },
+      "LockTargetSocket": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Evade_8",
+      "bShowAzimuthindicator": false,
+      "CharacterMovement": null,
+      "CapsuleComponent": null,
+      "BasedMovement": {}
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Player_051_Female_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Player_051_Female_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.17"
+      },
+      "VariableGUID": "56E993AE-4187D050-B0DF26A7-ECB83988",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SilentCheckComponent",
+    "Name": "SilentCheckComponent",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'SilentCheckComponent'",
+    "Template": {
+      "ObjectName": "SilentCheckComponent'Default__BP_PlayerCharacterBase_C:SilentCheckComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__Player_051_Female_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.2"
+      }
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Player_051_Female_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Player_051_Female_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/Player_051_Female.18"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FPCameraBoom",
+    "Outer": "Default__Player_051_Female_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Template": {
+      "ObjectName": "SpringArmComponent'Default__BP_PlayerCharacterBase_C:FPCameraBoom'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.31"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": null
+    }
+  }
+]

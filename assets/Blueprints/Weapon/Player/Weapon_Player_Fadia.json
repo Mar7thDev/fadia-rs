@@ -1,0 +1,663 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Fadia_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Fadia_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FuncMap": {
+      "K2_GetCustomUnEquipMontageSectionName": {
+        "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Fadia_C'Default__Weapon_Player_Fadia_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.10"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_GetCustomUnEquipMontageSectionName",
+    "Outer": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'WeaponBase:K2_GetCustomUnEquipMontageSectionName'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 0,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetOwner_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Actor'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'Actor:GetOwner'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 20,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTPlayerCharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTPlayerCharacter'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_GetOwner_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'Actor'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 56,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTPlayerCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 85,
+        "CodeOffset": 171,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.K2_GetCustomUnEquipMontageSectionName[171]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 99,
+        "CodeOffset": 207,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.K2_GetCustomUnEquipMontageSectionName[207]",
+        "BooleanExpression": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTPlayerCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 9,
+          "RValuePointer": {
+            "Path": [
+              "bCanTransitionNewFightLeisure"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'HTPlayerCharacter'",
+              "ObjectPath": "/Script/HTGame"
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_InstanceVariable",
+            "Variable": {
+              "Path": [
+                "bCanTransitionNewFightLeisure"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'HTPlayerCharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 135,
+        "Variable": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "NameProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 12,
+              "PropertyFlags": "Parm | OutParm | ReturnParm"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_NameConst",
+          "Value": "NoWeapon"
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 166,
+        "CodeOffset": 238,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.K2_GetCustomUnEquipMontageSectionName[238]"
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 171,
+        "Variable": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "NameProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 12,
+              "PropertyFlags": "Parm | OutParm | ReturnParm"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_NameConst",
+          "Value": "Weapon"
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 202,
+        "CodeOffset": 238,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.K2_GetCustomUnEquipMontageSectionName[238]"
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 207,
+        "Variable": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "NameProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 12,
+              "PropertyFlags": "Parm | OutParm | ReturnParm"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_NameConst",
+          "Value": "Weapon"
+        }
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 238,
+        "Expression": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Fadia_C:K2_GetCustomUnEquipMontageSectionName'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.1"
+            },
+            "Property": {
+              "Type": "NameProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 12,
+              "PropertyFlags": "Parm | OutParm | ReturnParm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 248
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "SocketName": "GrassInteract",
+          "Radius": 200.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Player_Fadia_AB_C'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/Weapon_Player_fadia/Weapon_Player_Fadia_AB.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_Fadia_skin'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/Weapon_Player_fadia/Weapon_Player_Fadia_skin.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_Fadia_skin'",
+        "ObjectPath": "/Game/Characters/Player/039_fadia/Weapon_Player_fadia/Weapon_Player_Fadia_skin.1"
+      },
+      "bReceivesDecals": false,
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Fadia_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.5"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Fadia_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.3"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "828EFF74-45FF106E-18E254AF-2E450D44",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Fadia_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Fadia_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Fadia_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.6"
+      }
+    }
+  },
+  {
+    "Type": "SocketFieldInteraction",
+    "Name": "SocketFieldInteraction_0",
+    "Outer": "Default__Weapon_Player_Fadia_C",
+    "Class": "UScriptClass'SocketFieldInteraction'",
+    "Properties": {
+      "WindFieldParams": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "Mesh": null,
+          "SocketName": "GrassInteract",
+          "WindStrength": 200.0,
+          "WindRadius": 50.0,
+          "SocketOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "duration": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Weapon_Player_Fadia_C",
+    "Name": "Default__Weapon_Player_Fadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.Weapon_Player_Fadia_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "Weapon_Player_Fadia"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Fadia/NS_Player_Fadia__packup_01.NS_Player_Fadia__packup_01",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Weapon_Player_Fadia",
+            "Attached": false,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": false,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Player_Fadia_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.2"
+      },
+      "WindInteraction": {
+        "ObjectName": "SocketFieldInteraction'Default__Weapon_Player_Fadia_C:SocketFieldInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Fadia.9"
+      },
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionNew_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionNew.0"
+        },
+        "DLWE_Size": 80.0,
+        "BindSocketName": "GrassInteract"
+      }
+    }
+  }
+]

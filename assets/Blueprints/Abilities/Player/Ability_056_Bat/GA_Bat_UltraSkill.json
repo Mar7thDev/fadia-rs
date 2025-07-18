@@ -1,0 +1,402 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Bat_UltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Bat_UltraSkill_C'Default__GA_Bat_UltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.18"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_2",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_3",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_BatTargetPoint",
+    "Name": "FindSpawnLocationObj_BatTargetPoint_4",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_BatTargetPoint'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_6"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_1"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_2",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_2"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_3",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_3"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_4",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_4"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_5",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_5"
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_OwnerMesh",
+    "Name": "FindSpawnRotationObj_OwnerMesh_4",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_OwnerMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bat_Skill1_4"
+    }
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_2",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_3",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_4",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Bat_UltraSkill_C",
+    "Name": "Default__GA_Bat_UltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.GA_Bat_UltraSkill_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Mint_Melee_New_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/LockRange/LockRange_Mint_Melee_New.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "Skill",
+          "Value": {
+            "ObjectName": "AnimMontage'Bat_Skill'",
+            "ObjectPath": "/Game/Characters/Monster/boss_18/boss_18_player01/animation/Bat_Skill.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Bat_UltraSkill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.21"
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityChargeCost'Default__GA_Bat_UltraSkill_C:HTAbilityChargeCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.19"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.20"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1"
+          },
+          "Value": {
+            "TargetType": null,
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Nanally_BranchPraojectile_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Damage/GE_Player_Nanally_BranchPraojectile_Damage.1"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true,
+      "AbilityTags": [
+        "Ability.UltraSkill"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityChargeCost",
+    "Name": "HTAbilityChargeCost_0",
+    "Outer": "Default__GA_Bat_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilityChargeCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Bat_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.7"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.2"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnScaleObj_Param_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.15"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.8"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.1"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnScaleObj_Param_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.14"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_3'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.9"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.3"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnScaleObj_Param_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.13"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_4'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.10"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_OwnerMesh'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnRotationObj_OwnerMesh_4'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.12"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_5'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.11"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_3'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.4"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnScaleObj_Param_3'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.16"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BulletActor_BatUltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/Actor/BulletActor_BatUltraSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.6"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnLocationObj_BatTargetPoint'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_BatTargetPoint_4'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.5"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Bat_UltraSkill_C:HTAbilitySpawnProjectiles_0.FindSpawnScaleObj_Param_4'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_056_Bat/GA_Bat_UltraSkill.17"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Bat_UltraSkill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Skill"
+    }
+  }
+]

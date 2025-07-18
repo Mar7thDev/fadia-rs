@@ -1,0 +1,978 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Skia_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Skia_Melee_C'Default__GA_Skia_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 300.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "NeedCheckFloor": true,
+      "DownCheckDis": 300.0
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 300.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Skia_Melee_C",
+    "Name": "Default__GA_Skia_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.GA_Skia_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Skia_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/LockRange/LockRange_Skia_Melee.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 150.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/LockRange/LockRange_Skia_Melee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_001'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_001.1"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_002'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_002.1"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_003'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_003.3"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_004'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_004.3"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_005'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_005.2"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_AirAttackEnd.1"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Melee_Pre'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Melee_Pre.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Dissolve.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_AppearMelee'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_AppearMelee.1"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Skia_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.8"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Skia_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.9"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Skia_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.10"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.22"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.23"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.29"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.25"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.26"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.27"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.28"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.24"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_9'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.30"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.21"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "AirAttackEnd"
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.6"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.7"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee2_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee2_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee3_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee3_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee4_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee4_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee5_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee5_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee3_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee3_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee6_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee6_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee6_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee6_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee8_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee8_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee8_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee8_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee5_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_AirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_AirAttack_Damage.1"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true,
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorSkiaMelee9_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Actor/DamageActorSkiaMelee9.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.3"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerSkiaMelee9",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee9_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee9.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee9_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee9_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee9_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee9_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_1",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorSkiaMelee7_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Actor/DamageActorSkiaMelee7.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Skia_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.4"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerSkiaMelee7",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Melee7_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Melee7.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee7_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Melee7_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Melee7_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Melee7_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 400.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.35,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.25,
+          "Y": 0.4
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.28
+        },
+        {
+          "X": 0.3,
+          "Y": 0.9
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.4
+        },
+        {
+          "X": 0.5,
+          "Y": 0.8
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.52,
+          "Y": 0.6
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.2,
+          "Y": 0.34
+        },
+        {
+          "X": 0.56,
+          "Y": 0.7
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.24,
+          "Y": 0.4
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Skia_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_6.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_9",
+    "Outer": "Default__GA_Skia_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Skia_Melee_C:SkillJumpSectionData_9.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Melee.20"
+        }
+      ]
+    }
+  }
+]

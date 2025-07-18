@@ -1,0 +1,141 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_HathorAnger_Gaze_GuangXiang_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_HathorAnger_Gaze_GuangXiang_C'Default__Buff_HathorAnger_Gaze_GuangXiang_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_GuangXiang.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_HathorAnger_Gaze_GuangXiang_C",
+    "Name": "Default__Buff_HathorAnger_Gaze_GuangXiang_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_GuangXiang.Buff_HathorAnger_Gaze_GuangXiang_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_FINISH",
+          "EffectType": "EBuffEffectType::BUFF_ADD",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": true,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_GuangXiangFive_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_GuangXiangFive_Damage.1"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": {
+            "ObjectName": "BlueprintGeneratedClass'Con_Hathor_Gaze_GuangXiangFiveDmg_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Hathor/Con_Hathor_Gaze_GuangXiangFiveDmg.0"
+          }
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 1.0,
+          "Curve": {
+            "CurveTable": {
+              "ObjectName": "CurveTable'DT_HathorEffectFigure'",
+              "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_HathorEffectFigure.0"
+            },
+            "RowName": "Buff_HathorAnger_Gaze_Duration"
+          }
+        }
+      },
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "Ability.Player.Buff.Reaction.GuangXiangSix"
+        ],
+        "Added": [
+          "Ability.Player.Buff.Reaction.GuangXiangSix"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_HathorAnger_Gaze_GuangXiang_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_GuangXiang.3"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__Buff_HathorAnger_Gaze_GuangXiang_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_GuangXiang.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__Buff_HathorAnger_Gaze_GuangXiang_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Hathor_Gaze_GuangXiang_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Hathor/Con_Hathor_Gaze_GuangXiang.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_HathorAnger_Gaze_GuangXiang_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "Ability.Player.Buff.Reaction.GuangXiangSix"
+        ],
+        "Added": [
+          "Ability.Player.Buff.Reaction.GuangXiangSix"
+        ]
+      }
+    }
+  }
+]

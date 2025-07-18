@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Female_UltraSkill2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Female_UltraSkill2_C'Default__DamageRange_Female_UltraSkill2_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_UltraSkill2.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Female_UltraSkill2_C",
+    "Name": "Default__DamageRange_Female_UltraSkill2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_UltraSkill2.DamageRange_Female_UltraSkill2_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageBoxBase_C'Default__BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfSize": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 300.0
+      }
+    }
+  }
+]

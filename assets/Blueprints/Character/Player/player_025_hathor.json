@@ -1,0 +1,706 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "player_025_hathor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'player_025_hathor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.25"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'player_025_hathor_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'player_025_hathor_C:ExecuteUbergraph_player_025_hathor'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'player_025_hathor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.5"
+      },
+      {
+        "ObjectName": "Function'player_025_hathor_C:ExecuteUbergraph_player_025_hathor'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UltraSkillBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_player_025_hathor": {
+        "ObjectName": "Function'player_025_hathor_C:ExecuteUbergraph_player_025_hathor'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'player_025_hathor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "player_025_hathor_C'Default__player_025_hathor_C'",
+      "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.20"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "UltraSkillBox_GEN_VARIABLE",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 250.0,
+        "Z": 150.0
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "DamageCheck",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -50.0,
+        "Y": 200.0,
+        "Z": 0.0
+      },
+      "ComponentTags": [
+        "UltraSkillBoxTag"
+      ]
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FPFollowCamera",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Template": {
+      "ObjectName": "CameraComponent'Default__BP_PlayerCharacterBase_C:FPFollowCamera'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__player_025_hathor_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.26"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BP_PlayerCharacterBase_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CapsuleHalfHeight": 82.0,
+      "CapsuleRadius": 30.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_player_025_hathor",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GameplayAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'GameplayAttributeSet'",
+    "Template": {
+      "ObjectName": "GameplayAttributeSet'Default__BP_PlayerCharacterBase_C:AttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.12"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GhostTrailComponent",
+    "Name": "GhostTrail",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'GhostTrailComponent'",
+    "Template": {
+      "ObjectName": "GhostTrailComponent'Default__BP_PlayerCharacterBase_C:GhostTrail'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "FoliageInteraction",
+          "SocketName": "FoliageInteractionL",
+          "Radius": 150.0
+        },
+        {
+          "MeshTag": "FoliageInteraction",
+          "SocketName": "FoliageInteractionR",
+          "Radius": 150.0
+        },
+        {
+          "MeshTag": "FoliageInteraction",
+          "SocketName": "FoliageInteractionFootL",
+          "Radius": 150.0
+        },
+        {
+          "MeshTag": "FoliageInteractionFoot",
+          "SocketName": "FoliageInteractionFootR",
+          "Radius": 150.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTAbilitySystemComponent'",
+    "Template": {
+      "ObjectName": "HTAbilitySystemComponent'Default__BP_PlayerCharacterBase_C:AbilitySystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.14"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTCharacterStateManagerComponent",
+    "Name": "StateManagerComponent",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTCharacterStateManagerComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterStateManagerComponent'Default__BP_PlayerCharacterBase_C:StateManagerComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PrimaryComponentTick": {
+        "TickInterval": 0.016667
+      }
+    }
+  },
+  {
+    "Type": "HTCharacterTrajectoryComponent",
+    "Name": "HTCharacterTrajectoryComponent",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTCharacterTrajectoryComponent'",
+    "Template": {
+      "ObjectName": "HTCharacterTrajectoryComponent'Default__BP_PlayerCharacterBase_C:HTCharacterTrajectoryComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.16"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTFluxInteractionComponent",
+    "Name": "HTFluxInteraction",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTFluxInteractionComponent'",
+    "Template": {
+      "ObjectName": "HTFluxInteractionComponent'Default__BP_PlayerCharacterBase_C:HTFluxInteraction'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.17"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMotionWarpingComponent",
+    "Name": "MotionWarping",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTMotionWarpingComponent'",
+    "Template": {
+      "ObjectName": "HTMotionWarpingComponent'Default__BP_PlayerCharacterBase_C:MotionWarping'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.18"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTPlayerAttributeSet",
+    "Name": "HTCharacterAttributeSet",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTPlayerAttributeSet'",
+    "Template": {
+      "ObjectName": "HTPlayerAttributeSet'Default__BP_PlayerCharacterBase_C:HTCharacterAttributeSet'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.19"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DeathAnimation": {
+        "ObjectName": "AnimMontage'DieMontage'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/DieMontage.0"
+      },
+      "HalfHitMontage": {
+        "ObjectName": "AnimMontage'Hathor_HalfHitMontage'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Hit/Hathor_HalfHitMontage.0"
+      },
+      "HitBackMontage": {
+        "ObjectName": "AnimMontage'Hathor_HitBackMontage'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Hit/Hathor_HitBackMontage.0"
+      },
+      "HitDownMontage": {
+        "ObjectName": "AnimMontage'Hathor_HeavyHit'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Hit/Hathor_HeavyHit.0"
+      },
+      "ChainRestrainMontage": {
+        "ObjectName": "AnimMontage'char_f_combat_linkrest_Montage'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Hit/char_f_combat_linkrest_Montage.0"
+      }
+    }
+  },
+  {
+    "Type": "HTPlayerCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTPlayerCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "HTPlayerCharacterMovementComponent'Default__BP_PlayerCharacterBase_C:CharMoveComp'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.20"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "fMaxImmersionDepth": 0.72,
+      "ImmersionPercentEnterSwim": 0.72,
+      "JumpZVelocity": 2000.0,
+      "MaxFlySpeed": 2000.0
+    }
+  },
+  {
+    "Type": "HtRotationDetection",
+    "Name": "RotationDetection",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HtRotationDetection'",
+    "Template": {
+      "ObjectName": "HtRotationDetection'Default__BP_PlayerCharacterBase_C:RotationDetection'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.21"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Template": {
+      "ObjectName": "HTSkeletalMeshComponentBudgeted'Default__BP_PlayerCharacterBase_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.22"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Player025_Hathor_AnimBP_C'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Player025_Hathor_AnimBP.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_025_hathor_skin'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/player_025_hathor_skin.84"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_025_hathor_skin'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/player_025_hathor_skin.84"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__player_025_hathor_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.3"
+      },
+      "RelativeLocation": {
+        "X": -4.3871708E-08,
+        "Y": 1.6144137E-16,
+        "Z": -84.0
+      },
+      "ComponentTags": [
+        "FoliageInteraction"
+      ]
+    }
+  },
+  {
+    "Type": "HTSkillEffectComponent",
+    "Name": "SkillEffectComponent",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'HTSkillEffectComponent'",
+    "Template": {
+      "ObjectName": "HTSkillEffectComponent'Default__BP_PlayerCharacterBase_C:SkillEffectComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.23"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "player_025_hathor_C",
+    "Name": "Default__player_025_hathor_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Character/Player/player_025_hathor.player_025_hathor_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerCharacterBase_C'Default__BP_PlayerCharacterBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BodyType": "EBodyType::FemaleBodyType_LevelThree",
+      "VaultAsset": {
+        "HighHeight": 500.0
+      },
+      "HTTrajectoryComponent": {
+        "ObjectName": "HTCharacterTrajectoryComponent'Default__player_025_hathor_C:HTCharacterTrajectoryComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.11"
+      },
+      "GrantedAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Melee.GA_Hathor_Melee_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_None"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Evade.GA_Hathor_Evade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Melee"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.GA_Hathor_Skill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Evade"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_UltraSkill.GA_Hathor_UltraSkill_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::InputID_Skill"
+        }
+      ],
+      "PassiveAbilities": [
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Common/GA_Common_SpawnTimeActor.GA_Common_SpawnTimeActor_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Appear.GA_Hathor_Appear_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_QTE.GA_Hathor_QTE_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        },
+        {
+          "AbilityClass": {
+            "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_PerfectEvade.GA_Hathor_PerfectEvade_C",
+            "SubPathString": ""
+          },
+          "InputID": "ESkillInputIDType::255"
+        }
+      ],
+      "PassiveBuffs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Hathor_BasePas_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_Hathor_BasePas.0"
+        }
+      ],
+      "MotionWarpingComponent": {
+        "ObjectName": "HTMotionWarpingComponent'Default__player_025_hathor_C:MotionWarping'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.13"
+      },
+      "FirstPersonCameraBoom": {
+        "ObjectName": "SpringArmComponent'Default__player_025_hathor_C:FPCameraBoom'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.26"
+      },
+      "FirstPersonFollowCamera": {
+        "ObjectName": "CameraComponent'Default__player_025_hathor_C:FPFollowCamera'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.2"
+      },
+      "StateManagerComponent": {
+        "ObjectName": "HTCharacterStateManagerComponent'Default__player_025_hathor_C:StateManagerComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.10"
+      },
+      "SilentCheckComponent": {
+        "ObjectName": "SilentCheckComponent'Default__player_025_hathor_C:SilentCheckComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.24"
+      },
+      "DefaultCharacterID": "1025",
+      "SkillVideoID": "HathorUltraSkill",
+      "GuideNPCData": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__player_025_hathor_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.8"
+      },
+      "HTFluxSolverComponent": {
+        "ObjectName": "HTFluxInteractionComponent'Default__player_025_hathor_C:HTFluxInteraction'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.12"
+      },
+      "HTAbilitySystemComponent": {
+        "ObjectName": "HTSkillEffectComponent'Default__player_025_hathor_C:SkillEffectComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.18"
+      },
+      "AbilityAttributeSet": {
+        "ObjectName": "HTAbilitySystemComponent'Default__player_025_hathor_C:AbilitySystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.9"
+      },
+      "GhostTrailComponent": {
+        "ObjectName": "GameplayAttributeSet'Default__player_025_hathor_C:AttributeSet'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.6"
+      },
+      "MassAgentComponent": null,
+      "CurrentWeapon": {
+        "ObjectName": "HTPlayerAttributeSet'Default__player_025_hathor_C:HTCharacterAttributeSet'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.14"
+      },
+      "LockTargetSocket": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Evade_8",
+      "bShowAzimuthindicator": false,
+      "CharacterMovement": null,
+      "CapsuleComponent": null,
+      "BasedMovement": {}
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'player_025_hathor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.21"
+      },
+      "VariableGUID": "56E993AE-4187D050-B0DF26A7-ECB83988",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'player_025_hathor_C:UltraSkillBox_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.1"
+      },
+      "AttachToName": "Bip001-Pelvis",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGUID": "1A310946-43BE60F9-1524D2A2-93A556AC",
+      "InternalVariableName": "UltraSkillBox"
+    }
+  },
+  {
+    "Type": "SilentCheckComponent",
+    "Name": "SilentCheckComponent",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'SilentCheckComponent'",
+    "Template": {
+      "ObjectName": "SilentCheckComponent'Default__BP_PlayerCharacterBase_C:SilentCheckComponent'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.29"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__player_025_hathor_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.3"
+      }
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "player_025_hathor_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'player_025_hathor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'player_025_hathor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'player_025_hathor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.22"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FPCameraBoom",
+    "Outer": "Default__player_025_hathor_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Template": {
+      "ObjectName": "SpringArmComponent'Default__BP_PlayerCharacterBase_C:FPCameraBoom'",
+      "ObjectPath": "/Game/Blueprints/Share/Character/Player/BP_PlayerCharacterBase.31"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__player_025_hathor_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Blueprints/Character/Player/player_025_hathor.3"
+      }
+    }
+  }
+]

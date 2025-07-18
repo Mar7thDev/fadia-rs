@@ -1,0 +1,379 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Female046_Appear_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_Female051_Appear_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Female046_Appear_C'Default__GA_Female046_Appear_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Female046_Appear_C",
+    "Name": "Default__GA_Female046_Appear_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.GA_Female046_Appear_C'",
+    "Template": {
+      "ObjectName": "GA_Female051_Appear_C'Default__GA_Female051_Appear_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "Appear",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_appear_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_appear_Montage.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_dissolve_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_dissolve_Montage.0"
+          }
+        },
+        {
+          "Key": "Appear_Parry",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_Appear_Parry_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_Appear_Parry_Montage.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Female046_Appear_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.5"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Female046_Appear_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.6"
+        },
+        {
+          "ObjectName": "HTMontageSelect_BeParryDuration'Default__GA_Female046_Appear_C:HTMontageSelect_BeParryDuration_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.4"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Appear",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Appear_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.12"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Appear_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.13"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Appear_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.14"
+          }
+        },
+        {
+          "Key": "Appear_Parry",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_Appear_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.16"
+          }
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Female046_Appear_C:HTGAComponent_ActivateSetLocation_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.2"
+        },
+        {
+          "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Female046_Appear_C:HTGAComponent_CheckActivateCondition_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.3"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_AirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Damage/GE_Player_Female046_AirAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Effect/GE_Player_Female046_Melee1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Damage/GE_Player_Female046_Melee1_Damage.1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_ActivateSetLocation",
+    "Name": "HTGAComponent_ActivateSetLocation_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'HTGAComponent_ActivateSetLocation'",
+    "Template": {
+      "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Female051_Appear_C:HTGAComponent_ActivateSetLocation_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_CheckActivateCondition",
+    "Name": "HTGAComponent_CheckActivateCondition_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'HTGAComponent_CheckActivateCondition'",
+    "Template": {
+      "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Female051_Appear_C:HTGAComponent_CheckActivateCondition_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.3"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_BeParryDuration",
+    "Name": "HTMontageSelect_BeParryDuration_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_BeParryDuration'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_BeParryDuration'Default__GA_Female051_Appear_C:HTMontageSelect_BeParryDuration_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.4"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Default'Default__GA_Female051_Appear_C:HTMontageSelect_Default_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.5"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Falling'Default__GA_Female051_Appear_C:HTMontageSelect_Falling_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.6"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_AutoAttackTarget",
+    "Name": "JumpSection_AutoAttackTarget_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_AutoAttackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AppearMelee",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female046_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Melee.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_AutoAttackTarget",
+    "Name": "JumpSection_AutoAttackTarget_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_AutoAttackTarget'",
+    "Template": {
+      "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Female051_Appear_C:SkillJumpSectionData_3.JumpSection_AutoAttackTarget_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.7"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Template": {
+      "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female051_Appear_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.8"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Template": {
+      "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female051_Appear_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.9"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Template": {
+      "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Appear_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.10"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.4
+        }
+      ],
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female046_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Female046_Appear_C:SkillJumpSectionData_0.JumpSection_AutoAttackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Appear_C:SkillJumpSectionData_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.11"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female046_Appear_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Appear_C:SkillJumpSectionData_2'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.12"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female046_Appear_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Appear_C:SkillJumpSectionData_3'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.13"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Female046_Appear_C:SkillJumpSectionData_3.JumpSection_AutoAttackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Female046_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Appear_C:SkillJumpSectionData_4'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Appear.14"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female046_Appear_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_Appear.11"
+        }
+      ]
+    }
+  }
+]

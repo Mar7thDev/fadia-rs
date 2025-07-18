@@ -1,0 +1,266 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Skia_ShadowEvade_C'Default__GA_Skia_ShadowEvade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Skia_ShadowEvade_C",
+    "Name": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.GA_Skia_ShadowEvade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_skia_skill_evadeback_Montage'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/char_skia_skill_evadeback_Montage.0"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'char_skia_skill_evadeforward_Montage'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/char_skia_skill_evadeforward_Montage.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Dissolve.0"
+          }
+        },
+        {
+          "Key": "ShadowEvadeEntry",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEntry_Shadow'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEntry_Shadow.0"
+          }
+        },
+        {
+          "Key": "ShadowEvadeEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_Shadow'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_Shadow.3"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Skia_ShadowEvade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.3"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Joystick'Default__GA_Skia_ShadowEvade_C:HTMontageSelect_Joystick_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.4"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvade_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.7"
+          }
+        },
+        {
+          "Key": "ShadowEvadeEntry",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvade_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.8"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityEvadeBeanCost'Default__GA_Skia_ShadowEvade_C:HTAbilityEvadeBeanCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.2"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_EvadeAtk1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_EvadeAtk1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Evade1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Evade1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowEvadeCheck_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowEvadeCheck.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowControl1_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowControl1.1"
+              }
+            ]
+          }
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "BackEvade",
+          "Value": false
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Skill"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityEvadeBeanCost",
+    "Name": "HTAbilityEvadeBeanCost_0",
+    "Outer": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'HTAbilityEvadeBeanCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "BackEvade"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Joystick",
+    "Name": "HTMontageSelect_Joystick_0",
+    "Outer": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'HTMontageSelect_Joystick'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "FrontEvade"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.25,
+      "NextSectionName": "ShadowEvadeEntry"
+    }
+  },
+  {
+    "Type": "JumpSection_ReleaseHoldTimeTriggerCheck",
+    "Name": "JumpSection_ReleaseHoldTimeTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_ReleaseHoldTimeTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTriggers": [
+        {
+          "Key": "0.2",
+          "Value": "ShadowEvadeEnd"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Skia_ShadowEvade_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Skia_ShadowEvade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_ReleaseHoldTimeTriggerCheck'Default__GA_Skia_ShadowEvade_C:SkillJumpSectionData_1.JumpSection_ReleaseHoldTimeTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvade.6"
+        }
+      ]
+    }
+  }
+]

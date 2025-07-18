@@ -1,0 +1,340 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BulletActor_LacrimosaMeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BulletActor_LacrimosaMelee1_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BulletActor_LacrimosaMelee1_C'Default__BulletActor_LacrimosaMelee1_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BulletActor_LacrimosaMeleeBase_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      }
+    }
+  },
+  {
+    "Type": "BulletActor_LacrimosaMelee1_C",
+    "Name": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.BulletActor_LacrimosaMelee1_C'",
+    "Template": {
+      "ObjectName": "BulletActor_LacrimosaMeleeBase_C'Default__BulletActor_LacrimosaMeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BulletActor_LacrimosaMelee1_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.11"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BulletActor_LacrimosaMelee1_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.3"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_LacrimosaMelee1_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BulletActor_LacrimosaMelee1_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.4"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BulletActor_LacrimosaMelee1_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.7"
+        }
+      ],
+      "ProjectileFuncArray": [
+        {
+          "ObjectName": "ProjectileHitExplodeEffect'Default__BulletActor_LacrimosaMelee1_C:ProjectileHitExplodeEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.6"
+        },
+        {
+          "ObjectName": "ProjectileCameraShake'Default__BulletActor_LacrimosaMelee1_C:ProjectileCameraShake_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.5"
+        }
+      ],
+      "DisappearParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Hit_002.NS_Lacrimosa_Hit_002",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "None",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "OpenGravityFunc": false,
+      "MaxFlyDistance": 1000.0,
+      "bDestroyOnExceedMaxFlyDist": true,
+      "DefaultDisappearTime": 0.3,
+      "PrimaryActorTick": {
+        "TickInterval": 0.01
+      },
+      "InitialLifeSpan": 0.1331,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_LacrimosaMelee1_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.1"
+      }
+    }
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BulletActor_LacrimosaMeleeBase_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 7000.0,
+      "MaxSpeed": 7000.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BulletActor_LacrimosaMeleeBase_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Lacrimosa_Skill_004'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Lacrimosa/NS_Lacrimosa_Skill_004.115"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Width",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Width",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Width",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          154,
+          153,
+          153,
+          62
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_LacrimosaMelee1_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.1"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileCameraShake",
+    "Name": "ProjectileCameraShake_0",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'ProjectileCameraShake'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CameraShakeTriggerType": 2,
+      "CameraShake": {
+        "ObjectName": "BlueprintGeneratedClass'CameraShake_LacrimosaMelee1_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Lacrimosa/CameraShake_LacrimosaMelee1.0"
+      },
+      "InnerRadius": 1.0,
+      "OuterRadius": 2000.0
+    }
+  },
+  {
+    "Type": "ProjectileHitExplodeEffect",
+    "Name": "ProjectileHitExplodeEffect_0",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'ProjectileHitExplodeEffect'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitExplodeEffectContainer": {
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'DamageRange_Lacrimosa_Melee1_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/DamageRange/DamageRange_Lacrimosa_Melee1.0"
+        },
+        "TargetGameplayEffectClasses": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'GE_Player_Lacrimosa_Melee1_Damage_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Melee1_Damage.1"
+          },
+          {
+            "ObjectName": "BlueprintGeneratedClass'GE_Player_Lacrimosa_Melee1_HitBack_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Effect/GE_Player_Lacrimosa_Melee1_HitBack.1"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitOpenTrack": true,
+      "UseLerpRotatorVelocity": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BulletActor_LacrimosaMelee1_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.8"
+      },
+      "VariableGUID": "7615D6D5-4896560C-AFF1D695-97964569",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BulletActor_LacrimosaMelee1_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.9"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BulletActor_LacrimosaMelee1_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BulletActor_LacrimosaMeleeBase_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMeleeBase.10"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_LacrimosaMelee1_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Actor/BulletActor_LacrimosaMelee1.1"
+      }
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LockRange_JinLv5_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_LockSphereBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockSphereBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LockRange_JinLv5_C'Default__LockRange_JinLv5_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_JinLv5.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "LockRange_JinLv5_C",
+    "Name": "Default__LockRange_JinLv5_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_JinLv5.LockRange_JinLv5_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_LockSphereBase_C'Default__BP_PlayerType_LockSphereBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockSphereBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SphereRadius": 1000.0,
+      "ObjectTypes": [
+        "ObjectTypeQuery3",
+        "ObjectTypeQuery12"
+      ],
+      "MaxCount": 10,
+      "bIgnoreCantBeSelected": false
+    }
+  }
+]

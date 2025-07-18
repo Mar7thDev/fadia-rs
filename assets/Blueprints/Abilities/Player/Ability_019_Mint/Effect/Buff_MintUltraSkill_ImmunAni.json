@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_MintUltraSkill_ImmunAni_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneAnim_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneAnim.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_MintUltraSkill_ImmunAni_C'Default__Buff_MintUltraSkill_ImmunAni_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunAni.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_MintUltraSkill_ImmunAni_C",
+    "Name": "Default__Buff_MintUltraSkill_ImmunAni_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunAni.Buff_MintUltraSkill_ImmunAni_C'",
+    "Template": {
+      "ObjectName": "Buff_UltraSkill_ImmuneAnim_C'Default__Buff_UltraSkill_ImmuneAnim_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneAnim.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_MintUltraSkill_ImmunAni_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintUltraSkill_ImmunAni.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_MintUltraSkill_ImmunAni_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneAnim_C:TargetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneAnim.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Alphard_UltraSkill_Palsy_Delay_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Alphard_UltraSkill_Palsy_Delay_C'Default__GE_Player_Alphard_UltraSkill_Palsy_Delay_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy_Delay.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Alphard_UltraSkill_Palsy_Delay_C",
+    "Name": "Default__GE_Player_Alphard_UltraSkill_Palsy_Delay_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_018_Alphard/Buff/GE_Player_Alphard_UltraSkill_Palsy_Delay.GE_Player_Alphard_UltraSkill_Palsy_Delay_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ModifyActiveEffectDurationData": {
+        "GameplayTagContainer": [
+          "Ability.Player.Buff.Alphard.Delay"
+        ],
+        "TimeExpand": 0.7
+      },
+      "SourceTagsPartakeImmunity": true,
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 0.1
+        }
+      },
+      "bSuppressStackingCues": true,
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.ImmuneAniState"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "StackDurationRefreshPolicy": "EGameplayEffectStackingDurationPolicy::NeverRefresh",
+      "StackPeriodResetPolicy": "EGameplayEffectStackingPeriodPolicy::NeverReset"
+    }
+  }
+]

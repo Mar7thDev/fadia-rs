@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_MintActorWind_Skill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_MintActorWind_Skill_C:ExecuteUbergraph_GA_MintActorWind_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_MintActorWind_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.2"
+      },
+      {
+        "ObjectName": "Function'GA_MintActorWind_Skill_C:ExecuteUbergraph_GA_MintActorWind_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_MintActorWind_Skill": {
+        "ObjectName": "Function'GA_MintActorWind_Skill_C:ExecuteUbergraph_GA_MintActorWind_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_MintActorWind_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_MintActorWind_Skill_C'Default__GA_MintActorWind_Skill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_MintActorWind_Skill",
+    "Outer": "GA_MintActorWind_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_MintActorWind_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_TriggerGEBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_MintActorWind_Skill_C",
+    "Name": "Default__GA_MintActorWind_Skill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.GA_MintActorWind_Skill_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TriggerEventTags": [
+        {
+          "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityChargeCost'Default__GA_MintActorWind_Skill_C:HTAbilityChargeCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/ActorSkill/GA_MintActorWind_Skill.4"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common.SpawnActor"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_WindSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_WindSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee5_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee5_Damage_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee1_HitBack_New.1"
+              }
+            ]
+          }
+        }
+      ],
+      "SkillReleaseCondition": {
+        "CoolDownTime": 0.35
+      }
+    }
+  },
+  {
+    "Type": "HTAbilityChargeCost",
+    "Name": "HTAbilityChargeCost_0",
+    "Outer": "Default__GA_MintActorWind_Skill_C",
+    "Class": "UScriptClass'HTAbilityChargeCost'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

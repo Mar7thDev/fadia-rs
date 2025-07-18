@@ -1,0 +1,171 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Fadia_GiveUltraMelee_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Fadia_GiveUltraMelee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Fadia_GiveUltraMelee_C'Default__Buff_Fadia_GiveUltraMelee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Fadia_GiveUltraMelee_C",
+    "Name": "Default__Buff_Fadia_GiveUltraMelee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.Buff_Fadia_GiveUltraMelee_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_CHANGE_ROLE_OUT",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Fadia_GiveUltraMelee_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.1"
+              },
+              "StackCount": -1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": null
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 1.0,
+          "Curve": {
+            "CurveTable": {
+              "ObjectName": "CurveTable'DT_FadiaEffectFigure'",
+              "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_FadiaEffectFigure.0"
+            },
+            "RowName": "FadiaUltraSkillDur"
+          }
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "HTAbilitiesGameplayEffectComponent'Default__Buff_Fadia_GiveUltraMelee_C:HTAbilitiesGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.4"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__Buff_Fadia_GiveUltraMelee_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.3"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_Fadia_GiveUltraMelee_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/Buff_Fadia_GiveUltraMelee.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Fadia_GiveUltraMelee_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_IsServerOrStandalone_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Common/Con_IsServerOrStandalone.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitiesGameplayEffectComponent",
+    "Name": "HTAbilitiesGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Fadia_GiveUltraMelee_C",
+    "Class": "UScriptClass'HTAbilitiesGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrantAbilityConfigs": [
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Fadia_UltraSkill_Melee_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/GA_Fadia_UltraSkill_Melee.0"
+          },
+          "LevelScalableFloat": {
+            "Value": 0.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": 0,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::RemoveAbilityOnEnd"
+        }
+      ]
+    }
+  }
+]

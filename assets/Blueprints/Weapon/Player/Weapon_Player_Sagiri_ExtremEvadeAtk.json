@@ -1,0 +1,179 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Sagiri_ExtremEvadeAtk_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Sagiri_ExtremEvadeAtk_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.2"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Sagiri_ExtremEvadeAtk_C'Default__Weapon_Player_Sagiri_ExtremEvadeAtk_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Anomaly_009_skin_Skeleton_AnimBlueprint_C'",
+        "ObjectPath": "/Game/Characters/Anomaly/Anomaly_009/Anomaly_009_skin_Skeleton_AnimBlueprint.0"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'weapon_sagiri_skill_ExtremEvadeAtk'",
+          "ObjectPath": "/Game/Characters/Player/003_sagiri_1/Weapon_Player_Sagiri/animation/weapon_sagiri_skill_ExtremEvadeAtk.0"
+        }
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Anomaly_009_skin'",
+        "ObjectPath": "/Game/Characters/Anomaly/Anomaly_009/Anomaly_009_skin.22"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Anomaly_009_skin'",
+        "ObjectPath": "/Game/Characters/Anomaly/Anomaly_009/Anomaly_009_skin.22"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "ComponentTags": [
+        "WeaponSagiriShow"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Sagiri_ExtremEvadeAtk_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.3"
+      },
+      "VariableGUID": "4482498D-4C3CCC76-50895AA9-55AE8BBA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Sagiri_ExtremEvadeAtk_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.1"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "37E7FC7B-4115DB59-48D78094-A5380F01",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_ExtremEvadeAtk_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_ExtremEvadeAtk_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Sagiri_ExtremEvadeAtk_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.4"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Name": "Default__Weapon_Player_Sagiri_ExtremEvadeAtk_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri_ExtremEvadeAtk.Weapon_Player_Sagiri_ExtremEvadeAtk_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "WeaponSagiriShow",
+          "Value": "Rhand_Weapon"
+        }
+      ],
+      "bIgnoreMeshOptimized": true,
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Default",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Item/SM_Storagebottle_01/SM_Storage_bottle_01_skin_Anim_Montage.SM_Storage_bottle_01_skin_Anim_Montage",
+            "SubPathString": ""
+          }
+        }
+      ]
+    }
+  }
+]

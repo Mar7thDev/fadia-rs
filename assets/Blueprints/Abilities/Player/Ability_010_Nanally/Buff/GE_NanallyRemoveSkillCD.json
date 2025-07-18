@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_1",
+    "Outer": "Default__GE_NanallyRemoveSkillCD_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_CoolDownBase_C:AssetTagsGameplayEffectComponent_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_NanallyRemoveSkillCD_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_NanallyRemoveSkillCD_C'Default__GE_NanallyRemoveSkillCD_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallyRemoveSkillCD.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_NanallyRemoveSkillCD_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_IsServerOrStandalone_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Common/Con_IsServerOrStandalone.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_NanallyRemoveSkillCD_C",
+    "Name": "Default__GE_NanallyRemoveSkillCD_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallyRemoveSkillCD.GE_NanallyRemoveSkillCD_C'",
+    "Template": {
+      "ObjectName": "GE_CoolDownBase_C'Default__GE_CoolDownBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationMagnitude": {
+        "MagnitudeCalculationType": "EGameplayEffectMagnitudeCalculation::ScalableFloat",
+        "ScalableFloatMagnitude": {
+          "Value": 2.0
+        },
+        "CustomMagnitude": {
+          "CalculationClassMagnitude": null
+        }
+      },
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "CoolDown.Player.Skill.Nanally"
+        ],
+        "Added": [
+          "CoolDown.Player.Skill.Nanally"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_NanallyRemoveSkillCD_C:AssetTagsGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallyRemoveSkillCD.0"
+        },
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__GE_NanallyRemoveSkillCD_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallyRemoveSkillCD.4"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_NanallyRemoveSkillCD_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_NanallyRemoveSkillCD.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_NanallyRemoveSkillCD_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "CoolDown.Player.Skill.Nanally"
+        ],
+        "Added": [
+          "CoolDown.Player.Skill.Nanally"
+        ]
+      }
+    }
+  }
+]

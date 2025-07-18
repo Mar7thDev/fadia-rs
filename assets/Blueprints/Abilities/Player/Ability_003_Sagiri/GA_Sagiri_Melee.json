@@ -1,0 +1,2839 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:ExecuteUbergraph_GA_Sagiri_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.3"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:GetHoldSection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.5"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapGeometryCollection_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.8"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapPhyActor_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.9"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapCharacter_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.7"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowPhyActor'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.12"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.6"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowCharacter'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.10"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowGeometryCollection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.11"
+      },
+      {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:ExecuteUbergraph_GA_Sagiri_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SwallowTask",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityTask_SagiriSwallowTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Traction Params",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 824,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'ApplyTractionForceParams'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "NewVar",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Sagiri_Melee": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:ExecuteUbergraph_GA_Sagiri_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.4"
+      },
+      "OnSwallowGeometryCollection": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowGeometryCollection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.11"
+      },
+      "OnSwallowCharacter": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowCharacter'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.10"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.6"
+      },
+      "OnSwallowPhyActor": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnSwallowPhyActor'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.12"
+      },
+      "OnOverlapCharacter_3F9864B94AAE67E84A7E7CA5145B21EC": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapCharacter_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.7"
+      },
+      "OnOverlapPhyActor_3F9864B94AAE67E84A7E7CA5145B21EC": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapPhyActor_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.9"
+      },
+      "OnOverlapGeometryCollection_3F9864B94AAE67E84A7E7CA5145B21EC": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:OnOverlapGeometryCollection_3F9864B94AAE67E84A7E7CA5145B21EC'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.8"
+      },
+      "GetHoldSection": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:GetHoldSection'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.5"
+      },
+      "CheckNeedUseReleaseTask": {
+        "ObjectName": "Function'GA_Sagiri_Melee_C:CheckNeedUseReleaseTask'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Sagiri_Melee_C'Default__GA_Sagiri_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.13"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BPJumpSection_CheckLimitUseMelee_C",
+    "Name": "BPJumpSection_CheckLimitUseMelee_C_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/JumpSectionType/BPJumpSection_CheckLimitUseMelee.BPJumpSection_CheckLimitUseMelee_C'",
+    "Template": {
+      "ObjectName": "BPJumpSection_CheckLimitUseMelee_C'Default__BPJumpSection_CheckLimitUseMelee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/JumpSectionType/BPJumpSection_CheckLimitUseMelee.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.7
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 1.0
+              }
+            }
+          ]
+        }
+      ],
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "BPJumpSection_CheckLimitUseMelee_C",
+    "Name": "BPJumpSection_CheckLimitUseMelee_C_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/JumpSectionType/BPJumpSection_CheckLimitUseMelee.BPJumpSection_CheckLimitUseMelee_C'",
+    "Template": {
+      "ObjectName": "BPJumpSection_CheckLimitUseMelee_C'Default__BPJumpSection_CheckLimitUseMelee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/JumpSectionType/BPJumpSection_CheckLimitUseMelee.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.7
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 1.0
+              }
+            }
+          ]
+        }
+      ],
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckNeedUseReleaseTask",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:CheckNeedUseReleaseTask'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.1"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CheckNeedUseReleaseTask_NeedUse",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Sagiri_Melee",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult_3",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult_2",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_TractionInnerBoxParams",
+        "Flags": "RF_Public",
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "Class'TractionInnerBoxParams'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSimulatingPhysics_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TractionInnerBoxOverlapDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetComponentBounds_Origin",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetComponentBounds_BoxExtent",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetComponentBounds_SphereRadius",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMaterial_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SagiriSwallowTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityTask_SagiriSwallowTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCurrentWeapon_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WeaponBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSagiri_Weapon",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SagiriWeapon'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult_4",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TractionInnerBoxOverlapDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult_1",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTAbility_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TractionInnerBoxOverlapDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SwallowTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_HitResult_5",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_As______",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'GeometryCollectionComponent'",
+          "ObjectPath": "/Script/GeometryCollectionEngine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPhysicsObjectWorldTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMaterial_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Rotation_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakTransform_Scale_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Vector_IsZero_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnEmitterAtLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnAkComponentAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AkComponent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnAkComponentAtLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AkComponent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnAkComponentAtLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AkComponent'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHoldSection",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTGameplayAbility:GetHoldSection'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetHoldSection_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHTMovementComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTCharacterMovementComponent'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnOverlapCharacter_3F9864B94AAE67E84A7E7CA5145B21EC",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnOverlapGeometryCollection_3F9864B94AAE67E84A7E7CA5145B21EC",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnOverlapPhyActor_3F9864B94AAE67E84A7E7CA5145B21EC",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSwallowCharacter",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSwallowGeometryCollection",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnSwallowPhyActor",
+    "Outer": "GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "HitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Sagiri_Melee_C",
+    "Name": "Default__GA_Sagiri_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.GA_Sagiri_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Traction Params": {
+        "duration": -1.0,
+        "HalfYawAngleRange": 35.0,
+        "HalfPitchAngleRange": 30.0,
+        "Radius": 500.0,
+        "ForceMagnitude": 90000.0,
+        "DistanceFallOff": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 685.6452,
+                "Value": 0.8,
+                "ArriveTangent": 9.5E-05,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -0.000153,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 2086.0312,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "HalfYawAngleFallOff": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "HalfPitchAngleFallOff": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "DistanceYawAngleRange": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 180.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "DistancePitchAngleRange": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 180.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "PostInfinityExtrap": "ERichCurveExtrapolation::RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "ObjectTypes": [
+          "ObjectTypeQuery6",
+          "ObjectTypeQuery10",
+          "ObjectTypeQuery3",
+          "ObjectTypeQuery1"
+        ],
+        "BoxExtent": {
+          "X": 250.0,
+          "Y": 250.0,
+          "Z": 250.0
+        },
+        "TractionGE": {
+          "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Branch_Traction_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Branch_Traction.1"
+        },
+        "DamageGE": {
+          "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee1_Damage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee1_Damage.1"
+        },
+        "bDebug": false,
+        "ParticleMaxSpeed": 1000.0,
+        "CenterLocationOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "CenterRotationOffset": {
+          "Pitch": 0.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        },
+        "MaxTraceNum": 999,
+        "bEnableInMobile": true
+      },
+      "NewVar": {
+        "AssetPathName": "/Game/FX/Nia/Item/Item_Dissipation/NS_Item_Dissipation_001.NS_Item_Dissipation_001",
+        "SubPathString": ""
+      },
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Sagiri_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/LockRange/LockRange_Sagiri_Melee.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 150.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Sagiri_AppearMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/LockRange/LockRange_Sagiri_AppearMelee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_001'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_001.1"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_002'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_002.0"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_003'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_003.2"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_004'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_004.1"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_005'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_005.2"
+          }
+        },
+        {
+          "Key": "Branch",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Branch'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Branch.96"
+          }
+        },
+        {
+          "Key": "BranchEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_BranchEnd'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_BranchEnd.0"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_Pre'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_Pre.1"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_AirAttackEnd.2"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Dissolve.0"
+          }
+        },
+        {
+          "Key": "Melee5_1",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_Melee_005_1'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_Melee_005_1.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_AppearMelee'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_AppearMelee.1"
+          }
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": {
+            "ObjectName": "AnimMontage'Sagiri_PerfectEvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/003_sagiri_1/animation/Skill/Sagiri_PerfectEvadeBack.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Sagiri_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.14"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Sagiri_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.15"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Sagiri_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.16"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.34"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.37"
+          }
+        },
+        {
+          "Key": "Branch",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.41"
+          }
+        },
+        {
+          "Key": "BranchLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.33"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.38"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.39"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.40"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.42"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.43"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_9'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.44"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_10'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.35"
+          }
+        },
+        {
+          "Key": "Melee5_1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_11'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.36"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "Branch",
+        "BranchEnd",
+        "AirAttackEnd"
+      ],
+      "StartBlockMovementSections": [
+        "Branch",
+        "BranchEnd"
+      ],
+      "HoldSection": "Branch",
+      "AdditionalCosts": [
+        null
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee2_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee2_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee4_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee5.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee5_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee5_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_AirAttack1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_AirAttack1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee6_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee6.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee6_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee6_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee6_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee6_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee7_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee7.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee7_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee7_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee6_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee6_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee8_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee8_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee9_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee9.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee5_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee5_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.10"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Sagiri_Melee10_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_Melee10.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Melee5_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Sagiri_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Effect/GE_Player_Sagiri_Melee5_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "ReleaseSkillMode": "EInputTriggerSkillType::Input_P_And_R",
+      "bCheckLedges": true,
+      "ExcludeCheckLedgesMontage": [
+        "Branch"
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "None",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 160.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 30.0,
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 30.0,
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.23,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_10",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.8
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_11",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.4
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.6
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Sagiri_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerUnPossessed",
+    "Name": "JumpSection_PlayerUnPossessed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerUnPossessed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerUnPossessed",
+    "Name": "JumpSection_PlayerUnPossessed_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_PlayerUnPossessed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "BranchEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_ReleaseHoldTimeTriggerCheck",
+    "Name": "JumpSection_ReleaseHoldTimeTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_ReleaseHoldTimeTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTriggers": [
+        {
+          "Key": "999",
+          "Value": "BranchEnd"
+        }
+      ],
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.7
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 1.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "JumpSection_ReleaseHoldTimeTriggerCheck",
+    "Name": "JumpSection_ReleaseHoldTimeTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_ReleaseHoldTimeTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTriggers": [
+        {
+          "Key": "999",
+          "Value": "BranchEnd"
+        }
+      ],
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.7
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 1.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_ReleaseHoldTimeTriggerCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_0.JumpSection_ReleaseHoldTimeTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.31"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.17"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerUnPossessed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_0.JumpSection_PlayerUnPossessed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.29"
+        },
+        {
+          "ObjectName": "BPJumpSection_CheckLimitUseMelee_C'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_0.BPJumpSection_CheckLimitUseMelee_C_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_10",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_10.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.21"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_11",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_11.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_ReleaseHoldTimeTriggerCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_6.JumpSection_ReleaseHoldTimeTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.32"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_6.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.18"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerUnPossessed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_6.JumpSection_PlayerUnPossessed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.30"
+        },
+        {
+          "ObjectName": "BPJumpSection_CheckLimitUseMelee_C'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_6.BPJumpSection_CheckLimitUseMelee_C_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.26"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.27"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_9",
+    "Outer": "Default__GA_Sagiri_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Sagiri_Melee_C:SkillJumpSectionData_9.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/GA_Sagiri_Melee.28"
+        }
+      ]
+    }
+  }
+]

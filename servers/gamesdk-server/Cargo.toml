@@ -1,0 +1,28 @@
+[package]
+name = "fadia-gamesdk-server"
+edition = "2024"
+version.workspace = true
+
+[dependencies]
+tokio.workspace = true
+
+# Tracing
+tracing.workspace = true
+
+# Serialization
+serde.workspace = true
+flatbuffers.workspace = true
+
+# I/O
+byteorder.workspace = true
+
+# Util
+thiserror.workspace = true
+hex.workspace = true
+num_enum.workspace = true
+
+# Internal
+common.workspace = true
+
+[build-dependencies]
+flatc-rust.workspace = true

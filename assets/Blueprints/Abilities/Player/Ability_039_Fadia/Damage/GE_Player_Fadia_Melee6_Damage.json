@@ -1,0 +1,128 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Fadia_Melee6_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Fadia_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Fadia_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Melee"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Fadia_Melee6_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Fadia_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Fadia_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Fadia_Melee6_Damage_C'Default__GE_Player_Fadia_Melee6_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_Melee6_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Fadia_Melee6_Damage_C",
+    "Name": "Default__GE_Player_Fadia_Melee6_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_Melee6_Damage.GE_Player_Fadia_Melee6_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Fadia_DamageBase_C'Default__GE_Fadia_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Fadia_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationTime": 0.08,
+        "AttackDilationRate": 0.01,
+        "RateCurve": {
+          "ObjectName": "CurveFloat'GE_Player_Fadia_Melee2_Curve'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_Melee2_Curve.0"
+        }
+      },
+      "HitParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Fadia/New/NS_Player_Fadia_New_Hit_001.NS_Player_Fadia_New_Hit_001",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "FireSocket",
+          "Attached": true,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": true,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShake_FadiaHit_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Fadia/CameraShake_FadiaHit.0"
+        },
+        "InnerRadius": 1.0,
+        "OuterRadius": 1000.0,
+        "Falloff": 0.0
+      },
+      "HitWhiteEffectID": "Blue_HitRightShort",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Melee"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Fadia_Melee6_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Damage/GE_Player_Fadia_Melee6_Damage.0"
+        }
+      ]
+    }
+  }
+]

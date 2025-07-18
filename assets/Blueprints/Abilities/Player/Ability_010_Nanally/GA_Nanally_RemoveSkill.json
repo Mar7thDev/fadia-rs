@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Nanally_RemoveSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Nanally_RemoveSkill_C:ExecuteUbergraph_GA_Nanally_RemoveSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Nanally_RemoveSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.2"
+      },
+      {
+        "ObjectName": "Function'GA_Nanally_RemoveSkill_C:ExecuteUbergraph_GA_Nanally_RemoveSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Nanally_RemoveSkill": {
+        "ObjectName": "Function'GA_Nanally_RemoveSkill_C:ExecuteUbergraph_GA_Nanally_RemoveSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Nanally_RemoveSkill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Nanally_RemoveSkill_C'Default__GA_Nanally_RemoveSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Nanally_RemoveSkill",
+    "Outer": "GA_Nanally_RemoveSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Nanally_RemoveSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_TriggerGEBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Nanally_RemoveSkill_C",
+    "Name": "Default__GA_Nanally_RemoveSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.GA_Nanally_RemoveSkill_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Nanally_RemoveSkill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/GA_Nanally_RemoveSkill.4"
+        }
+      ],
+      "CooldownTags": [
+        "CoolDown.Player.Skill.Nanally"
+      ],
+      "GENeedShowDuration": {
+        "ObjectName": "BlueprintGeneratedClass'GE_Nanally_WalkOnWall_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_Nanally_WalkOnWall.0"
+      },
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.Nanally"
+      ],
+      "NetExecutionPolicy": "EGameplayAbilityNetExecutionPolicy::LocalPredicted"
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Nanally_RemoveSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'GE_Nanally_WalkOnWall_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_Nanally_WalkOnWall.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'GE_Nanally_GrantRemoveSkill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_010_Nanally/Buff/GE_Nanally_GrantRemoveSkill.1"
+        }
+      ]
+    }
+  }
+]

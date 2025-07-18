@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Lacrimosa_GrantChangeAvatarSkill_C'Default__GE_Lacrimosa_GrantChangeAvatarSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/GE_Lacrimosa_GrantChangeAvatarSkill.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_IsServerOrStandalone_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Common/Con_IsServerOrStandalone.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Name": "Default__GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/GE_Lacrimosa_GrantChangeAvatarSkill.GE_Lacrimosa_GrantChangeAvatarSkill_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::Infinite",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 61.0
+        }
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "Event.Common.OnlyServer"
+        ],
+        "Added": [
+          "Event.Common.OnlyServer"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "HTAbilitiesGameplayEffectComponent'Default__GE_Lacrimosa_GrantChangeAvatarSkill_C:HTAbilitiesGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/GE_Lacrimosa_GrantChangeAvatarSkill.4"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Lacrimosa_GrantChangeAvatarSkill_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/GE_Lacrimosa_GrantChangeAvatarSkill.2"
+        },
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Lacrimosa_GrantChangeAvatarSkill_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/GE_Lacrimosa_GrantChangeAvatarSkill.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitiesGameplayEffectComponent",
+    "Name": "HTAbilitiesGameplayEffectComponent_0",
+    "Outer": "Default__GE_Lacrimosa_GrantChangeAvatarSkill_C",
+    "Class": "UScriptClass'HTAbilitiesGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GrantAbilityConfigs": [
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Lacrimosa_ChangeAvatar_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/GA_Lacrimosa_ChangeAvatar.0"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": 2,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::CancelAbilityImmediately"
+        },
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Lacrimosa_ChangeAvatarEnd_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/GA_Lacrimosa_ChangeAvatarEnd.0"
+          },
+          "LevelScalableFloat": {
+            "Value": 1.0,
+            "Curve": {
+              "CurveTable": null,
+              "RowName": "None"
+            },
+            "RegistryType": {
+              "Name": "None"
+            }
+          },
+          "InputID": -1,
+          "RemovalPolicy": "EGameplayEffectGrantedAbilityRemovePolicy::RemoveAbilityOnEnd"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Cang_UltraSkill_C'Default__GA_Cang_UltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnConditionObj_IfActorNotExist",
+    "Name": "FindSpawnConditionObj_IfActorNotExist_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnConditionObj_IfActorNotExist'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ExcludedActorClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CangUltraSkillField_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_CangUltraSkillField.0"
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NeedCheckFloor": true
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Cang_UltraSkill_C",
+    "Name": "Default__GA_Cang_UltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.GA_Cang_UltraSkill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Cang_UtraSkill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/LockRange/LockRange_Cang_UtraSkill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "Default",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_UltralSkill'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_UltralSkill.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Cang_UltraSkill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.11"
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityChargeCost'Default__GA_Cang_UltraSkill_C:HTAbilityChargeCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.5"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Cang_UltraSkill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.8"
+        },
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Cang_UltraSkill_C:HTGAComponent_AddOrRemoveGE_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.9"
+        },
+        {
+          "ObjectName": "HTGAComponent_PlayAndStopVideo'Default__GA_Cang_UltraSkill_C:HTGAComponent_PlayAndStopVideo_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.10"
+        },
+        {
+          "ObjectName": "HTGAComponent_AbilityGamePaused'Default__GA_Cang_UltraSkill_C:HTGAComponent_AbilityGamePaused_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.7"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.2"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnHTActor'Default__GA_Cang_UltraSkill_C:HTAbilitySpawnHTActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.6"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_UltraSkill_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_UltraSkill_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_UltraSkill2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Damage/GE_Player_Cang_UltraSkill2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Reaction_5_new_1023_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Buff/element/Reaction/ReactionEffect/Reaction5/New/Buff_Reaction_5_new_1023.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.UltraSkill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_CangUltraSkill_Field_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_CangUltraSkill_Field.1"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Cang_UltraSkill"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.UltraSkill.F"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.UltraSkill.F"
+      ],
+      "AbilityTags": [
+        "Ability.UltraSkill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilityChargeCost",
+    "Name": "HTAbilityChargeCost_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilityChargeCost'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTAbilitySpawnHTActor",
+    "Name": "HTAbilitySpawnHTActor_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTAbilitySpawnHTActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_CangUltraSkillField_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_CangUltraSkillField.0"
+            },
+            "SpawnConditionObjs": [
+              {
+                "ObjectName": "FindSpawnConditionObj_IfActorNotExist'Default__GA_Cang_UltraSkill_C:HTAbilitySpawnHTActor_0.FindSpawnConditionObj_IfActorNotExist_0'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.1"
+              }
+            ],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Cang_UltraSkill_C:HTAbilitySpawnHTActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Cang_UltraSkill_C:HTAbilitySpawnHTActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_UltraSkill.3"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTGAComponent_AbilityGamePaused",
+    "Name": "HTGAComponent_AbilityGamePaused_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AbilityGamePaused'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_1",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ],
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_Display_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_Display.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_PlayAndStopVideo",
+    "Name": "HTGAComponent_PlayAndStopVideo_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTGAComponent_PlayAndStopVideo'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "VideoName": "CangUltraSkill"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Cang_UltraSkill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Default"
+    }
+  }
+]

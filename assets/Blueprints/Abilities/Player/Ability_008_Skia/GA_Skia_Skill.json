@@ -1,0 +1,499 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Skia_Skill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Skia_Skill_C:ExecuteUbergraph_GA_Skia_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.3"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Skia_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.4"
+      },
+      {
+        "ObjectName": "Function'GA_Skia_Skill_C:ExecuteUbergraph_GA_Skia_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Skia_Skill": {
+        "ObjectName": "Function'GA_Skia_Skill_C:ExecuteUbergraph_GA_Skia_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.3"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Skia_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Skia_Skill_C'Default__GA_Skia_Skill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Skia_Skill",
+    "Outer": "GA_Skia_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilitySystemComponentFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AbilitySystemComponent'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 72,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'GameplayTagAssetInterface'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasMatchingGameplayTag_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HUD'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTHUD",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTHUD'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Skia_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Skia_Skill_C",
+    "Name": "Default__GA_Skia_Skill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.GA_Skia_Skill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Skia_Skill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/LockRange/LockRange_Skia_Skill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "Default",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Skill_001'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Skill_001.7"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Skia_Skill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.7"
+        }
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.5"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Skia_Skill_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.6"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Skill1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Skill1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Skill2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Skill1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Skill3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Skill3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Skill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Skill3_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowBase_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowBase.0"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowBase_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowBase.0"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowBase_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowBase.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowControl_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowControl.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowControl2_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowControl2.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Skia008_Level2_2_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Upgrade/Level2/Buff_Skia008_Level2_2.0"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Skia_Skill"
+        }
+      },
+      "CancelCooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "CoolDownBreak"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.Skill.ShortPress"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.ShortPress"
+      ],
+      "AbilityTags": [
+        "Ability.Skill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      },
+      "ActivationBlockedTags": [
+        "State.Property.CantSneak"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Skia_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorSkiaSkill5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Actor/DamageActorSkiaSkill5.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Skia_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Skia_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_Skill.2"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerSkiaSkill1",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_Skill1_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_Skill1.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill1_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Skill1_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Skill1_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Skill1_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Skia_Skill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Default"
+    }
+  }
+]

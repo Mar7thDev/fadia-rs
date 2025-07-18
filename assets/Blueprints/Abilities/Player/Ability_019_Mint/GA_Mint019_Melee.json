@@ -1,0 +1,1423 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Mint019_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Mint019_Melee_C'Default__GA_Mint019_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Mint019_Melee_C",
+    "Name": "Default__GA_Mint019_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.GA_Mint019_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Mint_Melee_New_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/LockRange/LockRange_Mint_Melee_New.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 360.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Mint_AppearMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/LockRange/LockRange_Mint_AppearMelee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Melee_001'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Melee_001.2"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Melee_002'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Melee_002.2"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Melee_003'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Melee_003.2"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Melee_004'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Melee_004.2"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Melee_005'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Melee_005.3"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_AirAttackEnd.1"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_PreMelee'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_PreMelee.2"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Dissolve.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_AppearMelee'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_AppearMelee.2"
+          }
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_PerfectEvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_PerfectEvadeBack.0"
+          }
+        },
+        {
+          "Key": "Begin",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Skill_001_Begin'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Skill_001_Begin.32"
+          }
+        },
+        {
+          "Key": "End",
+          "Value": {
+            "ObjectName": "AnimMontage'Mint_Skill_001_End'",
+            "ObjectPath": "/Game/Characters/Player/019_mint/animation/Skill/Mint_Skill_001_End.1"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Mint019_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.3"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Mint019_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.4"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Mint019_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.5"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.26"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.28"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_9'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.35"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.30"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.31"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.32"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.33"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.29"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.34"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_10'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.27"
+          }
+        },
+        {
+          "Key": "Begin",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Mint019_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.25"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "AirAttackEnd"
+      ],
+      "StartBlockMovementSections": [
+        "AirAttack",
+        "AirAttackEnd"
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Mint019_Melee_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.2"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee1_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee1_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee2_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee2_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee2_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee2_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee3_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee3_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee3_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee3_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee4_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee4_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee1_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee1_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee4_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee4_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee5_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee5_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee3_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee3_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee5_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee5_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee6_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee6_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee6_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee6_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee6_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee6_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee7_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee7_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee6_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee6_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee7_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee7_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Branch1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/DamageRange/DamageRange_Mint_Branch1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Branch1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Damage/GE_Player_Mint_Branch1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Branch1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Effect/GE_Player_Mint_Branch1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_AirAttack1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/DamageRange/DamageRange_Mint_AirAttack1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_AirAttack1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_AirAttack1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Branch1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Effect/GE_Player_Mint_Branch1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee8_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Melee8_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee8_HitBack_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Melee8_HitBack_New.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee8_Damage_New_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Melee8_Damage_New.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/DamageRange/DamageRange_Mint_Melee4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Effect/GE_Player_Mint_Melee4_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee9_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Damage/GE_Player_Mint_Melee9_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.10"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Melee7_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/DamageRange/DamageRange_Mint_Melee7.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Melee10_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_Mint/Damage/GE_Player_Mint_Melee10_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Common.StrengthCost"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_EnergyCost_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_EnergyCost.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_Energy_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_Energy.0"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_Wind_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_Wind.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Common.Display"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_Display_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_Display.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill1_Hit_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill1_Hit.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Evade1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill2_Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill2_Float.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Evade1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill1_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill1_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill2_Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill2_Float.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Evade1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill4_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill4_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill4_HitDown_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill4_HitDown.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Evade4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Evade4_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Mint_Skill5_New_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/DamageRange/DamageRange_Mint_Skill5_New.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Skill5_Hit_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/GE_Player_Mint_Skill5_Hit.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Mint_Evade5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Damage/GE_Player_Mint_Evade5_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_SkillTriggerEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_Mint019_SkillTriggerEnd.0"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true,
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "EndAbilityRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_SkillTriggerEnd_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_Mint019_SkillTriggerEnd.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_Energy_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_Energy.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 400.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_10",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.45,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.7,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.45,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.2,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.5,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.25,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.53,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        },
+        {
+          "TargetRequirement": {}
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.4,
+      "OptionalRequirements": [
+        {
+          "TargetRequirement": {
+            "HasAllGEArray": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_MintSkill_WindEnd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_MintSkill_WindEnd.0"
+              }
+            ],
+            "HasAnyGEArray": []
+          }
+        }
+      ],
+      "NextSectionName": "Begin"
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_Mint019_SkillEnd_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Effect/Buff_Mint019_SkillEnd.0"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "End"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_10",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.8
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.2
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 1.0
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_9",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.5
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Mint019_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_10",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_10.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.17"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_10.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.18"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_3.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.19"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_4.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.20"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_5.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_6.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.21"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_6.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.22"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_7.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.23"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_8.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_9",
+    "Outer": "Default__GA_Mint019_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Mint019_Melee_C:SkillJumpSectionData_9.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.24"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Mint019_Melee_C:SkillJumpSectionData_9.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/GA_Mint019_Melee.13"
+        }
+      ]
+    }
+  }
+]

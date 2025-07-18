@@ -1,0 +1,244 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Hathor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Hathor_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.3"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Hathor_C'Default__Weapon_Player_Hathor_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Motor",
+          "SocketName": "GrassInteract",
+          "Radius": 150.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'vehicle_hathor_AnimBP_C'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/vehicle_010/vehicle_hathor_AnimBP.0"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'vehicle_hathor_skill_ultraskill'",
+          "ObjectPath": "/Game/Characters/Player/025_hathor/vehicle_010/vehicle_hathor_skill_ultraskill.0"
+        }
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Vehicle_010_skin'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/vehicle_010/Vehicle_010_skin.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Vehicle_010_skin'",
+        "ObjectPath": "/Game/Characters/Player/025_hathor/vehicle_010/Vehicle_010_skin.1"
+      },
+      "bUseAttachParentBound": true,
+      "ComponentTags": [
+        "Weapon_Motor"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'Weapon_Player_Hathor_C:ICH-DefaultSceneRoot_GEN_VARIABLE'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.5"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+              "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+            },
+            "SCSVariableName": "DefaultSceneRoot",
+            "AssociatedGuid": "3C4153C2-40C48419-34C2E7B8-ED5601EA"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ICH-DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bUseAttachParentBound": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Hathor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.4"
+      },
+      "VariableGUID": "7EB12900-48DE05CF-98CC8DA3-C5156965",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Hathor_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.2"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "203CD175-47F2DB4A-00FD5F91-14EEDCE1",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Hathor_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Hathor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Hathor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Hathor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.6"
+      }
+    }
+  },
+  {
+    "Type": "Weapon_Player_Hathor_C",
+    "Name": "Default__Weapon_Player_Hathor_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.Weapon_Player_Hathor_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Motor",
+          "Value": "rootSocket"
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Player_Hathor_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Hathor.1"
+      },
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Weapon_Motor",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/025_hathor/vehicle_010/Hathor_UltraSkill_Weapon.Hathor_UltraSkill_Weapon",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "UnequipIntervalTimeOffset": 3.7,
+      "HiddenUnequipIntervalTime": 3.7,
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionVehicle_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionVehicle.0"
+        },
+        "DLWE_Size": 60.0,
+        "BindSocketName": "GrassInteract"
+      },
+      "FollowOwnerHide": false,
+      "bCallPreReplicationForReplay": true
+    }
+  }
+]

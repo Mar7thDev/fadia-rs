@@ -1,0 +1,1141 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Female051_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Female051_Melee_C'Default__GA_Female051_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_1",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_2",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 350.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_OwnerMesh",
+    "Name": "FindSpawnRotationObj_OwnerMesh_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_OwnerMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_OwnerMesh",
+    "Name": "FindSpawnRotationObj_OwnerMesh_1",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_OwnerMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_OwnerMesh",
+    "Name": "FindSpawnRotationObj_OwnerMesh_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_2",
+    "Class": "UScriptClass'FindSpawnRotationObj_OwnerMesh'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "GA_Female051_Melee_C",
+    "Name": "Default__GA_Female051_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.GA_Female051_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "RefinedScopePriotityRadius": 150.0,
+        "RefinedScopePriotityAngle": 150.0,
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Female_Melee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/LockRange/LockRange_Female_Melee.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "IgnoreHalfLockSections": [
+          "AirAttackEnd"
+        ]
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 150.0,
+            "RefinedScopePriotityAngle": 150.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Female_AppearMelee_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/LockRange/LockRange_Female_AppearMelee.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee1_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee1_Montage.1"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee2_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee2_Montage.4"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee3_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee3_Montage.1"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee4_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee4_Montage.2"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee5_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee5_Montage.1"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_airattack_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_airattack_Montage.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_airattack_end_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_airattack_end_Montage.1"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee_pre_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee_pre_Montage.1"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_dissolve_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_dissolve_Montage.0"
+          }
+        },
+        {
+          "Key": "AppearMelee",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_melee1_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee1_Montage.1"
+          }
+        },
+        {
+          "Key": "PerfectEvadeBack",
+          "Value": {
+            "ObjectName": "AnimMontage'char_f_skill_Extremevadeback_Montage'",
+            "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_Extremevadeback_Montage.0"
+          }
+        }
+      ],
+      "ForceLoadMontages": [
+        {
+          "ObjectName": "AnimMontage'char_f_skill_melee1_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee1_Montage.1"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_melee2_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee2_Montage.4"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_melee3_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee3_Montage.1"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_melee4_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee4_Montage.2"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_melee5_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_melee5_Montage.1"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_airattack_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_airattack_Montage.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_airattack_end_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_airattack_end_Montage.1"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_Appear_Parry_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_Appear_Parry_Montage.1"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_appear_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_appear_Montage.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_dissolve_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_dissolve_Montage.0"
+        },
+        {
+          "ObjectName": "AnimMontage'char_f_skill_Extremevadeback_Montage'",
+          "ObjectPath": "/Game/Characters/Player/051_female/animation/Skill/char_f_skill_Extremevadeback_Montage.0"
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Female051_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.13"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Female051_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.14"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Female051_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.15"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.26"
+          }
+        },
+        {
+          "Key": "AirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.27"
+          }
+        },
+        {
+          "Key": "Melee1",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_8'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.33"
+          }
+        },
+        {
+          "Key": "MeleePre",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.25"
+          }
+        },
+        {
+          "Key": "Melee2",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.30"
+          }
+        },
+        {
+          "Key": "Melee3",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_6'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.31"
+          }
+        },
+        {
+          "Key": "Melee4",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_7'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.32"
+          }
+        },
+        {
+          "Key": "Melee5",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.28"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female051_Melee_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.29"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "AirAttackEnd"
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.12"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.10"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Branch.2"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.11"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee2_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee2_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee4_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee4_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee5_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee5.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee5_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee5_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee5_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee6_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee6.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee6_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee6_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee6_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee6_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee7_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee7.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee7_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee7_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee7_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee7_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee8_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee8.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee8_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee8_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee8_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee8_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.9"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee9_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee9.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee9_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee9_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee9_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee9_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_AirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_AirAttack_Damage.1"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true,
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "Melee3",
+          "Value": false
+        },
+        {
+          "Key": "Melee4",
+          "Value": false
+        },
+        {
+          "Key": "Melee5",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorFemaleMelee8_1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/DamageActorFemaleMelee8_1.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_OwnerMesh'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_OwnerMesh_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.6"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerFemaleMelee8_1",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_Melee8_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Melee8.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee8_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee8_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee8_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Melee8_HitBack.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          },
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorFemaleMelee8_2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/DamageActorFemaleMelee8_2.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Owner_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_OwnerMesh'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_OwnerMesh_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.7"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerFemaleMelee8_2",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_Melee8_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Melee8.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee8_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee8_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee8_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Melee8_HitBack.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_1",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorFemaleMelee9_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Actor/DamageActorFemaleMelee9.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnLocationObj_Target_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.4"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_1.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.5"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerFemaleMelee9",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_Melee9_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_Melee9.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee9_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Damage/GE_Player_Female_Melee9_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_Melee9_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Melee9_HitBack.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AttackTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_2",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorFemale051Melee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Actor/DamageActorFemale051Melee3.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_2.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.3"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_OwnerMesh'Default__GA_Female051_Melee_C:HTAbilitySpawnDamageTriggerActor_2.FindSpawnRotationObj_OwnerMesh_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.8"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerFemale051Melee3",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Female051_Melee3_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee3.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee3_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Effect/GE_Player_Female051_Melee3_HitBack.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Female051_Melee3_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/Damage/GE_Player_Female051_Melee3_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Melee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 400.0,
+      "PlayMontageName": "MeleePre"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.29,
+          "Y": 0.35
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.77,
+          "Y": 0.83
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.0,
+          "Y": 0.31
+        }
+      ],
+      "fDelayTimeTrigger": 0.02,
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.2,
+          "Y": 0.32
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_6",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.3,
+          "Y": 0.37
+        },
+        {
+          "X": 0.52,
+          "Y": 0.58
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_7",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.23,
+          "Y": 0.35
+        },
+        {
+          "X": 0.82,
+          "Y": 0.88
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerTriggerParrySucceed",
+    "Name": "JumpSection_PlayerTriggerParrySucceed_0",
+    "Outer": "SkillJumpSectionData_8",
+    "Class": "UScriptClass'JumpSection_PlayerTriggerParrySucceed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontagePositionArray": [
+        {
+          "X": 0.25,
+          "Y": 0.31
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Female051_ExtremEvadeAtk_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_ExtremEvadeAtk.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_0.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female051_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Female051_Melee_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_3.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_4.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_5.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.21"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_6",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_6.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.22"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_7",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_7.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_8",
+    "Outer": "Default__GA_Female051_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_PlayerTriggerParrySucceed'Default__GA_Female051_Melee_C:SkillJumpSectionData_8.JumpSection_PlayerTriggerParrySucceed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_Melee.24"
+        }
+      ]
+    }
+  }
+]

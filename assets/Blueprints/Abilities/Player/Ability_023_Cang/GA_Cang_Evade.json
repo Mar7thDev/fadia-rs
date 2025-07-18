@@ -1,0 +1,440 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Cang_Evade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Cang_Evade_C:ExecuteUbergraph_GA_Cang_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Cang_Evade_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.2"
+      },
+      {
+        "ObjectName": "Function'GA_Cang_Evade_C:ExecuteUbergraph_GA_Cang_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "As Cang Logic Obj",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CangLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Cang_Evade": {
+        "ObjectName": "Function'GA_Cang_Evade_C:ExecuteUbergraph_GA_Cang_Evade'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Cang_Evade_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Cang_Evade_C'Default__GA_Cang_Evade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Cang_Evade",
+    "Outer": "GA_Cang_Evade_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsCang_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CangLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Cang_Evade_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Cang_Evade_C",
+    "Name": "Default__GA_Cang_Evade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.GA_Cang_Evade_C'",
+    "Template": {
+      "ObjectName": "GA_MeleeBase_C'Default__GA_MeleeBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MeleeBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MontageToPlays": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_EvadeBack'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_EvadeBack.0"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_EvadeForward'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_EvadeForward.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Cang_Evade_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.7"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Joystick'Default__GA_Cang_Evade_C:HTMontageSelect_Joystick_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.8"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "BackEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Evade_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.14"
+          }
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Evade_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.13"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityStrengthCost'Default__GA_Cang_Evade_C:HTAbilityStrengthCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.4"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Cang_Evade_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.5"
+        },
+        {
+          "ObjectName": "HTGAComponent_EvadeCoolDown'Default__GA_Cang_Evade_C:HTGAComponent_EvadeCoolDown_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.6"
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "BackEvade",
+          "Value": false
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": false
+        }
+      ],
+      "AbilityTags": [
+        "Ability.Evade"
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityStrengthCost",
+    "Name": "HTAbilityStrengthCost_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'HTAbilityStrengthCost'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedAddGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_CommonEvade_Property_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_CommonEvade_Property.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_EvadeCoolDown",
+    "Name": "HTGAComponent_EvadeCoolDown_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'HTGAComponent_EvadeCoolDown'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TriggerCoolDown": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDown_Evade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDown_Evade.1"
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "BackEvade"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Joystick",
+    "Name": "HTMontageSelect_Joystick_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'HTMontageSelect_Joystick'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "FrontEvade"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {}
+      ],
+      "NextSectionName": "Branch2",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Melee.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {}
+      ],
+      "NextSectionName": "Branch1",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Melee.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeFront",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Cang_Evade_C:SkillJumpSectionData_0.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.11"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Cang_Evade_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Cang_Evade_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Cang_Evade_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.12"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Cang_Evade_C:SkillJumpSectionData_2.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Evade.10"
+        }
+      ]
+    }
+  }
+]

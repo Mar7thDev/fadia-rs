@@ -1,0 +1,197 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Lacrimosa_ChangeAvatar_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_Lacrimosa_ChangeAvatar_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_Lacrimosa_ChangeAvatar_C'Default__Buff_Lacrimosa_ChangeAvatar_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/Buff_Lacrimosa_ChangeAvatar.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_Lacrimosa_ChangeAvatar_C",
+    "Name": "Default__Buff_Lacrimosa_ChangeAvatar_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/Buff_Lacrimosa_ChangeAvatar.Buff_Lacrimosa_ChangeAvatar_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 10.0
+        }
+      },
+      "GameplayCues": [
+        {
+          "MagnitudeAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "MinLevel": 0.0,
+          "MaxLevel": 0.0,
+          "GameplayCueTags": []
+        }
+      ],
+      "InheritableOwnedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.ImmuneAniState"
+        ]
+      },
+      "GrantedApplicationImmunityQuery": {
+        "OwningTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.ControlState"
+            },
+            {
+              "TagName": "State.AniState"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "AutoDescription": " ANY( State.ControlState, State.AniState )"
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 1,
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_Lacrimosa_ChangeAvatar_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/Buff_Lacrimosa_ChangeAvatar.0"
+        },
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_Lacrimosa_ChangeAvatar_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/Buff_Lacrimosa_ChangeAvatar.4"
+        },
+        {
+          "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_Lacrimosa_ChangeAvatar_C:ImmunityGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Buff/Buff_Lacrimosa_ChangeAvatar.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ImmunityGameplayEffectComponent",
+    "Name": "ImmunityGameplayEffectComponent_1",
+    "Outer": "Default__Buff_Lacrimosa_ChangeAvatar_C",
+    "Class": "UScriptClass'ImmunityGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ImmunityQueries": [
+        {
+          "CustomMatchDelegate_BP": {
+            "Num": 0,
+            "Name": "None"
+          },
+          "OwningTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.ControlState"
+              },
+              {
+                "TagName": "State.AniState"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              1,
+              2,
+              0,
+              1
+            ],
+            "UserDescription": "",
+            "AutoDescription": " ANY( State.ControlState, State.AniState )"
+          },
+          "EffectTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceAggregateTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "ModifyingAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "EffectSource": null,
+          "EffectDefinition": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_Lacrimosa_ChangeAvatar_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableGrantedTagsContainer": {
+        "CombinedTags": [
+          "State.Property.ImmuneAniState"
+        ],
+        "Added": [
+          "State.Property.ImmuneAniState"
+        ]
+      }
+    }
+  }
+]

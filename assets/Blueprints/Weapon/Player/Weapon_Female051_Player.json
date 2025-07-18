@@ -1,0 +1,289 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Female051_Player_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Female051_Player_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Female051_Player_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.3"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Female051_Player_C'Default__Weapon_Female051_Player_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Female051_Player_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "SocketName": "GrassInteract",
+          "Radius": 150.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Female051_Player_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimationMode": "EAnimationMode::AnimationCustomMode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_051_weapon_skin'",
+        "ObjectPath": "/Game/Characters/Player/051_female/player_051_weapon/player_051_weapon_skin.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_051_weapon_skin'",
+        "ObjectPath": "/Game/Characters/Player/051_female/player_051_weapon/player_051_weapon_skin.1"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Female051_Player_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Female051_Player_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Female051_Player_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.4"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Female051_Player_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.2"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_WeaponBase_C",
+      "VariableGUID": "33B90FFC-40043E25-6562C8AD-B5F544B2",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Female051_Player_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Female051_Player_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Female051_Player_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Female051_Player_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.5"
+      }
+    }
+  },
+  {
+    "Type": "SocketFieldInteraction",
+    "Name": "SocketFieldInteraction_0",
+    "Outer": "Default__Weapon_Female051_Player_C",
+    "Class": "UScriptClass'SocketFieldInteraction'",
+    "Properties": {
+      "WindFieldParams": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "Mesh": null,
+          "SocketName": "GrassInteract",
+          "WindStrength": 200000.0,
+          "WindRadius": 30.0,
+          "SocketOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "duration": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Weapon_Female051_Player_C",
+    "Name": "Default__Weapon_Female051_Player_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.Weapon_Female051_Player_C'",
+    "Template": {
+      "ObjectName": "BP_WeaponBase_C'Default__BP_WeaponBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Weapon/BP_WeaponBase.1"
+    },
+    "Properties": {
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "Rhand_Weapon2"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Common/Weapon/NS_player_009_weapon_Disappear_BP.NS_player_009_weapon_Disappear_BP",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Rhand_Weapon2",
+            "Attached": true,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": false,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Female051_Player_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.1"
+      },
+      "WindInteraction": {
+        "ObjectName": "SocketFieldInteraction'Default__Weapon_Female051_Player_C:SocketFieldInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Female051_Player.8"
+      },
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/051_female/player_051_weapon/player_051_weapon_ani_1_Montage.player_051_weapon_ani_1_Montage",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionNew_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionNew.0"
+        },
+        "DLWE_Size": 20.0,
+        "BindSocketName": "GrassInteract"
+      }
+    }
+  }
+]

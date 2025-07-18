@@ -1,0 +1,295 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Female046_QTE_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_Female051_QTE_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Female046_QTE_C'Default__GA_Female046_QTE_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GA_Female046_QTE_C",
+    "Name": "Default__GA_Female046_QTE_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.GA_Female046_QTE_C'",
+    "Template": {
+      "ObjectName": "GA_Female051_QTE_C'Default__GA_Female051_QTE_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MontageToPlays": [
+        {
+          "Key": "QTE",
+          "Value": {
+            "ObjectName": "AnimMontage'char_male_skill_qte_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_male_skill_qte_Montage.1"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'char_m_skill_dissolve_Montage'",
+            "ObjectPath": "/Game/Characters/Player/046_male/animation/Skill/char_m_skill_dissolve_Montage.0"
+          }
+        }
+      ],
+      "ForceLoadMontages": [],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Female046_QTE_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.9"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "QTE",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Female046_QTE_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.11"
+          }
+        }
+      ],
+      "AdditionalCosts": [
+        {
+          "ObjectName": "HTAbilityHeterochromeCost'Default__GA_Female046_QTE_C:HTAbilityHeterochromeCost_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.2"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female046_QTE_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.4"
+        },
+        {
+          "ObjectName": "HTGAComponent_HandleActorSpawn'Default__GA_Female046_QTE_C:HTGAComponent_HandleActorSpawn_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.6"
+        },
+        {
+          "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Female046_QTE_C:HTGAComponent_ActivateSetLocation_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.3"
+        },
+        {
+          "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Female046_QTE_C:HTGAComponent_CheckActivateCondition_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.5"
+        },
+        {
+          "ObjectName": "HTGAComponent_QTECameraBoom'Default__GA_Female046_QTE_C:HTGAComponent_QTECameraBoom_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.7"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.QTE.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_QTE_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_QTE.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_QTE1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_QTE1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_QTE1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Damage/GE_Player_Female046_QTE1_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.QTE.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Female_QTE_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/DamageRange/DamageRange_Female_QTE.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female_QTE2_Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_QTE2_Float.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Female046_QTE2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Damage/GE_Player_Female046_QTE2_Damage.1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTAbilityHeterochromeCost",
+    "Name": "HTAbilityHeterochromeCost_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTAbilityHeterochromeCost'",
+    "Template": {
+      "ObjectName": "HTAbilityHeterochromeCost'Default__GA_Female051_QTE_C:HTAbilityHeterochromeCost_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.2"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_ActivateSetLocation",
+    "Name": "HTGAComponent_ActivateSetLocation_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTGAComponent_ActivateSetLocation'",
+    "Template": {
+      "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Female051_QTE_C:HTGAComponent_ActivateSetLocation_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.3"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetLocationMap": [
+        {
+          "Key": "QTE",
+          "Value": {
+            "OffSetLocation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DesLocationObj": {
+              "ObjectName": "HTGetDesLocation_TargetOffset'Default__GA_Female046_QTE_C:HTGAComponent_ActivateSetLocation_0.HTGetDesLocation_TargetOffset_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.8"
+            },
+            "TraceHeight": 600.0,
+            "bFaceTarget": true,
+            "bFindFloor": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Template": {
+      "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Female051_QTE_C:HTGAComponent_AddOrRemoveGE_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.4"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_CheckActivateCondition",
+    "Name": "HTGAComponent_CheckActivateCondition_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTGAComponent_CheckActivateCondition'",
+    "Template": {
+      "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Female051_QTE_C:HTGAComponent_CheckActivateCondition_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.5"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_HandleActorSpawn",
+    "Name": "HTGAComponent_HandleActorSpawn_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTGAComponent_HandleActorSpawn'",
+    "Template": {
+      "ObjectName": "HTGAComponent_HandleActorSpawn'Default__GA_Female051_QTE_C:HTGAComponent_HandleActorSpawn_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.6"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_QTECameraBoom",
+    "Name": "HTGAComponent_QTECameraBoom_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTGAComponent_QTECameraBoom'",
+    "Template": {
+      "ObjectName": "HTGAComponent_QTECameraBoom'Default__GA_Female051_QTE_C:HTGAComponent_QTECameraBoom_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.7"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGetDesLocation_TargetOffset",
+    "Name": "HTGetDesLocation_TargetOffset_0",
+    "Outer": "HTGAComponent_ActivateSetLocation_0",
+    "Class": "UScriptClass'HTGetDesLocation_TargetOffset'",
+    "Template": {
+      "ObjectName": "HTGetDesLocation_TargetOffset'Default__GA_Female051_QTE_C:HTGAComponent_ActivateSetLocation_0.HTGetDesLocation_TargetOffset_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.8"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetRandData": {
+        "RandCheckRadius": {
+          "X": 0.0,
+          "Y": 50.0
+        },
+        "RandCheckNum": 8,
+        "CheckNavigation": true
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Default'Default__GA_Female051_QTE_C:HTMontageSelect_Default_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.9"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "JumpSection_AutoAttackTarget",
+    "Name": "JumpSection_AutoAttackTarget_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_AutoAttackTarget'",
+    "Template": {
+      "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Female051_QTE_C:SkillJumpSectionData_0.JumpSection_AutoAttackTarget_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.10"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Female046_QTE_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Template": {
+      "ObjectName": "SkillJumpSectionData'Default__GA_Female051_QTE_C:SkillJumpSectionData_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/GA_Female051_QTE.11"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Female046_QTE_C:SkillJumpSectionData_0.JumpSection_AutoAttackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/GA_Female046_QTE.10"
+        }
+      ]
+    }
+  }
+]

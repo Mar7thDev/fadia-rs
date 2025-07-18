@@ -1,0 +1,140 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Hathor_Gaze_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Hathor_Gaze_C:ExecuteUbergraph_GA_Hathor_Gaze'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Hathor_Gaze_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.2"
+      },
+      {
+        "ObjectName": "Function'GA_Hathor_Gaze_C:ExecuteUbergraph_GA_Hathor_Gaze'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Hathor_Gaze": {
+        "ObjectName": "Function'GA_Hathor_Gaze_C:ExecuteUbergraph_GA_Hathor_Gaze'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Hathor_Gaze_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Hathor_Gaze_C'Default__GA_Hathor_Gaze_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Hathor_Gaze",
+    "Outer": "GA_Hathor_Gaze_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Hathor_Gaze_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_TriggerGEBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Hathor_Gaze_C",
+    "Name": "Default__GA_Hathor_Gaze_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Gaze.GA_Hathor_Gaze_C'",
+    "Template": {
+      "ObjectName": "GA_TriggerGEBase_C'Default__GA_TriggerGEBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_TriggerGEBase.5"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TriggerEventTags": [
+        {
+          "TagName": "Event.NoMontage.Skill.Common"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.NoMontage.Skill.Common"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Hathor_Gaze_AddSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/DamageRange/DamageRange_Hathor_Gaze_AddSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_HathorAnger_Gaze_Stack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_Stack.0"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_HathorAnger_Gaze_Menu_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAnger_Gaze_Menu.0"
+              }
+            ]
+          }
+        }
+      ],
+      "ExcludeCheckLedgesMontage": [
+        "Power"
+      ]
+    }
+  }
+]

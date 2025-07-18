@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Vehicle_HitOut3_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__Buff_VehicleCollisionDamage_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_VehicleCollisionDamage.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Event.Common.CanHurtSelf",
+          "State.Property.IgnoreSuperArmor",
+          "State.AniState.HitOut"
+        ],
+        "Added": [
+          "State.AniState.HitOut"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Vehicle_HitOut3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_VehicleCollisionDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_VehicleCollisionDamage.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Vehicle_HitOut3_C'Default__GE_Vehicle_HitOut3_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/Vehicle/GE_Vehicle_HitOut3.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Vehicle_HitOut3_C",
+    "Name": "Default__GE_Vehicle_HitOut3_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Common/Vehicle/GE_Vehicle_HitOut3.GE_Vehicle_HitOut3_C'",
+    "Template": {
+      "ObjectName": "Buff_VehicleCollisionDamage_C'Default__Buff_VehicleCollisionDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_VehicleCollisionDamage.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectParam": [
+        {
+          "EventType": "ESkillEventType::SKILL_EVENT_AFTER_HIT",
+          "EffectObj": {
+            "ObjectName": "BlueprintGeneratedClass'Vehicle_SpeedOut3_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/HitOut/Vehicle/Vehicle_SpeedOut3.0"
+          }
+        }
+      ],
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Vehicle.Hit3"
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Event.Common.CanHurtSelf",
+          "State.Property.IgnoreSuperArmor",
+          "State.AniState.HitOut"
+        ],
+        "Added": [
+          "State.AniState.HitOut"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Vehicle_HitOut3_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/Vehicle/GE_Vehicle_HitOut3.0"
+        }
+      ]
+    }
+  }
+]

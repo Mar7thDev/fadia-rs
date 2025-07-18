@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CangLv1DamUpMMC_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'CangSkillDamUpMMCalc'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CangLv1DamUpMMC_C'Default__CangLv1DamUpMMC_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Upgrade/CangLv1DamUpMMC.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CangLv1DamUpMMC_C",
+    "Name": "Default__CangLv1DamUpMMC_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Upgrade/CangLv1DamUpMMC.CangLv1DamUpMMC_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxDampUpStackCnt": {
+        "Value": 2.0
+      },
+      "PerStackDamUp": {
+        "Value": 1.0,
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'DT_CangEffectFigure'",
+            "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_CangEffectFigure.0"
+          },
+          "RowName": "Buff_Cang023_Level1_SkillDamUP"
+        }
+      },
+      "ClampValue": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

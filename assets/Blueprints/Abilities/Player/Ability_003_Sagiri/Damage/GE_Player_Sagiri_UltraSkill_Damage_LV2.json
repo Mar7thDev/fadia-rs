@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Sagiri_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Sagiri_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Sagiri.Skill",
+          "Ability.Player.Sagiri.UltraSkillExtra",
+          "State.Damage.UltraSkill"
+        ],
+        "Added": [
+          "Ability.Player.Sagiri.Skill",
+          "Ability.Player.Sagiri.UltraSkillExtra",
+          "State.Damage.UltraSkill"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Sagiri_UltraSkill_Damage_LV2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Sagiri_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Sagiri_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Sagiri_UltraSkill_Damage_LV2_C'Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_UltraSkill_Damage_LV2.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Sagiri_Lv2_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Sagiri/Con_Sagiri_Lv2.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Sagiri_Lv2_TargetFloating_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Sagiri/Con_Sagiri_Lv2_TargetFloating.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Player_Sagiri_UltraSkill_Damage_LV2_C",
+    "Name": "Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_UltraSkill_Damage_LV2.GE_Player_Sagiri_UltraSkill_Damage_LV2_C'",
+    "Template": {
+      "ObjectName": "GE_Sagiri_DamageBase_C'Default__GE_Sagiri_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Sagiri_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitParticleEffects": [],
+      "DamageExuteGameplayCueTags": [],
+      "AttackBreakLevel": "EBreakableLevel::BL_High",
+      "HitWhiteEffectID": "Red_HitFrontShort",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Player.Sagiri.Skill",
+          "Ability.Player.Sagiri.UltraSkillExtra",
+          "State.Damage.UltraSkill"
+        ],
+        "Added": [
+          "Ability.Player.Sagiri.Skill",
+          "Ability.Player.Sagiri.UltraSkillExtra",
+          "State.Damage.UltraSkill"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_UltraSkill_Damage_LV2.0"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Player_Sagiri_UltraSkill_Damage_LV2_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_UltraSkill_Damage_LV2.2"
+        }
+      ]
+    }
+  }
+]

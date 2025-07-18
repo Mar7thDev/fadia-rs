@@ -1,0 +1,285 @@
+[
+  {
+    "Type": "Actor_Adler_SkillDisplay2_C",
+    "Name": "Default__Actor_Adler_SkillDisplay2_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.Actor_Adler_SkillDisplay2_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "InitialLifeSpan": 0.5
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Actor_Adler_SkillDisplay2_C:ExecuteUbergraph_Actor_Adler_SkillDisplay2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'HTAbilitySpawnActor'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Actor_Adler_SkillDisplay2_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.3"
+      },
+      {
+        "ObjectName": "Function'Actor_Adler_SkillDisplay2_C:ExecuteUbergraph_Actor_Adler_SkillDisplay2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkeletalMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Actor_Adler_SkillDisplay2": {
+        "ObjectName": "Function'Actor_Adler_SkillDisplay2_C:ExecuteUbergraph_Actor_Adler_SkillDisplay2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Actor_Adler_SkillDisplay2_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Actor_Adler_SkillDisplay2_C'Default__Actor_Adler_SkillDisplay2_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Actor_Adler_SkillDisplay2",
+    "Outer": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Actor_Adler_SkillDisplay2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.4"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.6"
+        }
+      ],
+      "VariableGUID": "6E6805F5-4AD582B2-0B79A591-66EB76A1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'Actor_Adler_SkillDisplay2_C:SkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.8"
+      },
+      "VariableGUID": "578F3F68-4FF88694-61C613A0-74CC71BE",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.5"
+        },
+        {
+          "ObjectName": "SCS_Node'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Actor_Adler_SkillDisplay2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "Actor_Adler_SkillDisplay2_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'char_adler_skill_skillactor2'",
+          "ObjectPath": "/Game/Characters/Player/033_adler_new/animation/Skill/char_adler_skill_skillactor2.1"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'player_033_adler_skin'",
+        "ObjectPath": "/Game/Characters/Player/033_adler_new/player_033_adler_skin.123"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'player_033_adler_skin'",
+        "ObjectPath": "/Game/Characters/Player/033_adler_new/player_033_adler_skin.123"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Common_0103_Inst1'",
+          "ObjectPath": "/Game/FX/Mat/Common/M_Common_0103_Inst1.0"
+        }
+      ],
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": -0.0
+      }
+    }
+  }
+]

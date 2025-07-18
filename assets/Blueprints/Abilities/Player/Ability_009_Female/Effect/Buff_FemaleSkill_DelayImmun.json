@@ -1,0 +1,226 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_FemaleSkill_DelayImmun_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_FemaleSkill_DelayImmun_C'Default__Buff_FemaleSkill_DelayImmun_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_FemaleSkill_DelayImmun.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_FemaleSkill_DelayImmun_C",
+    "Name": "Default__Buff_FemaleSkill_DelayImmun_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_FemaleSkill_DelayImmun.Buff_FemaleSkill_DelayImmun_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 4.1
+        }
+      },
+      "GrantedApplicationImmunityQuery": {
+        "OwningTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.ControlState.TimeDilation1"
+            },
+            {
+              "TagName": "Ability.Player.Female.Skill.1"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "AutoDescription": " ANY( State.ControlState.TimeDilation, Ability.Player.Female.Skill.1 )"
+        }
+      },
+      "RemoveGameplayEffectQuery": {
+        "OwningTagQuery": {
+          "TagDictionary": [
+            {
+              "TagName": "State.WeakControlState.TimeDilation"
+            }
+          ],
+          "QueryTokenStream": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+        }
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_FemaleSkill_DelayImmun_C:ImmunityGameplayEffectComponent_4'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_FemaleSkill_DelayImmun.2"
+        },
+        {
+          "ObjectName": "RemoveOtherGameplayEffectComponent'Default__Buff_FemaleSkill_DelayImmun_C:RemoveOtherGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/Buff_FemaleSkill_DelayImmun.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ImmunityGameplayEffectComponent",
+    "Name": "ImmunityGameplayEffectComponent_4",
+    "Outer": "Default__Buff_FemaleSkill_DelayImmun_C",
+    "Class": "UScriptClass'ImmunityGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ImmunityQueries": [
+        {
+          "CustomMatchDelegate_BP": {
+            "Num": 0,
+            "Name": "None"
+          },
+          "OwningTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.ControlState.TimeDilation1"
+              },
+              {
+                "TagName": "Ability.Player.Female.Skill.1"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              1,
+              2,
+              0,
+              1
+            ],
+            "UserDescription": "",
+            "AutoDescription": " ANY( State.ControlState.TimeDilation, Ability.Player.Female.Skill.1 )"
+          },
+          "EffectTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceAggregateTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "ModifyingAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "EffectSource": null,
+          "EffectDefinition": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "RemoveOtherGameplayEffectComponent",
+    "Name": "RemoveOtherGameplayEffectComponent_0",
+    "Outer": "Default__Buff_FemaleSkill_DelayImmun_C",
+    "Class": "UScriptClass'RemoveOtherGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RemoveGameplayEffectQueries": [
+        {
+          "CustomMatchDelegate_BP": {
+            "Num": 0,
+            "Name": "None"
+          },
+          "OwningTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [
+              {
+                "TagName": "State.WeakControlState.TimeDilation"
+              }
+            ],
+            "QueryTokenStream": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "UserDescription": "",
+            "AutoDescription": " ANY( State.WeakControlState.TimeDilation )"
+          },
+          "EffectTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "SourceAggregateTagQuery": {
+            "TokenStreamVersion": 0,
+            "TagDictionary": [],
+            "QueryTokenStream": [],
+            "UserDescription": "",
+            "AutoDescription": ""
+          },
+          "ModifyingAttribute": {
+            "AttributeName": "",
+            "Attribute": {
+              "Path": [],
+              "ResolvedOwner": null
+            },
+            "AttributeOwner": null
+          },
+          "EffectSource": null,
+          "EffectDefinition": null
+        }
+      ]
+    }
+  }
+]

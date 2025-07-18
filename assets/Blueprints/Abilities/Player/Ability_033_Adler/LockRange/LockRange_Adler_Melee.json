@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LockRange_Adler_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_LockBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LockRange_Adler_Melee_C'Default__LockRange_Adler_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/LockRange/LockRange_Adler_Melee.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "LockRange_Adler_Melee_C",
+    "Name": "Default__LockRange_Adler_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/LockRange/LockRange_Adler_Melee.LockRange_Adler_Melee_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_LockBoxBase_C'Default__BP_PlayerType_LockBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_LockBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HalfSize": {
+        "X": 1500.0,
+        "Y": 1500.0,
+        "Z": 500.0
+      },
+      "SphereRadius": 700.0
+    }
+  }
+]

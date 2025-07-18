@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Adler_Melee7_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Adler_Melee7_C'Default__DamageRange_Adler_Melee7_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/DamageRange/DamageRange_Adler_Melee7.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Adler_Melee7_C",
+    "Name": "Default__DamageRange_Adler_Melee7_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/DamageRange/DamageRange_Adler_Melee7.DamageRange_Adler_Melee7_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageBoxBase_C'Default__BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetFromActor": {
+        "X": 220.0,
+        "Y": 0.0,
+        "Z": 30.0
+      },
+      "TraceVector": {
+        "X": 220.0,
+        "Y": 0.0,
+        "Z": 30.0
+      },
+      "HalfSize": {
+        "X": 260.0,
+        "Y": 200.0,
+        "Z": 155.0
+      },
+      "MaxCount": 12
+    }
+  }
+]

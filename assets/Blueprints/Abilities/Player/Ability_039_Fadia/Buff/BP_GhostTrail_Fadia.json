@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GhostTrail_Fadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'NotifyState_GhostTrail'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CollapseCategories | CLASS_Const | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GhostTrail_Fadia_C'Default__BP_GhostTrail_Fadia_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/BP_GhostTrail_Fadia.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Const"
+    }
+  },
+  {
+    "Type": "BP_GhostTrail_Fadia_C",
+    "Name": "Default__BP_GhostTrail_Fadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/BP_GhostTrail_Fadia.BP_GhostTrail_Fadia_C'",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GhostTrailMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_GhostTrailMask'",
+        "ObjectPath": "/Game/CoreMaterials/Character/Effect/MI_GhostTrailMask.0"
+      },
+      "CustomTrailClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_GhostTrailFadia_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_039_Fadia/Buff/BP_GhostTrailFadia.0"
+      }
+    }
+  }
+]

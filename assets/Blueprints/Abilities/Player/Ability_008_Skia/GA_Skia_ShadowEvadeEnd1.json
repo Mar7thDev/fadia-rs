@@ -1,0 +1,329 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_Skia_SneakEndBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_SneakEndBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Skia_ShadowEvadeEnd1_C:ExecuteUbergraph_GA_Skia_ShadowEvadeEnd1'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Skia_ShadowEvadeEnd1_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.2"
+      },
+      {
+        "ObjectName": "Function'GA_Skia_ShadowEvadeEnd1_C:ExecuteUbergraph_GA_Skia_ShadowEvadeEnd1'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Skia_ShadowEvadeEnd1": {
+        "ObjectName": "Function'GA_Skia_ShadowEvadeEnd1_C:ExecuteUbergraph_GA_Skia_ShadowEvadeEnd1'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Skia_ShadowEvadeEnd1_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Skia_ShadowEvadeEnd1_C'Default__GA_Skia_ShadowEvadeEnd1_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Skia_ShadowEvadeEnd1",
+    "Outer": "GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_Skia_SneakEndBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_SneakEndBase.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Skia_ShadowEvadeEnd1_C",
+    "Name": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.GA_Skia_ShadowEvadeEnd1_C'",
+    "Template": {
+      "ObjectName": "GA_Skia_SneakEndBase_C'Default__GA_Skia_SneakEndBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_SneakEndBase.6"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MontageToPlays": [
+        {
+          "Key": "ShadowEvadeEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_Shadow1'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_Shadow1.0"
+          }
+        },
+        {
+          "Key": "ShadowEvadeEndOnWall",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_Shadow3'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_Shadow3.0"
+          }
+        },
+        {
+          "Key": "OnWallEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_Shadow3'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_Shadow3.0"
+          }
+        },
+        {
+          "Key": "EvadeEnd_end",
+          "Value": {
+            "ObjectName": "AnimMontage'Skia_EvadeEnd_end'",
+            "ObjectPath": "/Game/Characters/Player/008_Skia/animation/Skill/Skia_EvadeEnd_end.0"
+          }
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "ShadowEvadeEndOnWall",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.10"
+          }
+        },
+        {
+          "Key": "OnWallLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.9"
+          }
+        },
+        {
+          "Key": "ShadowEvadeEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.12"
+          }
+        },
+        {
+          "Key": "EvadeoutLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.11"
+          }
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Skia_ShadowEvadeEnd1_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.4"
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Evade.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Skia_EvadeAtk1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/DamageRange/DamageRange_Skia_EvadeAtk1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/GE_Player_Skia_Evade1_HitBack.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Skia_Evade1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Damage/GE_Player_Skia_Evade1_Damage.1"
+              }
+            ]
+          }
+        }
+      ],
+      "PlayMontageHoldWeaponMaps": [
+        {
+          "Key": "BackEvade",
+          "Value": false
+        },
+        {
+          "Key": "FrontEvade",
+          "Value": false
+        }
+      ],
+      "bUnActiveAchievement": true,
+      "AbilityTags": [
+        "Ability.Skill"
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivatedRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_Skia_ShadowControl1_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/Effect/Buff_Skia_ShadowControl1.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "OnWallEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "OnWallEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "EvadeEnd_end"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.35,
+      "NextSectionName": "EvadeEnd_end"
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_0.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_2.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Skia_ShadowEvadeEnd1_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Skia_ShadowEvadeEnd1_C:SkillJumpSectionData_3.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_008_Skia/GA_Skia_ShadowEvadeEnd1.8"
+        }
+      ]
+    }
+  }
+]

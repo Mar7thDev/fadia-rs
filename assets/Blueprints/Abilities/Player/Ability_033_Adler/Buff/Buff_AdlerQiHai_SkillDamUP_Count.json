@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_AdlerQiHai_SkillDamUP_Count_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_AdlerQiHai_SkillDamUP_Count_C'Default__Buff_AdlerQiHai_SkillDamUP_Count_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerQiHai_SkillDamUP_Count.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_AdlerQiHai_SkillDamUP_Count_C",
+    "Name": "Default__Buff_AdlerQiHai_SkillDamUP_Count_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerQiHai_SkillDamUP_Count.Buff_AdlerQiHai_SkillDamUP_Count_C'",
+    "Template": {
+      "ObjectName": "BuffBase_C'Default__BuffBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/BuffBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "ScalableFloatMagnitude": {
+          "Value": 1.2,
+          "Curve": {
+            "CurveTable": {
+              "ObjectName": "CurveTable'DT_AdlerEffectFigure'",
+              "ObjectPath": "/Game/DataTable/Skill/GlobalCharacterData/DT_AdlerEffectFigure.0"
+            },
+            "RowName": "Adler_SkillDam_Time"
+          }
+        }
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateByTarget",
+      "StackLimitCount": 10
+    }
+  }
+]

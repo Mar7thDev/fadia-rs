@@ -1,0 +1,6 @@
+target/
+
+# Configuration files
+patchersdk_server.toml
+gamesdk_server.toml
+game_server.toml

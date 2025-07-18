@@ -1,0 +1,606 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:ExecuteUbergraph_GA_Cang_WorldPas_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.5"
+      },
+      {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.6"
+      },
+      {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:ExecuteUbergraph_GA_Cang_WorldPas_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Cang_WorldPas_Fadia": {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:ExecuteUbergraph_GA_Cang_WorldPas_Fadia'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.4"
+      },
+      "K2_OnEndAbility": {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.6"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Cang_WorldPas_Fadia_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.5"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Cang_WorldPas_Fadia_C'Default__GA_Cang_WorldPas_Fadia_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnSocketName": "Bip001-L-Finger0"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_2",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "LocationOffset": {
+        "X": 800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "NeedCheckFloor": true,
+      "DownCheckDis": 300.0
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Cang_WorldPas_Fadia",
+    "Outer": "GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsCang_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CangLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilityTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTAbility_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsCang_Logic_Obj_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'CangLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_OnEndAbility",
+    "Outer": "GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'GameplayAbility:K2_OnEndAbility'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Cang_WorldPas_Fadia_C",
+    "Name": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.GA_Cang_WorldPas_Fadia_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Cang_AppearAtk_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/LockRange/LockRange_Cang_AppearAtk.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        },
+        "PriotityAngle": 360.0,
+        "LockTargetPriotityAngle": 360.0
+      },
+      "MontageToPlays": [
+        {
+          "Key": "Default",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_WorlldPasFadia_Treat'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_WorlldPasFadia_Treat.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Cang_WorldPas_Fadia_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.13"
+        }
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Cang_WorldPas_Fadia_C:HTGAComponent_CheckActivateCondition_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.12"
+        },
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Cang_WorldPas_Fadia_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.11"
+        },
+        {
+          "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Cang_WorldPas_Fadia_C:HTGAComponent_ActivateSetLocation_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.10"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Cang_WorldPas_Fadia_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.8"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Cang_WorldPas_Fadia_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.9"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Cang_SpawnWordSkill_Start_Team_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_SpawnWordSkill_Start_Team.0"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Cang_WorldPas_Fadia"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.Skill.CangFadia"
+      ],
+      "bCanTriggerUnControlled": true,
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.CangFadia"
+      ],
+      "AbilityTags": [
+        "Ability.Skill",
+        "Ability.Coordination"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorCangMelee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangMelee3.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Cang_WorldPas_Fadia_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Target_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Cang_WorldPas_Fadia_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.3"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerCangMelee3",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_Melee3_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_Melee3.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_Fadia_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Damage/GE_Player_Cang_Fadia_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_Melee3_Float_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_Melee3_Float.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AbilityTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_Cang_WordCBullet_Fadia_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Fadia.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Cang_WorldPas_Fadia_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_MeshSocket_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_WorldPas_Fadia.1"
+            },
+            "SpawnRotationObj": null,
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": true,
+            "SelectSpawnTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_WorldPasFadia_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_WorldPasFadia.0"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTGAComponent_ActivateSetLocation",
+    "Name": "HTGAComponent_ActivateSetLocation_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTGAComponent_ActivateSetLocation'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetLocationMap": [
+        {
+          "Key": "Default",
+          "Value": {
+            "OffSetLocation": {
+              "X": 50.0,
+              "Y": 260.0,
+              "Z": 0.0
+            },
+            "DesLocationObj": null,
+            "TraceHeight": 100.0,
+            "bFaceTarget": false,
+            "bFindFloor": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGAComponent_CheckActivateCondition",
+    "Name": "HTGAComponent_CheckActivateCondition_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTGAComponent_CheckActivateCondition'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ActivationCondition": 32
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Cang_WorldPas_Fadia_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Default"
+    }
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Lacrimosa_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Dot.Blood",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Dot.Blood",
+          "State.Damage.Melee"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Lacrimosa_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Lacrimosa_Blood_Damage_LV6_C'Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CustomCanApplyGameplayEffectComponent",
+    "Name": "CustomCanApplyGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Class": "UScriptClass'CustomCanApplyGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ApplicationRequirements": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Con_Lacrimosa_Lv6_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Lacrimosa/Con_Lacrimosa_Lv6.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Name": "Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.GE_Player_Lacrimosa_Blood_Damage_LV6_C'",
+    "Template": {
+      "ObjectName": "GE_Lacrimosa_DamageBase_C'Default__GE_Lacrimosa_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Lacrimosa_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationRate": 0.01
+      },
+      "HitCameraShake": {
+        "InnerRadius": 1.0,
+        "OuterRadius": 1000.0
+      },
+      "SkillEffectDisableMask": 6,
+      "BuffEventEffectData": [
+        {
+          "EventType": "EBuffEventType::BUFF_EVENT_BEING_TREATED",
+          "EffectType": "EBuffEffectType::BUFF_REMOVE",
+          "TriggerStackCount": 0,
+          "BySelf": true,
+          "TargetTrigger": false,
+          "UseSourceObject": false,
+          "CheckTriggerObjectName": "",
+          "ExecGAs": [],
+          "ExecSimpleGAs": [],
+          "ExecGEs": [
+            {
+              "GEClass": {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Lacrimosa_Blood_Damage_LV6_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.1"
+              },
+              "StackCount": 1,
+              "CheckTags": [],
+              "ModifyDuration": {
+                "Value": 0.0,
+                "Curve": {
+                  "CurveTable": null,
+                  "RowName": "None"
+                },
+                "RegistryType": {
+                  "Name": "None"
+                }
+              },
+              "MaxModifyDuration": 0.0
+            }
+          ],
+          "ApplicationRequirement": {
+            "ObjectName": "BlueprintGeneratedClass'Con_Lacrimosa_TargetGotTreatment_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Condition/Player/Lacrimosa/Con_Lacrimosa_TargetGotTreatment.0"
+          }
+        }
+      ],
+      "DurationPolicy": "EGameplayEffectDurationType::HasDuration",
+      "DurationMagnitude": {
+        "MagnitudeCalculationType": "EGameplayEffectMagnitudeCalculation::CustomCalculationClass",
+        "CustomMagnitude": {
+          "CalculationClassMagnitude": {
+            "ObjectName": "BlueprintGeneratedClass'Cau_Lacrimosa_BloodDuaration_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Calculation/Lacrimosa/Cau_Lacrimosa_BloodDuaration.0"
+          }
+        }
+      },
+      "Period": {
+        "Value": 1.0
+      },
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.Dot.Blood",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "State.Damage.Dot.Blood",
+          "State.Damage.Melee"
+        ]
+      },
+      "StackingType": "EGameplayEffectStackingType::AggregateBySource",
+      "StackLimitCount": 10,
+      "StackPeriodResetPolicy": "EGameplayEffectStackingPeriodPolicy::NeverReset",
+      "StackExpirationPolicy": "EGameplayEffectStackingExpirationPolicy::RemoveSingleStackAndRefreshDuration",
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.0"
+        },
+        {
+          "ObjectName": "CustomCanApplyGameplayEffectComponent'Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C:CustomCanApplyGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.2"
+        },
+        {
+          "ObjectName": "SingleTimeGEComponent'Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C:SingleTimeGEComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_004_Lacrimosa/Damage/GE_Player_Lacrimosa_Blood_Damage_LV6.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SingleTimeGEComponent",
+    "Name": "SingleTimeGEComponent_0",
+    "Outer": "Default__GE_Player_Lacrimosa_Blood_Damage_LV6_C",
+    "Class": "UScriptClass'SingleTimeGEComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

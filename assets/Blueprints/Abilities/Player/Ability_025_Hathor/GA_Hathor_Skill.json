@@ -1,0 +1,674 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Hathor_Skill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Hathor_Skill_C:ExecuteUbergraph_GA_Hathor_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.6"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Hathor_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.7"
+      },
+      {
+        "ObjectName": "Function'GA_Hathor_Skill_C:ExecuteUbergraph_GA_Hathor_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Hathor_Skill": {
+        "ObjectName": "Function'GA_Hathor_Skill_C:ExecuteUbergraph_GA_Hathor_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.6"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Hathor_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.7"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Hathor_Skill_C'Default__GA_Hathor_Skill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.8"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 500.0,
+        "Y": -500.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_1",
+    "Outer": "HTAbilitySpawnProjectiles_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Hathor_Skill",
+    "Outer": "GA_Hathor_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Hathor_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Hathor_Skill_C",
+    "Name": "Default__GA_Hathor_Skill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.GA_Hathor_Skill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Hathor_Skill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/LockRange/LockRange_Hathor_Skill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "LockTargetInfoMap": [
+        {
+          "Key": "ShortEnd",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 0.0,
+            "RefinedScopePriotityAngle": 0.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Hathor_Skill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/LockRange/LockRange_Hathor_Skill.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 120.0,
+            "LockTargetPriotityAngle": 150.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Short",
+          "Value": {
+            "ObjectName": "AnimMontage'Hathor_Skill1_Short'",
+            "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/Hathor_Skill1_Short.2"
+          }
+        },
+        {
+          "Key": "Power",
+          "Value": {
+            "ObjectName": "AnimMontage'Hathor_Skill1_Power'",
+            "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/Hathor_Skill1_Power.0"
+          }
+        },
+        {
+          "Key": "PowerEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Hathor_Skill1_Power_End'",
+            "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/Hathor_Skill1_Power_End.2"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Hathor_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/Hathor_Dissolve.0"
+          }
+        },
+        {
+          "Key": "ShortEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Hathor_Skill1_ShortEnd'",
+            "ObjectPath": "/Game/Characters/Player/025_hathor/Animation/Skill/Hathor_Skill1_ShortEnd.2"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Hathor_Skill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.11"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Power",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Hathor_Skill_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.17"
+          }
+        },
+        {
+          "Key": "Short",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Hathor_Skill_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.18"
+          }
+        }
+      ],
+      "IgnoreCheckJoyDirectionSections": [
+        "Power",
+        "PowerEnd",
+        "ShortEnd"
+      ],
+      "StartBlockMovementSections": [
+        "Power",
+        "PowerEnd"
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.6"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Hathor_Skill_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.9"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.7"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnProjectiles'Default__GA_Hathor_Skill_C:HTAbilitySpawnProjectiles_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.10"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Hathor_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/DamageRange/DamageRange_Hathor_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Effect/GE_Player_Hathor_Skill1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Hathor_Skill2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/DamageRange/DamageRange_Hathor_Skill2.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Effect/GE_Player_Hathor_Skill1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Hathor_Skill3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/DamageRange/DamageRange_Hathor_Skill3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Effect/GE_Player_Hathor_Skill1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Hathor_Skill4_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/DamageRange/DamageRange_Hathor_Skill4.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill4_HitOut_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Effect/GE_Player_Hathor_Skill4_HitOut.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Hathor_Skill4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Skill4_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_HathorAngerStack_Skill1ShortAdd_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAngerStack_Skill1ShortAdd.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_HathorAngerStack_SkillAddOnce_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Buff/Buff_HathorAngerStack_SkillAddOnce.0"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Hathor_Skill"
+        }
+      },
+      "CancelCooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "CoolDownBreak"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.Skill.Hathor"
+      ],
+      "HoldPressedTriggerTime": 0.15,
+      "ExcludeCheckLedgesMontage": [
+        "Power"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.Hathor"
+      ],
+      "AbilityTags": [
+        "Ability.Skill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Hathor_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActor_HathorSkill1Power_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Actor/DamageActor_HathorSkill1Power.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Hathor_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.1"
+            },
+            "SpawnRotationObj": null,
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerHathorSkill1Power",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": null,
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": []
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnProjectiles",
+    "Name": "HTAbilitySpawnProjectiles_0",
+    "Outer": "Default__GA_Hathor_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnProjectiles'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": null,
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Hathor_Skill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.3"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Hathor_Skill_C:HTAbilitySpawnProjectiles_0.FindSpawnRotationObj_Owner_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.5"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          },
+          {
+            "SpawnClass": null,
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Hathor_Skill_C:HTAbilitySpawnProjectiles_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Hathor_Skill_C:HTAbilitySpawnProjectiles_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.4"
+            },
+            "SpawnScaleObj": null,
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Hathor_Skill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Short"
+    }
+  },
+  {
+    "Type": "JumpSection_DelayTimeTrigger",
+    "Name": "JumpSection_DelayTimeTrigger_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_DelayTimeTrigger'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayTimeTrigger": 0.233333,
+      "NextSectionName": "ShortEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 5.0,
+      "NextSectionName": "PowerEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_HoldTriggerCheck",
+    "Name": "JumpSection_HoldTriggerCheck_1",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_HoldTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTrigger": 0.22,
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.0
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "NextSectionName": "Power"
+    }
+  },
+  {
+    "Type": "JumpSection_PlayerUnPossessed",
+    "Name": "JumpSection_PlayerUnPossessed_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_PlayerUnPossessed'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "PowerEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_ReleaseHoldTimeTriggerCheck",
+    "Name": "JumpSection_ReleaseHoldTimeTriggerCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_ReleaseHoldTimeTriggerCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HoldTimeTriggers": [
+        {
+          "Key": "1",
+          "Value": "ShortEnd"
+        },
+        {
+          "Key": "999",
+          "Value": "PowerEnd"
+        }
+      ],
+      "OptionalRequirements": [
+        {
+          "MontagePositionRequirement": [
+            {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": 0.0
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Hathor_Skill_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_ReleaseHoldTimeTriggerCheck'Default__GA_Hathor_Skill_C:SkillJumpSectionData_0.JumpSection_ReleaseHoldTimeTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.16"
+        },
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Hathor_Skill_C:SkillJumpSectionData_0.JumpSection_HoldTriggerCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.13"
+        },
+        {
+          "ObjectName": "JumpSection_PlayerUnPossessed'Default__GA_Hathor_Skill_C:SkillJumpSectionData_0.JumpSection_PlayerUnPossessed_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Hathor_Skill_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_HoldTriggerCheck'Default__GA_Hathor_Skill_C:SkillJumpSectionData_4.JumpSection_HoldTriggerCheck_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.14"
+        },
+        {
+          "ObjectName": "JumpSection_DelayTimeTrigger'Default__GA_Hathor_Skill_C:SkillJumpSectionData_4.JumpSection_DelayTimeTrigger_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/GA_Hathor_Skill.12"
+        }
+      ]
+    }
+  }
+]

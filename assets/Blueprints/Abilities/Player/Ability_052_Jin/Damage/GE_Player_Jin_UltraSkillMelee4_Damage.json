@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Jin_UltraSkillMelee4_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Jin_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Jin_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.UltraSkill"
+        ],
+        "Added": [
+          "State.Damage.UltraSkill"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Jin_UltraSkillMelee4_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Jin_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Jin_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Jin_UltraSkillMelee4_Damage_C'Default__GE_Player_Jin_UltraSkillMelee4_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Jin_UltraSkillMelee4_Damage_C",
+    "Name": "Default__GE_Player_Jin_UltraSkillMelee4_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_Damage.GE_Player_Jin_UltraSkillMelee4_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Jin_DamageBase_C'Default__GE_Jin_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Jin_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationTime": 0.01,
+        "AttackDilationRate": 0.0
+      },
+      "HitParticleEffects": [
+        {
+          "bUseSoftObject": true,
+          "SoftPSTemplate": {
+            "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Jin/NS_Player_Jin_Hit_002.NS_Player_Jin_Hit_002",
+            "SubPathString": ""
+          },
+          "PSTemplate": null,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": -160.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "SocketName": "FireSocket",
+          "Attached": false,
+          "IgnoreHitEffectOpt": false,
+          "UseParentBoundBox": false,
+          "bAcceptCustomDilation": true,
+          "bAttachRootComponent": false,
+          "AdaptiveScale": false,
+          "UserParameters": [],
+          "DirectionForce": null,
+          "SavedParticleSystem": null
+        }
+      ],
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShake_JinHit_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Jin/CameraShake_JinHit.0"
+        },
+        "OuterRadius": 1000.0
+      },
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Combat.Xun.UltraSkillLight"
+      ],
+      "AttackBreakLevel": "EBreakableLevel::BL_High",
+      "HitWhiteEffectID": "White_HitFrontShort",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "State.Damage.UltraSkill"
+        ],
+        "Added": [
+          "State.Damage.UltraSkill"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Jin_UltraSkillMelee4_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_Damage.0"
+        }
+      ]
+    }
+  }
+]

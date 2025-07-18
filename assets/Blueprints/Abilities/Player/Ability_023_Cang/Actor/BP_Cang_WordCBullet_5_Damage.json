@@ -1,0 +1,321 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Cang_WordCBullet_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Cang_WordCBullet_5_Damage_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.14"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_5_Damage_C:ExecuteUbergraph_BP_Cang_WordCBullet_5_Damage'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Cang_WordCBullet_5_Damage_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.5"
+      },
+      {
+        "ObjectName": "Function'BP_Cang_WordCBullet_5_Damage_C:ExecuteUbergraph_BP_Cang_WordCBullet_5_Damage'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Cang_WordCBullet_5_Damage": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_5_Damage_C:ExecuteUbergraph_BP_Cang_WordCBullet_5_Damage'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Cang_WordCBullet_5_Damage_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Cang_WordCBullet_5_Damage_C'Default__BP_Cang_WordCBullet_5_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_Damage_C:BoxComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BP_Cang_WordCBullet_5_Damage_C",
+    "Name": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.BP_Cang_WordCBullet_5_Damage_C'",
+    "Template": {
+      "ObjectName": "BP_Cang_WordCBullet_Damage_C'Default__BP_Cang_WordCBullet_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Cang_WordCBullet_5_Damage_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.15"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.6"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_5_Damage_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BP_Cang_WordCBullet_5_Damage_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.7"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileMissileFire'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileMissileFire_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.10"
+        },
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.11"
+        },
+        {
+          "ObjectName": "ProjectileCircleAroundOwner'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileCircleAroundOwner_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.8"
+        }
+      ],
+      "ProjectileFuncArray": [
+        {
+          "ObjectName": "ProjectileDestroyExplodeEffect'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileDestroyExplodeEffect_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.9"
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_5_Damage_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.1"
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "ProjectileMissileFire_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Template": {
+      "ObjectName": "FindSpawnRotationObj_Owner'Default__BP_Cang_WordCBullet_Damage_C:ProjectileMissileFire_1.FindSpawnRotationObj_Owner_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.3"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Cang_WordCBullet_5_Damage",
+    "Outer": "BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetInstigator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_Cang_WordCBullet_Damage_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Template": {
+      "ObjectName": "HTProjectileMovementComponent'Default__BP_Cang_WordCBullet_Damage_C:ProjectileMovement'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.7"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Template": {
+      "ObjectName": "NiagaraComponent'Default__BP_Cang_WordCBullet_Damage_C:ParticleSystemComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OverrideParameters": {},
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_5_Damage_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.1"
+      }
+    }
+  },
+  {
+    "Type": "ProjectileCircleAroundOwner",
+    "Name": "ProjectileCircleAroundOwner_0",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'ProjectileCircleAroundOwner'",
+    "Template": {
+      "ObjectName": "ProjectileCircleAroundOwner'Default__BP_Cang_WordCBullet_Damage_C:ProjectileCircleAroundOwner_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.9"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CenterRotOffset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -45.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileDestroyExplodeEffect",
+    "Name": "ProjectileDestroyExplodeEffect_0",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'ProjectileDestroyExplodeEffect'",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "ProjectileMissileFire",
+    "Name": "ProjectileMissileFire_1",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'ProjectileMissileFire'",
+    "Template": {
+      "ObjectName": "ProjectileMissileFire'Default__BP_Cang_WordCBullet_Damage_C:ProjectileMissileFire_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.10"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TraceDirectionObj": {
+        "ObjectName": "FindSpawnRotationObj_Owner'Default__BP_Cang_WordCBullet_5_Damage_C:ProjectileMissileFire_1.FindSpawnRotationObj_Owner_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.3"
+      }
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Template": {
+      "ObjectName": "ProjectileTrackTarget'Default__BP_Cang_WordCBullet_Damage_C:ProjectileTrackTarget_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.11"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Cang_WordCBullet_5_Damage_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.12"
+      },
+      "VariableGUID": "7615D6D5-4896560C-AFF1D695-97964569",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Cang_WordCBullet_5_Damage_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.13"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BP_Cang_WordCBullet_5_Damage_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "SkeletalMeshComponent'Default__BP_Cang_WordCBullet_Damage_C:SkeletalMeshComponent'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_Damage.15"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Cang_WordCBullet_5_Damage_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/BP_Cang_WordCBullet_5_Damage.1"
+      }
+    }
+  }
+]

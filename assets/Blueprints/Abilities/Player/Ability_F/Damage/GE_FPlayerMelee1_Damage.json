@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_FPlayerMelee1_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_FPlayerMelee1_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_FPlayerMelee1_Damage_C'Default__GE_FPlayerMelee1_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_F/Damage/GE_FPlayerMelee1_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_FPlayerMelee1_Damage_C",
+    "Name": "Default__GE_FPlayerMelee1_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_F/Damage/GE_FPlayerMelee1_Damage.GE_FPlayerMelee1_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_DamageBase_C'Default__GE_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "DelayTime": 0.06,
+        "AttackDilationTime": 0.06,
+        "AttackDilationRate": 0.03
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_FPlayerMelee1_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_F/Damage/GE_FPlayerMelee1_Damage.0"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BulletActor_AdlerUltraSkill_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.14"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ExecuteUbergraph_BulletActor_AdlerUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.3"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AdlerUltraSkillProjectile'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.5"
+      },
+      {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.4"
+      },
+      {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.6"
+      },
+      {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ExecuteUbergraph_BulletActor_AdlerUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BulletActor_AdlerUltraSkill": {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ExecuteUbergraph_BulletActor_AdlerUltraSkill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.3"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveTick'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.6"
+      },
+      "ReceiveActorBeginOverlap": {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BulletActor_AdlerUltraSkill_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BulletActor_AdlerUltraSkill_C'Default__BulletActor_AdlerUltraSkill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BoxExtent": {
+        "X": 16.0,
+        "Y": 16.0,
+        "Z": 16.0
+      },
+      "CanCharacterStepUpOn": "ECanBeCharacterBase::ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECollisionChannel::ECC_GameTraceChannel1",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            }
+          ]
+        },
+        "bEnableGravity": false
+      }
+    }
+  },
+  {
+    "Type": "BulletActor_AdlerUltraSkill_C",
+    "Name": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.BulletActor_AdlerUltraSkill_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StageTargetTypeMap": [
+        {
+          "Key": "EAdlerProjectileStage::InitRandomTrack",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'LockRange_Adler_UtraSkill_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/LockRange/LockRange_Adler_UtraSkill.0"
+          }
+        },
+        {
+          "Key": "EAdlerProjectileStage::TrackTargets",
+          "Value": {
+            "ObjectName": "BlueprintGeneratedClass'LockRange_Adler_UtraSkill_Search_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/LockRange/LockRange_Adler_UtraSkill_Search.0"
+          }
+        }
+      ],
+      "ReboundEffectContainer": {
+        "TargetGameplayEffectClasses": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_UltraSkill_Damage1_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Damage/GE_Player_Adler_UltraSkill_Damage1.1"
+          }
+        ]
+      },
+      "ReboundDirectionObj": {
+        "ObjectName": "ProjectileMissileFire'Default__BulletActor_AdlerUltraSkill_C:ProjectileMissileFire_2'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.10"
+      },
+      "ReboundRandomDirectionMinDistance": 240.0,
+      "RepeatSpawnRandomVelRequireFlyDistance": 600.0,
+      "DelayDestroyTimeAfterFinish": 0.6,
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BulletActor_AdlerUltraSkill_C:SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.15"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "HTProjectileMovementComponent'Default__BulletActor_AdlerUltraSkill_C:ProjectileMovement'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.7"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_AdlerUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.1"
+      },
+      "ParticleSystemComponent": {
+        "ObjectName": "NiagaraComponent'Default__BulletActor_AdlerUltraSkill_C:ParticleSystemComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.8"
+      },
+      "ProjectilePathEffects": [
+        {
+          "ObjectName": "ProjectileTrackTarget'Default__BulletActor_AdlerUltraSkill_C:ProjectileTrackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.11"
+        },
+        {
+          "ObjectName": "ProjectileMissileFire'Default__BulletActor_AdlerUltraSkill_C:ProjectileMissileFire_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.9"
+        }
+      ],
+      "FlyingSound": {
+        "bUseSoftObject": true,
+        "SoftAkEvent": {
+          "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Stick/Play_Sfx_Player_Wpn_Stick_UltraSkill_BulletFly.Play_Sfx_Player_Wpn_Stick_UltraSkill_BulletFly",
+          "SubPathString": ""
+        },
+        "ForceLoadAkEvent": null,
+        "bAttached": false,
+        "SocketName": "None",
+        "SaveLoadAkAudioEvent": null
+      },
+      "PrimaryActorTick": {
+        "TickInterval": 0.01
+      },
+      "InitialLifeSpan": 40.0,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_AdlerUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.1"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BulletActor_AdlerUltraSkill",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_VariableSet_MaxSpeed_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorBeginOverlap",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveActorBeginOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'HTProjectileMovementComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitialSpeed": 1100.0,
+      "MaxSpeed": 1200.0,
+      "bRotationFollowsVelocity": true,
+      "bInterpRotation": true,
+      "ProjectileGravityScale": 0.0,
+      "InterpRotationTime": 12.0
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "ParticleSystemComponent",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'P_Skill_Player_Adler_008'",
+        "ObjectPath": "/Game/FX/Nia/Player/FX_Player_Adler/P_Skill_Player_Adler_008.68"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "MYcolor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.MYcolor",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.MYcolor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_AdlerUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.1"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMissileFire",
+    "Name": "ProjectileMissileFire_1",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'ProjectileMissileFire'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AcceleratedSpeed": 550.0,
+      "DirectionRangeStart": {
+        "Pitch": 30.0,
+        "Yaw": 80.0,
+        "Roll": 0.0
+      },
+      "DirectionRangeEnd": {
+        "Pitch": 15.0,
+        "Yaw": -80.0,
+        "Roll": 0.0
+      },
+      "bRandDirection": false
+    }
+  },
+  {
+    "Type": "ProjectileMissileFire",
+    "Name": "ProjectileMissileFire_2",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'ProjectileMissileFire'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "AcceleratedSpeed": 900.0,
+      "DirectionRangeStart": {
+        "Pitch": 30.0,
+        "Yaw": 45.0,
+        "Roll": 0.0
+      },
+      "DirectionRangeEnd": {
+        "Pitch": 15.0,
+        "Yaw": -45.0,
+        "Roll": 0.0
+      },
+      "bRandDirection": false,
+      "DelayTrackTime": 0.36
+    }
+  },
+  {
+    "Type": "ProjectileTrackTarget",
+    "Name": "ProjectileTrackTarget_0",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'ProjectileTrackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InitOpenTrack": true,
+      "AcceleratedSpeed": 800.0,
+      "DelayTrackTime": 0.28,
+      "TrackNearDistanceTime": 0.15,
+      "UseLerpRotatorVelocity": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BulletActor_AdlerUltraSkill_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.12"
+      },
+      "VariableGUID": "E93C3115-474DE70B-27D9B995-87241047",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BulletActor_AdlerUltraSkill_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.13"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default__BulletActor_AdlerUltraSkill_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BodyInstance": {
+        "bEnableGravity": false
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BulletActor_AdlerUltraSkill_C:BoxComponent'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/BulletActor_AdlerUltraSkill.1"
+      }
+    }
+  }
+]

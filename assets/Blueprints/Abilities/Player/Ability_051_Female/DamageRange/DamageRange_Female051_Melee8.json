@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Female051_Melee8_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Female051_Melee8_C'Default__DamageRange_Female051_Melee8_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee8.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Female051_Melee8_C",
+    "Name": "Default__DamageRange_Female051_Melee8_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_051_Female/DamageRange/DamageRange_Female051_Melee8.DamageRange_Female051_Melee8_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageBoxBase_C'Default__BP_PlayerType_DamageBoxBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageBoxBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetFromActor": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 110.0
+      },
+      "TraceVector": {
+        "X": 250.0,
+        "Y": 0.0,
+        "Z": -110.0
+      },
+      "HalfSize": {
+        "X": 70.0,
+        "Y": 70.0,
+        "Z": 70.0
+      }
+    }
+  }
+]

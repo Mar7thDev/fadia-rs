@@ -1,0 +1,532 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Adler_Skill_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Adler_Skill_C:ExecuteUbergraph_GA_Adler_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.10"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Adler_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.11"
+      },
+      {
+        "ObjectName": "Function'GA_Adler_Skill_C:ExecuteUbergraph_GA_Adler_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.10"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Adler_Skill": {
+        "ObjectName": "Function'GA_Adler_Skill_C:ExecuteUbergraph_GA_Adler_Skill'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.10"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Adler_Skill_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.11"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Adler_Skill_C'Default__GA_Adler_Skill_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.12"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_MeshSocket",
+    "Name": "FindSpawnLocationObj_MeshSocket_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_MeshSocket'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LocationOffset": {
+        "X": 0.0,
+        "Y": 600.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnLocationObj_Owner",
+    "Name": "FindSpawnLocationObj_Owner_0",
+    "Outer": "HTAbilitySpawnHTActor_1",
+    "Class": "UScriptClass'FindSpawnLocationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnRotationObj_UseTarget",
+    "Name": "FindSpawnRotationObj_UseTarget_0",
+    "Outer": "HTAbilitySpawnHTActor_1",
+    "Class": "UScriptClass'FindSpawnRotationObj_UseTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_0",
+    "Outer": "HTAbilitySpawnHTActor_0",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "FindSpawnScaleObj_Param",
+    "Name": "FindSpawnScaleObj_Param_0",
+    "Outer": "HTAbilitySpawnHTActor_1",
+    "Class": "UScriptClass'FindSpawnScaleObj_Param'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Adler_Skill",
+    "Outer": "GA_Adler_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Adler_Skill_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Adler_Skill_C",
+    "Name": "Default__GA_Adler_Skill_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.GA_Adler_Skill_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Adler_Skill_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/LockRange/LockRange_Adler_Skill.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "Default",
+          "Value": {
+            "ObjectName": "AnimMontage'Adler_Skill'",
+            "ObjectPath": "/Game/Characters/Player/033_adler_new/animation/Skill/Adler_Skill.3"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Adler_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/033_adler_new/animation/Skill/Adler_Dissolve.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Adler_Skill_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.17"
+        }
+      ],
+      "AdditionalCosts": [
+        null
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_AddOrRemoveGE'Default__GA_Adler_Skill_C:HTGAComponent_AddOrRemoveGE_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.16"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.2"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Adler_Skill_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.13"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.3"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnHTActor'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.14"
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.4"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnHTActor'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.15"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill_Shield_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_Skill_Shield.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill_Shield_Lv6_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_Skill_Shield_Lv6.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Adler_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/DamageRange/DamageRange_Adler_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Damage/GE_Player_Adler_Skill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Adler_Skill1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/DamageRange/DamageRange_Adler_Skill1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Damage/GE_Player_Adler_Skill3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Skill.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_AdlerSkill_CutCount_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerSkill_CutCount.0"
+              }
+            ]
+          }
+        }
+      ],
+      "CooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "GA_Adler_Skill"
+        }
+      },
+      "CancelCooldownDuration": {
+        "Curve": {
+          "CurveTable": {
+            "ObjectName": "CurveTable'CoolDwonCurveTable'",
+            "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/CoolDwonCurveTable.0"
+          },
+          "RowName": "CoolDownBreak"
+        }
+      },
+      "CooldownTags": [
+        "CoolDown.Player.Skill.ShortPress"
+      ],
+      "TempCooldownTags": [
+        "CoolDown.Player.Skill.ShortPress"
+      ],
+      "AbilityTags": [
+        "Ability.Skill"
+      ],
+      "CooldownGameplayEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'GE_CoolDownBase_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/CoolDown/GE_CoolDownBase.1"
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Adler_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActor_AdlerSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/DamageActor_AdlerSkill.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_MeshSocket'Default__GA_Adler_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_MeshSocket_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Adler_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.4"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Adler_Skill_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnScaleObj_Param_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.7"
+            },
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerAdlerSkill",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Adler_Skill_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/DamageRange/DamageRange_Adler_Skill.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Damage/GE_Player_Adler_Skill_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill_Float_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_Skill_Float.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_Skill2_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Damage/GE_Player_Adler_Skill2_Damage.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnHTActor",
+    "Name": "HTAbilitySpawnHTActor_0",
+    "Outer": "Default__GA_Adler_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnHTActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'Actor_Adler_SkillDisplay1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay1.1"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_0.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.2"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_UseTarget'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_0.FindSpawnRotationObj_UseTarget_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.5"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_0.FindSpawnScaleObj_Param_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.8"
+            },
+            "bCanSpawnOnClient": true,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnHTActor",
+    "Name": "HTAbilitySpawnHTActor_1",
+    "Outer": "Default__GA_Adler_Skill_C",
+    "Class": "UScriptClass'HTAbilitySpawnHTActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnActorsInfo": {
+        "SpawnArray": [
+          {
+            "SpawnClass": {
+              "ObjectName": "BlueprintGeneratedClass'Actor_Adler_SkillDisplay2_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Actor/Actor_Adler_SkillDisplay2.1"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Owner'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_1.FindSpawnLocationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.3"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_UseTarget'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_1.FindSpawnRotationObj_UseTarget_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.6"
+            },
+            "SpawnScaleObj": {
+              "ObjectName": "FindSpawnScaleObj_Param'Default__GA_Adler_Skill_C:HTAbilitySpawnHTActor_1.FindSpawnScaleObj_Param_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/GA_Adler_Skill.9"
+            },
+            "bCanSpawnOnClient": false,
+            "bOnlySpawnOnServer": false,
+            "SelectSpawnTargetType": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "HTGAComponent_AddOrRemoveGE",
+    "Name": "HTGAComponent_AddOrRemoveGE_0",
+    "Outer": "Default__GA_Adler_Skill_C",
+    "Class": "UScriptClass'HTGAComponent_AddOrRemoveGE'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHybridServerTrigger": true,
+      "ActivatedRemoveGEs": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_AdlerQiHai_SkillDamUP_Count_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerQiHai_SkillDamUP_Count.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_AdlerQiHai_SkillDamUP_Count_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerQiHai_SkillDamUP_Count.0"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'Buff_AdlerQiHai_SkillDamUP_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerQiHai_SkillDamUP.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Adler_Skill_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Default"
+    }
+  }
+]

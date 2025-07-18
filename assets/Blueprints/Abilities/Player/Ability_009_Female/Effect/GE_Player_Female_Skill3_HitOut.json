@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Female_Skill3_HitOut_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.AniState.HitOut"
+        ],
+        "Added": [
+          "State.AniState.HitOut"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Female_Skill3_HitOut_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Female_Skill3_HitOut_C'Default__GE_Player_Female_Skill3_HitOut_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Skill3_HitOut.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Female_Skill3_HitOut_C",
+    "Name": "Default__GE_Player_Female_Skill3_HitOut_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Skill3_HitOut.GE_Player_Female_Skill3_HitOut_C'",
+    "Template": {
+      "ObjectName": "GE_SkillEffectBase_C'Default__GE_SkillEffectBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Buff/GE_SkillEffectBase.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SkillEffectParam": [
+        {
+          "EventType": "ESkillEventType::SKILL_EVENT_AFTER_HIT",
+          "EffectObj": {
+            "ObjectName": "BlueprintGeneratedClass'FemaleSkillHitOut3_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/HitOut/Female/FemaleSkillHitOut3.0"
+          }
+        }
+      ],
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.AniState.HitOut"
+        ],
+        "Added": [
+          "State.AniState.HitOut"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Female_Skill3_HitOut_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_009_Female/Effect/GE_Player_Female_Skill3_HitOut.0"
+        }
+      ]
+    }
+  }
+]

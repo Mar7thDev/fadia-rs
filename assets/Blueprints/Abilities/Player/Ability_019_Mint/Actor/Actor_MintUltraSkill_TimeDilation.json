@@ -1,0 +1,323 @@
+[
+  {
+    "Type": "Actor_MintUltraSkill_TimeDilation_C",
+    "Name": "Default__Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.Actor_MintUltraSkill_TimeDilation_C'",
+    "Template": {
+      "ObjectName": "BP_TimeDilationVolumeActor_C'Default__BP_TimeDilationVolumeActor_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_TimeDilationVolumeActor.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DilationRate": 0.01,
+      "EffectTime": 0.0,
+      "InitialLifeSpan": 6.0,
+      "Tags": [
+        "UltraSkillTimeStop"
+      ]
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_TimeDilationVolumeActor_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_TimeDilationVolumeActor.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Actor_MintUltraSkill_TimeDilation_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Actor_MintUltraSkill_TimeDilation_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ExecuteUbergraph_Actor_MintUltraSkill_TimeDilation'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.4"
+      },
+      {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.3"
+      },
+      {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ExecuteUbergraph_Actor_MintUltraSkill_TimeDilation'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Actor_MintUltraSkill_TimeDilation": {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ExecuteUbergraph_Actor_MintUltraSkill_TimeDilation'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.2"
+      },
+      "ReceiveActorBeginOverlap": {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ReceiveActorBeginOverlap'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Actor_MintUltraSkill_TimeDilation_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Actor_MintUltraSkill_TimeDilation_C'Default__Actor_MintUltraSkill_TimeDilation_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Actor_MintUltraSkill_TimeDilation",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActorBeginOverlap",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveActorBeginOverlap'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BP_TimeDilationVolumeActor_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_TimeDilationVolumeActor.3"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SphereComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SphereComponent'Actor_MintUltraSkill_TimeDilation_C:Sphere_GEN_VARIABLE'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.9"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_TimeDilationVolumeActor_C'",
+              "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_TimeDilationVolumeActor.0"
+            },
+            "SCSVariableName": "Sphere",
+            "AssociatedGuid": "0E219DA2-49F7738C-CC2A3C84-378A9D01"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Actor_MintUltraSkill_TimeDilation_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.6"
+      },
+      "VariableGUID": "3720C5B2-47AAAD16-46B6B890-8DC1459B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Actor_MintUltraSkill_TimeDilation_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_019_Mint/Actor/Actor_MintUltraSkill_TimeDilation.7"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "Actor_MintUltraSkill_TimeDilation_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'BP_TimeDilationVolumeActor_C:Sphere_GEN_VARIABLE'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/Actor/BP_TimeDilationVolumeActor.8"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Properties": {
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Projectile",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_AirWall",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Player",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_HTVisual",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Mesh",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_TerrainTrace",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_BossPawn",
+              "Response": "ECollisionResponse::ECR_Overlap"
+            },
+            {
+              "Channel": "ECC_NpcMoving",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            },
+            {
+              "Channel": "ECC_Water",
+              "Response": "ECollisionResponse::ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

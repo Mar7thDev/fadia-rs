@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Camera_MaleMelee3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'HTCameraSettingModifier_General'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Camera_MaleMelee3_C'Default__Camera_MaleMelee3_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Camera/Camera_MaleMelee3.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Camera_MaleMelee3_C",
+    "Name": "Default__Camera_MaleMelee3_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_046_Male/Camera/Camera_MaleMelee3.Camera_MaleMelee3_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CameraArmLength": {
+        "bOverride": true,
+        "TargetValue": {
+          "FloatValue": 500.0
+        },
+        "TargetValueEffectsPedalStack": [
+          {
+            "ObjectName": "CameraSettingEffectsPedal_ArmLength'Default__Camera_MaleMelee3_C:CameraSettingEffectsPedal_ArmLength_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_046_Male/Camera/Camera_MaleMelee3.2"
+          }
+        ],
+        "Speed": {
+          "FloatValue": 5.0
+        }
+      },
+      "AlphaInTime": 0.47568
+    }
+  },
+  {
+    "Type": "CameraSettingEffectsPedal_ArmLength",
+    "Name": "CameraSettingEffectsPedal_ArmLength_0",
+    "Outer": "Default__Camera_MaleMelee3_C",
+    "Class": "UScriptClass'CameraSettingEffectsPedal_ArmLength'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bUseMaxArmLength": true
+    }
+  }
+]

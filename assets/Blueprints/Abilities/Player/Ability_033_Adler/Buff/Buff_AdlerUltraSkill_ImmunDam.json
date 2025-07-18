@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_AdlerUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_UltraSkill_ImmuneDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_AdlerUltraSkill_ImmunDam_C'Default__Buff_AdlerUltraSkill_ImmunDam_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerUltraSkill_ImmunDam.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Buff_AdlerUltraSkill_ImmunDam_C",
+    "Name": "Default__Buff_AdlerUltraSkill_ImmunDam_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerUltraSkill_ImmunDam.Buff_AdlerUltraSkill_ImmunDam_C'",
+    "Template": {
+      "ObjectName": "Buff_UltraSkill_ImmuneDamage_C'Default__Buff_UltraSkill_ImmuneDamage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GEComponents": [
+        {
+          "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_AdlerUltraSkill_ImmunDam_C:TargetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerUltraSkill_ImmunDam.4"
+        },
+        {
+          "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_AdlerUltraSkill_ImmunDam_C:ImmunityGameplayEffectComponent_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerUltraSkill_ImmunDam.2"
+        },
+        {
+          "ObjectName": "RemoveOtherGameplayEffectComponent'Default__Buff_AdlerUltraSkill_ImmunDam_C:RemoveOtherGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Buff/Buff_AdlerUltraSkill_ImmunDam.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ImmunityGameplayEffectComponent",
+    "Name": "ImmunityGameplayEffectComponent_1",
+    "Outer": "Default__Buff_AdlerUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'ImmunityGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "ImmunityGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:ImmunityGameplayEffectComponent_1'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "RemoveOtherGameplayEffectComponent",
+    "Name": "RemoveOtherGameplayEffectComponent_0",
+    "Outer": "Default__Buff_AdlerUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'RemoveOtherGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "RemoveOtherGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:RemoveOtherGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.3"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "TargetTagsGameplayEffectComponent",
+    "Name": "TargetTagsGameplayEffectComponent_0",
+    "Outer": "Default__Buff_AdlerUltraSkill_ImmunDam_C",
+    "Class": "UScriptClass'TargetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "TargetTagsGameplayEffectComponent'Default__Buff_UltraSkill_ImmuneDamage_C:TargetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_UltraSkill_ImmuneDamage.4"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  }
+]

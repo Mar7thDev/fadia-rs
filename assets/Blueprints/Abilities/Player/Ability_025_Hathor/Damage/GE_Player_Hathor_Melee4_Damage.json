@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "AssetTagsGameplayEffectComponent",
+    "Name": "AssetTagsGameplayEffectComponent_0",
+    "Outer": "Default__GE_Player_Hathor_Melee4_Damage_C",
+    "Class": "UScriptClass'AssetTagsGameplayEffectComponent'",
+    "Template": {
+      "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Hathor_DamageBase_C:AssetTagsGameplayEffectComponent_0'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "InheritableAssetTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Melee",
+          "Ability.Player.Hathor",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "Ability.Melee",
+          "Ability.Player.Hathor",
+          "State.Damage.Melee"
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GE_Player_Hathor_Melee4_Damage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GE_Hathor_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GE_Player_Hathor_Melee4_Damage_C'Default__GE_Player_Hathor_Melee4_Damage_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Melee4_Damage.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "GE_Player_Hathor_Melee4_Damage_C",
+    "Name": "Default__GE_Player_Hathor_Melee4_Damage_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Melee4_Damage.GE_Player_Hathor_Melee4_Damage_C'",
+    "Template": {
+      "ObjectName": "GE_Hathor_DamageBase_C'Default__GE_Hathor_DamageBase_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/DamageShare/GE_Hathor_DamageBase.2"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HitPauseData": {
+        "AttackDilationTime": 0.066666,
+        "AttackDilationRate": 0.0,
+        "RateCurve": {
+          "ObjectName": "CurveFloat'HathorHitDilationCurve_Melee4'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Curve/HathorHitDilationCurve_Melee4.0"
+        }
+      },
+      "HitCameraShake": {
+        "CameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShake_Hathor_Hit_Melee4_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/SkillEffect/CameraShake/Hathor/Hit/CameraShake_Hathor_Hit_Melee4.0"
+        },
+        "OuterRadius": 1000.0,
+        "DurationPercentCanPlayNextShake": 0.5
+      },
+      "DamageExuteGameplayCueTags": [
+        "GameplayCue.Sound.Combat.Hathor.Long"
+      ],
+      "HitWhiteEffectID": "Orange_HitLeft",
+      "InheritableGameplayEffectTags": {
+        "CombinedTags": [
+          "State.Damage",
+          "Ability.Melee",
+          "Ability.Player.Hathor",
+          "State.Damage.Melee"
+        ],
+        "Added": [
+          "Ability.Melee",
+          "Ability.Player.Hathor",
+          "State.Damage.Melee"
+        ]
+      },
+      "GEComponents": [
+        {
+          "ObjectName": "AssetTagsGameplayEffectComponent'Default__GE_Player_Hathor_Melee4_Damage_C:AssetTagsGameplayEffectComponent_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_025_Hathor/Damage/GE_Player_Hathor_Melee4_Damage.0"
+        }
+      ]
+    }
+  }
+]

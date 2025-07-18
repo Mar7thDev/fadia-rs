@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Sagiri_PerfectEvade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_DamageSphereBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageSphereBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Sagiri_PerfectEvade_C'Default__DamageRange_Sagiri_PerfectEvade_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_PerfectEvade.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Sagiri_PerfectEvade_C",
+    "Name": "Default__DamageRange_Sagiri_PerfectEvade_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/DamageRange/DamageRange_Sagiri_PerfectEvade.DamageRange_Sagiri_PerfectEvade_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_DamageSphereBase_C'Default__BP_PlayerType_DamageSphereBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_DamageSphereBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetFromActor": {
+        "X": 210.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 360.0,
+      "TraceLength": 210.0,
+      "ObjectTypes": [
+        "ObjectTypeQuery3",
+        "ObjectTypeQuery10",
+        "ObjectTypeQuery12"
+      ],
+      "MaxCount": 10
+    }
+  }
+]

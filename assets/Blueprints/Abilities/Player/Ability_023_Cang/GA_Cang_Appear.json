@@ -1,0 +1,701 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Cang_Appear_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_ChangePlayerAppear_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_ChangePlayerAppear.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Cang_Appear_C:ExecuteUbergraph_GA_Cang_Appear'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.3"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Cang_Appear_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.4"
+      },
+      {
+        "ObjectName": "Function'GA_Cang_Appear_C:ExecuteUbergraph_GA_Cang_Appear'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Cang_Appear": {
+        "ObjectName": "Function'GA_Cang_Appear_C:ExecuteUbergraph_GA_Cang_Appear'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.3"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Cang_Appear_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.4"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Cang_Appear_C'Default__GA_Cang_Appear_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "FindSpawnLocationObj_Target",
+    "Name": "FindSpawnLocationObj_Target_2",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnLocationObj_Target'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NotTargetSpawnBySelfLocation": true,
+      "NeedCheckFloor": true,
+      "DownCheckDis": 300.0
+    }
+  },
+  {
+    "Type": "FindSpawnRotationObj_Owner",
+    "Name": "FindSpawnRotationObj_Owner_0",
+    "Outer": "HTAbilitySpawnDamageTriggerActor_0",
+    "Class": "UScriptClass'FindSpawnRotationObj_Owner'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Cang_Appear",
+    "Outer": "GA_Cang_Appear_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'ActiveGameplayEffectHandle'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Cang_Appear_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_ChangePlayerAppear_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_ChangePlayerAppear.2"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Cang_Appear_C",
+    "Name": "Default__GA_Cang_Appear_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.GA_Cang_Appear_C'",
+    "Template": {
+      "ObjectName": "GA_ChangePlayerAppear_C'Default__GA_ChangePlayerAppear_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_ChangePlayerAppear.5"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfoMap": [
+        {
+          "Key": "AppearAtk",
+          "Value": {
+            "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+            "RefinedScopePriotityRadius": 0.0,
+            "RefinedScopePriotityAngle": 0.0,
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_Cang_AppearAtk_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/LockRange/LockRange_Cang_AppearAtk.0"
+            },
+            "SecondTargetType": {
+              "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+            },
+            "PriotityAngle": 360.0,
+            "LockTargetPriotityAngle": 360.0,
+            "IgnoreHalfLockSections": []
+          }
+        }
+      ],
+      "MontageToPlays": [
+        {
+          "Key": "Appear",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Appear'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Appear.0"
+          }
+        },
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Dissolve'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Dissolve.0"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_AirAttack.0"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_AirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_AirAttackEnd.1"
+          }
+        },
+        {
+          "Key": "AppearAtk",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_AppearAtk_Yi'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_AppearAtk_Yi.1"
+          }
+        },
+        {
+          "Key": "AppearAir",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_AirAttack'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_AirAttack.0"
+          }
+        },
+        {
+          "Key": "Appear_Evade",
+          "Value": {
+            "ObjectName": "AnimMontage'Cang_Appear_Evade'",
+            "ObjectPath": "/Game/Characters/Player/023_cang/animation/Skill/Cang_Appear_Evade.0"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Cang_Appear_C:HTMontageSelect_Default_1'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.14"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Cang_Appear_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.15"
+        },
+        {
+          "ObjectName": "StartMontage_Sneak_C'Default__GA_Cang_Appear_C:StartMontage_Sneak_C_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.26"
+        },
+        {
+          "ObjectName": "HTMontageSelect_BeParryDuration'Default__GA_Cang_Appear_C:HTMontageSelect_BeParryDuration_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.12"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "Appear",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Appear_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.21"
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Appear_C:SkillJumpSectionData_5'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.25"
+          }
+        },
+        {
+          "Key": "AirAttackEnd",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Appear_C:SkillJumpSectionData_4'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.24"
+          }
+        },
+        {
+          "Key": "AppearAir",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Appear_C:SkillJumpSectionData_3'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.23"
+          }
+        },
+        {
+          "Key": "Appear_Evade",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Cang_Appear_C:SkillJumpSectionData_2'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.22"
+          }
+        }
+      ],
+      "StartBlockMovementSections": [
+        "AppearAtk"
+      ],
+      "GAComponents": [
+        {
+          "ObjectName": "HTGAComponent_ActivateSetLocation'Default__GA_Cang_Appear_C:HTGAComponent_ActivateSetLocation_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.7"
+        },
+        {
+          "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_Cang_Appear_C:HTGAComponent_CheckActivateCondition_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.8"
+        }
+      ],
+      "SpawnActorMaps": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "ObjectName": "HTAbilitySpawnDamageTriggerActor'Default__GA_Cang_Appear_C:HTAbilitySpawnDamageTriggerActor_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.6"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_AirAttack_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_AirAttack.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_AirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Damage/GE_Player_Cang_AirAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Adler_AirAttack_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_033_Adler/Effect/GE_Player_Adler_AirAttack_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "bCheckLedges": true
+    }
+  },
+  {
+    "Type": "HTAbilitySpawnDamageTriggerActor",
+    "Name": "HTAbilitySpawnDamageTriggerActor_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTAbilitySpawnDamageTriggerActor'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "SpawnDamageTriggerActorsInfo": {
+        "SpawnArray": [
+          {
+            "SapwnActorClass": {
+              "ObjectName": "BlueprintGeneratedClass'DamageActorCangAppearYi_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Actor/DamageActorCangAppearYi.0"
+            },
+            "SpawnConditionObjs": [],
+            "SpawnLocationObj": {
+              "ObjectName": "FindSpawnLocationObj_Target'Default__GA_Cang_Appear_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnLocationObj_Target_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.1"
+            },
+            "SpawnRotationObj": {
+              "ObjectName": "FindSpawnRotationObj_Owner'Default__GA_Cang_Appear_C:HTAbilitySpawnDamageTriggerActor_0.FindSpawnRotationObj_Owner_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.2"
+            },
+            "SpawnScaleObj": null,
+            "bForceSpawn": true,
+            "bClientPredictionSpawn": true,
+            "DamageTriggerConfigID": "PlayerCangAppearSkia",
+            "RandomRadius": 0.0,
+            "EffectContainer": {
+              "TargetType": {
+                "ObjectName": "BlueprintGeneratedClass'DamageRange_Cang_ApearYi_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_ApearYi.0"
+              },
+              "AddTargetType": null,
+              "NotFindToDoTargetType": null,
+              "TargetGameplayEffectClasses": [
+                {
+                  "ObjectName": "BlueprintGeneratedClass'Buff_Cang_SpawnWordSkill_Start_Team_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Buff/Buff_Cang_SpawnWordSkill_Start_Team.0"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_Skia_Damage_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Damage/GE_Player_Cang_Skia_Damage.1"
+                },
+                {
+                  "ObjectName": "BlueprintGeneratedClass'GE_Player_Cang_Melee1_HitBack_C'",
+                  "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/Effect/GE_Player_Cang_Melee1_HitBack.1"
+                }
+              ]
+            },
+            "RandomCountCurve": null
+          }
+        ],
+        "SelectTargetType": {
+          "ObjectName": "Class'HTTargetType_AttackTarget'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    }
+  },
+  {
+    "Type": "HTGAComponent_ActivateSetLocation",
+    "Name": "HTGAComponent_ActivateSetLocation_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTGAComponent_ActivateSetLocation'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OffsetLocationMap": [
+        {
+          "Key": "Appear",
+          "Value": {
+            "OffSetLocation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DesLocationObj": {
+              "ObjectName": "HTGetDesLocation_UnPossessedOffset'Default__GA_Cang_Appear_C:HTGAComponent_ActivateSetLocation_0.HTGetDesLocation_UnPossessedOffset_2'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.11"
+            },
+            "TraceHeight": 100.0,
+            "bFaceTarget": false,
+            "bFindFloor": false
+          }
+        },
+        {
+          "Key": "AirAttack",
+          "Value": {
+            "OffSetLocation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DesLocationObj": {
+              "ObjectName": "HTGetDesLocation_UnPossessedOffset'Default__GA_Cang_Appear_C:HTGAComponent_ActivateSetLocation_0.HTGetDesLocation_UnPossessedOffset_1'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.10"
+            },
+            "TraceHeight": 100.0,
+            "bFaceTarget": false,
+            "bFindFloor": false
+          }
+        },
+        {
+          "Key": "Appear_Evade",
+          "Value": {
+            "OffSetLocation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "DesLocationObj": {
+              "ObjectName": "HTGetDesLocation_UnPossessedOffset'Default__GA_Cang_Appear_C:HTGAComponent_ActivateSetLocation_0.HTGetDesLocation_UnPossessedOffset_0'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.9"
+            },
+            "TraceHeight": 100.0,
+            "bFaceTarget": false,
+            "bFindFloor": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTGAComponent_CheckActivateCondition",
+    "Name": "HTGAComponent_CheckActivateCondition_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTGAComponent_CheckActivateCondition'",
+    "Template": {
+      "ObjectName": "HTGAComponent_CheckActivateCondition'Default__GA_ChangePlayerAppear_C:HTGAComponent_CheckActivateCondition_0'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_ChangePlayerAppear.6"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGetDesLocation_UnPossessedOffset",
+    "Name": "HTGetDesLocation_UnPossessedOffset_0",
+    "Outer": "HTGAComponent_ActivateSetLocation_0",
+    "Class": "UScriptClass'HTGetDesLocation_UnPossessedOffset'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTGetDesLocation_UnPossessedOffset",
+    "Name": "HTGetDesLocation_UnPossessedOffset_1",
+    "Outer": "HTGAComponent_ActivateSetLocation_0",
+    "Class": "UScriptClass'HTGetDesLocation_UnPossessedOffset'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSpaceLocation": {
+        "X": 0.0,
+        "Y": 100.0,
+        "Z": 50.0
+      }
+    }
+  },
+  {
+    "Type": "HTGetDesLocation_UnPossessedOffset",
+    "Name": "HTGetDesLocation_UnPossessedOffset_2",
+    "Outer": "HTGAComponent_ActivateSetLocation_0",
+    "Class": "UScriptClass'HTGetDesLocation_UnPossessedOffset'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TargetSpaceLocation": {
+        "X": -85.0,
+        "Y": 85.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "HTMontageSelect_BeParryDuration",
+    "Name": "HTMontageSelect_BeParryDuration_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_BeParryDuration'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Appear_Evade"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Template": {
+      "ObjectName": "HTMontageSelect_Default'Default__GA_ChangePlayerAppear_C:HTMontageSelect_Default_0'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_ChangePlayerAppear.7"
+    },
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_1",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "Appear"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "AirAttack"
+    }
+  },
+  {
+    "Type": "JumpSection_AutoAttackTarget",
+    "Name": "JumpSection_AutoAttackTarget_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_AutoAttackTarget'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AppearMelee",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_Melee_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Melee.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_LocalClientGenericCheck",
+    "Name": "JumpSection_LocalClientGenericCheck_0",
+    "Outer": "SkillJumpSectionData_2",
+    "Class": "UScriptClass'JumpSection_LocalClientGenericCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "OptionalRequirements": [
+        {
+          "HasAllGEArray": [
+            {
+              "ObjectName": "BlueprintGeneratedClass'Buff_ExtremeEvade_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Buff/Common/Buff_ExtremeEvade.1"
+            }
+          ],
+          "HasAnyGEArray": []
+        }
+      ],
+      "NextSectionName": "PerfectEvadeBack",
+      "JumpAbilityClass": {
+        "ObjectName": "BlueprintGeneratedClass'GA_Cang_PerfectEvade_C'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_PerfectEvade.0"
+      }
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_3",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_4",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_5",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "AirAttackEnd"
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_AutoAttackTarget'Default__GA_Cang_Appear_C:SkillJumpSectionData_0.JumpSection_AutoAttackTarget_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_2",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_LocalClientGenericCheck'Default__GA_Cang_Appear_C:SkillJumpSectionData_2.JumpSection_LocalClientGenericCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_3",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Cang_Appear_C:SkillJumpSectionData_3.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_4",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Cang_Appear_C:SkillJumpSectionData_4.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_5",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Cang_Appear_C:SkillJumpSectionData_5.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/GA_Cang_Appear.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StartMontage_Sneak_C",
+    "Name": "StartMontage_Sneak_C_0",
+    "Outer": "Default__GA_Cang_Appear_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/StartMontage_Sneak.StartMontage_Sneak_C'",
+    "Template": {
+      "ObjectName": "StartMontage_Sneak_C'Default__StartMontage_Sneak_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/StartMontage_Sneak.2"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "AppearAtk"
+    }
+  }
+]

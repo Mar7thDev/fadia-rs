@@ -1,0 +1,2581 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weapon_Player_Sagiri_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.14"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Weapon_Player_Sagiri_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SagiriWeapon'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.4"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.5"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_SwallowTarget'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.3"
+      },
+      {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HTSkeletalMeshComponentBudgeted",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Scene",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Weapon_Player_Sagiri": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+      },
+      "K2_SwallowTarget": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_SwallowTarget'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.5"
+      },
+      "OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.4"
+      },
+      "K2_CanSwallowTarget": {
+        "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weapon_Player_Sagiri_C'Default__Weapon_Player_Sagiri_C'",
+      "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.16"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Weapon_Player_Sagiri",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAsyncSpawnEmitterCompleted__DelegateSignature'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_SpawnedComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_InTarget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTAIController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAIController'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AsyncTaskSpawnEmitterAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 10,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetOwner_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Actor'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'Actor:GetOwner'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 30,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTPlayerCharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTPlayerCharacter'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_GetOwner_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'Actor'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 66,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTPlayerCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 95,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 109,
+        "ObjectExpression": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTPlayerCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 9,
+          "RValuePointer": {
+            "Path": [
+              "CapsuleComponent"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'Character'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_InstanceVariable",
+            "Variable": {
+              "Path": [
+                "CapsuleComponent"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'Character'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Offset": 20,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'PrimitiveComponent:IgnoreActorWhenMoving'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "K2Node_Event_InTarget",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'HTAbilityCharacter'",
+                    "ObjectPath": "/Script/HTGame"
+                  }
+                }
+              }
+            },
+            {
+              "Inst": "EX_True"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 173,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetController_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Controller'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_Event_InTarget",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTAbilityCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 10,
+          "RValuePointer": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetController_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Controller'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_FinalFunction",
+            "Function": {
+              "ObjectName": "Class'Pawn:GetController'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Parameters": []
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 215,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTAIController",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTAIController'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTAIController'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_GetController_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'Controller'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 251,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTAIController",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTAIController'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 280,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 294,
+        "ObjectExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTAIController",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTAIController'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Offset": 26,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'HTAIController:PauseBehavior'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_StringConst",
+              "Value": "Sagiri Swallow"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 342,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]"
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 347,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Temp_object_Variable",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "InstancedReference",
+              "PropertyClass": {
+                "ObjectName": "Class'NiagaraComponent'",
+                "ObjectPath": "/Script/Niagara"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_CustomEvent_SpawnedComp",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "InstancedReference",
+              "PropertyClass": {
+                "ObjectName": "Class'NiagaraComponent'",
+                "ObjectPath": "/Script/Niagara"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 366,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]"
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 371,
+        "Function": {
+          "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 381,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 386,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'HTUtil:IsClientOrStandalone'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_Self"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 407,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetSystemLibrary:IsValid'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "K2Node_Event_InTarget",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'HTAbilityCharacter'",
+                    "ObjectPath": "/Script/HTGame"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 436,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanAND_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:BooleanAND'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_IsValid_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            },
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_IsClientOrStandalone_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 474,
+        "CodeOffset": 869,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[869]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanAND_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 488,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_AsyncTaskSpawnEmitterAttached_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter:AsyncTaskSpawnEmitterAttached'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_Self"
+            },
+            {
+              "Inst": "EX_SoftObjectConst",
+              "Value": {
+                "Inst": "EX_StringConst",
+                "Value": "/Game/FX/Nia/Item/Item_Dissipation/NS_Item_Dissipation_003.NS_Item_Dissipation_003"
+              }
+            },
+            {
+              "Inst": "EX_Context",
+              "ObjectExpression": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                    "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                  },
+                  "Property": {
+                    "Type": "ObjectProperty",
+                    "Name": "K2Node_Event_InTarget",
+                    "Flags": "RF_Public",
+                    "ElementSize": 8,
+                    "PropertyClass": {
+                      "ObjectName": "Class'HTAbilityCharacter'",
+                      "ObjectPath": "/Script/HTGame"
+                    }
+                  }
+                }
+              },
+              "Offset": 9,
+              "RValuePointer": {
+                "Path": [
+                  "Mesh"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "Class'Character'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              "ContextExpression": {
+                "Inst": "EX_InstanceVariable",
+                "Variable": {
+                  "Path": [
+                    "Mesh"
+                  ],
+                  "ResolvedOwner": {
+                    "ObjectName": "Class'Character'",
+                    "ObjectPath": "/Script/Engine"
+                  }
+                }
+              }
+            },
+            {
+              "Inst": "EX_NameConst",
+              "Value": "firesocket"
+            },
+            {
+              "Inst": "EX_VectorConst",
+              "Value": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              }
+            },
+            {
+              "Inst": "EX_RotationConst",
+              "Value": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              }
+            },
+            {
+              "Inst": "EX_VectorConst",
+              "Value": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            {
+              "Inst": "EX_False"
+            },
+            {
+              "Inst": "EX_ByteConst",
+              "Value": 0
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_ByteConst",
+              "Value": 0
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_False"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 721,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetSystemLibrary:IsValid'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                  "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "CallFunc_AsyncTaskSpawnEmitterAttached_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+                    "ObjectPath": "/Script/HTGame"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 750,
+        "CodeOffset": 10,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[10]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_BindDelegate",
+        "StatementIndex": 764,
+        "FunctionName": "OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258",
+        "Delegate": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "DelegateProperty",
+              "Name": "K2Node_CreateDelegate_OutputDelegate",
+              "Flags": "RF_Public",
+              "ElementSize": 32,
+              "SignatureFunction": {
+                "ObjectName": "Class'OnAsyncSpawnEmitterCompleted__DelegateSignature'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "ObjectTerm": {
+          "Inst": "EX_Self"
+        }
+      },
+      {
+        "Inst": "EX_AddMulticastDelegate",
+        "StatementIndex": 787,
+        "MulticastDelegate": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_AsyncTaskSpawnEmitterAttached_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          },
+          "Offset": 9,
+          "RValuePointer": {
+            "Path": [
+              "OnEmitterSpawned"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+              "ObjectPath": "/Script/HTGame"
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_InstanceVariable",
+            "Variable": {
+              "Path": [
+                "OnEmitterSpawned"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Delegate": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "DelegateProperty",
+              "Name": "K2Node_CreateDelegate_OutputDelegate",
+              "Flags": "RF_Public",
+              "ElementSize": 32,
+              "SignatureFunction": {
+                "ObjectName": "Class'OnAsyncSpawnEmitterCompleted__DelegateSignature'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 828,
+        "ObjectExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_AsyncTaskSpawnEmitterAttached_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTGameplayEffectTask_AsyncSpawnEmitter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Offset": 14,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_VirtualFunction",
+          "Function": "Activate",
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 864,
+        "CodeOffset": 10,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 869,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 871
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_CanSwallowTarget",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SagiriWeapon:K2_CanSwallowTarget'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InTarget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InMonsterStaticData",
+        "Flags": "RF_Public",
+        "ElementSize": 176,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "Class'MonsterStaticData'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTAICharacter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTAICharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_PushExecutionFlow",
+        "StatementIndex": 0,
+        "PushingAddress": 268,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.K2_CanSwallowTarget[268]"
+      },
+      {
+        "Inst": "EX_PushExecutionFlow",
+        "StatementIndex": 5,
+        "PushingAddress": 257,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.K2_CanSwallowTarget[257]"
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 10,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_GetOwner_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'Actor'",
+                "ObjectPath": "/Script/Engine"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'Actor:GetOwner'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 30,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTPlayerCharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTPlayerCharacter'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_GetOwner_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'Actor'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 66,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTPlayerCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_PopExecutionFlowIfNot",
+        "StatementIndex": 95,
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 105,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "K2Node_DynamicCast_AsHTAICharacter",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'HTAICharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DynamicCast",
+          "InterfaceClass": {
+            "ObjectName": "Class'HTAICharacter'",
+            "ObjectPath": "/Script/HTGame"
+          },
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "InTarget",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+                "PropertyClass": {
+                  "ObjectName": "Class'HTAbilityCharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 141,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Cast",
+          "ConversionType": "CST_ObjectToBool",
+          "Target": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+                "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "K2Node_DynamicCast_AsHTAICharacter",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'HTAICharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_PopExecutionFlowIfNot",
+        "StatementIndex": 170,
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "K2Node_DynamicCast_bSuccess",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 180,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:EqualEqual_ByteByte'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_Context",
+              "ObjectExpression": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+                    "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+                  },
+                  "Property": {
+                    "Type": "ObjectProperty",
+                    "Name": "K2Node_DynamicCast_AsHTAICharacter",
+                    "Flags": "RF_Public",
+                    "ElementSize": 8,
+                    "PropertyClass": {
+                      "ObjectName": "Class'HTAICharacter'",
+                      "ObjectPath": "/Script/HTGame"
+                    }
+                  }
+                }
+              },
+              "Offset": 9,
+              "RValuePointer": {
+                "Path": [
+                  "MonsterJob"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "Class'HTAICharacter'",
+                  "ObjectPath": "/Script/HTGame"
+                }
+              },
+              "ContextExpression": {
+                "Inst": "EX_InstanceVariable",
+                "Variable": {
+                  "Path": [
+                    "MonsterJob"
+                  ],
+                  "ResolvedOwner": {
+                    "ObjectName": "Class'HTAICharacter'",
+                    "ObjectPath": "/Script/HTGame"
+                  }
+                }
+              }
+            },
+            {
+              "Inst": "EX_ByteConst",
+              "Value": 1
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 233,
+        "Variable": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "PropertyFlags": "Parm | OutParm | ReturnParm",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 252,
+        "CodeOffset": 268,
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.K2_CanSwallowTarget[268]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 257,
+        "Variable": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "PropertyFlags": "Parm | OutParm | ReturnParm",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_False"
+        }
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 268,
+        "Expression": {
+          "Inst": "EX_LocalOutVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_CanSwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.2"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "PropertyFlags": "Parm | OutParm | ReturnParm",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 278
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_SwallowTarget",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SagiriWeapon:K2_SwallowTarget'",
+      "ObjectPath": "/Script/HTGame"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InTarget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'HTAbilityCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+          },
+          "Property": {
+            "Type": "ObjectProperty",
+            "Name": "K2Node_Event_InTarget",
+            "Flags": "RF_Public",
+            "ElementSize": 8,
+            "PropertyClass": {
+              "ObjectName": "Class'HTAbilityCharacter'",
+              "ObjectPath": "/Script/HTGame"
+            }
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:K2_SwallowTarget'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.3"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "InTarget",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+              "PropertyClass": {
+                "ObjectName": "Class'HTAbilityCharacter'",
+                "ObjectPath": "/Script/HTGame"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 386
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[386]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+            "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+          },
+          "Property": {
+            "Type": "ObjectProperty",
+            "Name": "K2Node_CustomEvent_SpawnedComp",
+            "Flags": "RF_Public",
+            "ElementSize": 8,
+            "PropertyFlags": "InstancedReference",
+            "PropertyClass": {
+              "ObjectName": "Class'NiagaraComponent'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'Weapon_Player_Sagiri_C:OnEmitterSpawned_0831479E453496D80D062C8AD2DA9258'",
+              "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.4"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "SpawnedComp",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+              "PropertyClass": {
+                "ObjectName": "Class'NiagaraComponent'",
+                "ObjectPath": "/Script/Niagara"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 347
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[347]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 0,
+        "Function": {
+          "ObjectName": "Function'Weapon_Player_Sagiri_C:ExecuteUbergraph_Weapon_Player_Sagiri'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 371
+          }
+        ],
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.ExecuteUbergraph_Weapon_Player_Sagiri[371]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 15,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 17
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "HTAbilityFoliageInteraction",
+    "Name": "HTAbilityFoliageInteraction_0",
+    "Outer": "Default__Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'HTAbilityFoliageInteraction'",
+    "Properties": {
+      "FoliageInteractionArray": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "SocketName": "GrassInteract",
+          "Radius": 200.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HTSkeletalMeshComponentBudgeted",
+    "Name": "HTSkeletalMeshComponentBudgeted_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'HTSkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'Weapon_Player_Sagiri_skin_Skeleton_AnimBlueprint1_C'",
+        "ObjectPath": "/Game/Characters/Player/003_sagiri_1/Weapon_Player_Sagiri/Weapon_Player_Sagiri_skin_Skeleton_AnimBlueprint1.0"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_Sagiri_skin'",
+        "ObjectPath": "/Game/Characters/Player/003_sagiri_1/Weapon_Player_Sagiri/Weapon_Player_Sagiri_skin.4"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'Weapon_Player_Sagiri_skin'",
+        "ObjectPath": "/Game/Characters/Player/003_sagiri_1/Weapon_Player_Sagiri/Weapon_Player_Sagiri_skin.4"
+      },
+      "ComponentTags": [
+        "Weapon_Hand_R1"
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Scene_GEN_VARIABLE",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Sagiri_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.9"
+      },
+      "VariableGUID": "E0641870-465818CE-FF688A8E-921A7AEA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weapon_Player_Sagiri_C:Scene_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.10"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.13"
+        }
+      ],
+      "VariableGUID": "E97CB49F-4DEB848C-7D9580B3-B0A77DF0",
+      "InternalVariableName": "Scene"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'HTSkeletalMeshComponentBudgeted'",
+        "ObjectPath": "/Script/HTGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "HTSkeletalMeshComponentBudgeted'Weapon_Player_Sagiri_C:HTSkeletalMeshComponentBudgeted_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.7"
+      },
+      "VariableGUID": "1D9F38D7-48065E50-C838FFB2-90F1E4C3",
+      "InternalVariableName": "HTSkeletalMeshComponentBudgeted"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.12"
+        },
+        {
+          "ObjectName": "SCS_Node'Weapon_Player_Sagiri_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weapon_Player_Sagiri_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.11"
+      }
+    }
+  },
+  {
+    "Type": "SocketFieldInteraction",
+    "Name": "SocketFieldInteraction_0",
+    "Outer": "Default__Weapon_Player_Sagiri_C",
+    "Class": "UScriptClass'SocketFieldInteraction'",
+    "Properties": {
+      "WindFieldParams": [
+        {
+          "MeshTag": "Weapon_Hand_R1",
+          "Mesh": null,
+          "SocketName": "Bn_m_headAll_001",
+          "WindStrength": 200000.0,
+          "WindRadius": 50.0,
+          "SocketOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "duration": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Weapon_Player_Sagiri_C",
+    "Name": "Default__Weapon_Player_Sagiri_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.Weapon_Player_Sagiri_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "SwallowSlots": [
+        {
+          "bIsEmpty": true,
+          "bIsDisabled": true,
+          "bPreIsDisabled": true,
+          "bPreIsEmpty": true,
+          "CoolDownGE": {
+            "ObjectName": "BlueprintGeneratedClass'GE_Sagiri_BranchCD1_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD1.1"
+          },
+          "RequiredGE": null,
+          "SlotName": "13 - Default",
+          "SocketName": "Bn_m_gunC_002",
+          "SwallowTarget": null,
+          "FakeFreeTime": 0.0,
+          "FakeDuration": 0.0
+        },
+        {
+          "bIsEmpty": true,
+          "bIsDisabled": true,
+          "bPreIsDisabled": true,
+          "bPreIsEmpty": true,
+          "CoolDownGE": {
+            "ObjectName": "BlueprintGeneratedClass'GE_Sagiri_BranchCD2_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD2.1"
+          },
+          "RequiredGE": {
+            "ObjectName": "BlueprintGeneratedClass'Buff_Sagiri003_Level6_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Upgrade/Level6/Buff_Sagiri003_Level6.0"
+          },
+          "SlotName": "15 - Default",
+          "SocketName": "Bn_m_gunA_002",
+          "SwallowTarget": null,
+          "FakeFreeTime": 0.0,
+          "FakeDuration": 0.0
+        },
+        {
+          "bIsEmpty": true,
+          "bIsDisabled": true,
+          "bPreIsDisabled": true,
+          "bPreIsEmpty": true,
+          "CoolDownGE": {
+            "ObjectName": "BlueprintGeneratedClass'GE_Sagiri_BranchCD3_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Buff/GE_Sagiri_BranchCD3.1"
+          },
+          "RequiredGE": {
+            "ObjectName": "BlueprintGeneratedClass'Buff_Sagiri003_Level6_C'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Upgrade/Level6/Buff_Sagiri003_Level6.0"
+          },
+          "SlotName": "14 - Default",
+          "SocketName": "Bn_m_gunB_002",
+          "SwallowTarget": null,
+          "FakeFreeTime": 0.0,
+          "FakeDuration": 0.0
+        }
+      ],
+      "KillTargetGE": {
+        "AssetPathName": "/Game/Blueprints/Abilities/Player/Ability_003_Sagiri/Damage/GE_Player_Sagiri_Branch_Kill_Damage.GE_Player_Sagiri_Branch_Kill_Damage_C",
+        "SubPathString": ""
+      },
+      "ConsumeSlotNiagaraSystem": {
+        "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Sagiri/NS_Player_Sagiri_029.NS_Player_Sagiri_029",
+        "SubPathString": ""
+      },
+      "FreeSlotNiagaraSystem": {
+        "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Sagiri/NS_Player_Sagiri_030.NS_Player_Sagiri_030",
+        "SubPathString": ""
+      },
+      "SwallowCharCurve": {
+        "EditorCurveData": {
+          "KeyHandlesToIndices": {}
+        },
+        "ExternalCurve": {
+          "ObjectName": "CurveFloat'Curve_NS_Item_Dissipation_003'",
+          "ObjectPath": "/Game/FX/Nia/Item/Item_Dissipation/Curve_NS_Item_Dissipation_003.0"
+        }
+      },
+      "ConsumeSlotTimeSinceSwallowTarget": 0.0,
+      "ParentSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": "Rhand_Weapon"
+        }
+      ],
+      "UnEquipSocketMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "UnequipSocket": "Bip001-Pelvis",
+            "UnequipOffset": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "HiddenEffects": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "bUseSoftObject": true,
+            "SoftPSTemplate": {
+              "AssetPathName": "/Game/FX/Nia/Player/FX_Player_Sagiri/NS_Player_Sagiri_032.NS_Player_Sagiri_032",
+              "SubPathString": ""
+            },
+            "PSTemplate": null,
+            "LocationOffset": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "RotationOffset": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "SocketName": "Rhand_Weapon",
+            "Attached": true,
+            "IgnoreHitEffectOpt": false,
+            "UseParentBoundBox": true,
+            "bAcceptCustomDilation": true,
+            "bAttachRootComponent": false,
+            "AdaptiveScale": false,
+            "UserParameters": [],
+            "DirectionForce": null,
+            "SavedParticleSystem": null
+          }
+        }
+      ],
+      "WeaponFoliageInteraction": {
+        "ObjectName": "HTAbilityFoliageInteraction'Default__Weapon_Player_Sagiri_C:HTAbilityFoliageInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.6"
+      },
+      "WindInteraction": {
+        "ObjectName": "SocketFieldInteraction'Default__Weapon_Player_Sagiri_C:SocketFieldInteraction_0'",
+        "ObjectPath": "/Game/Blueprints/Weapon/Player/Weapon_Player_Sagiri.15"
+      },
+      "WeaponSkillMontageMap": [
+        {
+          "Key": "Weapon_Hand_R1",
+          "Value": {
+            "AssetPathName": "/Game/Characters/Player/003_sagiri_1/Weapon_Player_Sagiri/animation/Weapon_Player_Sagiri_Montage.Weapon_Player_Sagiri_Montage",
+            "SubPathString": ""
+          }
+        }
+      ],
+      "UnequipIntervalTimeOffset": 5.0,
+      "HideAudioEvent": {
+        "AssetPathName": "/Game/WwiseAudio/Events/Weapon/Weapon_Hammer/Play_Sfx_Player_Wpn_Hammer_Disappear.Play_Sfx_Player_Wpn_Hammer_Disappear",
+        "SubPathString": ""
+      },
+      "DLWEComponentData": {
+        "DLWEComponentClass": {
+          "ObjectName": "BlueprintGeneratedClass'DLWE_InteractionNew_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/DLWE/Blueprints/Weather_Effects/DLWE_InteractionNew.0"
+        },
+        "DLWE_Size": 80.0,
+        "BindSocketName": "GrassInteract"
+      }
+    }
+  }
+]

@@ -1,0 +1,957 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:ExecuteUbergraph_GA_Jin_UltraSkill_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.2"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.3"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:TriggerJumpSectionImpl'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.4"
+      },
+      {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:ExecuteUbergraph_GA_Jin_UltraSkill_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_Jin_UltraSkill_Melee": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:ExecuteUbergraph_GA_Jin_UltraSkill_Melee'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.1"
+      },
+      "TriggerJumpSectionImpl": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:TriggerJumpSectionImpl'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.4"
+      },
+      "K2_OnEndAbility": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:K2_OnEndAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.3"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_Jin_UltraSkill_Melee_C:K2_ActivateAbility'",
+        "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_Jin_UltraSkill_Melee_C'Default__GA_Jin_UltraSkill_Melee_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_Jin_UltraSkill_Melee",
+    "Outer": "GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsJin_Record_Skill_Logic_Obj",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'JinRecordSkillLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetTriggerUltraSubSkillCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetSkillStartSectionName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsHTPlayer_Character_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerCharacter'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCustomLogicObjByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'HTPlayerLogicObjBase'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Event_JumpSectionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsJin_Record_Skill_Logic_Obj_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'JinRecordSkillLogicObj'",
+          "ObjectPath": "/Script/HTGame"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_SelectName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:K2_ActivateAbility'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.5"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_OnEndAbility",
+    "Outer": "GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'GameplayAbility:K2_OnEndAbility'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TriggerJumpSectionImpl",
+    "Outer": "GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'GA_MontageBase_C:TriggerJumpSectionImpl'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_MontageBase.16"
+    },
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "JumpSectionName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GA_Jin_UltraSkill_Melee_C",
+    "Name": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.GA_Jin_UltraSkill_Melee_C'",
+    "Template": {
+      "ObjectName": "GA_SkillBase_C'Default__GA_SkillBase_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Ability/GA_SkillBase.1"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LockTargetInfo": {
+        "PriotityType": "ELockDirectionCondition::LockType_JoystickAngle",
+        "TargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_Jin_AppearMelee_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/LockRange/LockRange_Jin_AppearMelee.0"
+        },
+        "SecondTargetType": {
+          "ObjectName": "BlueprintGeneratedClass'LockRange_BossLock_C'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Common/LockRange/LockRange_BossLock.0"
+        }
+      },
+      "MontageToPlays": [
+        {
+          "Key": "DissolveMontage",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_dissolve'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_dissolve.0"
+          }
+        },
+        {
+          "Key": "UltraMelee1",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_001'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_001.1"
+          }
+        },
+        {
+          "Key": "UltraMelee3",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_003'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_003.1"
+          }
+        },
+        {
+          "Key": "UltraMelee4",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_004'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_004.3"
+          }
+        },
+        {
+          "Key": "UltraMelee5",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_005'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_005.1"
+          }
+        },
+        {
+          "Key": "UltraMelee1Pre",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMeleePre'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMeleePre.1"
+          }
+        },
+        {
+          "Key": "UltraMelee2",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_002'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_002.2"
+          }
+        },
+        {
+          "Key": "UltraMelee6",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraMelee_006'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraMelee_006.2"
+          }
+        },
+        {
+          "Key": "UltraAirAttack",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraAirAttack'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraAirAttack.0"
+          }
+        },
+        {
+          "Key": "UltraAirAttackEnd",
+          "Value": {
+            "ObjectName": "AnimMontage'Jin_UltraAirAttackEnd'",
+            "ObjectPath": "/Game/Characters/Player/052_jin/animation/Skill/Jin_UltraAirAttackEnd.2"
+          }
+        }
+      ],
+      "AdditionalStartSections": [
+        {
+          "ObjectName": "HTMontageSelect_Default'Default__GA_Jin_UltraSkill_Melee_C:HTMontageSelect_Default_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.6"
+        },
+        {
+          "ObjectName": "HTMontageSelect_PreSection'Default__GA_Jin_UltraSkill_Melee_C:HTMontageSelect_PreSection_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.8"
+        },
+        {
+          "ObjectName": "HTMontageSelect_Falling'Default__GA_Jin_UltraSkill_Melee_C:HTMontageSelect_Falling_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.7"
+        }
+      ],
+      "JumpSectionMap": [
+        {
+          "Key": "UltraAirAttack",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_UltraSkill_Melee_C:SkillJumpSectionData_0'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.11"
+          }
+        },
+        {
+          "Key": "UltraAirAttackLoop",
+          "Value": {
+            "ObjectName": "SkillJumpSectionData'Default__GA_Jin_UltraSkill_Melee_C:SkillJumpSectionData_1'",
+            "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.12"
+          }
+        }
+      ],
+      "EffectContainerMap": [
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee2_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee2_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee4_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee5_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee5_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.6"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkill_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkill.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee6_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee6_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee8_HitOut_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee8_HitOut.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.2_1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee2_1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee2_1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee2_1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee2_1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.3_1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee3_1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee3_1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4_1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee4_1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee1_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee1_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4_2"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee4_2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee4_2Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee4_2Float.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4_3"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee4_3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_3_Damage.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.5_1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee5_1_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee5_1_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee7HitDown_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee7HitDown.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.AirAttack.1"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_AirAttack_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_AirAttack.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraAirAttack_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraAirAttack_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee3_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee3_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.4_4"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee1_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee1.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee4_3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee4_3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraMelee4_3Float_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_UltraMelee4_3Float.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Common.Display"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "Class'HTGATargetType_UseOwner'",
+              "ObjectPath": "/Script/HTGame"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'Buff_Jin_SkillBeBreak_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Buff/Buff_Jin_SkillBeBreak.0"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.7"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee3_2_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee3_2_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        },
+        {
+          "Key": {
+            "TagName": "Event.Montage.Player.Melee.8"
+          },
+          "Value": {
+            "TargetType": {
+              "ObjectName": "BlueprintGeneratedClass'DamageRange_Jin_UltraSkillMelee3_C'",
+              "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/DamageRange/DamageRange_Jin_UltraSkillMelee3.0"
+            },
+            "AddTargetType": null,
+            "NotFindToDoTargetType": null,
+            "TargetGameplayEffectClasses": [
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_UltraSkillMelee3_3_Damage_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Damage/GE_Player_Jin_UltraSkillMelee3_3_Damage.1"
+              },
+              {
+                "ObjectName": "BlueprintGeneratedClass'GE_Player_Jin_Melee4_HitBack_C'",
+                "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/Effect/GE_Player_Jin_Melee4_HitBack.1"
+              }
+            ]
+          }
+        }
+      ],
+      "AbilityTags": [
+        "Ability.UltraSubSkill",
+        "Ability.Melee"
+      ]
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Default",
+    "Name": "HTMontageSelect_Default_0",
+    "Outer": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Default'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayMontageName": "UltraMelee1"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_Falling",
+    "Name": "HTMontageSelect_Falling_0",
+    "Outer": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_Falling'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LandOffDistanceMin": 0.0,
+      "PlayMontageName": "UltraAirAttack"
+    }
+  },
+  {
+    "Type": "HTMontageSelect_PreSection",
+    "Name": "HTMontageSelect_PreSection_0",
+    "Outer": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'HTMontageSelect_PreSection'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DistancePreSection": 180.0,
+      "PlayMontageName": "UltraMelee1Pre"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_0",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "UltraAirAttackEnd"
+    }
+  },
+  {
+    "Type": "JumpSection_OnLandedCheck",
+    "Name": "JumpSection_OnLandedCheck_0",
+    "Outer": "SkillJumpSectionData_1",
+    "Class": "UScriptClass'JumpSection_OnLandedCheck'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DelayCheckOnLanded": 0.3,
+      "NextSectionName": "UltraAirAttackEnd"
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_0",
+    "Outer": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Jin_UltraSkill_Melee_C:SkillJumpSectionData_0.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkillJumpSectionData",
+    "Name": "SkillJumpSectionData_1",
+    "Outer": "Default__GA_Jin_UltraSkill_Melee_C",
+    "Class": "UScriptClass'SkillJumpSectionData'",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "JumpSectionTypes": [
+        {
+          "ObjectName": "JumpSection_OnLandedCheck'Default__GA_Jin_UltraSkill_Melee_C:SkillJumpSectionData_1.JumpSection_OnLandedCheck_0'",
+          "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_052_Jin/GA_Jin_UltraSkill_Melee.10"
+        }
+      ]
+    }
+  }
+]

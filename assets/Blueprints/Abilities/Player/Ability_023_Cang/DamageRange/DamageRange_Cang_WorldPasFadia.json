@@ -1,0 +1,41 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DamageRange_Cang_WorldPasFadia_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PlayerType_EquippedPlayers_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_EquippedPlayers.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DamageRange_Cang_WorldPasFadia_C'Default__DamageRange_Cang_WorldPasFadia_C'",
+      "ObjectPath": "/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_WorldPasFadia.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DamageRange_Cang_WorldPasFadia_C",
+    "Name": "Default__DamageRange_Cang_WorldPasFadia_C",
+    "Class": "BlueprintGeneratedClass'/Game/Blueprints/Abilities/Player/Ability_023_Cang/DamageRange/DamageRange_Cang_WorldPasFadia.DamageRange_Cang_WorldPasFadia_C'",
+    "Template": {
+      "ObjectName": "BP_PlayerType_EquippedPlayers_C'Default__BP_PlayerType_EquippedPlayers_C'",
+      "ObjectPath": "/Game/Blueprints/Share/Range/BP_PlayerType_EquippedPlayers.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PlayerIDArray": [
+        "1039"
+      ]
+    }
+  }
+]
