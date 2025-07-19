@@ -6,6 +6,7 @@ use std::{
 use assets::{AssetsLoadingError, GameAssets};
 use common::config_util;
 use config::ServerConfig;
+
 use tracing::error;
 
 mod assets;

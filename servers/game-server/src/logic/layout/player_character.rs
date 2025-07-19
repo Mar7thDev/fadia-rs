@@ -1,4 +1,8 @@
-use fadia_codegen::{RepLayout, ReplicatedProperty, dummy_rpc_handler};
+use bitstream_io::BitRead;
+use std::io;
+use tracing::debug;
+
+use fadia_codegen::{RepLayout, ReplicatedProperty, dummy_rpc_handler, rpc_handlers};
 
 use fadia_config::blueprint::PlayerCharacterConfig;
 use fadia_engine::{
@@ -10,18 +14,22 @@ use fadia_engine::{
             PropertyU32,
         },
     },
+    rotator::FRotator,
+    util::{InBitReader, ReadPrimitivesExt, quantized::QuantizedReadExt},
+    vector::FVector3d,
 };
 
 use crate::{
     logic::{
         ObjectLayout,
         actor::{NetRole, PropertyNetRole},
+        rpc::{RpcArgument, RpcContext},
     },
     net::World,
 };
 
 #[derive(Debug, RepLayout)]
-#[dummy_rpc_handler]
+#[max_rep_index(136)]
 pub struct HTPlayerCharacter {
     #[rep(handle = 5)]
     pub remote_role: PropertyNetRole,
@@ -125,6 +133,11 @@ pub struct AbilitySystemComponent {
     #[rep(index = 7)]
     pub activatable_abilities: FastArraySerializer<GameplayAbilitySpec>,
 }
+
+#[derive(Debug, RepLayout)]
+#[max_rep_index(8)]
+#[dummy_rpc_handler]
+pub struct StateManagerComponent {}
 
 #[derive(Debug, ReplicatedProperty)]
 pub struct GameplayAbilityHandle(pub PropertyU32);
@@ -263,7 +276,10 @@ impl HTPlayerCharacter {
 
         sub_objects.push((motion_warping_guid, Box::new(NullLayout)));
         sub_objects.push((ht_character_attribute_set_guid, Box::new(NullLayout)));
-        sub_objects.push((state_manager_component_guid, Box::new(NullLayout)));
+        sub_objects.push((
+            state_manager_component_guid,
+            Box::new(StateManagerComponent {}),
+        ));
 
         (
             character_guid,
@@ -287,11 +303,64 @@ impl HTPlayerCharacter {
 
 impl ObjectLayout for HTPlayerCharacter {}
 impl ObjectLayout for HTAttributeSet {}
+impl ObjectLayout for StateManagerComponent {}
 
 impl ObjectLayout for AbilitySystemComponent {
     fn on_channel_open(&self, channel: &mut crate::net::ActorChannel, world: &World) {
         self.activatable_abilities.iter().for_each(|(_, ability)| {
             channel.export_net_guid(world.export_guid(ability.ability.get()));
         });
+    }
+}
+
+#[rpc_handlers]
+impl HTPlayerCharacter {
+    #[rpc(41, server)]
+    fn server_move_packed(_ctx: RpcContext, data: CharacterNetworkSerializationPackedBits) {
+        if let Some(move_data) = data.new_move_data
+            && move_data.acceleration.is_zero()
+            && move_data.time_stamp > 0.0
+        {
+            debug!("HTPlayerCharacter::server_move_packed: {move_data:?}");
+        }
+    }
+}
+
+#[derive(Debug)]
+#[allow(dead_code)]
+pub struct CharacterNetworkMoveData {
+    pub time_stamp: f32,
+    pub acceleration: FVector3d,
+    pub location: FVector3d,
+    pub control_rotation: FRotator,
+}
+
+pub struct CharacterNetworkSerializationPackedBits {
+    pub new_move_data: Option<CharacterNetworkMoveData>,
+}
+
+impl RpcArgument for CharacterNetworkSerializationPackedBits {
+    fn serialize(&self, _: &mut fadia_engine::util::OutBitWriter) -> io::Result<()> {
+        unreachable!()
+    }
+
+    fn deserialize(r: &mut InBitReader) -> io::Result<Self> {
+        // Very retarded structure. Sometimes there are 29 at start, sometimes 67, fuck it for now.
+        r.skip(29)?; // ??
+
+        Ok(Self {
+            new_move_data: CharacterNetworkMoveData::deserialize(r).ok(),
+        })
+    }
+}
+
+impl CharacterNetworkMoveData {
+    pub fn deserialize(r: &mut InBitReader) -> io::Result<Self> {
+        Ok(Self {
+            time_stamp: r.read_f32()?,
+            acceleration: r.read_packed_vector(10)?,
+            location: r.read_packed_vector(100)?,
+            control_rotation: FRotator::net_deserialize(r)?,
+        })
     }
 }

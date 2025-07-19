@@ -423,11 +423,6 @@ impl World {
 
     fn tick_rpc(&mut self, connection: &mut NetConnection) {
         while let Some((ch_index, obj_guid, rpc)) = connection.next_rpc() {
-            info!(
-                "received RPC to channel {ch_index}, rep_index: {}",
-                rpc.rep_index
-            );
-
             let rep_index = rpc.rep_index;
 
             let Some(rpc_handler) = self

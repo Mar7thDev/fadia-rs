@@ -198,6 +198,12 @@ impl NetConnection {
                 } else if let Some(channel) = self.actor_channels.get_mut(&bunch.ch_index) {
                     channel.received_raw_bunch(world, bunch, data)?;
                 }
+            } else if !bunch.partial {
+                // TODO: unreliable partial bunches
+
+                if let Some(channel) = self.actor_channels.get_mut(&bunch.ch_index) {
+                    channel.received_raw_bunch(world, bunch, data)?;
+                }
             }
         }
 
