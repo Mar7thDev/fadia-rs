@@ -22,7 +22,6 @@ pub struct RpcContext<'world, 'connection> {
 
 pub type RpcHandlerFunc = fn(context: RpcContext, rpc: InRPC) -> io::Result<()>;
 
-#[expect(dead_code)]
 pub trait RpcArgument: Sized {
     fn serialize(&self, w: &mut OutBitWriter) -> io::Result<()>;
     fn deserialize(r: &mut InBitReader) -> io::Result<Self>;

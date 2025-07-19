@@ -50,16 +50,25 @@ pub fn impl_rpc_handler_trait(impl_items: &[ImplItem], self_ty: &Type) -> TokenS
                 #rep_index => Some(Self::#wrapper_name),
             });
 
+            let mut rep_class_serialized_flag = TokenStream::new();
             let mut arg_deserialization = Vec::new();
-            for _ in 1..item_fn.sig.inputs.len() {
-                arg_deserialization.push(quote! {
-                    crate::logic::rpc::RpcArgument::deserialize(&mut r)?
+
+            if item_fn.sig.inputs.len() > 1 {
+                rep_class_serialized_flag.extend(quote! {
+                    ::bitstream_io::BitRead::read_bit(&mut r)?;
                 });
+
+                for _ in 1..item_fn.sig.inputs.len() {
+                    arg_deserialization.push(quote! {
+                        crate::logic::rpc::RpcArgument::deserialize(&mut r)?
+                    });
+                }
             }
 
             fn_wrappers.push(quote! {
-                fn #wrapper_name(context: RpcContext, rpc: crate::logic::replication::InRPC) -> ::std::io::Result<()> {
+                fn #wrapper_name(context: crate::logic::rpc::RpcContext, rpc: crate::logic::replication::InRPC) -> ::std::io::Result<()> {
                     let mut r = ::fadia_engine::util::InBitReader::new(::std::io::Cursor::new(rpc.data.as_ref()));
+                    #rep_class_serialized_flag
                     Self::#fn_name(context, #(#arg_deserialization),*);
                     Ok(())
                 }

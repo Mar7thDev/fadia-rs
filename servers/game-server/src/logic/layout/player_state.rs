@@ -10,12 +10,15 @@ use fadia_engine::{
     },
     util::FName,
 };
+use tracing::info;
 
 use crate::{
     logic::{
         ObjectLayout,
         actor::{NetRole, PropertyNetRole},
         hotta::HottaReplicatedObjectPropertyContainer,
+        layout::PlayerControllerBase,
+        rpc::RpcContext,
     },
     net::World,
 };
@@ -166,6 +169,34 @@ impl PlayerState {
         &self,
         container: HottaReplicatedObjectPropertyContainer,
     ) {
+    }
+
+    #[rpc(364, server)]
+    pub fn server_player_rename(context: RpcContext, new_name: String) {
+        info!("player rename: {new_name}");
+
+        let player_controller_guid = context
+            .world
+            .player_controller_map
+            .get(&context.connection.net_player_index())
+            .copied()
+            .unwrap();
+
+        let player_state_guid = context
+            .world
+            .get_actor_archetype_new::<PlayerControllerBase>(player_controller_guid)
+            .unwrap()
+            .data()
+            .player_state
+            .get();
+
+        context
+            .world
+            .get_actor_archetype_mut_new::<PlayerState>(player_state_guid)
+            .unwrap()
+            .data_mut()
+            .str_role_name
+            .set_value(new_name);
     }
 }
 
