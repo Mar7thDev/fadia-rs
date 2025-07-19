@@ -2,11 +2,11 @@ use std::io;
 
 use common::time_util;
 use flatbuffers::FlatBufferBuilder;
-use tracing::{info, warn};
+use tracing::{debug, info, warn};
 
 use crate::{
     data::{
-        ClientLoginReq, ClientTravelCmd, ClientTravelCmdArgs, ServerVersionCmd,
+        ClientKeepAliveCmd, ClientLoginReq, ClientTravelCmd, ClientTravelCmdArgs, ServerVersionCmd,
         ServerVersionCmdArgs,
     },
     net::ClientConnection,
@@ -33,6 +33,9 @@ pub async fn on_packet(
             MessageID::GatewayClientLoginReq => {
                 on_client_login_req(client_connection, packet).await?
             }
+            MessageID::GatewayClientKeepAliveCmd => {
+                on_client_keep_alive_cmd(client_connection, packet).await?
+            }
             unhandled => warn!("ignoring message with id: {unhandled:?}"),
         }
     }
@@ -54,7 +57,7 @@ async fn on_client_login_req(
     let empty_2 = builder.create_string("");
     let empty_3 = builder.create_string("");
     let player_character_bp = builder
-        .create_string("/Game/Blueprints/Character/Player/Player_039_Fadia.Player_039_Hathor_C");
+        .create_string("/Game/Blueprints/Character/Player/Player_039_Fadia.Player_039_Fadia_C");
 
     let client_travel_cmd = ClientTravelCmd::create(
         &mut builder,
@@ -88,6 +91,20 @@ async fn on_client_login_req(
     Ok(())
 }
 
+async fn on_client_keep_alive_cmd(
+    _client_connection: &ClientConnection,
+    packet: Packet,
+) -> Result<(), ProcessPacketError> {
+    let client_keep_alive = flatbuffers::root::<ClientKeepAliveCmd>(packet.payload())?;
+    let current_time_in_ticks = time_util::current_time_in_ticks();
+
+    debug!(
+        "received KeepAlive from client, current_time_in_ticks: {current_time_in_ticks} {client_keep_alive:?}"
+    );
+
+    Ok(())
+}
+
 pub async fn send_server_version_cmd(client_connection: &ClientConnection) {
     let mut builder = FlatBufferBuilder::new();
 
@@ -102,7 +119,7 @@ pub async fn send_server_version_cmd(client_connection: &ClientConnection) {
             client_wan_port: client_connection.addr.port() as i32,
             heart_type: 1, // Disable = 0, Check_Alive = 1, Tracert = 2
             heart_client_interval: 30,
-            check_server_interval: 600,
+            check_server_interval: u32::MAX,
             server_id: 11000,
             server_time_utc: time_util::unix_utc_timestamp_ms(),
             server_time: time_util::unix_timestamp_ms(),

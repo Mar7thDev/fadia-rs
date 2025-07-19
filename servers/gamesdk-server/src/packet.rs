@@ -22,6 +22,8 @@ pub enum MessageID {
     GatewayClientLoginRes = 1107,
     GatewayClientTravelCmd = 1117,
     GatewayServerVersionCmd = 1120,
+    GatewayClientKeepAliveCmd = 1121,
+    GatewayServerKeepAliveCmd = 1122,
     GameDataFirstSync = 1652,
 }
 

@@ -87,18 +87,18 @@ impl<'a> ServerVersionCmd<'a> {
     unsafe { self._tab.get::<u8>(ServerVersionCmd::VT_HEART_TYPE, Some(0)).unwrap()}
   }
   #[inline]
-  pub fn heart_client_interval(&self) -> i32 {
+  pub fn heart_client_interval(&self) -> u32 {
     // Safety:
     // Created from valid Table for this object
     // which contains a valid value in this slot
-    unsafe { self._tab.get::<i32>(ServerVersionCmd::VT_HEART_CLIENT_INTERVAL, Some(0)).unwrap()}
+    unsafe { self._tab.get::<u32>(ServerVersionCmd::VT_HEART_CLIENT_INTERVAL, Some(0)).unwrap()}
   }
   #[inline]
-  pub fn check_server_interval(&self) -> i32 {
+  pub fn check_server_interval(&self) -> u32 {
     // Safety:
     // Created from valid Table for this object
     // which contains a valid value in this slot
-    unsafe { self._tab.get::<i32>(ServerVersionCmd::VT_CHECK_SERVER_INTERVAL, Some(0)).unwrap()}
+    unsafe { self._tab.get::<u32>(ServerVersionCmd::VT_CHECK_SERVER_INTERVAL, Some(0)).unwrap()}
   }
   #[inline]
   pub fn server_id(&self) -> i32 {
@@ -134,8 +134,8 @@ impl flatbuffers::Verifiable for ServerVersionCmd<'_> {
      .visit_field::<flatbuffers::ForwardsUOffset<&str>>("client_wan_ip", Self::VT_CLIENT_WAN_IP, false)?
      .visit_field::<i32>("client_wan_port", Self::VT_CLIENT_WAN_PORT, false)?
      .visit_field::<u8>("heart_type", Self::VT_HEART_TYPE, false)?
-     .visit_field::<i32>("heart_client_interval", Self::VT_HEART_CLIENT_INTERVAL, false)?
-     .visit_field::<i32>("check_server_interval", Self::VT_CHECK_SERVER_INTERVAL, false)?
+     .visit_field::<u32>("heart_client_interval", Self::VT_HEART_CLIENT_INTERVAL, false)?
+     .visit_field::<u32>("check_server_interval", Self::VT_CHECK_SERVER_INTERVAL, false)?
      .visit_field::<i32>("server_id", Self::VT_SERVER_ID, false)?
      .visit_field::<u64>("server_time_utc", Self::VT_SERVER_TIME_UTC, false)?
      .visit_field::<u64>("server_time", Self::VT_SERVER_TIME, false)?
@@ -148,8 +148,8 @@ pub struct ServerVersionCmdArgs<'a> {
     pub client_wan_ip: Option<flatbuffers::WIPOffset<&'a str>>,
     pub client_wan_port: i32,
     pub heart_type: u8,
-    pub heart_client_interval: i32,
-    pub check_server_interval: i32,
+    pub heart_client_interval: u32,
+    pub check_server_interval: u32,
     pub server_id: i32,
     pub server_time_utc: u64,
     pub server_time: u64,
@@ -193,12 +193,12 @@ impl<'a: 'b, 'b, A: flatbuffers::Allocator + 'a> ServerVersionCmdBuilder<'a, 'b,
     self.fbb_.push_slot::<u8>(ServerVersionCmd::VT_HEART_TYPE, heart_type, 0);
   }
   #[inline]
-  pub fn add_heart_client_interval(&mut self, heart_client_interval: i32) {
-    self.fbb_.push_slot::<i32>(ServerVersionCmd::VT_HEART_CLIENT_INTERVAL, heart_client_interval, 0);
+  pub fn add_heart_client_interval(&mut self, heart_client_interval: u32) {
+    self.fbb_.push_slot::<u32>(ServerVersionCmd::VT_HEART_CLIENT_INTERVAL, heart_client_interval, 0);
   }
   #[inline]
-  pub fn add_check_server_interval(&mut self, check_server_interval: i32) {
-    self.fbb_.push_slot::<i32>(ServerVersionCmd::VT_CHECK_SERVER_INTERVAL, check_server_interval, 0);
+  pub fn add_check_server_interval(&mut self, check_server_interval: u32) {
+    self.fbb_.push_slot::<u32>(ServerVersionCmd::VT_CHECK_SERVER_INTERVAL, check_server_interval, 0);
   }
   #[inline]
   pub fn add_server_id(&mut self, server_id: i32) {
@@ -841,6 +841,103 @@ impl core::fmt::Debug for ClientTravelCmd<'_> {
       ds.field("unk_322", &self.unk_322());
       ds.field("unk_1", &self.unk_1());
       ds.field("unk_cdcdcdcd", &self.unk_cdcdcdcd());
+      ds.finish()
+  }
+}
+pub enum ClientKeepAliveCmdOffset {}
+#[derive(Copy, Clone, PartialEq)]
+
+pub struct ClientKeepAliveCmd<'a> {
+  pub _tab: flatbuffers::Table<'a>,
+}
+
+impl<'a> flatbuffers::Follow<'a> for ClientKeepAliveCmd<'a> {
+  type Inner = ClientKeepAliveCmd<'a>;
+  #[inline]
+  unsafe fn follow(buf: &'a [u8], loc: usize) -> Self::Inner {
+    Self { _tab: flatbuffers::Table::new(buf, loc) }
+  }
+}
+
+impl<'a> ClientKeepAliveCmd<'a> {
+  pub const VT_UNK_1: flatbuffers::VOffsetT = 4;
+
+  #[inline]
+  pub unsafe fn init_from_table(table: flatbuffers::Table<'a>) -> Self {
+    ClientKeepAliveCmd { _tab: table }
+  }
+  #[allow(unused_mut)]
+  pub fn create<'bldr: 'args, 'args: 'mut_bldr, 'mut_bldr, A: flatbuffers::Allocator + 'bldr>(
+    _fbb: &'mut_bldr mut flatbuffers::FlatBufferBuilder<'bldr, A>,
+    args: &'args ClientKeepAliveCmdArgs
+  ) -> flatbuffers::WIPOffset<ClientKeepAliveCmd<'bldr>> {
+    let mut builder = ClientKeepAliveCmdBuilder::new(_fbb);
+    builder.add_unk_1(args.unk_1);
+    builder.finish()
+  }
+
+
+  #[inline]
+  pub fn unk_1(&self) -> u32 {
+    // Safety:
+    // Created from valid Table for this object
+    // which contains a valid value in this slot
+    unsafe { self._tab.get::<u32>(ClientKeepAliveCmd::VT_UNK_1, Some(0)).unwrap()}
+  }
+}
+
+impl flatbuffers::Verifiable for ClientKeepAliveCmd<'_> {
+  #[inline]
+  fn run_verifier(
+    v: &mut flatbuffers::Verifier, pos: usize
+  ) -> Result<(), flatbuffers::InvalidFlatbuffer> {
+    use self::flatbuffers::Verifiable;
+    v.visit_table(pos)?
+     .visit_field::<u32>("unk_1", Self::VT_UNK_1, false)?
+     .finish();
+    Ok(())
+  }
+}
+pub struct ClientKeepAliveCmdArgs {
+    pub unk_1: u32,
+}
+impl<'a> Default for ClientKeepAliveCmdArgs {
+  #[inline]
+  fn default() -> Self {
+    ClientKeepAliveCmdArgs {
+      unk_1: 0,
+    }
+  }
+}
+
+pub struct ClientKeepAliveCmdBuilder<'a: 'b, 'b, A: flatbuffers::Allocator + 'a> {
+  fbb_: &'b mut flatbuffers::FlatBufferBuilder<'a, A>,
+  start_: flatbuffers::WIPOffset<flatbuffers::TableUnfinishedWIPOffset>,
+}
+impl<'a: 'b, 'b, A: flatbuffers::Allocator + 'a> ClientKeepAliveCmdBuilder<'a, 'b, A> {
+  #[inline]
+  pub fn add_unk_1(&mut self, unk_1: u32) {
+    self.fbb_.push_slot::<u32>(ClientKeepAliveCmd::VT_UNK_1, unk_1, 0);
+  }
+  #[inline]
+  pub fn new(_fbb: &'b mut flatbuffers::FlatBufferBuilder<'a, A>) -> ClientKeepAliveCmdBuilder<'a, 'b, A> {
+    let start = _fbb.start_table();
+    ClientKeepAliveCmdBuilder {
+      fbb_: _fbb,
+      start_: start,
+    }
+  }
+  #[inline]
+  pub fn finish(self) -> flatbuffers::WIPOffset<ClientKeepAliveCmd<'a>> {
+    let o = self.fbb_.end_table(self.start_);
+    flatbuffers::WIPOffset::new(o.value())
+  }
+}
+
+impl core::fmt::Debug for ClientKeepAliveCmd<'_> {
+  fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+    let mut ds = f.debug_struct("ClientKeepAliveCmd");
+      ds.field("unk_1", &self.unk_1());
       ds.finish()
   }
 }

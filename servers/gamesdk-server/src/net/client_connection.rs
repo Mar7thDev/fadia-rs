@@ -2,8 +2,8 @@ use std::{io, net::SocketAddr};
 
 use tokio::{
     net::{
-        tcp::{OwnedReadHalf, OwnedWriteHalf},
         TcpStream,
+        tcp::{OwnedReadHalf, OwnedWriteHalf},
     },
     sync::mpsc,
 };

@@ -3,8 +3,8 @@ table ServerVersionCmd {
 	client_wan_ip: string;
 	client_wan_port: int;
 	heart_type: ubyte;
-	heart_client_interval: int;
-	check_server_interval: int;
+	heart_client_interval: uint;
+	check_server_interval: uint;
 	server_id: int;
 	server_time_utc: ulong;
 	server_time: ulong;
@@ -40,4 +40,8 @@ table ClientTravelCmd {
 	unk_322: int;
 	unk_1: int;
 	unk_cdcdcdcd: uint;
+}
+
+table ClientKeepAliveCmd {
+    unk_1: uint;
 }
