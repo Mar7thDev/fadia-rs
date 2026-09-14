@@ -252,6 +252,8 @@ impl HTGameMode {
             .push(PropertyObject::new(pawn_guid));
 
         // Fill data. Maybe make it configurable later.
+        player_state.curr_character_net_id_solt.set_value(1);
+        player_state.curr_character_net_id_serial.set_value(1);
         player_state.role_id.set_value(1337);
         player_state.role_level.set_value(60);
         player_state
@@ -282,6 +284,20 @@ impl HTGameMode {
         if weapon_guid.is_valid() {
             world.open_actor_channel_at(connection, 11, weapon_guid);
         }
+
+        // Bootstrap possession before waiting for ServerAcknowledgePossession.
+        // ServerRequestActorItems runs later, after the character-ready notify;
+        // sending the first restart only there makes both sides wait forever.
+        let controller = world
+            .get_actor_archetype_mut_new::<PlayerControllerBase>(controller_guid)
+            .unwrap();
+        controller
+            .object
+            .layout_mut::<PlayerControllerBase>()
+            .pawn
+            .set_value(pawn_guid);
+        call_rpcs!(controller.client_restart(pawn_guid));
+        tracing::info!(?controller_guid, ?pawn_guid, "starting client possession");
     }
 
     fn spawn_default_pawn_for(
@@ -321,7 +337,6 @@ impl HTGameMode {
 
         character.player_state.set_value(player_state_guid);
         character.saved_player_state.set_value(player_state_guid);
-        character.server_ready_flag.set_value(true);
 
         if let Some(weapon) = world
             .assets

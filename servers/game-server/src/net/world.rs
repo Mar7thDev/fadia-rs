@@ -418,6 +418,16 @@ impl World {
 
     pub fn tick(&mut self, connection: &mut NetConnection) {
         self.tick_rpc(connection);
+        if let Some(controller_guid) = self
+            .player_controller_map
+            .get(&connection.net_player_index())
+            .copied()
+        {
+            crate::logic::layout::PlayerControllerBase::retry_pending_possession(
+                self,
+                controller_guid,
+            );
+        }
         self.tick_network(connection);
     }
 

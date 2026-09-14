@@ -2,7 +2,7 @@ use std::path::Path;
 
 use serde::Deserialize;
 
-use crate::{util, LoadDataError};
+use crate::{LoadDataError, util};
 
 use super::ClassReference;
 

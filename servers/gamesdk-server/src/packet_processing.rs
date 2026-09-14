@@ -68,11 +68,13 @@ async fn on_client_login_req(
             server_addr: Some(server_addr),
             unk_empty_string_2: Some(empty_2),
             unk_empty_string_3: Some(empty_3),
+            save_info: Some(empty_3),
             player_role_id: 1337,
             player_character_bp: Some(player_character_bp),
             compressed_data_blob: None,
             unk_322: 322,
             unk_1: 1,
+            clear_previous_state: true,
             unk_cdcdcdcd: 0xCDCDCDCD,
         },
     );

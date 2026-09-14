@@ -99,10 +99,7 @@ pub fn receive_client_data(
         let size_in_bits = r.read_packed_int()? as usize;
         let data = r.read_bits(size_in_bits)?.into_boxed_slice();
 
-        output.push(InRPC {
-            rep_index,
-            data,
-        });
+        output.push(InRPC { rep_index, data });
     }
 
     Ok(output)

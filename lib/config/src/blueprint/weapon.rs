@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 use serde::Deserialize;
 
-use crate::{util, LoadDataError};
+use crate::{LoadDataError, util};
 
 use super::ClassDefinition;
 

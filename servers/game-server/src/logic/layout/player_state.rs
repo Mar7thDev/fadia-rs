@@ -18,14 +18,16 @@ use crate::{
         actor::{NetRole, PropertyNetRole},
         hotta::HottaReplicatedObjectPropertyContainer,
         layout::PlayerControllerBase,
-        rpc::RpcContext,
+        rpc::{RpcContext, call_rpcs},
     },
     net::World,
 };
 
 #[derive(Debug, RepLayout)]
-#[max_rep_index(424)]
+#[max_rep_index(840)]
 pub struct PlayerState {
+    #[rep(ignore)]
+    pub inventory_component: FNetworkGUID,
     #[rep(handle = 5)]
     pub remote_role: PropertyNetRole,
     #[rep(handle = 13)]
@@ -48,35 +50,33 @@ pub struct PlayerState {
     pub role_id: PropertyU64,
     #[rep(handle = 35)]
     pub server_ready_flag: PropertyBool,
-    #[rep(handle = 37)]
-    pub sign_content: PropertyString,
-    #[rep(handle = 38)]
-    pub birthday_month: PropertyU32,
-    #[rep(handle = 39)]
-    pub birthday_day: PropertyU32,
     #[rep(handle = 40)]
-    pub play_time_seconds: PropertyF32,
+    pub sign_content: PropertyString,
     #[rep(handle = 41)]
+    pub birthday_month: PropertyU32,
+    #[rep(handle = 42)]
+    pub birthday_day: PropertyU32,
+    #[rep(handle = 43)]
+    pub play_time_seconds: PropertyF32,
+    #[rep(handle = 44)]
     pub player_world_time_seconds_delta: PropertyF32,
-    #[rep(handle = 46)]
-    pub current_stamina: PropertyU32,
-    #[rep(handle = 56)]
+    #[rep(handle = 58)]
     pub rand_bean: PropertyU32,
-    #[rep(handle = 57)]
+    #[rep(handle = 59)]
     pub cur_bean_count: PropertyU32,
-    #[rep(handle = 61)]
+    #[rep(handle = 65)]
     pub strength_current: PropertyF32,
-    #[rep(handle = 66)]
+    #[rep(handle = 72)]
     pub role_level: PropertyU32,
-    #[rep(handle = 67)]
+    #[rep(handle = 73)]
     pub role_exp: PropertyU32,
-    #[rep(handle = 71)]
+    #[rep(handle = 78)]
     pub equipped_players: PropertyArray<PropertyObject>,
-    #[rep(handle = 74)]
+    #[rep(handle = 82)]
     pub curr_character_net_id_solt: PropertyU32,
-    #[rep(handle = 75)]
+    #[rep(handle = 83)]
     pub curr_character_net_id_serial: PropertyU32,
-    #[rep(handle = 99)]
+    #[rep(handle = 129)]
     pub avatar_id: PropertyName,
 }
 
@@ -109,6 +109,7 @@ impl PlayerState {
             .net_guid_cache
             .assign_new_net_guid_for_dynamic_object(None);
 
+        let mut inventory_component = FNetworkGUID::INVALID;
         let sub_objects = SUB_CLASSES
             .iter()
             .map(|name| {
@@ -116,19 +117,24 @@ impl PlayerState {
                     .net_guid_cache
                     .assign_new_net_guid_for_dynamic_object(Some(name));
 
-                (sub_guid, Box::new(NullLayout) as _)
+                let layout: Box<dyn ObjectLayout> = if *name == "InventoryComponent" {
+                    inventory_component = sub_guid;
+                    Box::new(super::InventoryComponent {})
+                } else {
+                    Box::new(NullLayout)
+                };
+                (sub_guid, layout)
             })
             .collect();
 
-        (
-            own_guid,
-            PlayerState::internal_new(remote_role, role),
-            sub_objects,
-        )
+        let mut state = PlayerState::internal_new(remote_role, role);
+        state.inventory_component = inventory_component;
+        (own_guid, state, sub_objects)
     }
 
     fn internal_new(remote_role: NetRole, role: NetRole) -> Self {
         PlayerState {
+            inventory_component: FNetworkGUID::INVALID,
             remote_role: PropertyNetRole::new(remote_role),
             role: PropertyNetRole::new(role),
             owner: Default::default(),
@@ -145,7 +151,6 @@ impl PlayerState {
             birthday_day: Default::default(),
             play_time_seconds: Default::default(),
             player_world_time_seconds_delta: Default::default(),
-            current_stamina: PropertyU32::new(200),
             rand_bean: Default::default(),
             cur_bean_count: Default::default(),
             strength_current: PropertyF32::new(100.0),
@@ -161,17 +166,30 @@ impl PlayerState {
 
 #[rpc_handlers]
 impl PlayerState {
-    #[rpc(103, client)]
+    #[rpc(479, server)]
+    pub fn server_heartbeat(context: RpcContext) {
+        let player_state = context
+            .world
+            .get_actor_archetype_mut_new::<Self>(context.actor_guid)
+            .unwrap();
+        call_rpcs!(player_state.client_heartbeat_response());
+        tracing::debug!("replied to client heartbeat");
+    }
+
+    #[rpc(167, client)]
+    pub fn client_heartbeat_response(&self) {}
+
+    #[rpc(168, client)]
     pub fn client_initial_rpcs_finished(&self) {}
 
-    #[rpc(256, client)]
+    #[rpc(470, client)]
     pub fn send_replicated_object_property_array_to_client(
         &self,
         container: HottaReplicatedObjectPropertyContainer,
     ) {
     }
 
-    #[rpc(364, server)]
+    #[rpc(676, server)]
     pub fn server_player_rename(context: RpcContext, new_name: String) {
         info!("player rename: {new_name}");
 

@@ -5,6 +5,8 @@ use bitstream_io::{BitRead, BitWrite};
 type SequenceNumber = u16;
 type Word = u32;
 const SEQUENCE_NUMBER_BITS: u16 = 14;
+const SEQUENCE_MASK: u16 = (1 << SEQUENCE_NUMBER_BITS) - 1;
+const SEQUENCE_HALF: u16 = 1 << (SEQUENCE_NUMBER_BITS - 1);
 const HISTORY_SIZE: u32 = 256;
 const BITS_PER_WORD: u32 = Word::BITS;
 const WORD_COUNT: u32 = HISTORY_SIZE / BITS_PER_WORD;
@@ -46,21 +48,34 @@ impl SequenceHistory {
 }
 
 fn diff(a: SequenceNumber, b: SequenceNumber) -> u32 {
-    ((a as i32) - (b as i32)).unsigned_abs()
+    (a.wrapping_sub(b) & SEQUENCE_MASK) as u32
+}
+
+fn newer(a: SequenceNumber, b: SequenceNumber) -> bool {
+    let distance = diff(a, b);
+    distance != 0 && distance < SEQUENCE_HALF as u32
+}
+
+fn next(seq: SequenceNumber) -> SequenceNumber {
+    seq.wrapping_add(1) & SEQUENCE_MASK
+}
+
+fn previous(seq: SequenceNumber) -> SequenceNumber {
+    seq.wrapping_sub(1) & SEQUENCE_MASK
 }
 
 impl FNetPacketNotify {
     pub fn init(&mut self, initial_in_seq: SequenceNumber, initial_out_seq: SequenceNumber) {
-        self.in_seq = initial_in_seq;
-        self.in_ack_seq = initial_in_seq;
-        self.in_ack_seq_ack = initial_in_seq;
-        self.out_seq = initial_out_seq;
-        self.out_ack_seq = initial_out_seq - 1;
-        self.waiting_for_flush_seq_ack = initial_out_seq - 1;
+        self.in_seq = initial_in_seq & SEQUENCE_MASK;
+        self.in_ack_seq = self.in_seq;
+        self.in_ack_seq_ack = self.in_seq;
+        self.out_seq = initial_out_seq & SEQUENCE_MASK;
+        self.out_ack_seq = previous(self.out_seq);
+        self.waiting_for_flush_seq_ack = self.out_ack_seq;
     }
 
     pub fn will_sequence_fit_in_sequence_history(&self, seq: SequenceNumber) -> bool {
-        if seq >= self.in_ack_seq_ack {
+        if seq == self.in_ack_seq_ack || newer(seq, self.in_ack_seq_ack) {
             diff(seq, self.in_ack_seq_ack) <= SequenceHistory::SIZE
         } else {
             false
@@ -72,7 +87,7 @@ impl FNetPacketNotify {
     }
 
     pub fn get_current_sequence_history_length(&self) -> u32 {
-        if self.in_ack_seq >= self.in_ack_seq_ack {
+        if self.in_ack_seq == self.in_ack_seq_ack || newer(self.in_ack_seq, self.in_ack_seq_ack) {
             std::cmp::min(
                 diff(self.in_ack_seq, self.in_ack_seq_ack),
                 SequenceHistory::SIZE,
@@ -83,11 +98,14 @@ impl FNetPacketNotify {
     }
 
     pub fn is_waiting_for_sequence_history_flush(&self) -> bool {
-        self.waiting_for_flush_seq_ack > self.out_ack_seq
+        newer(self.waiting_for_flush_seq_ack, self.out_ack_seq)
     }
 
     pub fn process_received_acks(&mut self, notification_data: &FNotificationHeader) {
-        if notification_data.packed_header.get_acked_seq() > self.out_ack_seq {
+        if newer(
+            notification_data.packed_header.get_acked_seq(),
+            self.out_ack_seq,
+        ) {
             let mut ack_count = diff(
                 notification_data.packed_header.get_acked_seq(),
                 self.out_ack_seq,
@@ -95,30 +113,33 @@ impl FNetPacketNotify {
 
             let new_in_ack_seq_ack = self
                 .update_in_ack_seq_ack(ack_count, notification_data.packed_header.get_acked_seq());
-            if new_in_ack_seq_ack > self.in_ack_seq_ack {
+            if notification_data._history.is_delivered(0)
+                && newer(new_in_ack_seq_ack, self.in_ack_seq_ack)
+            {
                 self.in_ack_seq_ack = new_in_ack_seq_ack;
             }
 
             let mut current_ack = self.out_ack_seq;
-            current_ack = current_ack.wrapping_add(1);
+            current_ack = next(current_ack);
 
             while ack_count
-                > notification_data.packed_header.get_history_word_count() as u32 * BITS_PER_WORD
+                > (notification_data.packed_header.get_history_word_count() as u32 + 1)
+                    * BITS_PER_WORD
             {
                 ack_count -= 1;
                 // in_func(current_ack, false)
-                current_ack = current_ack.wrapping_add(1);
+                current_ack = next(current_ack);
             }
 
             while ack_count > 0 {
                 ack_count -= 1;
                 // in_func(current_ack, notification_data.history.is_delivered);
-                current_ack += 1;
+                current_ack = next(current_ack);
             }
 
             self.out_ack_seq = notification_data.packed_header.get_acked_seq();
 
-            if self.out_ack_seq > self.waiting_for_flush_seq_ack {
+            if newer(self.out_ack_seq, self.waiting_for_flush_seq_ack) {
                 self.waiting_for_flush_seq_ack = self.out_ack_seq;
             }
         }
@@ -136,7 +157,7 @@ impl FNetPacketNotify {
             if self.get_has_unacknowledged_acks() {
                 self.set_wait_for_sequence_history_flush();
             } else {
-                self.in_ack_seq_ack = notification_data.packed_header.get_seq() - 1;
+                self.in_ack_seq_ack = previous(notification_data.packed_header.get_seq());
             }
         }
 
@@ -167,8 +188,11 @@ impl FNetPacketNotify {
     }
 
     pub fn ack_seq(&mut self, acked_seq: SequenceNumber, is_ack: bool) {
-        while acked_seq > self.in_ack_seq {
-            self.in_ack_seq += 1;
+        while newer(acked_seq, self.in_ack_seq) {
+            self.in_ack_seq = next(self.in_ack_seq);
+            if self.in_ack_seq == 0 {
+                tracing::debug!("incoming packet sequence wrapped to zero");
+            }
 
             let report_acked = self.in_ack_seq == acked_seq && is_ack;
             // debug!(
@@ -184,24 +208,22 @@ impl FNetPacketNotify {
 
     pub fn update_in_ack_seq_ack(
         &mut self,
-        ack_count: u32,
+        _ack_count: u32,
         acked_seq: SequenceNumber,
     ) -> SequenceNumber {
-        if (ack_count as usize) <= self.ack_record.len() {
-            if ack_count > 1 {
-                self.ack_record.pop_back();
+        // A cumulative ACK may cover several sent packets. Retire records from
+        // the front through that sequence, preserving the newer pending records.
+        while let Some(front) = self.ack_record.front() {
+            if front.out_seq != acked_seq && !newer(acked_seq, front.out_seq) {
+                break;
             }
-
-            let ack_data = self.ack_record.pop_front().unwrap_or_default();
+            let ack_data = self.ack_record.pop_front().unwrap();
             if ack_data.out_seq == acked_seq {
                 return ack_data.in_ack_seq;
             }
         }
-
-        // TODO: find out why this happens sometimes (usually on keep alives?)
-        // acked_seq.wrapping_sub(256) // original code returns this
-
-        acked_seq
+        // Incoming and outgoing sequence spaces have independent initial values.
+        self.in_ack_seq_ack
     }
 
     pub fn get_has_unacknowledged_acks(&self) -> bool {
@@ -232,6 +254,7 @@ impl FNetPacketNotify {
 
         let seq = self.out_seq;
         let acked_seq = self.in_ack_seq;
+        self.written_in_ack_seq = acked_seq;
 
         let packed_header =
             FPackedHeader::pack(seq, acked_seq, self.written_history_word_count as u16 - 1);
@@ -247,9 +270,11 @@ impl FNetPacketNotify {
     }
 
     pub fn get_sequence_delta(&self, notification_data: &FNotificationHeader) -> u32 {
-        if notification_data.packed_header.get_seq() > self.in_seq
-            && notification_data.packed_header.get_acked_seq() >= self.out_ack_seq
-            && self.out_seq >= notification_data.packed_header.get_acked_seq()
+        let seq = notification_data.packed_header.get_seq();
+        let acked_seq = notification_data.packed_header.get_acked_seq();
+        if newer(seq, self.in_seq)
+            && (acked_seq == self.out_ack_seq || newer(acked_seq, self.out_ack_seq))
+            && newer(self.out_seq, acked_seq)
         {
             diff(notification_data.packed_header.get_seq(), self.in_seq)
         } else {
@@ -264,7 +289,10 @@ impl FNetPacketNotify {
         });
         self.written_history_word_count = 0;
 
-        self.out_seq += 1;
+        self.out_seq = next(self.out_seq);
+        if self.out_seq == 0 {
+            tracing::debug!("outgoing packet sequence wrapped to zero");
+        }
         self.out_seq
     }
 }
@@ -335,8 +363,8 @@ impl FPackedHeader {
     pub const fn pack(seq: u16, acked_seq: u16, history_word_count: u16) -> Self {
         let mut packed = 0;
 
-        packed |= (seq as u32) << Self::SEQ_SHIFT;
-        packed |= (acked_seq as u32) << Self::ACK_SEQ_SHIFT;
+        packed |= ((seq & Self::SEQ_MASK) as u32) << Self::SEQ_SHIFT;
+        packed |= ((acked_seq & Self::SEQ_MASK) as u32) << Self::ACK_SEQ_SHIFT;
         packed |= (history_word_count as u32) & Self::HISTORY_WORD_COUNT_MASK;
 
         Self(packed)
@@ -364,5 +392,85 @@ impl fmt::Display for FPackedHeader {
             self.get_acked_seq(),
             self.get_history_word_count()
         )
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::util::{InBitReader, OutBitWriter};
+    use std::io::Cursor;
+
+    fn transfer(sender: &mut FNetPacketNotify, receiver: &mut FNetPacketNotify) {
+        let mut bytes = Vec::new();
+        sender
+            .write_header(&mut OutBitWriter::new(&mut bytes), false)
+            .unwrap();
+        sender.commit_and_increment_seq();
+        let header = receiver
+            .read_header(&mut InBitReader::new(Cursor::new(&bytes)))
+            .unwrap();
+        let delta = receiver.get_sequence_delta(&header);
+        assert_eq!(delta, 1, "new packet rejected at {}", header.packed_header);
+        receiver.process_received_acks(&header);
+        receiver.internal_update(&header, delta);
+        receiver.ack_seq(header.packed_header.get_seq(), true);
+    }
+
+    #[test]
+    fn wrapped_sequence_is_newer_but_old_and_duplicate_packets_are_not() {
+        assert!(newer(0, 16383));
+        assert!(newer(2, 16382));
+        assert_eq!(diff(2, 16382), 4);
+        assert!(!newer(16383, 0));
+        assert!(!newer(42, 42));
+    }
+
+    #[test]
+    fn zero_initial_sequence_and_delivery_history_wrap() {
+        let mut notify = FNetPacketNotify::default();
+        notify.init(16382, 0);
+        assert_eq!(notify.out_ack_seq, 16383);
+        notify.ack_seq(1, true);
+        assert_eq!(notify.in_ack_seq, 1);
+        assert!(notify.in_seq_history.is_delivered(0));
+        assert!(!notify.in_seq_history.is_delivered(1));
+        assert!(!notify.in_seq_history.is_delivered(2));
+        notify.ack_seq(16383, true);
+        assert_eq!(notify.in_ack_seq, 1, "stale ACK must not rewind history");
+    }
+
+    #[test]
+    fn cumulative_ack_uses_recorded_incoming_sequence_and_keeps_newer_records() {
+        let mut notify = FNetPacketNotify::default();
+        notify.init(500, 16382);
+        for incoming in 501..=504 {
+            notify.ack_seq(incoming, true);
+            let mut bytes = Vec::new();
+            notify
+                .write_header(&mut OutBitWriter::new(&mut bytes), false)
+                .unwrap();
+            notify.commit_and_increment_seq();
+        }
+        assert_eq!(notify.update_in_ack_seq_ack(3, 0), 503);
+        assert_eq!(notify.ack_record.len(), 1);
+        assert_eq!(notify.ack_record.front().unwrap().out_seq, 1);
+        assert_eq!(notify.update_in_ack_seq_ack(1, 1), 504);
+    }
+
+    #[test]
+    fn bidirectional_packet_headers_survive_two_complete_sequence_wraps() {
+        let mut client = FNetPacketNotify::default();
+        let mut server = FNetPacketNotify::default();
+        client.init(3999, 16380);
+        server.init(16379, 4000);
+        for _ in 0..32780 {
+            transfer(&mut client, &mut server);
+            transfer(&mut server, &mut client);
+            assert!(client.ack_record.len() <= 1);
+            assert!(server.ack_record.len() <= 1);
+            assert!(client.get_current_sequence_history_length() <= 2);
+            assert!(server.get_current_sequence_history_length() <= 2);
+        }
     }
 }

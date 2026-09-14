@@ -1,4 +1,7 @@
 target/
+/run-logs/
+__pycache__/
+*.py[cod]
 
 # Configuration files
 patchersdk_server.toml

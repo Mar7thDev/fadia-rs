@@ -1,5 +1,6 @@
 mod actor;
 mod gameplay_debugger;
+mod inventory;
 mod player_character;
 mod player_controller;
 mod player_state;
@@ -14,6 +15,7 @@ pub use gameplay_debugger::*;
 #[allow(unused_imports)]
 pub use ultra_dynamic_weather::*;
 
+pub use inventory::*;
 pub use player_character::*;
 pub use player_controller::*;
 pub use player_state::*;

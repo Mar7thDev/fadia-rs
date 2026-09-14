@@ -17,5 +17,5 @@ pub enum ERoleSex {
     #[serde(rename = "ERoleSex::Male")]
     Male,
     #[serde(rename = "ERoleSex::Female")]
-    Female
+    Female,
 }

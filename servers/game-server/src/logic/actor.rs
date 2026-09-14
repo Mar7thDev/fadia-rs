@@ -47,6 +47,9 @@ impl Actor {
     pub fn on_channel_opened(&self, out: &mut OutBitWriter) {
         if let Some(NetPlayerIndex(index)) = self.controls_player.as_ref() {
             out.write_u8(*index).unwrap();
+            // APlayerController::OnActorChannelOpen reads ClientHandshakeId
+            // after NetPlayerIndex for engine network versions >= 41.
+            out.write_u32(0).unwrap();
         }
     }
 }

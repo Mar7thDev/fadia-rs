@@ -1,7 +1,7 @@
 use fadia_codegen::{RepLayout, dummy_rpc_handler};
 use fadia_engine::replication::property::PropertyObject;
 
-use crate::logic::{actor::PropertyNetRole, ObjectLayout};
+use crate::logic::{ObjectLayout, actor::PropertyNetRole};
 
 #[derive(Debug, RepLayout)]
 #[dummy_rpc_handler]

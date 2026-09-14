@@ -3,7 +3,7 @@ use std::collections::HashMap;
 use num_enum::IntoPrimitive;
 use serde::Deserialize;
 
-use crate::{util, LoadDataError};
+use crate::{LoadDataError, util};
 
 use super::{ClassDefinition, ClassReference};
 
@@ -35,6 +35,8 @@ pub struct CharacterAbilityEntry {
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "PascalCase")]
 pub struct PlayerCharacterProperties {
+    #[serde(rename = "DefaultCharacterID", default)]
+    pub default_character_id: String,
     #[serde(default)]
     pub granted_abilities: Vec<CharacterAbilityEntry>,
     #[serde(default)]

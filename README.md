@@ -1,6 +1,13 @@
 # fadia-rs
 ##### Experimental server emulator for the game Neverness to Everness
 
+This private fork targets the locally verified **1.3.10 Windows client**.
+Companion projects: [nte-dumper](https://github.com/Mar7thDev/nte-dumper) and
+[symphonic](https://github.com/Mar7thDev/symphonic).
+The loading and connection fixes are documented in
+[docs/loading-100-diagnosis.md](docs/loading-100-diagnosis.md).
+Original upstream: https://git.xeondev.com/fadia-rs/fadia-rs.
+
 ![title](assets/img/title.png)
 
 #### NOTE: fadia-rs is currently under active development
@@ -13,18 +20,21 @@
 ### Setup
 #### a) building from sources
 ```sh
-git clone https://git.xeondev.com/fadia-rs/fadia-rs.git
+git clone https://github.com/Mar7thDev/fadia-rs.git
 cd fadia-rs
 cargo run --bin fadia-patchersdk-server
 cargo run --bin fadia-gamesdk-server
 cargo run --bin fadia-game-server
 ```
-#### b) using pre-built binaries
-Navigate to the [Releases](https://git.xeondev.com/fadia-rs/fadia-rs/releases) page and download the latest release for your platform.
-Start each service in order from option `a)`.
+Run each service in a separate terminal from the repository root. Configuration
+files are generated locally and are ignored by Git. To build release binaries,
+run `cargo build --release --workspace`.
 
 ### Logging in
-Currently supported client version is `CB2 Global 1.0.19`, you can get it from 3rd party sources (e.g. game launcher). Next, you have to apply the necessary [client patch](https://git.xeondev.com/fadia-rs/symphonic/). It disables anticheat and allows you to connect to local server.
+Use the matching `1.3.10` client and the accompanying
+[client patch](https://github.com/Mar7thDev/symphonic). The patch enables local
+login and routes requests to the local services. Older upstream client builds
+use different replication handles and RPC indices.
 
 ## Implementation details
 - patchersdk-server: implements a basic HTTP file server from which client obtains the "serverlist".

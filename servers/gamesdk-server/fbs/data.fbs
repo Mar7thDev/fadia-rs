@@ -28,17 +28,19 @@ table ClientLoginReq {
 }
 
 table ClientTravelCmd {
-	unk_131644: int;
+	unk_131644: ulong;
 	player_uid: string;
 	unk_empty_string: string;
+	save_info: string;
 	server_addr: string;
 	unk_empty_string_2: string;
 	unk_empty_string_3: string;
-	player_role_id: int;
+	player_role_id: ulong;
 	player_character_bp: string;
 	compressed_data_blob: [ubyte];
 	unk_322: int;
 	unk_1: int;
+	clear_previous_state: bool = true;
 	unk_cdcdcdcd: uint;
 }
 

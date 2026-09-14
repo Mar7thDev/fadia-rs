@@ -44,9 +44,7 @@ const DEFAULT_DATA_LAYER_NAMES: &[&str] = &[
     "DataLayer_F99A219143708D8368AEE4B98AF5E78B",
 ];
 
-const DEFAULT_LOADED_DATA_LAYER_NAMES: &[&str] = &[
-    "DataLayer_9FBCFE1E49B3D2C6196E538050975D52"
-];
+const DEFAULT_LOADED_DATA_LAYER_NAMES: &[&str] = &["DataLayer_9FBCFE1E49B3D2C6196E538050975D52"];
 
 impl WorldDataLayers {
     pub fn new(remote_role: NetRole, role: NetRole, world: &mut World) -> (FNetworkGUID, Self) {

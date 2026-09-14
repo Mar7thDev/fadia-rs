@@ -23,6 +23,11 @@ pub struct Object {
 
 impl Object {
     pub fn add_rpc(&mut self, index: u32, data: Box<[u8]>) {
+        self.queued_rpcs
+            .extend(super::hotta::initialization::before_rpc(
+                self.rep_layout.as_ref(),
+                index,
+            ));
         self.queued_rpcs.push((index, data));
     }
 

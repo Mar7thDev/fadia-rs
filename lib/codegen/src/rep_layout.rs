@@ -55,6 +55,12 @@ pub fn impl_rep_layout(ident: &Ident, data: &DataStruct, attrs: &[Attribute]) ->
         }
 
         if let Some(handle) = attr.handle.as_ref() {
+            let mapped = crate::generated_rep_handles::wire_handle(
+                &ident.to_string(),
+                &name.to_string(),
+                handle.base10_parse().unwrap(),
+            );
+            let handle = LitInt::new(&mapped.to_string(), handle.span());
             fields_with_handle.push(name);
 
             layout_serialization.extend(quote! {

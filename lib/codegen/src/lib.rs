@@ -2,6 +2,7 @@ use proc_macro::TokenStream;
 use quote::{ToTokens, format_ident, quote};
 use syn::{Data, DeriveInput, ItemEnum, ItemImpl, ItemStruct, parse_macro_input};
 
+mod generated_rep_handles;
 mod hotta_replicated_object;
 mod newtype_util;
 mod rep_layout;

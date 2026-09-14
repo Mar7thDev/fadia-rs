@@ -10,12 +10,12 @@ use fadia_engine::{
     replication::{
         FastArraySerializer, NullLayout,
         property::{
-            GameplayTagContainer, PropertyArray, PropertyBool, PropertyF32, PropertyObject,
-            PropertyU32,
+            GameplayTagContainer, PropertyArray, PropertyBool, PropertyF32, PropertyI32,
+            PropertyName, PropertyObject, PropertyU32, PropertyU64,
         },
     },
     rotator::FRotator,
-    util::{InBitReader, ReadPrimitivesExt, quantized::QuantizedReadExt},
+    util::{FName, InBitReader, ReadPrimitivesExt, quantized::QuantizedReadExt},
     vector::FVector3d,
 };
 
@@ -29,7 +29,7 @@ use crate::{
 };
 
 #[derive(Debug, RepLayout)]
-#[max_rep_index(136)]
+#[max_rep_index(203)]
 pub struct HTPlayerCharacter {
     #[rep(handle = 5)]
     pub remote_role: PropertyNetRole,
@@ -41,17 +41,25 @@ pub struct HTPlayerCharacter {
     pub instigator: PropertyObject,
     #[rep(handle = 16)]
     pub group_id: PropertyU32,
-    #[rep(handle = 18)]
-    pub player_state: PropertyObject,
     #[rep(handle = 19)]
+    pub player_state: PropertyObject,
+    #[rep(handle = 20)]
     pub controller: PropertyObject,
-    #[rep(handle = 51)]
+    #[rep(handle = 33)]
     pub self_ht_player_controller: PropertyObject,
-    #[rep(handle = 56)]
+    #[rep(handle = 38)]
     pub current_weapon: PropertyObject,
-    #[rep(handle = 74)]
+    #[rep(handle = 55)]
     pub server_ready_flag: PropertyBool,
-    #[rep(handle = 75)]
+    // FashionDyeData is flattened into three replication handles. None skips
+    // appearance loading, leaving MainPlayerReadyLoadingProcessTask pending.
+    #[rep(handle = 90)]
+    pub fashion_id: PropertyName,
+    #[rep(handle = 91)]
+    pub dye_id: PropertyI32,
+    #[rep(handle = 92)]
+    pub appearance_option_mask: PropertyU64,
+    #[rep(handle = 62)]
     pub saved_player_state: PropertyObject,
 }
 
@@ -109,33 +117,33 @@ pub struct HTAttributeSet {
 }
 
 #[derive(Debug, RepLayout)]
-#[max_rep_index(98)]
+#[max_rep_index(81)]
 #[dummy_rpc_handler]
 pub struct AbilitySystemComponent {
     #[rep(handle = 6)]
     pub owner_actor: PropertyObject,
     #[rep(handle = 7)]
     pub avatar_actor: PropertyObject,
-    #[rep(handle = 18)]
+    #[rep(handle = 57)]
     pub hp_current: PropertyF32,
-    #[rep(handle = 19)]
+    #[rep(handle = 58)]
     pub max_hp: PropertyF32,
-    #[rep(handle = 20)]
+    #[rep(handle = 59)]
     pub max_hp_temp: PropertyF32,
-    #[rep(handle = 22)]
+    #[rep(handle = 61)]
     pub satiety_change_time: PropertyF32,
-    #[rep(handle = 23)]
+    #[rep(handle = 62)]
     pub atk: PropertyF32,
-    #[rep(handle = 24)]
+    #[rep(handle = 63)]
     pub charge_current: PropertyF32,
-    #[rep(handle = 28)]
+    #[rep(handle = 67)]
     pub unbal_speed: PropertyF32,
     #[rep(index = 7)]
     pub activatable_abilities: FastArraySerializer<GameplayAbilitySpec>,
 }
 
 #[derive(Debug, RepLayout)]
-#[max_rep_index(8)]
+#[max_rep_index(6)]
 #[dummy_rpc_handler]
 pub struct StateManagerComponent {}
 
@@ -154,9 +162,9 @@ pub struct GameplayAbilitySpec {
     pub input_id: PropertyU32,
     #[rep(handle = 5)]
     pub source_object: PropertyObject,
-    #[rep(handle = 6)]
+    #[rep(handle = 14)]
     pub gameplay_tags: GameplayTagContainer,
-    #[rep(handle = 7)]
+    #[rep(handle = 16)]
     pub replicated_instances: PropertyArray<PropertyObject>,
 }
 
@@ -294,6 +302,9 @@ impl HTPlayerCharacter {
                 self_ht_player_controller: PropertyObject::default(),
                 current_weapon: PropertyObject::default(),
                 server_ready_flag: PropertyBool::default(),
+                fashion_id: PropertyName::new(FName::Custom("DefaultFashion".into())),
+                dye_id: PropertyI32::new(-1),
+                appearance_option_mask: PropertyU64::default(),
                 saved_player_state: PropertyObject::default(),
             },
             sub_objects,
@@ -315,7 +326,7 @@ impl ObjectLayout for AbilitySystemComponent {
 
 #[rpc_handlers]
 impl HTPlayerCharacter {
-    #[rpc(41, server)]
+    #[rpc(42, server)]
     fn server_move_packed(_ctx: RpcContext, data: CharacterNetworkSerializationPackedBits) {
         if let Some(move_data) = data.new_move_data
             && move_data.acceleration.is_zero()

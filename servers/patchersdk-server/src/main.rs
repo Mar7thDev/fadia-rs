@@ -1,7 +1,10 @@
 use axum::{
+    Router,
+    extract::Request,
     handler::HandlerWithoutStateExt,
     http::{StatusCode, Uri},
-    Router,
+    middleware::{self, Next},
+    response::Response,
 };
 use config::ServerConfig;
 use tokio::net::TcpListener;
@@ -25,9 +28,11 @@ async fn main() -> Result<(), StartupError> {
         include_str!("../patchersdk_server.default.toml"),
     );
 
-    let app = Router::new().fallback_service(
-        ServeDir::new(config.serve_dir).not_found_service(not_found.into_service()),
-    );
+    let app = Router::new()
+        .fallback_service(
+            ServeDir::new(config.serve_dir).not_found_service(not_found.into_service()),
+        )
+        .layer(middleware::from_fn(log_request));
 
     let listener = TcpListener::bind(config.tcp_addr)
         .await
@@ -45,4 +50,12 @@ async fn main() -> Result<(), StartupError> {
 async fn not_found(uri: Uri) -> (StatusCode, &'static str) {
     warn!("requested asset not found: {uri}");
     (StatusCode::NOT_FOUND, "requested asset was not found")
+}
+
+async fn log_request(request: Request, next: Next) -> Response {
+    let method = request.method().clone();
+    let path = request.uri().path().to_owned();
+    let response = next.run(request).await;
+    info!(%method, %path, status = response.status().as_u16(), "patcher request");
+    response
 }
