@@ -45,4 +45,4 @@ use different replication handles and RPC indices.
 You can change playable character in the `game_server.toml` file.
 
 ## Support
-Your support for this project is greatly appreciated! If you'd like to contribute, feel submit pull requests.
+Your support for this project is greatly appreciated! If you'd like to contribute, feel free to submit pull requests.
